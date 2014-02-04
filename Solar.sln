@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solar", "Solar\Solar.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZClient", "ZClient\ZClient.csproj", "{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonInterface", "CommonInterface\CommonInterface.csproj", "{1517C034-C7A2-45D3-AF13-15C80982CD00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1517C034-C7A2-45D3-AF13-15C80982CD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1517C034-C7A2-45D3-AF13-15C80982CD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1517C034-C7A2-45D3-AF13-15C80982CD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1517C034-C7A2-45D3-AF13-15C80982CD00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
