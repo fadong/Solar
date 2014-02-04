@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solar", "Solar\Solar.csproj", "{BD4A0A4B-9A96-47CE-985C-041DA1F8D930}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZClient", "ZClient\ZClient.csproj", "{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{BD4A0A4B-9A96-47CE-985C-041DA1F8D930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD4A0A4B-9A96-47CE-985C-041DA1F8D930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD4A0A4B-9A96-47CE-985C-041DA1F8D930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
