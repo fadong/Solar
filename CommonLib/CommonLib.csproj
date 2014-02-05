@@ -39,10 +39,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FCalendar.cs" />
+    <Compile Include="FCalendarDate.cs" />
     <Compile Include="FCashFlow.cs" />
     <Compile Include="FInstrument.cs" />
-    <Compile Include="FLeg.cs" />
+    <Compile Include="FCLeg.cs" />
+    <Compile Include="FInstrumentBill.cs" />
+    <Compile Include="FInstrumentBond.cs" />
+    <Compile Include="FInstrumentCap.cs" />
+    <Compile Include="FInstrumentCD.cs" />
+    <Compile Include="FInstrumentCDS.cs" />
+    <Compile Include="FInstrumentCF.cs" />
+    <Compile Include="FInstrumentCLN.cs" />
+    <Compile Include="FInstrumentCollar.cs" />
+    <Compile Include="FInstrumentCombi.cs" />
+    <Compile Include="FInstrumentCommodity.cs" />
+    <Compile Include="FInstrumentConvertible.cs" />
+    <Compile Include="FInstrumentCreditIndex.cs" />
+    <Compile Include="FInstrumentCurrency.cs" />
+    <Compile Include="FInstrumentCurrSwap.cs" />
+    <Compile Include="FInstrumentDeposit.cs" />
+    <Compile Include="FInstrumentDeriv.cs" />
+    <Compile Include="FInstrumentDR.cs" />
+    <Compile Include="FInstrumentDualCurrBond.cs" />
+    <Compile Include="FInstrumentEquityIndex.cs" />
+    <Compile Include="FInstrumentEquitySwap.cs" />
+    <Compile Include="FInstrumentETF.cs" />
+    <Compile Include="FInstrumentFloor.cs" />
+    <Compile Include="FInstrumentForwardFuture.cs" />
+    <Compile Include="FInstrumentFRA.cs" />
+    <Compile Include="FInstrumentFreeDefCF.cs" />
+    <Compile Include="FInstrumentFRN.cs" />
+    <Compile Include="FInstrumentFXSwap.cs" />
+    <Compile Include="FInstrumentMBSABS.cs" />
+    <Compile Include="FInstrumentOption.cs" />
+    <Compile Include="FInstrumentPriceIndex.cs" />
+    <Compile Include="FInstrumentRateIndex.cs" />
+    <Compile Include="FInstrumentRepoReverse.cs" />
+    <Compile Include="FInstrumentSecurityLoan.cs" />
+    <Compile Include="FInstrumentStock.cs" />
+    <Compile Include="FInstrumentSwap.cs" />
+    <Compile Include="FInstrumentTRS.cs" />
+    <Compile Include="FInstrumentWarrant.cs" />
+    <Compile Include="FInstrumentZero.cs" />
+    <Compile Include="FPmCorrPoint.cs" />
+    <Compile Include="FPmDivd.cs" />
+    <Compile Include="FPmDivdCorr.cs" />
+    <Compile Include="FPmDivdPoint.cs" />
+    <Compile Include="FPmVol.cs" />
+    <Compile Include="FPmVolPoint.cs" />
+    <Compile Include="FPmYC.cs" />
+    <Compile Include="FPmYCPoint.cs" />
+    <Compile Include="FPortfolio.cs" />
+    <Compile Include="FPortfolioCompound.cs" />
+    <Compile Include="FPortfolioPhysical.cs" />
+    <Compile Include="FPrice.cs" />
+    <Compile Include="FPriceHist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">
+      <Project>{1517c034-c7a2-45d3-af13-15c80982cd00}</Project>
+      <Name>CommonInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

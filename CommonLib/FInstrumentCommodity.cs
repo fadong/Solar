@@ -5,6 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FLeg {
+    class FInstrumentCommodity {
     }
 }

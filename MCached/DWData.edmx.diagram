@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d48471c132d34e619be5092db441142c" Name="다이어그램1" ZoomLevel="81">
+        <EntityTypeShape EntityType="Model.NGOS_INSTRUMENT" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NGOS_ADDINFO" Width="1.5" PointX="3.8060482683619714" PointY="24.921460207980807" />
+        <EntityTypeShape EntityType="Model.NGOS_ADDINFOSPEC" Width="1.5" PointX="0.22786636847437655" PointY="2.6239474875032656" />
+        <EntityTypeShape EntityType="Model.NGOS_CASHFLOW" Width="1.5" PointX="7.0252234540065865" PointY="27.355079142076466" />
+        <EntityTypeShape EntityType="Model.NGOS_EXOTICEVENT" Width="1.5" PointX="3.0903423051770509" PointY="1.1382865762050667" />
+        <EntityTypeShape EntityType="Model.NGOS_LEG" Width="1.5" PointX="6.6977833782778049" PointY="17.010053985291187" />
+        <EntityTypeShape EntityType="Model.NGOS_PARTY" Width="1.5" PointX="8.2732047384014376" PointY="31.070410087271785" />
+        <EntityTypeShape EntityType="Model.NGOS_PORTFOLIO" Width="1.5" PointX="6.41102911085404" PointY="20.202486569156164" />
+        <EntityTypeShape EntityType="Model.NGOS_RESET" Width="1.5" PointX="3.7471991217449303" PointY="5.3107142920190071" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

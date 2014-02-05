@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLib", "SolarLib\SolarL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNode", "CNode\CNode.csproj", "{A153D1D7-69B4-409C-B589-0BCDA1942CA2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{4200C506-8C13-4A75-BF4B-4FD9D950072D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter4CalcService", "Adapter4CalcService\Adapter4CalcService.csproj", "{D64F9D6C-9A87-4F58-AB98-F20548651AE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{A153D1D7-69B4-409C-B589-0BCDA1942CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A153D1D7-69B4-409C-B589-0BCDA1942CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A153D1D7-69B4-409C-B589-0BCDA1942CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D64F9D6C-9A87-4F58-AB98-F20548651AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64F9D6C-9A87-4F58-AB98-F20548651AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64F9D6C-9A87-4F58-AB98-F20548651AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64F9D6C-9A87-4F58-AB98-F20548651AE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

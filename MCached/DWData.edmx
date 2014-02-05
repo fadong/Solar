@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="NGOS_ADDINFO" EntityType="Model.Store.NGOS_ADDINFO" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_ADDINFOSPEC" EntityType="Model.Store.NGOS_ADDINFOSPEC" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_CASHFLOW" EntityType="Model.Store.NGOS_CASHFLOW" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_EXOTICEVENT" EntityType="Model.Store.NGOS_EXOTICEVENT" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_INSTRUMENT" EntityType="Model.Store.NGOS_INSTRUMENT" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_LEG" EntityType="Model.Store.NGOS_LEG" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_PARTY" EntityType="Model.Store.NGOS_PARTY" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_PORTFOLIO" EntityType="Model.Store.NGOS_PORTFOLIO" store:Type="Tables" Schema="NGOS" />
+          <EntitySet Name="NGOS_RESET" EntityType="Model.Store.NGOS_RESET" store:Type="Tables" Schema="NGOS" />
+        </EntityContainer>
+        <EntityType Name="NGOS_ADDINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="OBJID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="SPECID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="VALUE" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NGOS_ADDINFOSPEC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar2" MaxLength="255" />
+          <Property Name="FILED_NAME" Type="varchar2" MaxLength="40" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="RECTYPE" Type="number" Nullable="false" Precision="6" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="DATA_TYPE_GRP" Type="number" Precision="1" />
+          <Property Name="DATA_TYPE_TYPE" Type="number" Precision="6" />
+          <Property Name="DEFAULT_VALUE" Type="varchar2" MaxLength="50" />
+          <Property Name="MANDATORY" Type="number" Precision="1" />
+          <Property Name="SUBREC_MASK1" Type="number" Precision="10" />
+          <Property Name="SUBREC_MASK2" Type="number" Precision="10" />
+        </EntityType>
+        <EntityType Name="NGOS_CASHFLOW">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="ENDDAY" Type="date" />
+          <Property Name="FLOATRATE_FACTOR" Type="float" Precision="126" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="LEGID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="NOMINAL_FACTOR" Type="float" Precision="126" />
+          <Property Name="PAYDAY" Type="date" />
+          <Property Name="RATE" Type="float" Precision="126" />
+          <Property Name="STARTDAY" Type="date" />
+          <Property Name="STRIKE_RATE" Type="float" Precision="126" />
+          <Property Name="TYPE" Type="number" Nullable="false" Precision="2" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="ISEXCLUDE" Type="number" Nullable="false" Precision="1" />
+          <Property Name="EXTERN_ID" Type="varchar2" MaxLength="30" />
+          <Property Name="FIXED_AMOUNT" Type="float" Precision="126" />
+          <Property Name="FIXED_TIME" Type="date" />
+          <Property Name="FLOATRATE_FACTOR2" Type="float" Precision="126" />
+          <Property Name="FLOATRATE_OFFSET" Type="float" Precision="126" />
+          <Property Name="ISMANUALLY" Type="number" Nullable="false" Precision="1" />
+          <Property Name="SPREAD" Type="float" Precision="126" />
+          <Property Name="SPREAD2" Type="float" Precision="126" />
+        </EntityType>
+        <EntityType Name="NGOS_EXOTICEVENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="COMPID" Type="number" Precision="8" />
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="ENDDATE" Type="date" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="INSID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="RUNNO" Type="number" Precision="2" />
+          <Property Name="STDATE" Type="date" />
+          <Property Name="TYPE" Type="number" Precision="6" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="VALUE" Type="float" Precision="126" />
+        </EntityType>
+        <EntityType Name="NGOS_INSTRUMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CALLABLE" Type="number" Precision="1" />
+          <Property Name="CONTR_SIZE" Type="float" Nullable="false" Precision="126" />
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="CURRENCY" Type="number" Precision="8" />
+          <Property Name="ENDDAY" Type="date" />
+          <Property Name="EXP_PERIOD_COUNT" Type="number" Precision="6" />
+          <Property Name="EXP_PERIOD_UNIT" Type="number" Precision="2" />
+          <Property Name="EXTERN_ID1" Type="varchar2" MaxLength="30" />
+          <Property Name="EXTERN_ID2" Type="varchar2" MaxLength="30" />
+          <Property Name="GENERIC" Type="number" Nullable="false" Precision="1" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="INSTYPE" Type="number" Nullable="false" Precision="2" />
+          <Property Name="ISIN" Type="varchar2" MaxLength="20" />
+          <Property Name="ISSUEDAY" Type="date" />
+          <Property Name="NAME" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="OTC" Type="number" Nullable="false" Precision="2" />
+          <Property Name="PRODUCT_ID" Type="number" Precision="6" />
+          <Property Name="STARTDAY" Type="date" />
+          <Property Name="STRIKE_PRICE" Type="float" Precision="126" />
+          <Property Name="UND_INSID" Type="number" Precision="9" />
+          <Property Name="CALLOPTION" Type="number" Precision="1" />
+          <Property Name="CATAG_ID" Type="number" Precision="6" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="DWS_CREATE_USER" Type="varchar2" MaxLength="255" />
+          <Property Name="QUOTE_TYPE" Type="number" Precision="6" />
+          <Property Name="STRIKE_CURR" Type="number" Precision="6" />
+          <Property Name="QUOTATION_ID" Type="number" Precision="5" />
+          <Property Name="CONVRATIO" Type="number" Precision="7" />
+          <Property Name="YTM_METHOD" Type="number" Precision="4" />
+          <Property Name="NOTIONAL" Type="number" Precision="1" />
+          <Property Name="PUTABLE" Type="number" Precision="1" />
+          <Property Name="DIGITAL" Type="number" Precision="1" />
+        </EntityType>
+        <EntityType Name="NGOS_LEG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="DAYCOUNT_METHOD" Type="number" Precision="2" />
+          <Property Name="ISFIXED_COUPON" Type="number" Precision="1" />
+          <Property Name="FIXED_RATE" Type="float" Precision="126" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="INDEX_REF" Type="number" Precision="8" />
+          <Property Name="INSID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="ISPAYLEG" Type="number" Nullable="false" Precision="1" />
+          <Property Name="ISLONG_STUB" Type="number" Precision="1" />
+          <Property Name="ISNOMINAL_AT_END" Type="number" Precision="1" />
+          <Property Name="PAY_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="PAYDAY_METHOD" Type="number" Precision="2" />
+          <Property Name="PAYDAY_METHOD_COUNT" Type="number" Precision="6" />
+          <Property Name="PAYDAY_METHOD_UNIT" Type="number" Precision="2" />
+          <Property Name="ROLLING_BASEDAY" Type="date" />
+          <Property Name="ROLLING_METHOD_COUNT" Type="number" Precision="6" />
+          <Property Name="ROLLING_METHOD_UNIT" Type="number" Precision="2" />
+          <Property Name="TYPE" Type="number" Nullable="false" Precision="2" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="REFERENCE" Type="number" Precision="8" />
+          <Property Name="STRIKE" Type="float" Precision="8" />
+          <Property Name="STRIKE2" Type="float" Precision="8" />
+          <Property Name="SPREAD" Type="float" Precision="8" />
+          <Property Name="FLOAT_RATE_FACTOR" Type="float" Precision="8" />
+          <Property Name="REFERENCE2" Type="number" Precision="8" />
+          <Property Name="FLOAT_RATE_FACTOR2" Type="float" Precision="9" />
+          <Property Name="ISACCRUED_INCLUDED" Type="number" Precision="1" />
+          <Property Name="COMP_TYPE" Type="number" Precision="1" />
+          <Property Name="CONSTANT_STARTRESET" Type="number" Precision="1" />
+          <Property Name="CREDIT_REF" Type="number" Precision="8" />
+          <Property Name="DECIMALS" Type="number" Precision="2" />
+          <Property Name="DIGITALS" Type="number" Precision="1" />
+          <Property Name="DIGITAL_PAYOFF" Type="float" Precision="126" />
+          <Property Name="DIGITAL_TYPE" Type="number" Precision="1" />
+          <Property Name="END_DAY" Type="date" />
+          <Property Name="END_PERIOD_COUNT" Type="number" Precision="6" />
+          <Property Name="END_PERIOD_UNIT" Type="number" Precision="2" />
+          <Property Name="EXCLUDE_FIRSTPERIOD" Type="number" Precision="1" />
+          <Property Name="ISEXTENDED_FINALCF" Type="number" Precision="1" />
+          <Property Name="EXTERN_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="FLOAT_RATE_OFFSET" Type="float" Precision="126" />
+          <Property Name="INIT_INDEXVALUE" Type="float" Precision="126" />
+          <Property Name="ISLOCKED" Type="number" Precision="1" />
+          <Property Name="ISNOMINAL_AT_START" Type="number" Precision="1" />
+          <Property Name="NOMINAL_FACTOR" Type="float" Precision="126" />
+          <Property Name="NOMINAL_SCALING" Type="number" Precision="1" />
+          <Property Name="ORIGIN_CURR" Type="number" Precision="8" />
+          <Property Name="PAY2_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="PAY3_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="PAYOUT_SPREAD" Type="float" Precision="126" />
+          <Property Name="PERIOD_SCALE" Type="float" Precision="126" />
+          <Property Name="ISPRINCIPAL_GUARANTEED" Type="number" Precision="1" />
+          <Property Name="ISREINVESTED" Type="number" Precision="1" />
+          <Property Name="RESET2_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="RESET3_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="RESET_CALENDAR_ID" Type="number" Precision="8" />
+          <Property Name="RESETDAY_METHOD" Type="number" Precision="2" />
+          <Property Name="RESETDAY_OFFSET" Type="number" Precision="6" />
+          <Property Name="RESETDAY_INARREAR" Type="number" Precision="1" />
+          <Property Name="RESETDAY_COUNT" Type="number" Precision="6" />
+          <Property Name="RESETDAY_UNIT" Type="number" Precision="2" />
+          <Property Name="ISRESETROLLING_AT_END" Type="number" Precision="1" />
+          <Property Name="RESET_TYPE" Type="number" Precision="2" />
+          <Property Name="ROUNDINGRULE" Type="number" Precision="2" />
+          <Property Name="SPREAD2" Type="float" Precision="126" />
+          <Property Name="START_DAY" Type="date" />
+          <Property Name="START_PERIOD_COUNT" Type="number" Precision="6" />
+          <Property Name="START_PERIOD_UNIT" Type="number" Precision="2" />
+          <Property Name="STRIKE_LIMIT" Type="float" Precision="126" />
+          <Property Name="STRIKE_STEP" Type="float" Precision="126" />
+          <Property Name="STRIKE_TYPE" Type="number" Precision="2" />
+          <Property Name="CURR" Type="number" Precision="8" />
+          <Property Name="BARRIER" Type="float" Precision="126" />
+          <Property Name="BARRIER2" Type="float" Precision="126" />
+        </EntityType>
+        <EntityType Name="NGOS_PARTY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ADDRESS1" Type="varchar2" MaxLength="120" />
+          <Property Name="ADDRESS2" Type="varchar2" MaxLength="120" />
+          <Property Name="ALIAS" Type="varchar2" MaxLength="50" />
+          <Property Name="ATTENTION" Type="varchar2" MaxLength="39" />
+          <Property Name="BANKRUPTCY" Type="number" Precision="2" />
+          <Property Name="BIS_STATUS" Type="number" Precision="6" />
+          <Property Name="BUSINESS_STATUS" Type="number" Precision="6" />
+          <Property Name="CALCAGENT" Type="number" Precision="6" />
+          <Property Name="CITY" Type="varchar2" MaxLength="39" />
+          <Property Name="CONSOLIDATE" Type="number" Precision="6" />
+          <Property Name="CONTACT1" Type="varchar2" MaxLength="39" />
+          <Property Name="CONTACT2" Type="varchar2" MaxLength="39" />
+          <Property Name="COUNTRY" Type="varchar2" MaxLength="39" />
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="DEFAULT_DEPOT" Type="number" Precision="2" />
+          <Property Name="DEFAULT_NET" Type="number" Precision="2" />
+          <Property Name="DOCUMENT_DATE" Type="date" />
+          <Property Name="DOCUMENT_TYPE" Type="number" Precision="6" />
+          <Property Name="EMAIL" Type="varchar2" MaxLength="100" />
+          <Property Name="EXTERNAL_CUTOFF" Type="number" Precision="6" />
+          <Property Name="FAILURE_TO_PAY" Type="number" Precision="2" />
+          <Property Name="FAX" Type="varchar2" MaxLength="40" />
+          <Property Name="FREE1" Type="varchar2" MaxLength="255" />
+          <Property Name="FREE2" Type="varchar2" MaxLength="255" />
+          <Property Name="FULLNAME" Type="varchar2" MaxLength="100" />
+          <Property Name="GROUP_LIMIT" Type="number" Precision="2" />
+          <Property Name="GUARANTOR" Type="number" Precision="8" />
+          <Property Name="HOST_ID" Type="varchar2" MaxLength="19" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="INTERNAL_CUTOFF" Type="number" Precision="6" />
+          <Property Name="IS_CORRESPONDENT_BANK" Type="number" Precision="2" />
+          <Property Name="IS_ISDA_MEMBER" Type="number" Precision="2" />
+          <Property Name="IS_ISSUER" Type="number" Precision="2" />
+          <Property Name="IS_NOT_TRADING" Type="number" Precision="2" />
+          <Property Name="IS_NOTIFY_RECEIPT" Type="number" Precision="2" />
+          <Property Name="LEGAL_FORM" Type="number" Precision="6" />
+          <Property Name="NAME" Type="varchar2" MaxLength="50" />
+          <Property Name="OBL_ACCELERATION" Type="number" Precision="2" />
+          <Property Name="OBL_DEFAULT" Type="number" Precision="2" />
+          <Property Name="PARENT" Type="number" Precision="8" />
+          <Property Name="PHONE1" Type="varchar2" MaxLength="30" />
+          <Property Name="PRICE_ACCESS_CONTROL" Type="number" Precision="2" />
+          <Property Name="REDCODE" Type="varchar2" MaxLength="39" />
+          <Property Name="RELATION" Type="number" Precision="6" />
+          <Property Name="REPUDIATION" Type="number" Precision="2" />
+          <Property Name="RESTRUCTRURING" Type="number" Precision="2" />
+          <Property Name="SWIFTCODE" Type="varchar2" MaxLength="11" />
+          <Property Name="TELEX" Type="varchar2" MaxLength="30" />
+          <Property Name="TIME_ZONE" Type="varchar2" MaxLength="30" />
+          <Property Name="TYPE" Type="number" Precision="2" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="URL" Type="varchar2" MaxLength="40" />
+          <Property Name="ZIPCODE" Type="varchar2" MaxLength="14" />
+        </EntityType>
+        <EntityType Name="NGOS_PORTFOLIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="8" />
+          <Property Name="ISCOMPOUND" Type="number" Nullable="false" Precision="1" />
+          <Property Name="PARENT" Type="number" Precision="8" />
+          <Property Name="PRFNAME" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="OWNER" Type="number" Precision="5" />
+          <Property Name="PRFTYPE_ID" Type="number" Precision="6" />
+          <Property Name="CURRENCY" Type="number" Precision="8" />
+        </EntityType>
+        <EntityType Name="NGOS_RESET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CFWID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="CREATE_TIME" Type="date" />
+          <Property Name="CREATE_USER" Type="number" Precision="5" />
+          <Property Name="DAY" Type="date" />
+          <Property Name="ENDDAY" Type="date" />
+          <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="LEGID" Type="number" Nullable="false" Precision="10" />
+          <Property Name="STARTDAY" Type="date" />
+          <Property Name="TYPE" Type="number" Nullable="false" Precision="2" />
+          <Property Name="UPDATE_TIME" Type="date" />
+          <Property Name="UPDATE_USER" Type="number" Precision="5" />
+          <Property Name="VALUE" Type="float" Precision="126" />
+          <Property Name="VALUE2" Type="float" Precision="126" />
+          <Property Name="EXTERN_ID" Type="varchar2" MaxLength="30" />
+          <Property Name="READ_TIME" Type="date" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="dbctx" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="NGOS_INSTRUMENT" EntityType="Model.NGOS_INSTRUMENT" />
+          <EntitySet Name="NGOS_ADDINFO" EntityType="Model.NGOS_ADDINFO" />
+          <EntitySet Name="NGOS_ADDINFOSPEC" EntityType="Model.NGOS_ADDINFOSPEC" />
+          <EntitySet Name="NGOS_CASHFLOW" EntityType="Model.NGOS_CASHFLOW" />
+          <EntitySet Name="NGOS_EXOTICEVENT" EntityType="Model.NGOS_EXOTICEVENT" />
+          <EntitySet Name="NGOS_LEG" EntityType="Model.NGOS_LEG" />
+          <EntitySet Name="NGOS_PARTY" EntityType="Model.NGOS_PARTY" />
+          <EntitySet Name="NGOS_PORTFOLIO" EntityType="Model.NGOS_PORTFOLIO" />
+          <EntitySet Name="NGOS_RESET" EntityType="Model.NGOS_RESET" />
+        </EntityContainer>
+        <EntityType Name="NGOS_INSTRUMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CALLABLE" Type="Int16" />
+          <Property Name="CONTR_SIZE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CREATE_TIME" Type="DateTime" />
+          <Property Name="CREATE_USER" Type="Int16" />
+          <Property Name="CURRENCY" Type="Int32" />
+          <Property Name="ENDDAY" Type="DateTime" />
+          <Property Name="EXP_PERIOD_COUNT" Type="Int32" />
+          <Property Name="EXP_PERIOD_UNIT" Type="Int16" />
+          <Property Name="EXTERN_ID1" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="EXTERN_ID2" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="GENERIC" Type="Int16" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="INSTYPE" Type="Int16" Nullable="false" />
+          <Property Name="ISIN" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ISSUEDAY" Type="DateTime" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OTC" Type="Int16" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="Int32" />
+          <Property Name="STARTDAY" Type="DateTime" />
+          <Property Name="STRIKE_PRICE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UND_INSID" Type="Int32" />
+          <Property Name="CALLOPTION" Type="Int16" />
+          <Property Name="CATAG_ID" Type="Int32" />
+          <Property Name="UPDATE_TIME" Type="DateTime" />
+          <Property Name="UPDATE_USER" Type="Int16" />
+          <Property Name="DWS_CREATE_USER" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="QUOTE_TYPE" Type="Int32" />
+          <Property Name="STRIKE_CURR" Type="Int32" />
+          <Property Name="QUOTATION_ID" Type="Int16" />
+          <Property Name="CONVRATIO" Type="Int32" />
+          <Property Name="YTM_METHOD" Type="Int16" />
+          <Property Name="NOTIONAL" Type="Int16" />
+          <Property Name="PUTABLE" Type="Int16" />
+          <Property Name="DIGITAL" Type="Int16" />
+        </EntityType>
+        <EntityType Name="NGOS_ADDINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="OBJID" Nullable="false" />
+          <Property Type="Int32" Name="SPECID" Nullable="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="String" Name="VALUE" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="NGOS_ADDINFOSPEC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FILED_NAME" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="RECTYPE" Nullable="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Int16" Name="DATA_TYPE_GRP" />
+          <Property Type="Int32" Name="DATA_TYPE_TYPE" />
+          <Property Type="String" Name="DEFAULT_VALUE" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="MANDATORY" />
+          <Property Type="Int32" Name="SUBREC_MASK1" />
+          <Property Type="Int32" Name="SUBREC_MASK2" />
+        </EntityType>
+        <EntityType Name="NGOS_CASHFLOW">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="DateTime" Name="ENDDAY" />
+          <Property Type="Decimal" Name="FLOATRATE_FACTOR" Precision="38" Scale="0" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LEGID" Nullable="false" />
+          <Property Type="Decimal" Name="NOMINAL_FACTOR" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="PAYDAY" />
+          <Property Type="Decimal" Name="RATE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="STARTDAY" />
+          <Property Type="Decimal" Name="STRIKE_RATE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="TYPE" Nullable="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Int16" Name="ISEXCLUDE" Nullable="false" />
+          <Property Type="String" Name="EXTERN_ID" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="FIXED_AMOUNT" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FIXED_TIME" />
+          <Property Type="Decimal" Name="FLOATRATE_FACTOR2" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FLOATRATE_OFFSET" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="ISMANUALLY" Nullable="false" />
+          <Property Type="Decimal" Name="SPREAD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SPREAD2" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="NGOS_EXOTICEVENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="COMPID" />
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="DateTime" Name="ENDDATE" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="INSID" Nullable="false" />
+          <Property Type="Int16" Name="RUNNO" />
+          <Property Type="DateTime" Name="STDATE" />
+          <Property Type="Int32" Name="TYPE" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Decimal" Name="VALUE" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="NGOS_LEG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="Int16" Name="DAYCOUNT_METHOD" />
+          <Property Type="Int16" Name="ISFIXED_COUPON" />
+          <Property Type="Decimal" Name="FIXED_RATE" Precision="38" Scale="0" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="INDEX_REF" />
+          <Property Type="Int32" Name="INSID" Nullable="false" />
+          <Property Type="Int16" Name="ISPAYLEG" Nullable="false" />
+          <Property Type="Int16" Name="ISLONG_STUB" />
+          <Property Type="Int16" Name="ISNOMINAL_AT_END" />
+          <Property Type="Int32" Name="PAY_CALENDAR_ID" />
+          <Property Type="Int16" Name="PAYDAY_METHOD" />
+          <Property Type="Int32" Name="PAYDAY_METHOD_COUNT" />
+          <Property Type="Int16" Name="PAYDAY_METHOD_UNIT" />
+          <Property Type="DateTime" Name="ROLLING_BASEDAY" />
+          <Property Type="Int32" Name="ROLLING_METHOD_COUNT" />
+          <Property Type="Int16" Name="ROLLING_METHOD_UNIT" />
+          <Property Type="Int16" Name="TYPE" Nullable="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Int32" Name="REFERENCE" />
+          <Property Type="Decimal" Name="STRIKE" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="STRIKE2" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="SPREAD" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="FLOAT_RATE_FACTOR" Precision="3" Scale="0" />
+          <Property Type="Int32" Name="REFERENCE2" />
+          <Property Type="Decimal" Name="FLOAT_RATE_FACTOR2" Precision="3" Scale="0" />
+          <Property Type="Int16" Name="ISACCRUED_INCLUDED" />
+          <Property Type="Int16" Name="COMP_TYPE" />
+          <Property Type="Int16" Name="CONSTANT_STARTRESET" />
+          <Property Type="Int32" Name="CREDIT_REF" />
+          <Property Type="Int16" Name="DECIMALS" />
+          <Property Type="Int16" Name="DIGITALS" />
+          <Property Type="Decimal" Name="DIGITAL_PAYOFF" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="DIGITAL_TYPE" />
+          <Property Type="DateTime" Name="END_DAY" />
+          <Property Type="Int32" Name="END_PERIOD_COUNT" />
+          <Property Type="Int16" Name="END_PERIOD_UNIT" />
+          <Property Type="Int16" Name="EXCLUDE_FIRSTPERIOD" />
+          <Property Type="Int16" Name="ISEXTENDED_FINALCF" />
+          <Property Type="String" Name="EXTERN_ID" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="FLOAT_RATE_OFFSET" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="INIT_INDEXVALUE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="ISLOCKED" />
+          <Property Type="Int16" Name="ISNOMINAL_AT_START" />
+          <Property Type="Decimal" Name="NOMINAL_FACTOR" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="NOMINAL_SCALING" />
+          <Property Type="Int32" Name="ORIGIN_CURR" />
+          <Property Type="Int32" Name="PAY2_CALENDAR_ID" />
+          <Property Type="Int32" Name="PAY3_CALENDAR_ID" />
+          <Property Type="Decimal" Name="PAYOUT_SPREAD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PERIOD_SCALE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="ISPRINCIPAL_GUARANTEED" />
+          <Property Type="Int16" Name="ISREINVESTED" />
+          <Property Type="Int32" Name="RESET2_CALENDAR_ID" />
+          <Property Type="Int32" Name="RESET3_CALENDAR_ID" />
+          <Property Type="Int32" Name="RESET_CALENDAR_ID" />
+          <Property Type="Int16" Name="RESETDAY_METHOD" />
+          <Property Type="Int32" Name="RESETDAY_OFFSET" />
+          <Property Type="Int16" Name="RESETDAY_INARREAR" />
+          <Property Type="Int32" Name="RESETDAY_COUNT" />
+          <Property Type="Int16" Name="RESETDAY_UNIT" />
+          <Property Type="Int16" Name="ISRESETROLLING_AT_END" />
+          <Property Type="Int16" Name="RESET_TYPE" />
+          <Property Type="Int16" Name="ROUNDINGRULE" />
+          <Property Type="Decimal" Name="SPREAD2" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DAY" />
+          <Property Type="Int32" Name="START_PERIOD_COUNT" />
+          <Property Type="Int16" Name="START_PERIOD_UNIT" />
+          <Property Type="Decimal" Name="STRIKE_LIMIT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STRIKE_STEP" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="STRIKE_TYPE" />
+          <Property Type="Int32" Name="CURR" />
+          <Property Type="Decimal" Name="BARRIER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BARRIER2" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="NGOS_PARTY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ADDRESS1" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ADDRESS2" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ALIAS" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ATTENTION" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="BANKRUPTCY" />
+          <Property Type="Int32" Name="BIS_STATUS" />
+          <Property Type="Int32" Name="BUSINESS_STATUS" />
+          <Property Type="Int32" Name="CALCAGENT" />
+          <Property Type="String" Name="CITY" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CONSOLIDATE" />
+          <Property Type="String" Name="CONTACT1" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CONTACT2" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="COUNTRY" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="Int16" Name="DEFAULT_DEPOT" />
+          <Property Type="Int16" Name="DEFAULT_NET" />
+          <Property Type="DateTime" Name="DOCUMENT_DATE" />
+          <Property Type="Int32" Name="DOCUMENT_TYPE" />
+          <Property Type="String" Name="EMAIL" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EXTERNAL_CUTOFF" />
+          <Property Type="Int16" Name="FAILURE_TO_PAY" />
+          <Property Type="String" Name="FAX" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FREE1" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FREE2" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FULLNAME" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="GROUP_LIMIT" />
+          <Property Type="Int32" Name="GUARANTOR" />
+          <Property Type="String" Name="HOST_ID" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="INTERNAL_CUTOFF" />
+          <Property Type="Int16" Name="IS_CORRESPONDENT_BANK" />
+          <Property Type="Int16" Name="IS_ISDA_MEMBER" />
+          <Property Type="Int16" Name="IS_ISSUER" />
+          <Property Type="Int16" Name="IS_NOT_TRADING" />
+          <Property Type="Int16" Name="IS_NOTIFY_RECEIPT" />
+          <Property Type="Int32" Name="LEGAL_FORM" />
+          <Property Type="String" Name="NAME" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="OBL_ACCELERATION" />
+          <Property Type="Int16" Name="OBL_DEFAULT" />
+          <Property Type="Int32" Name="PARENT" />
+          <Property Type="String" Name="PHONE1" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="PRICE_ACCESS_CONTROL" />
+          <Property Type="String" Name="REDCODE" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="RELATION" />
+          <Property Type="Int16" Name="REPUDIATION" />
+          <Property Type="Int16" Name="RESTRUCTRURING" />
+          <Property Type="String" Name="SWIFTCODE" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TELEX" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIME_ZONE" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="TYPE" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="String" Name="URL" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ZIPCODE" MaxLength="14" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="NGOS_PORTFOLIO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int16" Name="ISCOMPOUND" Nullable="false" />
+          <Property Type="Int32" Name="PARENT" />
+          <Property Type="String" Name="PRFNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Int16" Name="OWNER" />
+          <Property Type="Int32" Name="PRFTYPE_ID" />
+          <Property Type="Int32" Name="CURRENCY" />
+        </EntityType>
+        <EntityType Name="NGOS_RESET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="CFWID" Nullable="false" />
+          <Property Type="DateTime" Name="CREATE_TIME" />
+          <Property Type="Int16" Name="CREATE_USER" />
+          <Property Type="DateTime" Name="DAY" />
+          <Property Type="DateTime" Name="ENDDAY" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LEGID" Nullable="false" />
+          <Property Type="DateTime" Name="STARTDAY" />
+          <Property Type="Int16" Name="TYPE" Nullable="false" />
+          <Property Type="DateTime" Name="UPDATE_TIME" />
+          <Property Type="Int16" Name="UPDATE_USER" />
+          <Property Type="Decimal" Name="VALUE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="VALUE2" Precision="38" Scale="0" />
+          <Property Type="String" Name="EXTERN_ID" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="READ_TIME" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="dbctx">
+          <EntitySetMapping Name="NGOS_INSTRUMENT">
+            <EntityTypeMapping TypeName="Model.NGOS_INSTRUMENT">
+              <MappingFragment StoreEntitySet="NGOS_INSTRUMENT">
+                <ScalarProperty Name="CALLABLE" ColumnName="CALLABLE" />
+                <ScalarProperty Name="CONTR_SIZE" ColumnName="CONTR_SIZE" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+                <ScalarProperty Name="ENDDAY" ColumnName="ENDDAY" />
+                <ScalarProperty Name="EXP_PERIOD_COUNT" ColumnName="EXP_PERIOD_COUNT" />
+                <ScalarProperty Name="EXP_PERIOD_UNIT" ColumnName="EXP_PERIOD_UNIT" />
+                <ScalarProperty Name="EXTERN_ID1" ColumnName="EXTERN_ID1" />
+                <ScalarProperty Name="EXTERN_ID2" ColumnName="EXTERN_ID2" />
+                <ScalarProperty Name="GENERIC" ColumnName="GENERIC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="INSTYPE" ColumnName="INSTYPE" />
+                <ScalarProperty Name="ISIN" ColumnName="ISIN" />
+                <ScalarProperty Name="ISSUEDAY" ColumnName="ISSUEDAY" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="OTC" ColumnName="OTC" />
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="STARTDAY" ColumnName="STARTDAY" />
+                <ScalarProperty Name="STRIKE_PRICE" ColumnName="STRIKE_PRICE" />
+                <ScalarProperty Name="UND_INSID" ColumnName="UND_INSID" />
+                <ScalarProperty Name="CALLOPTION" ColumnName="CALLOPTION" />
+                <ScalarProperty Name="CATAG_ID" ColumnName="CATAG_ID" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="DWS_CREATE_USER" ColumnName="DWS_CREATE_USER" />
+                <ScalarProperty Name="QUOTE_TYPE" ColumnName="QUOTE_TYPE" />
+                <ScalarProperty Name="STRIKE_CURR" ColumnName="STRIKE_CURR" />
+                <ScalarProperty Name="QUOTATION_ID" ColumnName="QUOTATION_ID" />
+                <ScalarProperty Name="CONVRATIO" ColumnName="CONVRATIO" />
+                <ScalarProperty Name="YTM_METHOD" ColumnName="YTM_METHOD" />
+                <ScalarProperty Name="NOTIONAL" ColumnName="NOTIONAL" />
+                <ScalarProperty Name="PUTABLE" ColumnName="PUTABLE" />
+                <ScalarProperty Name="DIGITAL" ColumnName="DIGITAL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_ADDINFO">
+            <EntityTypeMapping TypeName="Model.NGOS_ADDINFO">
+              <MappingFragment StoreEntitySet="NGOS_ADDINFO">
+                <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="SPECID" ColumnName="SPECID" />
+                <ScalarProperty Name="OBJID" ColumnName="OBJID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_ADDINFOSPEC">
+            <EntityTypeMapping TypeName="Model.NGOS_ADDINFOSPEC">
+              <MappingFragment StoreEntitySet="NGOS_ADDINFOSPEC">
+                <ScalarProperty Name="SUBREC_MASK2" ColumnName="SUBREC_MASK2" />
+                <ScalarProperty Name="SUBREC_MASK1" ColumnName="SUBREC_MASK1" />
+                <ScalarProperty Name="MANDATORY" ColumnName="MANDATORY" />
+                <ScalarProperty Name="DEFAULT_VALUE" ColumnName="DEFAULT_VALUE" />
+                <ScalarProperty Name="DATA_TYPE_TYPE" ColumnName="DATA_TYPE_TYPE" />
+                <ScalarProperty Name="DATA_TYPE_GRP" ColumnName="DATA_TYPE_GRP" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="RECTYPE" ColumnName="RECTYPE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FILED_NAME" ColumnName="FILED_NAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_CASHFLOW">
+            <EntityTypeMapping TypeName="Model.NGOS_CASHFLOW">
+              <MappingFragment StoreEntitySet="NGOS_CASHFLOW">
+                <ScalarProperty Name="SPREAD2" ColumnName="SPREAD2" />
+                <ScalarProperty Name="SPREAD" ColumnName="SPREAD" />
+                <ScalarProperty Name="ISMANUALLY" ColumnName="ISMANUALLY" />
+                <ScalarProperty Name="FLOATRATE_OFFSET" ColumnName="FLOATRATE_OFFSET" />
+                <ScalarProperty Name="FLOATRATE_FACTOR2" ColumnName="FLOATRATE_FACTOR2" />
+                <ScalarProperty Name="FIXED_TIME" ColumnName="FIXED_TIME" />
+                <ScalarProperty Name="FIXED_AMOUNT" ColumnName="FIXED_AMOUNT" />
+                <ScalarProperty Name="EXTERN_ID" ColumnName="EXTERN_ID" />
+                <ScalarProperty Name="ISEXCLUDE" ColumnName="ISEXCLUDE" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="STRIKE_RATE" ColumnName="STRIKE_RATE" />
+                <ScalarProperty Name="STARTDAY" ColumnName="STARTDAY" />
+                <ScalarProperty Name="RATE" ColumnName="RATE" />
+                <ScalarProperty Name="PAYDAY" ColumnName="PAYDAY" />
+                <ScalarProperty Name="NOMINAL_FACTOR" ColumnName="NOMINAL_FACTOR" />
+                <ScalarProperty Name="LEGID" ColumnName="LEGID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FLOATRATE_FACTOR" ColumnName="FLOATRATE_FACTOR" />
+                <ScalarProperty Name="ENDDAY" ColumnName="ENDDAY" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_EXOTICEVENT">
+            <EntityTypeMapping TypeName="Model.NGOS_EXOTICEVENT">
+              <MappingFragment StoreEntitySet="NGOS_EXOTICEVENT">
+                <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="STDATE" ColumnName="STDATE" />
+                <ScalarProperty Name="RUNNO" ColumnName="RUNNO" />
+                <ScalarProperty Name="INSID" ColumnName="INSID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="COMPID" ColumnName="COMPID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_LEG">
+            <EntityTypeMapping TypeName="Model.NGOS_LEG">
+              <MappingFragment StoreEntitySet="NGOS_LEG">
+                <ScalarProperty Name="BARRIER2" ColumnName="BARRIER2" />
+                <ScalarProperty Name="BARRIER" ColumnName="BARRIER" />
+                <ScalarProperty Name="CURR" ColumnName="CURR" />
+                <ScalarProperty Name="STRIKE_TYPE" ColumnName="STRIKE_TYPE" />
+                <ScalarProperty Name="STRIKE_STEP" ColumnName="STRIKE_STEP" />
+                <ScalarProperty Name="STRIKE_LIMIT" ColumnName="STRIKE_LIMIT" />
+                <ScalarProperty Name="START_PERIOD_UNIT" ColumnName="START_PERIOD_UNIT" />
+                <ScalarProperty Name="START_PERIOD_COUNT" ColumnName="START_PERIOD_COUNT" />
+                <ScalarProperty Name="START_DAY" ColumnName="START_DAY" />
+                <ScalarProperty Name="SPREAD2" ColumnName="SPREAD2" />
+                <ScalarProperty Name="ROUNDINGRULE" ColumnName="ROUNDINGRULE" />
+                <ScalarProperty Name="RESET_TYPE" ColumnName="RESET_TYPE" />
+                <ScalarProperty Name="ISRESETROLLING_AT_END" ColumnName="ISRESETROLLING_AT_END" />
+                <ScalarProperty Name="RESETDAY_UNIT" ColumnName="RESETDAY_UNIT" />
+                <ScalarProperty Name="RESETDAY_COUNT" ColumnName="RESETDAY_COUNT" />
+                <ScalarProperty Name="RESETDAY_INARREAR" ColumnName="RESETDAY_INARREAR" />
+                <ScalarProperty Name="RESETDAY_OFFSET" ColumnName="RESETDAY_OFFSET" />
+                <ScalarProperty Name="RESETDAY_METHOD" ColumnName="RESETDAY_METHOD" />
+                <ScalarProperty Name="RESET_CALENDAR_ID" ColumnName="RESET_CALENDAR_ID" />
+                <ScalarProperty Name="RESET3_CALENDAR_ID" ColumnName="RESET3_CALENDAR_ID" />
+                <ScalarProperty Name="RESET2_CALENDAR_ID" ColumnName="RESET2_CALENDAR_ID" />
+                <ScalarProperty Name="ISREINVESTED" ColumnName="ISREINVESTED" />
+                <ScalarProperty Name="ISPRINCIPAL_GUARANTEED" ColumnName="ISPRINCIPAL_GUARANTEED" />
+                <ScalarProperty Name="PERIOD_SCALE" ColumnName="PERIOD_SCALE" />
+                <ScalarProperty Name="PAYOUT_SPREAD" ColumnName="PAYOUT_SPREAD" />
+                <ScalarProperty Name="PAY3_CALENDAR_ID" ColumnName="PAY3_CALENDAR_ID" />
+                <ScalarProperty Name="PAY2_CALENDAR_ID" ColumnName="PAY2_CALENDAR_ID" />
+                <ScalarProperty Name="ORIGIN_CURR" ColumnName="ORIGIN_CURR" />
+                <ScalarProperty Name="NOMINAL_SCALING" ColumnName="NOMINAL_SCALING" />
+                <ScalarProperty Name="NOMINAL_FACTOR" ColumnName="NOMINAL_FACTOR" />
+                <ScalarProperty Name="ISNOMINAL_AT_START" ColumnName="ISNOMINAL_AT_START" />
+                <ScalarProperty Name="ISLOCKED" ColumnName="ISLOCKED" />
+                <ScalarProperty Name="INIT_INDEXVALUE" ColumnName="INIT_INDEXVALUE" />
+                <ScalarProperty Name="FLOAT_RATE_OFFSET" ColumnName="FLOAT_RATE_OFFSET" />
+                <ScalarProperty Name="EXTERN_ID" ColumnName="EXTERN_ID" />
+                <ScalarProperty Name="ISEXTENDED_FINALCF" ColumnName="ISEXTENDED_FINALCF" />
+                <ScalarProperty Name="EXCLUDE_FIRSTPERIOD" ColumnName="EXCLUDE_FIRSTPERIOD" />
+                <ScalarProperty Name="END_PERIOD_UNIT" ColumnName="END_PERIOD_UNIT" />
+                <ScalarProperty Name="END_PERIOD_COUNT" ColumnName="END_PERIOD_COUNT" />
+                <ScalarProperty Name="END_DAY" ColumnName="END_DAY" />
+                <ScalarProperty Name="DIGITAL_TYPE" ColumnName="DIGITAL_TYPE" />
+                <ScalarProperty Name="DIGITAL_PAYOFF" ColumnName="DIGITAL_PAYOFF" />
+                <ScalarProperty Name="DIGITALS" ColumnName="DIGITALS" />
+                <ScalarProperty Name="DECIMALS" ColumnName="DECIMALS" />
+                <ScalarProperty Name="CREDIT_REF" ColumnName="CREDIT_REF" />
+                <ScalarProperty Name="CONSTANT_STARTRESET" ColumnName="CONSTANT_STARTRESET" />
+                <ScalarProperty Name="COMP_TYPE" ColumnName="COMP_TYPE" />
+                <ScalarProperty Name="ISACCRUED_INCLUDED" ColumnName="ISACCRUED_INCLUDED" />
+                <ScalarProperty Name="FLOAT_RATE_FACTOR2" ColumnName="FLOAT_RATE_FACTOR2" />
+                <ScalarProperty Name="REFERENCE2" ColumnName="REFERENCE2" />
+                <ScalarProperty Name="FLOAT_RATE_FACTOR" ColumnName="FLOAT_RATE_FACTOR" />
+                <ScalarProperty Name="SPREAD" ColumnName="SPREAD" />
+                <ScalarProperty Name="STRIKE2" ColumnName="STRIKE2" />
+                <ScalarProperty Name="STRIKE" ColumnName="STRIKE" />
+                <ScalarProperty Name="REFERENCE" ColumnName="REFERENCE" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="ROLLING_METHOD_UNIT" ColumnName="ROLLING_METHOD_UNIT" />
+                <ScalarProperty Name="ROLLING_METHOD_COUNT" ColumnName="ROLLING_METHOD_COUNT" />
+                <ScalarProperty Name="ROLLING_BASEDAY" ColumnName="ROLLING_BASEDAY" />
+                <ScalarProperty Name="PAYDAY_METHOD_UNIT" ColumnName="PAYDAY_METHOD_UNIT" />
+                <ScalarProperty Name="PAYDAY_METHOD_COUNT" ColumnName="PAYDAY_METHOD_COUNT" />
+                <ScalarProperty Name="PAYDAY_METHOD" ColumnName="PAYDAY_METHOD" />
+                <ScalarProperty Name="PAY_CALENDAR_ID" ColumnName="PAY_CALENDAR_ID" />
+                <ScalarProperty Name="ISNOMINAL_AT_END" ColumnName="ISNOMINAL_AT_END" />
+                <ScalarProperty Name="ISLONG_STUB" ColumnName="ISLONG_STUB" />
+                <ScalarProperty Name="ISPAYLEG" ColumnName="ISPAYLEG" />
+                <ScalarProperty Name="INSID" ColumnName="INSID" />
+                <ScalarProperty Name="INDEX_REF" ColumnName="INDEX_REF" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIXED_RATE" ColumnName="FIXED_RATE" />
+                <ScalarProperty Name="ISFIXED_COUPON" ColumnName="ISFIXED_COUPON" />
+                <ScalarProperty Name="DAYCOUNT_METHOD" ColumnName="DAYCOUNT_METHOD" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_PARTY">
+            <EntityTypeMapping TypeName="Model.NGOS_PARTY">
+              <MappingFragment StoreEntitySet="NGOS_PARTY">
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="TIME_ZONE" ColumnName="TIME_ZONE" />
+                <ScalarProperty Name="TELEX" ColumnName="TELEX" />
+                <ScalarProperty Name="SWIFTCODE" ColumnName="SWIFTCODE" />
+                <ScalarProperty Name="RESTRUCTRURING" ColumnName="RESTRUCTRURING" />
+                <ScalarProperty Name="REPUDIATION" ColumnName="REPUDIATION" />
+                <ScalarProperty Name="RELATION" ColumnName="RELATION" />
+                <ScalarProperty Name="REDCODE" ColumnName="REDCODE" />
+                <ScalarProperty Name="PRICE_ACCESS_CONTROL" ColumnName="PRICE_ACCESS_CONTROL" />
+                <ScalarProperty Name="PHONE1" ColumnName="PHONE1" />
+                <ScalarProperty Name="PARENT" ColumnName="PARENT" />
+                <ScalarProperty Name="OBL_DEFAULT" ColumnName="OBL_DEFAULT" />
+                <ScalarProperty Name="OBL_ACCELERATION" ColumnName="OBL_ACCELERATION" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="LEGAL_FORM" ColumnName="LEGAL_FORM" />
+                <ScalarProperty Name="IS_NOTIFY_RECEIPT" ColumnName="IS_NOTIFY_RECEIPT" />
+                <ScalarProperty Name="IS_NOT_TRADING" ColumnName="IS_NOT_TRADING" />
+                <ScalarProperty Name="IS_ISSUER" ColumnName="IS_ISSUER" />
+                <ScalarProperty Name="IS_ISDA_MEMBER" ColumnName="IS_ISDA_MEMBER" />
+                <ScalarProperty Name="IS_CORRESPONDENT_BANK" ColumnName="IS_CORRESPONDENT_BANK" />
+                <ScalarProperty Name="INTERNAL_CUTOFF" ColumnName="INTERNAL_CUTOFF" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HOST_ID" ColumnName="HOST_ID" />
+                <ScalarProperty Name="GUARANTOR" ColumnName="GUARANTOR" />
+                <ScalarProperty Name="GROUP_LIMIT" ColumnName="GROUP_LIMIT" />
+                <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+                <ScalarProperty Name="FREE2" ColumnName="FREE2" />
+                <ScalarProperty Name="FREE1" ColumnName="FREE1" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="FAILURE_TO_PAY" ColumnName="FAILURE_TO_PAY" />
+                <ScalarProperty Name="EXTERNAL_CUTOFF" ColumnName="EXTERNAL_CUTOFF" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="DOCUMENT_TYPE" ColumnName="DOCUMENT_TYPE" />
+                <ScalarProperty Name="DOCUMENT_DATE" ColumnName="DOCUMENT_DATE" />
+                <ScalarProperty Name="DEFAULT_NET" ColumnName="DEFAULT_NET" />
+                <ScalarProperty Name="DEFAULT_DEPOT" ColumnName="DEFAULT_DEPOT" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="CONTACT2" ColumnName="CONTACT2" />
+                <ScalarProperty Name="CONTACT1" ColumnName="CONTACT1" />
+                <ScalarProperty Name="CONSOLIDATE" ColumnName="CONSOLIDATE" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="CALCAGENT" ColumnName="CALCAGENT" />
+                <ScalarProperty Name="BUSINESS_STATUS" ColumnName="BUSINESS_STATUS" />
+                <ScalarProperty Name="BIS_STATUS" ColumnName="BIS_STATUS" />
+                <ScalarProperty Name="BANKRUPTCY" ColumnName="BANKRUPTCY" />
+                <ScalarProperty Name="ATTENTION" ColumnName="ATTENTION" />
+                <ScalarProperty Name="ALIAS" ColumnName="ALIAS" />
+                <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+                <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_PORTFOLIO">
+            <EntityTypeMapping TypeName="Model.NGOS_PORTFOLIO">
+              <MappingFragment StoreEntitySet="NGOS_PORTFOLIO">
+                <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+                <ScalarProperty Name="PRFTYPE_ID" ColumnName="PRFTYPE_ID" />
+                <ScalarProperty Name="OWNER" ColumnName="OWNER" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="PRFNAME" ColumnName="PRFNAME" />
+                <ScalarProperty Name="PARENT" ColumnName="PARENT" />
+                <ScalarProperty Name="ISCOMPOUND" ColumnName="ISCOMPOUND" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGOS_RESET">
+            <EntityTypeMapping TypeName="Model.NGOS_RESET">
+              <MappingFragment StoreEntitySet="NGOS_RESET">
+                <ScalarProperty Name="READ_TIME" ColumnName="READ_TIME" />
+                <ScalarProperty Name="EXTERN_ID" ColumnName="EXTERN_ID" />
+                <ScalarProperty Name="VALUE2" ColumnName="VALUE2" />
+                <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+                <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="STARTDAY" ColumnName="STARTDAY" />
+                <ScalarProperty Name="LEGID" ColumnName="LEGID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ENDDAY" ColumnName="ENDDAY" />
+                <ScalarProperty Name="DAY" ColumnName="DAY" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="CFWID" ColumnName="CFWID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

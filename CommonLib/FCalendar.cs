@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonInterface {
-    public static class Logger {
+namespace CommonLib {
+    [Serializable]
+    public class FCalendar {
+
 
     }
 }

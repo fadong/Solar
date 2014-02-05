@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CUtil.cs" />
     <Compile Include="DataContract.cs" />
+    <Compile Include="EnumPooler.cs" />
     <Compile Include="IClientService.cs" />
     <Compile Include="ICommonLib.cs" />
     <Compile Include="Logger.cs" />
