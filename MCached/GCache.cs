@@ -28,7 +28,7 @@ namespace MCached {
             return cls;
         }
 
-        public abstract void Load<T>() where T : class;
+        public abstract void Load<Ts>() where Ts : class;
 
         IEnumerator IEnumerable.GetEnumerator() {
             return GetEnumerator();
