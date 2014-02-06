@@ -35,6 +35,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
             this.tBtn_WideView = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.statusMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -46,29 +47,30 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTab3 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.mnuMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).BeginInit();
+            this.c1DockingTab2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
             this.c1DockingTab1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).BeginInit();
-            this.c1DockingTab2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab3)).BeginInit();
             this.c1DockingTab3.SuspendLayout();
             this.c1DockingTabPage3.SuspendLayout();
@@ -102,29 +104,29 @@
             // configurationToolStripMenuItem
             // 
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.configurationToolStripMenuItem.Text = "환경설정";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(115, 6);
             // 
             // 인쇄ToolStripMenuItem
             // 
             this.인쇄ToolStripMenuItem.Name = "인쇄ToolStripMenuItem";
-            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.인쇄ToolStripMenuItem.Text = "인쇄";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(115, 6);
             // 
             // mnuClose
             // 
             this.mnuClose.Name = "mnuClose";
-            this.mnuClose.Size = new System.Drawing.Size(152, 22);
+            this.mnuClose.Size = new System.Drawing.Size(118, 22);
             this.mnuClose.Text = "종료";
             this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
             // 
@@ -139,7 +141,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // toolStripMain
@@ -162,6 +164,11 @@
             this.tBtn_WideView.Size = new System.Drawing.Size(35, 33);
             this.tBtn_WideView.Text = "Data";
             this.tBtn_WideView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 36);
             // 
             // statusMain
             // 
@@ -194,7 +201,7 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
@@ -217,13 +224,13 @@
             this.tableLayoutPanel1.Controls.Add(this.toolStrip1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.c1DockingTab2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(316, 342);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(314, 342);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(813, 194);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(815, 194);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // toolStrip1
@@ -231,12 +238,14 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
+            this.toolStripSeparator4,
             this.toolStripButton3,
             this.toolStripButton4,
+            this.toolStripButton5,
             this.toolStripComboBox1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(813, 23);
+            this.toolStrip1.Size = new System.Drawing.Size(815, 23);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -282,45 +291,57 @@
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             // 
+            // c1DockingTab2
+            // 
+            this.c1DockingTab2.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.c1DockingTab2.Controls.Add(this.c1DockingTabPage5);
+            this.c1DockingTab2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1DockingTab2.Location = new System.Drawing.Point(3, 26);
+            this.c1DockingTab2.Name = "c1DockingTab2";
+            this.c1DockingTab2.Padding = new System.Drawing.Point(3, 2);
+            this.c1DockingTab2.SelectedIndex = 3;
+            this.c1DockingTab2.Size = new System.Drawing.Size(809, 165);
+            this.c1DockingTab2.TabIndex = 7;
+            this.c1DockingTab2.TabsSpacing = 2;
+            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
+            this.c1DockingTab2.VisualStyle = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SlateGray;
+            this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(300, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.panel1.Name = "panel1";
             this.tableLayoutPanel2.SetRowSpan(this.panel1, 2);
-            this.panel1.Size = new System.Drawing.Size(13, 536);
+            this.panel1.Size = new System.Drawing.Size(11, 536);
             this.panel1.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(-1, -1);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(15, 23);
+            this.button1.Size = new System.Drawing.Size(13, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 36);
             // 
             // c1DockingTab1
             // 
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
             this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DockingTab1.Location = new System.Drawing.Point(316, 3);
+            this.c1DockingTab1.Location = new System.Drawing.Point(314, 3);
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Padding = new System.Drawing.Point(3, 2);
             this.c1DockingTab1.SelectedTabBold = true;
             this.c1DockingTab1.ShowTabList = true;
-            this.c1DockingTab1.Size = new System.Drawing.Size(813, 333);
+            this.c1DockingTab1.Size = new System.Drawing.Size(815, 333);
             this.c1DockingTab1.TabIndex = 7;
             this.c1DockingTab1.TabsSpacing = 3;
             this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
@@ -331,32 +352,9 @@
             // 
             this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 25);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(807, 304);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(809, 304);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "Start";
-            // 
-            // c1DockingTab2
-            // 
-            this.c1DockingTab2.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.c1DockingTab2.Controls.Add(this.c1DockingTabPage2);
-            this.c1DockingTab2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DockingTab2.Location = new System.Drawing.Point(3, 26);
-            this.c1DockingTab2.Name = "c1DockingTab2";
-            this.c1DockingTab2.Padding = new System.Drawing.Point(3, 2);
-            this.c1DockingTab2.Size = new System.Drawing.Size(807, 165);
-            this.c1DockingTab2.TabIndex = 7;
-            this.c1DockingTab2.TabsSpacing = 2;
-            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
-            this.c1DockingTab2.VisualStyle = C1.Win.C1Command.VisualStyle.System;
-            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
-            // 
-            // c1DockingTabPage2
-            // 
-            this.c1DockingTabPage2.Location = new System.Drawing.Point(4, 4);
-            this.c1DockingTabPage2.Name = "c1DockingTabPage2";
-            this.c1DockingTabPage2.Size = new System.Drawing.Size(801, 136);
-            this.c1DockingTabPage2.TabIndex = 0;
-            this.c1DockingTabPage2.Text = "Page2";
             // 
             // c1DockingTab3
             // 
@@ -386,15 +384,6 @@
             this.c1DockingTabPage3.TabIndex = 0;
             this.c1DockingTabPage3.Text = "Portfolio";
             // 
-            // c1DockingTabPage4
-            // 
-            this.c1DockingTabPage4.Controls.Add(this.listView1);
-            this.c1DockingTabPage4.Location = new System.Drawing.Point(4, 4);
-            this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(288, 503);
-            this.c1DockingTabPage4.TabIndex = 1;
-            this.c1DockingTabPage4.Text = "Bookmark";
-            // 
             // treeView1
             // 
             this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -403,6 +392,15 @@
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(288, 503);
             this.treeView1.TabIndex = 0;
+            // 
+            // c1DockingTabPage4
+            // 
+            this.c1DockingTabPage4.Controls.Add(this.listView1);
+            this.c1DockingTabPage4.Location = new System.Drawing.Point(4, 4);
+            this.c1DockingTabPage4.Name = "c1DockingTabPage4";
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(288, 503);
+            this.c1DockingTabPage4.TabIndex = 1;
+            this.c1DockingTabPage4.Text = "Bookmark";
             // 
             // listView1
             // 
@@ -413,6 +411,29 @@
             this.listView1.Size = new System.Drawing.Size(288, 503);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // c1DockingTabPage5
+            // 
+            this.c1DockingTabPage5.Location = new System.Drawing.Point(4, 4);
+            this.c1DockingTabPage5.Name = "c1DockingTabPage5";
+            this.c1DockingTabPage5.Size = new System.Drawing.Size(803, 136);
+            this.c1DockingTabPage5.TabIndex = 1;
+            this.c1DockingTabPage5.Text = "Page5";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton5.Text = "toolStripButton5";
             // 
             // FormMain
             // 
@@ -439,11 +460,11 @@
             this.tableLayoutPanel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).EndInit();
+            this.c1DockingTab2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).EndInit();
             this.c1DockingTab1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).EndInit();
-            this.c1DockingTab2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab3)).EndInit();
             this.c1DockingTab3.ResumeLayout(false);
             this.c1DockingTabPage3.ResumeLayout(false);
@@ -483,12 +504,14 @@
         private C1.Win.C1Command.C1DockingTab c1DockingTab1;
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
         private C1.Win.C1Command.C1DockingTab c1DockingTab2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
         private C1.Win.C1Command.C1DockingTab c1DockingTab3;
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
     }
 }
 

@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 
 namespace MCached {
-    public class GCacheDB : GCache<IEntityWithKey> {
+    public class GCacheDB : GCache<EntityObject> {
 
-        public override void Load<T>() {
+        public override void Load<Ts>() {
             Stopwatch sw = new Stopwatch();
             sw.Start();
             using(dbctx ctx = new dbctx()) {
-                foreach(IEntityWithKey t in ctx.CreateObjectSet<T>()) {
+                foreach(IEntityWithKey t in ctx.CreateObjectSet<Ts>()) {
                     if(t.EntityKey.EntityKeyValues.Length == 1) {
-                        this.Add((int)t.EntityKey.EntityKeyValues[0].Value, t);
+                        this.Add((int)t.EntityKey.EntityKeyValues[0].Value, (EntityObject)t);
                     }
                 }
             }
             sw.Stop();
-            string tablename = typeof(T).Name;
+            string tablename = typeof(Ts).Name;
             Console.WriteLine(tablename + " : " + sw.Elapsed.TotalSeconds);
             TableName = tablename;
         }

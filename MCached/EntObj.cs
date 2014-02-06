@@ -208,6 +208,550 @@ namespace MCached
             }
         }
         private ObjectSet<NGOS_RESET> _NGOS_RESET;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CALENDAR> NGOS_CALENDAR
+        {
+            get
+            {
+                if ((_NGOS_CALENDAR == null))
+                {
+                    _NGOS_CALENDAR = base.CreateObjectSet<NGOS_CALENDAR>("NGOS_CALENDAR");
+                }
+                return _NGOS_CALENDAR;
+            }
+        }
+        private ObjectSet<NGOS_CALENDAR> _NGOS_CALENDAR;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CALENDARDATE> NGOS_CALENDARDATE
+        {
+            get
+            {
+                if ((_NGOS_CALENDARDATE == null))
+                {
+                    _NGOS_CALENDARDATE = base.CreateObjectSet<NGOS_CALENDARDATE>("NGOS_CALENDARDATE");
+                }
+                return _NGOS_CALENDARDATE;
+            }
+        }
+        private ObjectSet<NGOS_CALENDARDATE> _NGOS_CALENDARDATE;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_COLLATERAL> NGOS_COLLATERAL
+        {
+            get
+            {
+                if ((_NGOS_COLLATERAL == null))
+                {
+                    _NGOS_COLLATERAL = base.CreateObjectSet<NGOS_COLLATERAL>("NGOS_COLLATERAL");
+                }
+                return _NGOS_COLLATERAL;
+            }
+        }
+        private ObjectSet<NGOS_COLLATERAL> _NGOS_COLLATERAL;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_COMBILINK> NGOS_COMBILINK
+        {
+            get
+            {
+                if ((_NGOS_COMBILINK == null))
+                {
+                    _NGOS_COMBILINK = base.CreateObjectSet<NGOS_COMBILINK>("NGOS_COMBILINK");
+                }
+                return _NGOS_COMBILINK;
+            }
+        }
+        private ObjectSet<NGOS_COMBILINK> _NGOS_COMBILINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CONTEXT> NGOS_CONTEXT
+        {
+            get
+            {
+                if ((_NGOS_CONTEXT == null))
+                {
+                    _NGOS_CONTEXT = base.CreateObjectSet<NGOS_CONTEXT>("NGOS_CONTEXT");
+                }
+                return _NGOS_CONTEXT;
+            }
+        }
+        private ObjectSet<NGOS_CONTEXT> _NGOS_CONTEXT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CONTEXT_LINK> NGOS_CONTEXT_LINK
+        {
+            get
+            {
+                if ((_NGOS_CONTEXT_LINK == null))
+                {
+                    _NGOS_CONTEXT_LINK = base.CreateObjectSet<NGOS_CONTEXT_LINK>("NGOS_CONTEXT_LINK");
+                }
+                return _NGOS_CONTEXT_LINK;
+            }
+        }
+        private ObjectSet<NGOS_CONTEXT_LINK> _NGOS_CONTEXT_LINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CORR> NGOS_CORR
+        {
+            get
+            {
+                if ((_NGOS_CORR == null))
+                {
+                    _NGOS_CORR = base.CreateObjectSet<NGOS_CORR>("NGOS_CORR");
+                }
+                return _NGOS_CORR;
+            }
+        }
+        private ObjectSet<NGOS_CORR> _NGOS_CORR;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CORR_MATRIX> NGOS_CORR_MATRIX
+        {
+            get
+            {
+                if ((_NGOS_CORR_MATRIX == null))
+                {
+                    _NGOS_CORR_MATRIX = base.CreateObjectSet<NGOS_CORR_MATRIX>("NGOS_CORR_MATRIX");
+                }
+                return _NGOS_CORR_MATRIX;
+            }
+        }
+        private ObjectSet<NGOS_CORR_MATRIX> _NGOS_CORR_MATRIX;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CREDIT> NGOS_CREDIT
+        {
+            get
+            {
+                if ((_NGOS_CREDIT == null))
+                {
+                    _NGOS_CREDIT = base.CreateObjectSet<NGOS_CREDIT>("NGOS_CREDIT");
+                }
+                return _NGOS_CREDIT;
+            }
+        }
+        private ObjectSet<NGOS_CREDIT> _NGOS_CREDIT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CREDITEVENT> NGOS_CREDITEVENT
+        {
+            get
+            {
+                if ((_NGOS_CREDITEVENT == null))
+                {
+                    _NGOS_CREDITEVENT = base.CreateObjectSet<NGOS_CREDITEVENT>("NGOS_CREDITEVENT");
+                }
+                return _NGOS_CREDITEVENT;
+            }
+        }
+        private ObjectSet<NGOS_CREDITEVENT> _NGOS_CREDITEVENT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_CREDITEVENTSPEC> NGOS_CREDITEVENTSPEC
+        {
+            get
+            {
+                if ((_NGOS_CREDITEVENTSPEC == null))
+                {
+                    _NGOS_CREDITEVENTSPEC = base.CreateObjectSet<NGOS_CREDITEVENTSPEC>("NGOS_CREDITEVENTSPEC");
+                }
+                return _NGOS_CREDITEVENTSPEC;
+            }
+        }
+        private ObjectSet<NGOS_CREDITEVENTSPEC> _NGOS_CREDITEVENTSPEC;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_DARTS_PNL> NGOS_DARTS_PNL
+        {
+            get
+            {
+                if ((_NGOS_DARTS_PNL == null))
+                {
+                    _NGOS_DARTS_PNL = base.CreateObjectSet<NGOS_DARTS_PNL>("NGOS_DARTS_PNL");
+                }
+                return _NGOS_DARTS_PNL;
+            }
+        }
+        private ObjectSet<NGOS_DARTS_PNL> _NGOS_DARTS_PNL;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_DARTS_POSITION> NGOS_DARTS_POSITION
+        {
+            get
+            {
+                if ((_NGOS_DARTS_POSITION == null))
+                {
+                    _NGOS_DARTS_POSITION = base.CreateObjectSet<NGOS_DARTS_POSITION>("NGOS_DARTS_POSITION");
+                }
+                return _NGOS_DARTS_POSITION;
+            }
+        }
+        private ObjectSet<NGOS_DARTS_POSITION> _NGOS_DARTS_POSITION;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_DIVD_ESTIMATE> NGOS_DIVD_ESTIMATE
+        {
+            get
+            {
+                if ((_NGOS_DIVD_ESTIMATE == null))
+                {
+                    _NGOS_DIVD_ESTIMATE = base.CreateObjectSet<NGOS_DIVD_ESTIMATE>("NGOS_DIVD_ESTIMATE");
+                }
+                return _NGOS_DIVD_ESTIMATE;
+            }
+        }
+        private ObjectSet<NGOS_DIVD_ESTIMATE> _NGOS_DIVD_ESTIMATE;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_DIVD_STREAM> NGOS_DIVD_STREAM
+        {
+            get
+            {
+                if ((_NGOS_DIVD_STREAM == null))
+                {
+                    _NGOS_DIVD_STREAM = base.CreateObjectSet<NGOS_DIVD_STREAM>("NGOS_DIVD_STREAM");
+                }
+                return _NGOS_DIVD_STREAM;
+            }
+        }
+        private ObjectSet<NGOS_DIVD_STREAM> _NGOS_DIVD_STREAM;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_EXERCISE_EVENT> NGOS_EXERCISE_EVENT
+        {
+            get
+            {
+                if ((_NGOS_EXERCISE_EVENT == null))
+                {
+                    _NGOS_EXERCISE_EVENT = base.CreateObjectSet<NGOS_EXERCISE_EVENT>("NGOS_EXERCISE_EVENT");
+                }
+                return _NGOS_EXERCISE_EVENT;
+            }
+        }
+        private ObjectSet<NGOS_EXERCISE_EVENT> _NGOS_EXERCISE_EVENT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_FEEDBACK> NGOS_FEEDBACK
+        {
+            get
+            {
+                if ((_NGOS_FEEDBACK == null))
+                {
+                    _NGOS_FEEDBACK = base.CreateObjectSet<NGOS_FEEDBACK>("NGOS_FEEDBACK");
+                }
+                return _NGOS_FEEDBACK;
+            }
+        }
+        private ObjectSet<NGOS_FEEDBACK> _NGOS_FEEDBACK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_FEEDBAKCOMMENT> NGOS_FEEDBAKCOMMENT
+        {
+            get
+            {
+                if ((_NGOS_FEEDBAKCOMMENT == null))
+                {
+                    _NGOS_FEEDBAKCOMMENT = base.CreateObjectSet<NGOS_FEEDBAKCOMMENT>("NGOS_FEEDBAKCOMMENT");
+                }
+                return _NGOS_FEEDBAKCOMMENT;
+            }
+        }
+        private ObjectSet<NGOS_FEEDBAKCOMMENT> _NGOS_FEEDBAKCOMMENT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_MODEL_ADDINFO> NGOS_MODEL_ADDINFO
+        {
+            get
+            {
+                if ((_NGOS_MODEL_ADDINFO == null))
+                {
+                    _NGOS_MODEL_ADDINFO = base.CreateObjectSet<NGOS_MODEL_ADDINFO>("NGOS_MODEL_ADDINFO");
+                }
+                return _NGOS_MODEL_ADDINFO;
+            }
+        }
+        private ObjectSet<NGOS_MODEL_ADDINFO> _NGOS_MODEL_ADDINFO;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_MODEL_LIST> NGOS_MODEL_LIST
+        {
+            get
+            {
+                if ((_NGOS_MODEL_LIST == null))
+                {
+                    _NGOS_MODEL_LIST = base.CreateObjectSet<NGOS_MODEL_LIST>("NGOS_MODEL_LIST");
+                }
+                return _NGOS_MODEL_LIST;
+            }
+        }
+        private ObjectSet<NGOS_MODEL_LIST> _NGOS_MODEL_LIST;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_MODELCTLDATA> NGOS_MODELCTLDATA
+        {
+            get
+            {
+                if ((_NGOS_MODELCTLDATA == null))
+                {
+                    _NGOS_MODELCTLDATA = base.CreateObjectSet<NGOS_MODELCTLDATA>("NGOS_MODELCTLDATA");
+                }
+                return _NGOS_MODELCTLDATA;
+            }
+        }
+        private ObjectSet<NGOS_MODELCTLDATA> _NGOS_MODELCTLDATA;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_PAYMENT> NGOS_PAYMENT
+        {
+            get
+            {
+                if ((_NGOS_PAYMENT == null))
+                {
+                    _NGOS_PAYMENT = base.CreateObjectSet<NGOS_PAYMENT>("NGOS_PAYMENT");
+                }
+                return _NGOS_PAYMENT;
+            }
+        }
+        private ObjectSet<NGOS_PAYMENT> _NGOS_PAYMENT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_PORTFOLIOLINK> NGOS_PORTFOLIOLINK
+        {
+            get
+            {
+                if ((_NGOS_PORTFOLIOLINK == null))
+                {
+                    _NGOS_PORTFOLIOLINK = base.CreateObjectSet<NGOS_PORTFOLIOLINK>("NGOS_PORTFOLIOLINK");
+                }
+                return _NGOS_PORTFOLIOLINK;
+            }
+        }
+        private ObjectSet<NGOS_PORTFOLIOLINK> _NGOS_PORTFOLIOLINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_PRE_COLLATERAL> NGOS_PRE_COLLATERAL
+        {
+            get
+            {
+                if ((_NGOS_PRE_COLLATERAL == null))
+                {
+                    _NGOS_PRE_COLLATERAL = base.CreateObjectSet<NGOS_PRE_COLLATERAL>("NGOS_PRE_COLLATERAL");
+                }
+                return _NGOS_PRE_COLLATERAL;
+            }
+        }
+        private ObjectSet<NGOS_PRE_COLLATERAL> _NGOS_PRE_COLLATERAL;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_PRICEDEF> NGOS_PRICEDEF
+        {
+            get
+            {
+                if ((_NGOS_PRICEDEF == null))
+                {
+                    _NGOS_PRICEDEF = base.CreateObjectSet<NGOS_PRICEDEF>("NGOS_PRICEDEF");
+                }
+                return _NGOS_PRICEDEF;
+            }
+        }
+        private ObjectSet<NGOS_PRICEDEF> _NGOS_PRICEDEF;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_QUOTATION> NGOS_QUOTATION
+        {
+            get
+            {
+                if ((_NGOS_QUOTATION == null))
+                {
+                    _NGOS_QUOTATION = base.CreateObjectSet<NGOS_QUOTATION>("NGOS_QUOTATION");
+                }
+                return _NGOS_QUOTATION;
+            }
+        }
+        private ObjectSet<NGOS_QUOTATION> _NGOS_QUOTATION;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_REPORTMAP> NGOS_REPORTMAP
+        {
+            get
+            {
+                if ((_NGOS_REPORTMAP == null))
+                {
+                    _NGOS_REPORTMAP = base.CreateObjectSet<NGOS_REPORTMAP>("NGOS_REPORTMAP");
+                }
+                return _NGOS_REPORTMAP;
+            }
+        }
+        private ObjectSet<NGOS_REPORTMAP> _NGOS_REPORTMAP;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_REPORTMAPLINK> NGOS_REPORTMAPLINK
+        {
+            get
+            {
+                if ((_NGOS_REPORTMAPLINK == null))
+                {
+                    _NGOS_REPORTMAPLINK = base.CreateObjectSet<NGOS_REPORTMAPLINK>("NGOS_REPORTMAPLINK");
+                }
+                return _NGOS_REPORTMAPLINK;
+            }
+        }
+        private ObjectSet<NGOS_REPORTMAPLINK> _NGOS_REPORTMAPLINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_TENORLINK> NGOS_TENORLINK
+        {
+            get
+            {
+                if ((_NGOS_TENORLINK == null))
+                {
+                    _NGOS_TENORLINK = base.CreateObjectSet<NGOS_TENORLINK>("NGOS_TENORLINK");
+                }
+                return _NGOS_TENORLINK;
+            }
+        }
+        private ObjectSet<NGOS_TENORLINK> _NGOS_TENORLINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_TRADE> NGOS_TRADE
+        {
+            get
+            {
+                if ((_NGOS_TRADE == null))
+                {
+                    _NGOS_TRADE = base.CreateObjectSet<NGOS_TRADE>("NGOS_TRADE");
+                }
+                return _NGOS_TRADE;
+            }
+        }
+        private ObjectSet<NGOS_TRADE> _NGOS_TRADE;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_VOLATILITY> NGOS_VOLATILITY
+        {
+            get
+            {
+                if ((_NGOS_VOLATILITY == null))
+                {
+                    _NGOS_VOLATILITY = base.CreateObjectSet<NGOS_VOLATILITY>("NGOS_VOLATILITY");
+                }
+                return _NGOS_VOLATILITY;
+            }
+        }
+        private ObjectSet<NGOS_VOLATILITY> _NGOS_VOLATILITY;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_VOLPOINT> NGOS_VOLPOINT
+        {
+            get
+            {
+                if ((_NGOS_VOLPOINT == null))
+                {
+                    _NGOS_VOLPOINT = base.CreateObjectSet<NGOS_VOLPOINT>("NGOS_VOLPOINT");
+                }
+                return _NGOS_VOLPOINT;
+            }
+        }
+        private ObjectSet<NGOS_VOLPOINT> _NGOS_VOLPOINT;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_YC> NGOS_YC
+        {
+            get
+            {
+                if ((_NGOS_YC == null))
+                {
+                    _NGOS_YC = base.CreateObjectSet<NGOS_YC>("NGOS_YC");
+                }
+                return _NGOS_YC;
+            }
+        }
+        private ObjectSet<NGOS_YC> _NGOS_YC;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<NGOS_YCPOINT> NGOS_YCPOINT
+        {
+            get
+            {
+                if ((_NGOS_YCPOINT == null))
+                {
+                    _NGOS_YCPOINT = base.CreateObjectSet<NGOS_YCPOINT>("NGOS_YCPOINT");
+                }
+                return _NGOS_YCPOINT;
+            }
+        }
+        private ObjectSet<NGOS_YCPOINT> _NGOS_YCPOINT;
 
         #endregion
 
@@ -283,6 +827,278 @@ namespace MCached
         public void AddToNGOS_RESET(NGOS_RESET nGOS_RESET)
         {
             base.AddObject("NGOS_RESET", nGOS_RESET);
+        }
+    
+        /// <summary>
+        /// NGOS_CALENDAR EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CALENDAR(NGOS_CALENDAR nGOS_CALENDAR)
+        {
+            base.AddObject("NGOS_CALENDAR", nGOS_CALENDAR);
+        }
+    
+        /// <summary>
+        /// NGOS_CALENDARDATE EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CALENDARDATE(NGOS_CALENDARDATE nGOS_CALENDARDATE)
+        {
+            base.AddObject("NGOS_CALENDARDATE", nGOS_CALENDARDATE);
+        }
+    
+        /// <summary>
+        /// NGOS_COLLATERAL EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_COLLATERAL(NGOS_COLLATERAL nGOS_COLLATERAL)
+        {
+            base.AddObject("NGOS_COLLATERAL", nGOS_COLLATERAL);
+        }
+    
+        /// <summary>
+        /// NGOS_COMBILINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_COMBILINK(NGOS_COMBILINK nGOS_COMBILINK)
+        {
+            base.AddObject("NGOS_COMBILINK", nGOS_COMBILINK);
+        }
+    
+        /// <summary>
+        /// NGOS_CONTEXT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CONTEXT(NGOS_CONTEXT nGOS_CONTEXT)
+        {
+            base.AddObject("NGOS_CONTEXT", nGOS_CONTEXT);
+        }
+    
+        /// <summary>
+        /// NGOS_CONTEXT_LINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CONTEXT_LINK(NGOS_CONTEXT_LINK nGOS_CONTEXT_LINK)
+        {
+            base.AddObject("NGOS_CONTEXT_LINK", nGOS_CONTEXT_LINK);
+        }
+    
+        /// <summary>
+        /// NGOS_CORR EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CORR(NGOS_CORR nGOS_CORR)
+        {
+            base.AddObject("NGOS_CORR", nGOS_CORR);
+        }
+    
+        /// <summary>
+        /// NGOS_CORR_MATRIX EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CORR_MATRIX(NGOS_CORR_MATRIX nGOS_CORR_MATRIX)
+        {
+            base.AddObject("NGOS_CORR_MATRIX", nGOS_CORR_MATRIX);
+        }
+    
+        /// <summary>
+        /// NGOS_CREDIT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CREDIT(NGOS_CREDIT nGOS_CREDIT)
+        {
+            base.AddObject("NGOS_CREDIT", nGOS_CREDIT);
+        }
+    
+        /// <summary>
+        /// NGOS_CREDITEVENT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CREDITEVENT(NGOS_CREDITEVENT nGOS_CREDITEVENT)
+        {
+            base.AddObject("NGOS_CREDITEVENT", nGOS_CREDITEVENT);
+        }
+    
+        /// <summary>
+        /// NGOS_CREDITEVENTSPEC EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_CREDITEVENTSPEC(NGOS_CREDITEVENTSPEC nGOS_CREDITEVENTSPEC)
+        {
+            base.AddObject("NGOS_CREDITEVENTSPEC", nGOS_CREDITEVENTSPEC);
+        }
+    
+        /// <summary>
+        /// NGOS_DARTS_PNL EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_DARTS_PNL(NGOS_DARTS_PNL nGOS_DARTS_PNL)
+        {
+            base.AddObject("NGOS_DARTS_PNL", nGOS_DARTS_PNL);
+        }
+    
+        /// <summary>
+        /// NGOS_DARTS_POSITION EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_DARTS_POSITION(NGOS_DARTS_POSITION nGOS_DARTS_POSITION)
+        {
+            base.AddObject("NGOS_DARTS_POSITION", nGOS_DARTS_POSITION);
+        }
+    
+        /// <summary>
+        /// NGOS_DIVD_ESTIMATE EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_DIVD_ESTIMATE(NGOS_DIVD_ESTIMATE nGOS_DIVD_ESTIMATE)
+        {
+            base.AddObject("NGOS_DIVD_ESTIMATE", nGOS_DIVD_ESTIMATE);
+        }
+    
+        /// <summary>
+        /// NGOS_DIVD_STREAM EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_DIVD_STREAM(NGOS_DIVD_STREAM nGOS_DIVD_STREAM)
+        {
+            base.AddObject("NGOS_DIVD_STREAM", nGOS_DIVD_STREAM);
+        }
+    
+        /// <summary>
+        /// NGOS_EXERCISE_EVENT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_EXERCISE_EVENT(NGOS_EXERCISE_EVENT nGOS_EXERCISE_EVENT)
+        {
+            base.AddObject("NGOS_EXERCISE_EVENT", nGOS_EXERCISE_EVENT);
+        }
+    
+        /// <summary>
+        /// NGOS_FEEDBACK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_FEEDBACK(NGOS_FEEDBACK nGOS_FEEDBACK)
+        {
+            base.AddObject("NGOS_FEEDBACK", nGOS_FEEDBACK);
+        }
+    
+        /// <summary>
+        /// NGOS_FEEDBAKCOMMENT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_FEEDBAKCOMMENT(NGOS_FEEDBAKCOMMENT nGOS_FEEDBAKCOMMENT)
+        {
+            base.AddObject("NGOS_FEEDBAKCOMMENT", nGOS_FEEDBAKCOMMENT);
+        }
+    
+        /// <summary>
+        /// NGOS_MODEL_ADDINFO EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_MODEL_ADDINFO(NGOS_MODEL_ADDINFO nGOS_MODEL_ADDINFO)
+        {
+            base.AddObject("NGOS_MODEL_ADDINFO", nGOS_MODEL_ADDINFO);
+        }
+    
+        /// <summary>
+        /// NGOS_MODEL_LIST EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_MODEL_LIST(NGOS_MODEL_LIST nGOS_MODEL_LIST)
+        {
+            base.AddObject("NGOS_MODEL_LIST", nGOS_MODEL_LIST);
+        }
+    
+        /// <summary>
+        /// NGOS_MODELCTLDATA EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_MODELCTLDATA(NGOS_MODELCTLDATA nGOS_MODELCTLDATA)
+        {
+            base.AddObject("NGOS_MODELCTLDATA", nGOS_MODELCTLDATA);
+        }
+    
+        /// <summary>
+        /// NGOS_PAYMENT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_PAYMENT(NGOS_PAYMENT nGOS_PAYMENT)
+        {
+            base.AddObject("NGOS_PAYMENT", nGOS_PAYMENT);
+        }
+    
+        /// <summary>
+        /// NGOS_PORTFOLIOLINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_PORTFOLIOLINK(NGOS_PORTFOLIOLINK nGOS_PORTFOLIOLINK)
+        {
+            base.AddObject("NGOS_PORTFOLIOLINK", nGOS_PORTFOLIOLINK);
+        }
+    
+        /// <summary>
+        /// NGOS_PRE_COLLATERAL EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_PRE_COLLATERAL(NGOS_PRE_COLLATERAL nGOS_PRE_COLLATERAL)
+        {
+            base.AddObject("NGOS_PRE_COLLATERAL", nGOS_PRE_COLLATERAL);
+        }
+    
+        /// <summary>
+        /// NGOS_PRICEDEF EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_PRICEDEF(NGOS_PRICEDEF nGOS_PRICEDEF)
+        {
+            base.AddObject("NGOS_PRICEDEF", nGOS_PRICEDEF);
+        }
+    
+        /// <summary>
+        /// NGOS_QUOTATION EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_QUOTATION(NGOS_QUOTATION nGOS_QUOTATION)
+        {
+            base.AddObject("NGOS_QUOTATION", nGOS_QUOTATION);
+        }
+    
+        /// <summary>
+        /// NGOS_REPORTMAP EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_REPORTMAP(NGOS_REPORTMAP nGOS_REPORTMAP)
+        {
+            base.AddObject("NGOS_REPORTMAP", nGOS_REPORTMAP);
+        }
+    
+        /// <summary>
+        /// NGOS_REPORTMAPLINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_REPORTMAPLINK(NGOS_REPORTMAPLINK nGOS_REPORTMAPLINK)
+        {
+            base.AddObject("NGOS_REPORTMAPLINK", nGOS_REPORTMAPLINK);
+        }
+    
+        /// <summary>
+        /// NGOS_TENORLINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_TENORLINK(NGOS_TENORLINK nGOS_TENORLINK)
+        {
+            base.AddObject("NGOS_TENORLINK", nGOS_TENORLINK);
+        }
+    
+        /// <summary>
+        /// NGOS_TRADE EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_TRADE(NGOS_TRADE nGOS_TRADE)
+        {
+            base.AddObject("NGOS_TRADE", nGOS_TRADE);
+        }
+    
+        /// <summary>
+        /// NGOS_VOLATILITY EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_VOLATILITY(NGOS_VOLATILITY nGOS_VOLATILITY)
+        {
+            base.AddObject("NGOS_VOLATILITY", nGOS_VOLATILITY);
+        }
+    
+        /// <summary>
+        /// NGOS_VOLPOINT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_VOLPOINT(NGOS_VOLPOINT nGOS_VOLPOINT)
+        {
+            base.AddObject("NGOS_VOLPOINT", nGOS_VOLPOINT);
+        }
+    
+        /// <summary>
+        /// NGOS_YC EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_YC(NGOS_YC nGOS_YC)
+        {
+            base.AddObject("NGOS_YC", nGOS_YC);
+        }
+    
+        /// <summary>
+        /// NGOS_YCPOINT EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToNGOS_YCPOINT(NGOS_YCPOINT nGOS_YCPOINT)
+        {
+            base.AddObject("NGOS_YCPOINT", nGOS_YCPOINT);
         }
 
         #endregion
@@ -894,6 +1710,412 @@ namespace MCached
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CALENDAR")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CALENDAR : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CALENDAR 개체를 만듭니다.
+        /// </summary>
+        /// <param name="cALNAME">CALNAME 속성의 초기 값입니다.</param>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CALENDAR CreateNGOS_CALENDAR(global::System.String cALNAME, global::System.Int32 id)
+        {
+            NGOS_CALENDAR nGOS_CALENDAR = new NGOS_CALENDAR();
+            nGOS_CALENDAR.CALNAME = cALNAME;
+            nGOS_CALENDAR.ID = id;
+            return nGOS_CALENDAR;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String CALNAME
+        {
+            get
+            {
+                return _CALNAME;
+            }
+            set
+            {
+                OnCALNAMEChanging(value);
+                ReportPropertyChanging("CALNAME");
+                _CALNAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("CALNAME");
+                OnCALNAMEChanged();
+            }
+        }
+        private global::System.String _CALNAME;
+        partial void OnCALNAMEChanging(global::System.String value);
+        partial void OnCALNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String DESCRIPTION
+        {
+            get
+            {
+                return _DESCRIPTION;
+            }
+            set
+            {
+                OnDESCRIPTIONChanging(value);
+                ReportPropertyChanging("DESCRIPTION");
+                _DESCRIPTION = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DESCRIPTION");
+                OnDESCRIPTIONChanged();
+            }
+        }
+        private global::System.String _DESCRIPTION;
+        partial void OnDESCRIPTIONChanging(global::System.String value);
+        partial void OnDESCRIPTIONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CALENDARDATE")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CALENDARDATE : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CALENDARDATE 개체를 만듭니다.
+        /// </summary>
+        /// <param name="cALID">CALID 속성의 초기 값입니다.</param>
+        /// <param name="dAY">DAY 속성의 초기 값입니다.</param>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CALENDARDATE CreateNGOS_CALENDARDATE(global::System.Int32 cALID, global::System.DateTime dAY, global::System.Int32 id)
+        {
+            NGOS_CALENDARDATE nGOS_CALENDARDATE = new NGOS_CALENDARDATE();
+            nGOS_CALENDARDATE.CALID = cALID;
+            nGOS_CALENDARDATE.DAY = dAY;
+            nGOS_CALENDARDATE.ID = id;
+            return nGOS_CALENDARDATE;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 CALID
+        {
+            get
+            {
+                return _CALID;
+            }
+            set
+            {
+                OnCALIDChanging(value);
+                ReportPropertyChanging("CALID");
+                _CALID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CALID");
+                OnCALIDChanged();
+            }
+        }
+        private global::System.Int32 _CALID;
+        partial void OnCALIDChanging(global::System.Int32 value);
+        partial void OnCALIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime DAY
+        {
+            get
+            {
+                return _DAY;
+            }
+            set
+            {
+                OnDAYChanging(value);
+                ReportPropertyChanging("DAY");
+                _DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DAY");
+                OnDAYChanged();
+            }
+        }
+        private global::System.DateTime _DAY;
+        partial void OnDAYChanging(global::System.DateTime value);
+        partial void OnDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CASHFLOW")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -1486,6 +2708,6234 @@ namespace MCached
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_COLLATERAL")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_COLLATERAL : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_COLLATERAL 개체를 만듭니다.
+        /// </summary>
+        /// <param name="cOLL_ID">COLL_ID 속성의 초기 값입니다.</param>
+        /// <param name="cOUNTPARTY_ID">COUNTPARTY_ID 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_SETTLE_DAY">COLL_SETTLE_DAY 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_INPUT_TYPE">COLL_INPUT_TYPE 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_TYPE">COLL_TYPE 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_NOMINAL">COLL_NOMINAL 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_REF_DEAL">COLL_REF_DEAL 속성의 초기 값입니다.</param>
+        /// <param name="cOLL_PARENT_ID">COLL_PARENT_ID 속성의 초기 값입니다.</param>
+        public static NGOS_COLLATERAL CreateNGOS_COLLATERAL(global::System.Int32 cOLL_ID, global::System.Int32 cOUNTPARTY_ID, global::System.DateTime cOLL_SETTLE_DAY, global::System.String cOLL_INPUT_TYPE, global::System.String cOLL_TYPE, global::System.Decimal cOLL_NOMINAL, global::System.Int32 cOLL_REF_DEAL, global::System.Int32 cOLL_PARENT_ID)
+        {
+            NGOS_COLLATERAL nGOS_COLLATERAL = new NGOS_COLLATERAL();
+            nGOS_COLLATERAL.COLL_ID = cOLL_ID;
+            nGOS_COLLATERAL.COUNTPARTY_ID = cOUNTPARTY_ID;
+            nGOS_COLLATERAL.COLL_SETTLE_DAY = cOLL_SETTLE_DAY;
+            nGOS_COLLATERAL.COLL_INPUT_TYPE = cOLL_INPUT_TYPE;
+            nGOS_COLLATERAL.COLL_TYPE = cOLL_TYPE;
+            nGOS_COLLATERAL.COLL_NOMINAL = cOLL_NOMINAL;
+            nGOS_COLLATERAL.COLL_REF_DEAL = cOLL_REF_DEAL;
+            nGOS_COLLATERAL.COLL_PARENT_ID = cOLL_PARENT_ID;
+            return nGOS_COLLATERAL;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 COLL_ID
+        {
+            get
+            {
+                return _COLL_ID;
+            }
+            set
+            {
+                if (_COLL_ID != value)
+                {
+                    OnCOLL_IDChanging(value);
+                    ReportPropertyChanging("COLL_ID");
+                    _COLL_ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("COLL_ID");
+                    OnCOLL_IDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _COLL_ID;
+        partial void OnCOLL_IDChanging(global::System.Int32 value);
+        partial void OnCOLL_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 COUNTPARTY_ID
+        {
+            get
+            {
+                return _COUNTPARTY_ID;
+            }
+            set
+            {
+                OnCOUNTPARTY_IDChanging(value);
+                ReportPropertyChanging("COUNTPARTY_ID");
+                _COUNTPARTY_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COUNTPARTY_ID");
+                OnCOUNTPARTY_IDChanged();
+            }
+        }
+        private global::System.Int32 _COUNTPARTY_ID;
+        partial void OnCOUNTPARTY_IDChanging(global::System.Int32 value);
+        partial void OnCOUNTPARTY_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime COLL_SETTLE_DAY
+        {
+            get
+            {
+                return _COLL_SETTLE_DAY;
+            }
+            set
+            {
+                OnCOLL_SETTLE_DAYChanging(value);
+                ReportPropertyChanging("COLL_SETTLE_DAY");
+                _COLL_SETTLE_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COLL_SETTLE_DAY");
+                OnCOLL_SETTLE_DAYChanged();
+            }
+        }
+        private global::System.DateTime _COLL_SETTLE_DAY;
+        partial void OnCOLL_SETTLE_DAYChanging(global::System.DateTime value);
+        partial void OnCOLL_SETTLE_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String COLL_INPUT_TYPE
+        {
+            get
+            {
+                return _COLL_INPUT_TYPE;
+            }
+            set
+            {
+                OnCOLL_INPUT_TYPEChanging(value);
+                ReportPropertyChanging("COLL_INPUT_TYPE");
+                _COLL_INPUT_TYPE = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("COLL_INPUT_TYPE");
+                OnCOLL_INPUT_TYPEChanged();
+            }
+        }
+        private global::System.String _COLL_INPUT_TYPE;
+        partial void OnCOLL_INPUT_TYPEChanging(global::System.String value);
+        partial void OnCOLL_INPUT_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String COLL_TYPE
+        {
+            get
+            {
+                return _COLL_TYPE;
+            }
+            set
+            {
+                OnCOLL_TYPEChanging(value);
+                ReportPropertyChanging("COLL_TYPE");
+                _COLL_TYPE = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("COLL_TYPE");
+                OnCOLL_TYPEChanged();
+            }
+        }
+        private global::System.String _COLL_TYPE;
+        partial void OnCOLL_TYPEChanging(global::System.String value);
+        partial void OnCOLL_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SECURITY_ID
+        {
+            get
+            {
+                return _SECURITY_ID;
+            }
+            set
+            {
+                OnSECURITY_IDChanging(value);
+                ReportPropertyChanging("SECURITY_ID");
+                _SECURITY_ID = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SECURITY_ID");
+                OnSECURITY_IDChanged();
+            }
+        }
+        private global::System.String _SECURITY_ID;
+        partial void OnSECURITY_IDChanging(global::System.String value);
+        partial void OnSECURITY_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SECURITY_NAME
+        {
+            get
+            {
+                return _SECURITY_NAME;
+            }
+            set
+            {
+                OnSECURITY_NAMEChanging(value);
+                ReportPropertyChanging("SECURITY_NAME");
+                _SECURITY_NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SECURITY_NAME");
+                OnSECURITY_NAMEChanged();
+            }
+        }
+        private global::System.String _SECURITY_NAME;
+        partial void OnSECURITY_NAMEChanging(global::System.String value);
+        partial void OnSECURITY_NAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> BOND_GETDAY
+        {
+            get
+            {
+                return _BOND_GETDAY;
+            }
+            set
+            {
+                OnBOND_GETDAYChanging(value);
+                ReportPropertyChanging("BOND_GETDAY");
+                _BOND_GETDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BOND_GETDAY");
+                OnBOND_GETDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _BOND_GETDAY;
+        partial void OnBOND_GETDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnBOND_GETDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String BOND_FUND
+        {
+            get
+            {
+                return _BOND_FUND;
+            }
+            set
+            {
+                OnBOND_FUNDChanging(value);
+                ReportPropertyChanging("BOND_FUND");
+                _BOND_FUND = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("BOND_FUND");
+                OnBOND_FUNDChanged();
+            }
+        }
+        private global::System.String _BOND_FUND;
+        partial void OnBOND_FUNDChanging(global::System.String value);
+        partial void OnBOND_FUNDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> SECURITY_MATUDAY
+        {
+            get
+            {
+                return _SECURITY_MATUDAY;
+            }
+            set
+            {
+                OnSECURITY_MATUDAYChanging(value);
+                ReportPropertyChanging("SECURITY_MATUDAY");
+                _SECURITY_MATUDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SECURITY_MATUDAY");
+                OnSECURITY_MATUDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _SECURITY_MATUDAY;
+        partial void OnSECURITY_MATUDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnSECURITY_MATUDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal COLL_NOMINAL
+        {
+            get
+            {
+                return _COLL_NOMINAL;
+            }
+            set
+            {
+                OnCOLL_NOMINALChanging(value);
+                ReportPropertyChanging("COLL_NOMINAL");
+                _COLL_NOMINAL = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COLL_NOMINAL");
+                OnCOLL_NOMINALChanged();
+            }
+        }
+        private global::System.Decimal _COLL_NOMINAL;
+        partial void OnCOLL_NOMINALChanging(global::System.Decimal value);
+        partial void OnCOLL_NOMINALChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SECURITY_CURRENCY
+        {
+            get
+            {
+                return _SECURITY_CURRENCY;
+            }
+            set
+            {
+                OnSECURITY_CURRENCYChanging(value);
+                ReportPropertyChanging("SECURITY_CURRENCY");
+                _SECURITY_CURRENCY = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SECURITY_CURRENCY");
+                OnSECURITY_CURRENCYChanged();
+            }
+        }
+        private global::System.String _SECURITY_CURRENCY;
+        partial void OnSECURITY_CURRENCYChanging(global::System.String value);
+        partial void OnSECURITY_CURRENCYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 COLL_REF_DEAL
+        {
+            get
+            {
+                return _COLL_REF_DEAL;
+            }
+            set
+            {
+                OnCOLL_REF_DEALChanging(value);
+                ReportPropertyChanging("COLL_REF_DEAL");
+                _COLL_REF_DEAL = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COLL_REF_DEAL");
+                OnCOLL_REF_DEALChanged();
+            }
+        }
+        private global::System.Int32 _COLL_REF_DEAL;
+        partial void OnCOLL_REF_DEALChanging(global::System.Int32 value);
+        partial void OnCOLL_REF_DEALChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String PRE_COLL_FLAG
+        {
+            get
+            {
+                return _PRE_COLL_FLAG;
+            }
+            set
+            {
+                OnPRE_COLL_FLAGChanging(value);
+                ReportPropertyChanging("PRE_COLL_FLAG");
+                _PRE_COLL_FLAG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("PRE_COLL_FLAG");
+                OnPRE_COLL_FLAGChanged();
+            }
+        }
+        private global::System.String _PRE_COLL_FLAG;
+        partial void OnPRE_COLL_FLAGChanging(global::System.String value);
+        partial void OnPRE_COLL_FLAGChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String DAILY_MONITOR_FLAG
+        {
+            get
+            {
+                return _DAILY_MONITOR_FLAG;
+            }
+            set
+            {
+                OnDAILY_MONITOR_FLAGChanging(value);
+                ReportPropertyChanging("DAILY_MONITOR_FLAG");
+                _DAILY_MONITOR_FLAG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DAILY_MONITOR_FLAG");
+                OnDAILY_MONITOR_FLAGChanged();
+            }
+        }
+        private global::System.String _DAILY_MONITOR_FLAG;
+        partial void OnDAILY_MONITOR_FLAGChanging(global::System.String value);
+        partial void OnDAILY_MONITOR_FLAGChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 COLL_PARENT_ID
+        {
+            get
+            {
+                return _COLL_PARENT_ID;
+            }
+            set
+            {
+                OnCOLL_PARENT_IDChanging(value);
+                ReportPropertyChanging("COLL_PARENT_ID");
+                _COLL_PARENT_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COLL_PARENT_ID");
+                OnCOLL_PARENT_IDChanged();
+            }
+        }
+        private global::System.Int32 _COLL_PARENT_ID;
+        partial void OnCOLL_PARENT_IDChanging(global::System.Int32 value);
+        partial void OnCOLL_PARENT_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MEMO
+        {
+            get
+            {
+                return _MEMO;
+            }
+            set
+            {
+                OnMEMOChanging(value);
+                ReportPropertyChanging("MEMO");
+                _MEMO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MEMO");
+                OnMEMOChanged();
+            }
+        }
+        private global::System.String _MEMO;
+        partial void OnMEMOChanging(global::System.String value);
+        partial void OnMEMOChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_COMBILINK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_COMBILINK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_COMBILINK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_COMBILINK CreateNGOS_COMBILINK(global::System.Int32 id)
+        {
+            NGOS_COMBILINK nGOS_COMBILINK = new NGOS_COMBILINK();
+            nGOS_COMBILINK.ID = id;
+            return nGOS_COMBILINK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> MEMBER_COMPID
+        {
+            get
+            {
+                return _MEMBER_COMPID;
+            }
+            set
+            {
+                OnMEMBER_COMPIDChanging(value);
+                ReportPropertyChanging("MEMBER_COMPID");
+                _MEMBER_COMPID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MEMBER_COMPID");
+                OnMEMBER_COMPIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _MEMBER_COMPID;
+        partial void OnMEMBER_COMPIDChanging(Nullable<global::System.Int32> value);
+        partial void OnMEMBER_COMPIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> OWNER_COMPID
+        {
+            get
+            {
+                return _OWNER_COMPID;
+            }
+            set
+            {
+                OnOWNER_COMPIDChanging(value);
+                ReportPropertyChanging("OWNER_COMPID");
+                _OWNER_COMPID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("OWNER_COMPID");
+                OnOWNER_COMPIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _OWNER_COMPID;
+        partial void OnOWNER_COMPIDChanging(Nullable<global::System.Int32> value);
+        partial void OnOWNER_COMPIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> WEIGHT
+        {
+            get
+            {
+                return _WEIGHT;
+            }
+            set
+            {
+                OnWEIGHTChanging(value);
+                ReportPropertyChanging("WEIGHT");
+                _WEIGHT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("WEIGHT");
+                OnWEIGHTChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _WEIGHT;
+        partial void OnWEIGHTChanging(Nullable<global::System.Decimal> value);
+        partial void OnWEIGHTChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CONTEXT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CONTEXT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CONTEXT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="nAME">NAME 속성의 초기 값입니다.</param>
+        public static NGOS_CONTEXT CreateNGOS_CONTEXT(global::System.Int32 id, global::System.String nAME)
+        {
+            NGOS_CONTEXT nGOS_CONTEXT = new NGOS_CONTEXT();
+            nGOS_CONTEXT.ID = id;
+            nGOS_CONTEXT.NAME = nAME;
+            return nGOS_CONTEXT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CONTEXT_LINK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CONTEXT_LINK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CONTEXT_LINK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="nAME">NAME 속성의 초기 값입니다.</param>
+        /// <param name="cONTEXT_ID">CONTEXT_ID 속성의 초기 값입니다.</param>
+        public static NGOS_CONTEXT_LINK CreateNGOS_CONTEXT_LINK(global::System.Int32 id, global::System.String nAME, global::System.Int32 cONTEXT_ID)
+        {
+            NGOS_CONTEXT_LINK nGOS_CONTEXT_LINK = new NGOS_CONTEXT_LINK();
+            nGOS_CONTEXT_LINK.ID = id;
+            nGOS_CONTEXT_LINK.NAME = nAME;
+            nGOS_CONTEXT_LINK.CONTEXT_ID = cONTEXT_ID;
+            return nGOS_CONTEXT_LINK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 CONTEXT_ID
+        {
+            get
+            {
+                return _CONTEXT_ID;
+            }
+            set
+            {
+                OnCONTEXT_IDChanging(value);
+                ReportPropertyChanging("CONTEXT_ID");
+                _CONTEXT_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CONTEXT_ID");
+                OnCONTEXT_IDChanged();
+            }
+        }
+        private global::System.Int32 _CONTEXT_ID;
+        partial void OnCONTEXT_IDChanging(global::System.Int32 value);
+        partial void OnCONTEXT_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CURR
+        {
+            get
+            {
+                return _CURR;
+            }
+            set
+            {
+                OnCURRChanging(value);
+                ReportPropertyChanging("CURR");
+                _CURR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURR");
+                OnCURRChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CURR;
+        partial void OnCURRChanging(Nullable<global::System.Int32> value);
+        partial void OnCURRChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> GROUPID
+        {
+            get
+            {
+                return _GROUPID;
+            }
+            set
+            {
+                OnGROUPIDChanging(value);
+                ReportPropertyChanging("GROUPID");
+                _GROUPID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("GROUPID");
+                OnGROUPIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _GROUPID;
+        partial void OnGROUPIDChanging(Nullable<global::System.Int32> value);
+        partial void OnGROUPIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> MAPPINGTYPE
+        {
+            get
+            {
+                return _MAPPINGTYPE;
+            }
+            set
+            {
+                OnMAPPINGTYPEChanging(value);
+                ReportPropertyChanging("MAPPINGTYPE");
+                _MAPPINGTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MAPPINGTYPE");
+                OnMAPPINGTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _MAPPINGTYPE;
+        partial void OnMAPPINGTYPEChanging(Nullable<global::System.Int32> value);
+        partial void OnMAPPINGTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CTX_TYPE
+        {
+            get
+            {
+                return _CTX_TYPE;
+            }
+            set
+            {
+                OnCTX_TYPEChanging(value);
+                ReportPropertyChanging("CTX_TYPE");
+                _CTX_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CTX_TYPE");
+                OnCTX_TYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CTX_TYPE;
+        partial void OnCTX_TYPEChanging(Nullable<global::System.Int32> value);
+        partial void OnCTX_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PRFID
+        {
+            get
+            {
+                return _PRFID;
+            }
+            set
+            {
+                OnPRFIDChanging(value);
+                ReportPropertyChanging("PRFID");
+                _PRFID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PRFID");
+                OnPRFIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PRFID;
+        partial void OnPRFIDChanging(Nullable<global::System.Int32> value);
+        partial void OnPRFIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ATTRIB0
+        {
+            get
+            {
+                return _ATTRIB0;
+            }
+            set
+            {
+                OnATTRIB0Changing(value);
+                ReportPropertyChanging("ATTRIB0");
+                _ATTRIB0 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("ATTRIB0");
+                OnATTRIB0Changed();
+            }
+        }
+        private global::System.String _ATTRIB0;
+        partial void OnATTRIB0Changing(global::System.String value);
+        partial void OnATTRIB0Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ATTRIB1
+        {
+            get
+            {
+                return _ATTRIB1;
+            }
+            set
+            {
+                OnATTRIB1Changing(value);
+                ReportPropertyChanging("ATTRIB1");
+                _ATTRIB1 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("ATTRIB1");
+                OnATTRIB1Changed();
+            }
+        }
+        private global::System.String _ATTRIB1;
+        partial void OnATTRIB1Changing(global::System.String value);
+        partial void OnATTRIB1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ATTRIB2
+        {
+            get
+            {
+                return _ATTRIB2;
+            }
+            set
+            {
+                OnATTRIB2Changing(value);
+                ReportPropertyChanging("ATTRIB2");
+                _ATTRIB2 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("ATTRIB2");
+                OnATTRIB2Changed();
+            }
+        }
+        private global::System.String _ATTRIB2;
+        partial void OnATTRIB2Changing(global::System.String value);
+        partial void OnATTRIB2Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ATTRIB_TYPE0
+        {
+            get
+            {
+                return _ATTRIB_TYPE0;
+            }
+            set
+            {
+                OnATTRIB_TYPE0Changing(value);
+                ReportPropertyChanging("ATTRIB_TYPE0");
+                _ATTRIB_TYPE0 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ATTRIB_TYPE0");
+                OnATTRIB_TYPE0Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _ATTRIB_TYPE0;
+        partial void OnATTRIB_TYPE0Changing(Nullable<global::System.Int32> value);
+        partial void OnATTRIB_TYPE0Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ATTRIB_TYPE1
+        {
+            get
+            {
+                return _ATTRIB_TYPE1;
+            }
+            set
+            {
+                OnATTRIB_TYPE1Changing(value);
+                ReportPropertyChanging("ATTRIB_TYPE1");
+                _ATTRIB_TYPE1 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ATTRIB_TYPE1");
+                OnATTRIB_TYPE1Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _ATTRIB_TYPE1;
+        partial void OnATTRIB_TYPE1Changing(Nullable<global::System.Int32> value);
+        partial void OnATTRIB_TYPE1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ATTRIB_TYPE2
+        {
+            get
+            {
+                return _ATTRIB_TYPE2;
+            }
+            set
+            {
+                OnATTRIB_TYPE2Changing(value);
+                ReportPropertyChanging("ATTRIB_TYPE2");
+                _ATTRIB_TYPE2 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ATTRIB_TYPE2");
+                OnATTRIB_TYPE2Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _ATTRIB_TYPE2;
+        partial void OnATTRIB_TYPE2Changing(Nullable<global::System.Int32> value);
+        partial void OnATTRIB_TYPE2Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CORR")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CORR : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CORR 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="cORR_ID">CORR_ID 속성의 초기 값입니다.</param>
+        public static NGOS_CORR CreateNGOS_CORR(global::System.Int32 id, global::System.Int32 cORR_ID)
+        {
+            NGOS_CORR nGOS_CORR = new NGOS_CORR();
+            nGOS_CORR.ID = id;
+            nGOS_CORR.CORR_ID = cORR_ID;
+            return nGOS_CORR;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 CORR_ID
+        {
+            get
+            {
+                return _CORR_ID;
+            }
+            set
+            {
+                OnCORR_IDChanging(value);
+                ReportPropertyChanging("CORR_ID");
+                _CORR_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CORR_ID");
+                OnCORR_IDChanged();
+            }
+        }
+        private global::System.Int32 _CORR_ID;
+        partial void OnCORR_IDChanging(global::System.Int32 value);
+        partial void OnCORR_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BUCKET0_COUNT
+        {
+            get
+            {
+                return _BUCKET0_COUNT;
+            }
+            set
+            {
+                OnBUCKET0_COUNTChanging(value);
+                ReportPropertyChanging("BUCKET0_COUNT");
+                _BUCKET0_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUCKET0_COUNT");
+                OnBUCKET0_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BUCKET0_COUNT;
+        partial void OnBUCKET0_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnBUCKET0_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BUCKET0_UNIT
+        {
+            get
+            {
+                return _BUCKET0_UNIT;
+            }
+            set
+            {
+                OnBUCKET0_UNITChanging(value);
+                ReportPropertyChanging("BUCKET0_UNIT");
+                _BUCKET0_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUCKET0_UNIT");
+                OnBUCKET0_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BUCKET0_UNIT;
+        partial void OnBUCKET0_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnBUCKET0_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BUCKET1_COUNT
+        {
+            get
+            {
+                return _BUCKET1_COUNT;
+            }
+            set
+            {
+                OnBUCKET1_COUNTChanging(value);
+                ReportPropertyChanging("BUCKET1_COUNT");
+                _BUCKET1_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUCKET1_COUNT");
+                OnBUCKET1_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BUCKET1_COUNT;
+        partial void OnBUCKET1_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnBUCKET1_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BUCKET1_UNIT
+        {
+            get
+            {
+                return _BUCKET1_UNIT;
+            }
+            set
+            {
+                OnBUCKET1_UNITChanging(value);
+                ReportPropertyChanging("BUCKET1_UNIT");
+                _BUCKET1_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUCKET1_UNIT");
+                OnBUCKET1_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BUCKET1_UNIT;
+        partial void OnBUCKET1_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnBUCKET1_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REC_ADDR0
+        {
+            get
+            {
+                return _REC_ADDR0;
+            }
+            set
+            {
+                OnREC_ADDR0Changing(value);
+                ReportPropertyChanging("REC_ADDR0");
+                _REC_ADDR0 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REC_ADDR0");
+                OnREC_ADDR0Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _REC_ADDR0;
+        partial void OnREC_ADDR0Changing(Nullable<global::System.Int32> value);
+        partial void OnREC_ADDR0Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REC_ADDR1
+        {
+            get
+            {
+                return _REC_ADDR1;
+            }
+            set
+            {
+                OnREC_ADDR1Changing(value);
+                ReportPropertyChanging("REC_ADDR1");
+                _REC_ADDR1 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REC_ADDR1");
+                OnREC_ADDR1Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _REC_ADDR1;
+        partial void OnREC_ADDR1Changing(Nullable<global::System.Int32> value);
+        partial void OnREC_ADDR1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REC_TYPE0
+        {
+            get
+            {
+                return _REC_TYPE0;
+            }
+            set
+            {
+                OnREC_TYPE0Changing(value);
+                ReportPropertyChanging("REC_TYPE0");
+                _REC_TYPE0 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REC_TYPE0");
+                OnREC_TYPE0Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _REC_TYPE0;
+        partial void OnREC_TYPE0Changing(Nullable<global::System.Int32> value);
+        partial void OnREC_TYPE0Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REC_TYPE1
+        {
+            get
+            {
+                return _REC_TYPE1;
+            }
+            set
+            {
+                OnREC_TYPE1Changing(value);
+                ReportPropertyChanging("REC_TYPE1");
+                _REC_TYPE1 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REC_TYPE1");
+                OnREC_TYPE1Changed();
+            }
+        }
+        private Nullable<global::System.Int32> _REC_TYPE1;
+        partial void OnREC_TYPE1Changing(Nullable<global::System.Int32> value);
+        partial void OnREC_TYPE1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> VALUE
+        {
+            get
+            {
+                return _VALUE;
+            }
+            set
+            {
+                OnVALUEChanging(value);
+                ReportPropertyChanging("VALUE");
+                _VALUE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VALUE");
+                OnVALUEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _VALUE;
+        partial void OnVALUEChanging(Nullable<global::System.Decimal> value);
+        partial void OnVALUEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CORR_MATRIX")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CORR_MATRIX : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CORR_MATRIX 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CORR_MATRIX CreateNGOS_CORR_MATRIX(global::System.Int32 id)
+        {
+            NGOS_CORR_MATRIX nGOS_CORR_MATRIX = new NGOS_CORR_MATRIX();
+            nGOS_CORR_MATRIX.ID = id;
+            return nGOS_CORR_MATRIX;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ORG_CMID
+        {
+            get
+            {
+                return _ORG_CMID;
+            }
+            set
+            {
+                OnORG_CMIDChanging(value);
+                ReportPropertyChanging("ORG_CMID");
+                _ORG_CMID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ORG_CMID");
+                OnORG_CMIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ORG_CMID;
+        partial void OnORG_CMIDChanging(Nullable<global::System.Int32> value);
+        partial void OnORG_CMIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DATE_FROM
+        {
+            get
+            {
+                return _DATE_FROM;
+            }
+            set
+            {
+                OnDATE_FROMChanging(value);
+                ReportPropertyChanging("DATE_FROM");
+                _DATE_FROM = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DATE_FROM");
+                OnDATE_FROMChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DATE_FROM;
+        partial void OnDATE_FROMChanging(Nullable<global::System.DateTime> value);
+        partial void OnDATE_FROMChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DATE_TO
+        {
+            get
+            {
+                return _DATE_TO;
+            }
+            set
+            {
+                OnDATE_TOChanging(value);
+                ReportPropertyChanging("DATE_TO");
+                _DATE_TO = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DATE_TO");
+                OnDATE_TOChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DATE_TO;
+        partial void OnDATE_TOChanging(Nullable<global::System.DateTime> value);
+        partial void OnDATE_TOChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> DEFAULT_VALUE
+        {
+            get
+            {
+                return _DEFAULT_VALUE;
+            }
+            set
+            {
+                OnDEFAULT_VALUEChanging(value);
+                ReportPropertyChanging("DEFAULT_VALUE");
+                _DEFAULT_VALUE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DEFAULT_VALUE");
+                OnDEFAULT_VALUEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _DEFAULT_VALUE;
+        partial void OnDEFAULT_VALUEChanging(Nullable<global::System.Decimal> value);
+        partial void OnDEFAULT_VALUEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _TYPE;
+        partial void OnTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnTYPEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CREDIT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CREDIT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CREDIT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CREDIT CreateNGOS_CREDIT(global::System.Int32 id)
+        {
+            NGOS_CREDIT nGOS_CREDIT = new NGOS_CREDIT();
+            nGOS_CREDIT.ID = id;
+            return nGOS_CREDIT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String COUNTRY_RISK
+        {
+            get
+            {
+                return _COUNTRY_RISK;
+            }
+            set
+            {
+                OnCOUNTRY_RISKChanging(value);
+                ReportPropertyChanging("COUNTRY_RISK");
+                _COUNTRY_RISK = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("COUNTRY_RISK");
+                OnCOUNTRY_RISKChanged();
+            }
+        }
+        private global::System.String _COUNTRY_RISK;
+        partial void OnCOUNTRY_RISKChanging(global::System.String value);
+        partial void OnCOUNTRY_RISKChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> COUNTRY_RISK_DATE
+        {
+            get
+            {
+                return _COUNTRY_RISK_DATE;
+            }
+            set
+            {
+                OnCOUNTRY_RISK_DATEChanging(value);
+                ReportPropertyChanging("COUNTRY_RISK_DATE");
+                _COUNTRY_RISK_DATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COUNTRY_RISK_DATE");
+                OnCOUNTRY_RISK_DATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _COUNTRY_RISK_DATE;
+        partial void OnCOUNTRY_RISK_DATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCOUNTRY_RISK_DATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String FITCH_RATE
+        {
+            get
+            {
+                return _FITCH_RATE;
+            }
+            set
+            {
+                OnFITCH_RATEChanging(value);
+                ReportPropertyChanging("FITCH_RATE");
+                _FITCH_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("FITCH_RATE");
+                OnFITCH_RATEChanged();
+            }
+        }
+        private global::System.String _FITCH_RATE;
+        partial void OnFITCH_RATEChanging(global::System.String value);
+        partial void OnFITCH_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> FITCH_RATEDATE
+        {
+            get
+            {
+                return _FITCH_RATEDATE;
+            }
+            set
+            {
+                OnFITCH_RATEDATEChanging(value);
+                ReportPropertyChanging("FITCH_RATEDATE");
+                _FITCH_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("FITCH_RATEDATE");
+                OnFITCH_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _FITCH_RATEDATE;
+        partial void OnFITCH_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnFITCH_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String KAP_RATE
+        {
+            get
+            {
+                return _KAP_RATE;
+            }
+            set
+            {
+                OnKAP_RATEChanging(value);
+                ReportPropertyChanging("KAP_RATE");
+                _KAP_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("KAP_RATE");
+                OnKAP_RATEChanged();
+            }
+        }
+        private global::System.String _KAP_RATE;
+        partial void OnKAP_RATEChanging(global::System.String value);
+        partial void OnKAP_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> KAP_RATEDATE
+        {
+            get
+            {
+                return _KAP_RATEDATE;
+            }
+            set
+            {
+                OnKAP_RATEDATEChanging(value);
+                ReportPropertyChanging("KAP_RATEDATE");
+                _KAP_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("KAP_RATEDATE");
+                OnKAP_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _KAP_RATEDATE;
+        partial void OnKAP_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnKAP_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String KIS_RATE
+        {
+            get
+            {
+                return _KIS_RATE;
+            }
+            set
+            {
+                OnKIS_RATEChanging(value);
+                ReportPropertyChanging("KIS_RATE");
+                _KIS_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("KIS_RATE");
+                OnKIS_RATEChanged();
+            }
+        }
+        private global::System.String _KIS_RATE;
+        partial void OnKIS_RATEChanging(global::System.String value);
+        partial void OnKIS_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> KIS_RATEDATE
+        {
+            get
+            {
+                return _KIS_RATEDATE;
+            }
+            set
+            {
+                OnKIS_RATEDATEChanging(value);
+                ReportPropertyChanging("KIS_RATEDATE");
+                _KIS_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("KIS_RATEDATE");
+                OnKIS_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _KIS_RATEDATE;
+        partial void OnKIS_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnKIS_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MOODYS_RATE
+        {
+            get
+            {
+                return _MOODYS_RATE;
+            }
+            set
+            {
+                OnMOODYS_RATEChanging(value);
+                ReportPropertyChanging("MOODYS_RATE");
+                _MOODYS_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MOODYS_RATE");
+                OnMOODYS_RATEChanged();
+            }
+        }
+        private global::System.String _MOODYS_RATE;
+        partial void OnMOODYS_RATEChanging(global::System.String value);
+        partial void OnMOODYS_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> MOODYS_RATEDATE
+        {
+            get
+            {
+                return _MOODYS_RATEDATE;
+            }
+            set
+            {
+                OnMOODYS_RATEDATEChanging(value);
+                ReportPropertyChanging("MOODYS_RATEDATE");
+                _MOODYS_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MOODYS_RATEDATE");
+                OnMOODYS_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _MOODYS_RATEDATE;
+        partial void OnMOODYS_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnMOODYS_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NICE_RATE
+        {
+            get
+            {
+                return _NICE_RATE;
+            }
+            set
+            {
+                OnNICE_RATEChanging(value);
+                ReportPropertyChanging("NICE_RATE");
+                _NICE_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NICE_RATE");
+                OnNICE_RATEChanged();
+            }
+        }
+        private global::System.String _NICE_RATE;
+        partial void OnNICE_RATEChanging(global::System.String value);
+        partial void OnNICE_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NICE_RATEDATE
+        {
+            get
+            {
+                return _NICE_RATEDATE;
+            }
+            set
+            {
+                OnNICE_RATEDATEChanging(value);
+                ReportPropertyChanging("NICE_RATEDATE");
+                _NICE_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NICE_RATEDATE");
+                OnNICE_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NICE_RATEDATE;
+        partial void OnNICE_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnNICE_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String OUR_RATE
+        {
+            get
+            {
+                return _OUR_RATE;
+            }
+            set
+            {
+                OnOUR_RATEChanging(value);
+                ReportPropertyChanging("OUR_RATE");
+                _OUR_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("OUR_RATE");
+                OnOUR_RATEChanged();
+            }
+        }
+        private global::System.String _OUR_RATE;
+        partial void OnOUR_RATEChanging(global::System.String value);
+        partial void OnOUR_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> OUR_RATEDATE
+        {
+            get
+            {
+                return _OUR_RATEDATE;
+            }
+            set
+            {
+                OnOUR_RATEDATEChanging(value);
+                ReportPropertyChanging("OUR_RATEDATE");
+                _OUR_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("OUR_RATEDATE");
+                OnOUR_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _OUR_RATEDATE;
+        partial void OnOUR_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnOUR_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PARTYID
+        {
+            get
+            {
+                return _PARTYID;
+            }
+            set
+            {
+                OnPARTYIDChanging(value);
+                ReportPropertyChanging("PARTYID");
+                _PARTYID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PARTYID");
+                OnPARTYIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PARTYID;
+        partial void OnPARTYIDChanging(Nullable<global::System.Int32> value);
+        partial void OnPARTYIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SNP_RATE
+        {
+            get
+            {
+                return _SNP_RATE;
+            }
+            set
+            {
+                OnSNP_RATEChanging(value);
+                ReportPropertyChanging("SNP_RATE");
+                _SNP_RATE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SNP_RATE");
+                OnSNP_RATEChanged();
+            }
+        }
+        private global::System.String _SNP_RATE;
+        partial void OnSNP_RATEChanging(global::System.String value);
+        partial void OnSNP_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> SNP_RATEDATE
+        {
+            get
+            {
+                return _SNP_RATEDATE;
+            }
+            set
+            {
+                OnSNP_RATEDATEChanging(value);
+                ReportPropertyChanging("SNP_RATEDATE");
+                _SNP_RATEDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SNP_RATEDATE");
+                OnSNP_RATEDATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _SNP_RATEDATE;
+        partial void OnSNP_RATEDATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnSNP_RATEDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CREDITEVENT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CREDITEVENT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CREDITEVENT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CREDITEVENT CreateNGOS_CREDITEVENT(global::System.Int32 id)
+        {
+            NGOS_CREDITEVENT nGOS_CREDITEVENT = new NGOS_CREDITEVENT();
+            nGOS_CREDITEVENT.ID = id;
+            return nGOS_CREDITEVENT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> EVENT_TYPE
+        {
+            get
+            {
+                return _EVENT_TYPE;
+            }
+            set
+            {
+                OnEVENT_TYPEChanging(value);
+                ReportPropertyChanging("EVENT_TYPE");
+                _EVENT_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EVENT_TYPE");
+                OnEVENT_TYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _EVENT_TYPE;
+        partial void OnEVENT_TYPEChanging(Nullable<global::System.Int32> value);
+        partial void OnEVENT_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REFPARTY
+        {
+            get
+            {
+                return _REFPARTY;
+            }
+            set
+            {
+                OnREFPARTYChanging(value);
+                ReportPropertyChanging("REFPARTY");
+                _REFPARTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REFPARTY");
+                OnREFPARTYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _REFPARTY;
+        partial void OnREFPARTYChanging(Nullable<global::System.Int32> value);
+        partial void OnREFPARTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> REC_DATE
+        {
+            get
+            {
+                return _REC_DATE;
+            }
+            set
+            {
+                OnREC_DATEChanging(value);
+                ReportPropertyChanging("REC_DATE");
+                _REC_DATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REC_DATE");
+                OnREC_DATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _REC_DATE;
+        partial void OnREC_DATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnREC_DATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> RECOVERY_RATE
+        {
+            get
+            {
+                return _RECOVERY_RATE;
+            }
+            set
+            {
+                OnRECOVERY_RATEChanging(value);
+                ReportPropertyChanging("RECOVERY_RATE");
+                _RECOVERY_RATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RECOVERY_RATE");
+                OnRECOVERY_RATEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _RECOVERY_RATE;
+        partial void OnRECOVERY_RATEChanging(Nullable<global::System.Decimal> value);
+        partial void OnRECOVERY_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SENIORITY_ID
+        {
+            get
+            {
+                return _SENIORITY_ID;
+            }
+            set
+            {
+                OnSENIORITY_IDChanging(value);
+                ReportPropertyChanging("SENIORITY_ID");
+                _SENIORITY_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SENIORITY_ID");
+                OnSENIORITY_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SENIORITY_ID;
+        partial void OnSENIORITY_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnSENIORITY_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TEXT1
+        {
+            get
+            {
+                return _TEXT1;
+            }
+            set
+            {
+                OnTEXT1Changing(value);
+                ReportPropertyChanging("TEXT1");
+                _TEXT1 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TEXT1");
+                OnTEXT1Changed();
+            }
+        }
+        private global::System.String _TEXT1;
+        partial void OnTEXT1Changing(global::System.String value);
+        partial void OnTEXT1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TEXT2
+        {
+            get
+            {
+                return _TEXT2;
+            }
+            set
+            {
+                OnTEXT2Changing(value);
+                ReportPropertyChanging("TEXT2");
+                _TEXT2 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TEXT2");
+                OnTEXT2Changed();
+            }
+        }
+        private global::System.String _TEXT2;
+        partial void OnTEXT2Changing(global::System.String value);
+        partial void OnTEXT2Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_CREDITEVENTSPEC")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_CREDITEVENTSPEC : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_CREDITEVENTSPEC 개체를 만듭니다.
+        /// </summary>
+        /// <param name="fAILURE_TO_PAY">FAILURE_TO_PAY 속성의 초기 값입니다.</param>
+        /// <param name="oBL_ACCELERATION">OBL_ACCELERATION 속성의 초기 값입니다.</param>
+        /// <param name="oBL_DEFAULT">OBL_DEFAULT 속성의 초기 값입니다.</param>
+        /// <param name="rEPUDIATION">REPUDIATION 속성의 초기 값입니다.</param>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_CREDITEVENTSPEC CreateNGOS_CREDITEVENTSPEC(global::System.Int16 fAILURE_TO_PAY, global::System.Int16 oBL_ACCELERATION, global::System.Int16 oBL_DEFAULT, global::System.Int16 rEPUDIATION, global::System.Int32 id)
+        {
+            NGOS_CREDITEVENTSPEC nGOS_CREDITEVENTSPEC = new NGOS_CREDITEVENTSPEC();
+            nGOS_CREDITEVENTSPEC.FAILURE_TO_PAY = fAILURE_TO_PAY;
+            nGOS_CREDITEVENTSPEC.OBL_ACCELERATION = oBL_ACCELERATION;
+            nGOS_CREDITEVENTSPEC.OBL_DEFAULT = oBL_DEFAULT;
+            nGOS_CREDITEVENTSPEC.REPUDIATION = rEPUDIATION;
+            nGOS_CREDITEVENTSPEC.ID = id;
+            return nGOS_CREDITEVENTSPEC;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> ISBANKRUPTCY
+        {
+            get
+            {
+                return _ISBANKRUPTCY;
+            }
+            set
+            {
+                OnISBANKRUPTCYChanging(value);
+                ReportPropertyChanging("ISBANKRUPTCY");
+                _ISBANKRUPTCY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ISBANKRUPTCY");
+                OnISBANKRUPTCYChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _ISBANKRUPTCY;
+        partial void OnISBANKRUPTCYChanging(Nullable<global::System.Int16> value);
+        partial void OnISBANKRUPTCYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DEFAULT_DATE
+        {
+            get
+            {
+                return _DEFAULT_DATE;
+            }
+            set
+            {
+                OnDEFAULT_DATEChanging(value);
+                ReportPropertyChanging("DEFAULT_DATE");
+                _DEFAULT_DATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DEFAULT_DATE");
+                OnDEFAULT_DATEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DEFAULT_DATE;
+        partial void OnDEFAULT_DATEChanging(Nullable<global::System.DateTime> value);
+        partial void OnDEFAULT_DATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> DELIVOBL_INSID
+        {
+            get
+            {
+                return _DELIVOBL_INSID;
+            }
+            set
+            {
+                OnDELIVOBL_INSIDChanging(value);
+                ReportPropertyChanging("DELIVOBL_INSID");
+                _DELIVOBL_INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DELIVOBL_INSID");
+                OnDELIVOBL_INSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _DELIVOBL_INSID;
+        partial void OnDELIVOBL_INSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnDELIVOBL_INSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> DELIVOBL_CATEG_ID
+        {
+            get
+            {
+                return _DELIVOBL_CATEG_ID;
+            }
+            set
+            {
+                OnDELIVOBL_CATEG_IDChanging(value);
+                ReportPropertyChanging("DELIVOBL_CATEG_ID");
+                _DELIVOBL_CATEG_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DELIVOBL_CATEG_ID");
+                OnDELIVOBL_CATEG_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _DELIVOBL_CATEG_ID;
+        partial void OnDELIVOBL_CATEG_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnDELIVOBL_CATEG_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 FAILURE_TO_PAY
+        {
+            get
+            {
+                return _FAILURE_TO_PAY;
+            }
+            set
+            {
+                OnFAILURE_TO_PAYChanging(value);
+                ReportPropertyChanging("FAILURE_TO_PAY");
+                _FAILURE_TO_PAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("FAILURE_TO_PAY");
+                OnFAILURE_TO_PAYChanged();
+            }
+        }
+        private global::System.Int16 _FAILURE_TO_PAY;
+        partial void OnFAILURE_TO_PAYChanging(global::System.Int16 value);
+        partial void OnFAILURE_TO_PAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 OBL_ACCELERATION
+        {
+            get
+            {
+                return _OBL_ACCELERATION;
+            }
+            set
+            {
+                OnOBL_ACCELERATIONChanging(value);
+                ReportPropertyChanging("OBL_ACCELERATION");
+                _OBL_ACCELERATION = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("OBL_ACCELERATION");
+                OnOBL_ACCELERATIONChanged();
+            }
+        }
+        private global::System.Int16 _OBL_ACCELERATION;
+        partial void OnOBL_ACCELERATIONChanging(global::System.Int16 value);
+        partial void OnOBL_ACCELERATIONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> OBL_CATEG_ID
+        {
+            get
+            {
+                return _OBL_CATEG_ID;
+            }
+            set
+            {
+                OnOBL_CATEG_IDChanging(value);
+                ReportPropertyChanging("OBL_CATEG_ID");
+                _OBL_CATEG_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("OBL_CATEG_ID");
+                OnOBL_CATEG_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _OBL_CATEG_ID;
+        partial void OnOBL_CATEG_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnOBL_CATEG_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 OBL_DEFAULT
+        {
+            get
+            {
+                return _OBL_DEFAULT;
+            }
+            set
+            {
+                OnOBL_DEFAULTChanging(value);
+                ReportPropertyChanging("OBL_DEFAULT");
+                _OBL_DEFAULT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("OBL_DEFAULT");
+                OnOBL_DEFAULTChanged();
+            }
+        }
+        private global::System.Int16 _OBL_DEFAULT;
+        partial void OnOBL_DEFAULTChanging(global::System.Int16 value);
+        partial void OnOBL_DEFAULTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> RECOVERY_RATE
+        {
+            get
+            {
+                return _RECOVERY_RATE;
+            }
+            set
+            {
+                OnRECOVERY_RATEChanging(value);
+                ReportPropertyChanging("RECOVERY_RATE");
+                _RECOVERY_RATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RECOVERY_RATE");
+                OnRECOVERY_RATEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _RECOVERY_RATE;
+        partial void OnRECOVERY_RATEChanging(Nullable<global::System.Decimal> value);
+        partial void OnRECOVERY_RATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 REPUDIATION
+        {
+            get
+            {
+                return _REPUDIATION;
+            }
+            set
+            {
+                OnREPUDIATIONChanging(value);
+                ReportPropertyChanging("REPUDIATION");
+                _REPUDIATION = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REPUDIATION");
+                OnREPUDIATIONChanged();
+            }
+        }
+        private global::System.Int16 _REPUDIATION;
+        partial void OnREPUDIATIONChanging(global::System.Int16 value);
+        partial void OnREPUDIATIONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> RESTRUCTURING_TYPE
+        {
+            get
+            {
+                return _RESTRUCTURING_TYPE;
+            }
+            set
+            {
+                OnRESTRUCTURING_TYPEChanging(value);
+                ReportPropertyChanging("RESTRUCTURING_TYPE");
+                _RESTRUCTURING_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RESTRUCTURING_TYPE");
+                OnRESTRUCTURING_TYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _RESTRUCTURING_TYPE;
+        partial void OnRESTRUCTURING_TYPEChanging(Nullable<global::System.Int32> value);
+        partial void OnRESTRUCTURING_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_DARTS_PNL")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_DARTS_PNL : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_DARTS_PNL 개체를 만듭니다.
+        /// </summary>
+        /// <param name="tRADE_DATE">TRADE_DATE 속성의 초기 값입니다.</param>
+        /// <param name="fUND_NM">FUND_NM 속성의 초기 값입니다.</param>
+        /// <param name="cRDR_SECT">CRDR_SECT 속성의 초기 값입니다.</param>
+        /// <param name="mKT_SECT">MKT_SECT 속성의 초기 값입니다.</param>
+        /// <param name="sECU_SECT">SECU_SECT 속성의 초기 값입니다.</param>
+        /// <param name="jOB_CD">JOB_CD 속성의 초기 값입니다.</param>
+        /// <param name="sTANDARD_ITEM_CD">STANDARD_ITEM_CD 속성의 초기 값입니다.</param>
+        /// <param name="iTEM_SECT">ITEM_SECT 속성의 초기 값입니다.</param>
+        /// <param name="sALE_QTY">SALE_QTY 속성의 초기 값입니다.</param>
+        /// <param name="sALE_AMT">SALE_AMT 속성의 초기 값입니다.</param>
+        /// <param name="bUY_QTY">BUY_QTY 속성의 초기 값입니다.</param>
+        /// <param name="bUY_AMT">BUY_AMT 속성의 초기 값입니다.</param>
+        /// <param name="rESALE_QTY">RESALE_QTY 속성의 초기 값입니다.</param>
+        /// <param name="rESALE_AMT">RESALE_AMT 속성의 초기 값입니다.</param>
+        /// <param name="rEBUY_QTY">REBUY_QTY 속성의 초기 값입니다.</param>
+        /// <param name="rEBUY_AMT">REBUY_AMT 속성의 초기 값입니다.</param>
+        /// <param name="bOOK_AMT">BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="tRAIN_GAIN">TRAIN_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="tRAIN_LOSS">TRAIN_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="tR_TAX">TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="mM_BOOK_AMT">MM_BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="mM_TRADE_GAIN">MM_TRADE_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="mM_TRADE_LOSS">MM_TRADE_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="mM_TR_TAX">MM_TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="qUART_BOOK_AMT">QUART_BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="qUART_TRADE_GAIN">QUART_TRADE_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="qUART_TRADE_LOSS">QUART_TRADE_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="qUART_TR_TAX">QUART_TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="hYEAR_BOOK_AMT">HYEAR_BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="hYEAR_TRADE_GAIN">HYEAR_TRADE_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="hYEAR_TRADE_LOSS">HYEAR_TRADE_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="hYEAR_TR_TAX">HYEAR_TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_BOOK_AMT">YEAR_BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_TRADE_GAIN">YEAR_TRADE_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_TRADE_LOSS">YEAR_TRADE_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_TR_TAX">YEAR_TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_BUY_QTY">YEAR_BUY_QTY 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_BUY_AMT">YEAR_BUY_AMT 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_SALE_QTY">YEAR_SALE_QTY 속성의 초기 값입니다.</param>
+        /// <param name="yEAR_SALE_AMT">YEAR_SALE_AMT 속성의 초기 값입니다.</param>
+        public static NGOS_DARTS_PNL CreateNGOS_DARTS_PNL(global::System.String tRADE_DATE, global::System.String fUND_NM, global::System.String cRDR_SECT, global::System.String mKT_SECT, global::System.String sECU_SECT, global::System.String jOB_CD, global::System.String sTANDARD_ITEM_CD, global::System.String iTEM_SECT, global::System.Int32 sALE_QTY, global::System.Int64 sALE_AMT, global::System.Int32 bUY_QTY, global::System.Int64 bUY_AMT, global::System.Int32 rESALE_QTY, global::System.Int64 rESALE_AMT, global::System.Int32 rEBUY_QTY, global::System.Int64 rEBUY_AMT, global::System.Int64 bOOK_AMT, global::System.Int64 tRAIN_GAIN, global::System.Int64 tRAIN_LOSS, global::System.Int32 tR_TAX, global::System.Int64 mM_BOOK_AMT, global::System.Int64 mM_TRADE_GAIN, global::System.Int64 mM_TRADE_LOSS, global::System.Int32 mM_TR_TAX, global::System.Int64 qUART_BOOK_AMT, global::System.Int64 qUART_TRADE_GAIN, global::System.Int64 qUART_TRADE_LOSS, global::System.Int32 qUART_TR_TAX, global::System.Int64 hYEAR_BOOK_AMT, global::System.Int64 hYEAR_TRADE_GAIN, global::System.Int64 hYEAR_TRADE_LOSS, global::System.Int32 hYEAR_TR_TAX, global::System.Int64 yEAR_BOOK_AMT, global::System.Int64 yEAR_TRADE_GAIN, global::System.Int64 yEAR_TRADE_LOSS, global::System.Int32 yEAR_TR_TAX, global::System.Int64 yEAR_BUY_QTY, global::System.Int64 yEAR_BUY_AMT, global::System.Int64 yEAR_SALE_QTY, global::System.Int64 yEAR_SALE_AMT)
+        {
+            NGOS_DARTS_PNL nGOS_DARTS_PNL = new NGOS_DARTS_PNL();
+            nGOS_DARTS_PNL.TRADE_DATE = tRADE_DATE;
+            nGOS_DARTS_PNL.FUND_NM = fUND_NM;
+            nGOS_DARTS_PNL.CRDR_SECT = cRDR_SECT;
+            nGOS_DARTS_PNL.MKT_SECT = mKT_SECT;
+            nGOS_DARTS_PNL.SECU_SECT = sECU_SECT;
+            nGOS_DARTS_PNL.JOB_CD = jOB_CD;
+            nGOS_DARTS_PNL.STANDARD_ITEM_CD = sTANDARD_ITEM_CD;
+            nGOS_DARTS_PNL.ITEM_SECT = iTEM_SECT;
+            nGOS_DARTS_PNL.SALE_QTY = sALE_QTY;
+            nGOS_DARTS_PNL.SALE_AMT = sALE_AMT;
+            nGOS_DARTS_PNL.BUY_QTY = bUY_QTY;
+            nGOS_DARTS_PNL.BUY_AMT = bUY_AMT;
+            nGOS_DARTS_PNL.RESALE_QTY = rESALE_QTY;
+            nGOS_DARTS_PNL.RESALE_AMT = rESALE_AMT;
+            nGOS_DARTS_PNL.REBUY_QTY = rEBUY_QTY;
+            nGOS_DARTS_PNL.REBUY_AMT = rEBUY_AMT;
+            nGOS_DARTS_PNL.BOOK_AMT = bOOK_AMT;
+            nGOS_DARTS_PNL.TRAIN_GAIN = tRAIN_GAIN;
+            nGOS_DARTS_PNL.TRAIN_LOSS = tRAIN_LOSS;
+            nGOS_DARTS_PNL.TR_TAX = tR_TAX;
+            nGOS_DARTS_PNL.MM_BOOK_AMT = mM_BOOK_AMT;
+            nGOS_DARTS_PNL.MM_TRADE_GAIN = mM_TRADE_GAIN;
+            nGOS_DARTS_PNL.MM_TRADE_LOSS = mM_TRADE_LOSS;
+            nGOS_DARTS_PNL.MM_TR_TAX = mM_TR_TAX;
+            nGOS_DARTS_PNL.QUART_BOOK_AMT = qUART_BOOK_AMT;
+            nGOS_DARTS_PNL.QUART_TRADE_GAIN = qUART_TRADE_GAIN;
+            nGOS_DARTS_PNL.QUART_TRADE_LOSS = qUART_TRADE_LOSS;
+            nGOS_DARTS_PNL.QUART_TR_TAX = qUART_TR_TAX;
+            nGOS_DARTS_PNL.HYEAR_BOOK_AMT = hYEAR_BOOK_AMT;
+            nGOS_DARTS_PNL.HYEAR_TRADE_GAIN = hYEAR_TRADE_GAIN;
+            nGOS_DARTS_PNL.HYEAR_TRADE_LOSS = hYEAR_TRADE_LOSS;
+            nGOS_DARTS_PNL.HYEAR_TR_TAX = hYEAR_TR_TAX;
+            nGOS_DARTS_PNL.YEAR_BOOK_AMT = yEAR_BOOK_AMT;
+            nGOS_DARTS_PNL.YEAR_TRADE_GAIN = yEAR_TRADE_GAIN;
+            nGOS_DARTS_PNL.YEAR_TRADE_LOSS = yEAR_TRADE_LOSS;
+            nGOS_DARTS_PNL.YEAR_TR_TAX = yEAR_TR_TAX;
+            nGOS_DARTS_PNL.YEAR_BUY_QTY = yEAR_BUY_QTY;
+            nGOS_DARTS_PNL.YEAR_BUY_AMT = yEAR_BUY_AMT;
+            nGOS_DARTS_PNL.YEAR_SALE_QTY = yEAR_SALE_QTY;
+            nGOS_DARTS_PNL.YEAR_SALE_AMT = yEAR_SALE_AMT;
+            return nGOS_DARTS_PNL;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String TRADE_DATE
+        {
+            get
+            {
+                return _TRADE_DATE;
+            }
+            set
+            {
+                if (_TRADE_DATE != value)
+                {
+                    OnTRADE_DATEChanging(value);
+                    ReportPropertyChanging("TRADE_DATE");
+                    _TRADE_DATE = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("TRADE_DATE");
+                    OnTRADE_DATEChanged();
+                }
+            }
+        }
+        private global::System.String _TRADE_DATE;
+        partial void OnTRADE_DATEChanging(global::System.String value);
+        partial void OnTRADE_DATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String FUND_NM
+        {
+            get
+            {
+                return _FUND_NM;
+            }
+            set
+            {
+                if (_FUND_NM != value)
+                {
+                    OnFUND_NMChanging(value);
+                    ReportPropertyChanging("FUND_NM");
+                    _FUND_NM = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("FUND_NM");
+                    OnFUND_NMChanged();
+                }
+            }
+        }
+        private global::System.String _FUND_NM;
+        partial void OnFUND_NMChanging(global::System.String value);
+        partial void OnFUND_NMChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String CRDR_SECT
+        {
+            get
+            {
+                return _CRDR_SECT;
+            }
+            set
+            {
+                if (_CRDR_SECT != value)
+                {
+                    OnCRDR_SECTChanging(value);
+                    ReportPropertyChanging("CRDR_SECT");
+                    _CRDR_SECT = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("CRDR_SECT");
+                    OnCRDR_SECTChanged();
+                }
+            }
+        }
+        private global::System.String _CRDR_SECT;
+        partial void OnCRDR_SECTChanging(global::System.String value);
+        partial void OnCRDR_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MKT_SECT
+        {
+            get
+            {
+                return _MKT_SECT;
+            }
+            set
+            {
+                if (_MKT_SECT != value)
+                {
+                    OnMKT_SECTChanging(value);
+                    ReportPropertyChanging("MKT_SECT");
+                    _MKT_SECT = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MKT_SECT");
+                    OnMKT_SECTChanged();
+                }
+            }
+        }
+        private global::System.String _MKT_SECT;
+        partial void OnMKT_SECTChanging(global::System.String value);
+        partial void OnMKT_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String SECU_SECT
+        {
+            get
+            {
+                return _SECU_SECT;
+            }
+            set
+            {
+                if (_SECU_SECT != value)
+                {
+                    OnSECU_SECTChanging(value);
+                    ReportPropertyChanging("SECU_SECT");
+                    _SECU_SECT = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("SECU_SECT");
+                    OnSECU_SECTChanged();
+                }
+            }
+        }
+        private global::System.String _SECU_SECT;
+        partial void OnSECU_SECTChanging(global::System.String value);
+        partial void OnSECU_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String JOB_CD
+        {
+            get
+            {
+                return _JOB_CD;
+            }
+            set
+            {
+                if (_JOB_CD != value)
+                {
+                    OnJOB_CDChanging(value);
+                    ReportPropertyChanging("JOB_CD");
+                    _JOB_CD = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("JOB_CD");
+                    OnJOB_CDChanged();
+                }
+            }
+        }
+        private global::System.String _JOB_CD;
+        partial void OnJOB_CDChanging(global::System.String value);
+        partial void OnJOB_CDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String STANDARD_ITEM_CD
+        {
+            get
+            {
+                return _STANDARD_ITEM_CD;
+            }
+            set
+            {
+                if (_STANDARD_ITEM_CD != value)
+                {
+                    OnSTANDARD_ITEM_CDChanging(value);
+                    ReportPropertyChanging("STANDARD_ITEM_CD");
+                    _STANDARD_ITEM_CD = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("STANDARD_ITEM_CD");
+                    OnSTANDARD_ITEM_CDChanged();
+                }
+            }
+        }
+        private global::System.String _STANDARD_ITEM_CD;
+        partial void OnSTANDARD_ITEM_CDChanging(global::System.String value);
+        partial void OnSTANDARD_ITEM_CDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String ITEM_SECT
+        {
+            get
+            {
+                return _ITEM_SECT;
+            }
+            set
+            {
+                OnITEM_SECTChanging(value);
+                ReportPropertyChanging("ITEM_SECT");
+                _ITEM_SECT = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("ITEM_SECT");
+                OnITEM_SECTChanged();
+            }
+        }
+        private global::System.String _ITEM_SECT;
+        partial void OnITEM_SECTChanging(global::System.String value);
+        partial void OnITEM_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 SALE_QTY
+        {
+            get
+            {
+                return _SALE_QTY;
+            }
+            set
+            {
+                OnSALE_QTYChanging(value);
+                ReportPropertyChanging("SALE_QTY");
+                _SALE_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_QTY");
+                OnSALE_QTYChanged();
+            }
+        }
+        private global::System.Int32 _SALE_QTY;
+        partial void OnSALE_QTYChanging(global::System.Int32 value);
+        partial void OnSALE_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 SALE_AMT
+        {
+            get
+            {
+                return _SALE_AMT;
+            }
+            set
+            {
+                OnSALE_AMTChanging(value);
+                ReportPropertyChanging("SALE_AMT");
+                _SALE_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_AMT");
+                OnSALE_AMTChanged();
+            }
+        }
+        private global::System.Int64 _SALE_AMT;
+        partial void OnSALE_AMTChanging(global::System.Int64 value);
+        partial void OnSALE_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 BUY_QTY
+        {
+            get
+            {
+                return _BUY_QTY;
+            }
+            set
+            {
+                OnBUY_QTYChanging(value);
+                ReportPropertyChanging("BUY_QTY");
+                _BUY_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_QTY");
+                OnBUY_QTYChanged();
+            }
+        }
+        private global::System.Int32 _BUY_QTY;
+        partial void OnBUY_QTYChanging(global::System.Int32 value);
+        partial void OnBUY_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BUY_AMT
+        {
+            get
+            {
+                return _BUY_AMT;
+            }
+            set
+            {
+                OnBUY_AMTChanging(value);
+                ReportPropertyChanging("BUY_AMT");
+                _BUY_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_AMT");
+                OnBUY_AMTChanged();
+            }
+        }
+        private global::System.Int64 _BUY_AMT;
+        partial void OnBUY_AMTChanging(global::System.Int64 value);
+        partial void OnBUY_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 RESALE_QTY
+        {
+            get
+            {
+                return _RESALE_QTY;
+            }
+            set
+            {
+                OnRESALE_QTYChanging(value);
+                ReportPropertyChanging("RESALE_QTY");
+                _RESALE_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RESALE_QTY");
+                OnRESALE_QTYChanged();
+            }
+        }
+        private global::System.Int32 _RESALE_QTY;
+        partial void OnRESALE_QTYChanging(global::System.Int32 value);
+        partial void OnRESALE_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 RESALE_AMT
+        {
+            get
+            {
+                return _RESALE_AMT;
+            }
+            set
+            {
+                OnRESALE_AMTChanging(value);
+                ReportPropertyChanging("RESALE_AMT");
+                _RESALE_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RESALE_AMT");
+                OnRESALE_AMTChanged();
+            }
+        }
+        private global::System.Int64 _RESALE_AMT;
+        partial void OnRESALE_AMTChanging(global::System.Int64 value);
+        partial void OnRESALE_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 REBUY_QTY
+        {
+            get
+            {
+                return _REBUY_QTY;
+            }
+            set
+            {
+                OnREBUY_QTYChanging(value);
+                ReportPropertyChanging("REBUY_QTY");
+                _REBUY_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REBUY_QTY");
+                OnREBUY_QTYChanged();
+            }
+        }
+        private global::System.Int32 _REBUY_QTY;
+        partial void OnREBUY_QTYChanging(global::System.Int32 value);
+        partial void OnREBUY_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 REBUY_AMT
+        {
+            get
+            {
+                return _REBUY_AMT;
+            }
+            set
+            {
+                OnREBUY_AMTChanging(value);
+                ReportPropertyChanging("REBUY_AMT");
+                _REBUY_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REBUY_AMT");
+                OnREBUY_AMTChanged();
+            }
+        }
+        private global::System.Int64 _REBUY_AMT;
+        partial void OnREBUY_AMTChanging(global::System.Int64 value);
+        partial void OnREBUY_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BOOK_AMT
+        {
+            get
+            {
+                return _BOOK_AMT;
+            }
+            set
+            {
+                OnBOOK_AMTChanging(value);
+                ReportPropertyChanging("BOOK_AMT");
+                _BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BOOK_AMT");
+                OnBOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _BOOK_AMT;
+        partial void OnBOOK_AMTChanging(global::System.Int64 value);
+        partial void OnBOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 TRAIN_GAIN
+        {
+            get
+            {
+                return _TRAIN_GAIN;
+            }
+            set
+            {
+                OnTRAIN_GAINChanging(value);
+                ReportPropertyChanging("TRAIN_GAIN");
+                _TRAIN_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRAIN_GAIN");
+                OnTRAIN_GAINChanged();
+            }
+        }
+        private global::System.Int64 _TRAIN_GAIN;
+        partial void OnTRAIN_GAINChanging(global::System.Int64 value);
+        partial void OnTRAIN_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 TRAIN_LOSS
+        {
+            get
+            {
+                return _TRAIN_LOSS;
+            }
+            set
+            {
+                OnTRAIN_LOSSChanging(value);
+                ReportPropertyChanging("TRAIN_LOSS");
+                _TRAIN_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRAIN_LOSS");
+                OnTRAIN_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _TRAIN_LOSS;
+        partial void OnTRAIN_LOSSChanging(global::System.Int64 value);
+        partial void OnTRAIN_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 TR_TAX
+        {
+            get
+            {
+                return _TR_TAX;
+            }
+            set
+            {
+                OnTR_TAXChanging(value);
+                ReportPropertyChanging("TR_TAX");
+                _TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TR_TAX");
+                OnTR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _TR_TAX;
+        partial void OnTR_TAXChanging(global::System.Int32 value);
+        partial void OnTR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 MM_BOOK_AMT
+        {
+            get
+            {
+                return _MM_BOOK_AMT;
+            }
+            set
+            {
+                OnMM_BOOK_AMTChanging(value);
+                ReportPropertyChanging("MM_BOOK_AMT");
+                _MM_BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MM_BOOK_AMT");
+                OnMM_BOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _MM_BOOK_AMT;
+        partial void OnMM_BOOK_AMTChanging(global::System.Int64 value);
+        partial void OnMM_BOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 MM_TRADE_GAIN
+        {
+            get
+            {
+                return _MM_TRADE_GAIN;
+            }
+            set
+            {
+                OnMM_TRADE_GAINChanging(value);
+                ReportPropertyChanging("MM_TRADE_GAIN");
+                _MM_TRADE_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MM_TRADE_GAIN");
+                OnMM_TRADE_GAINChanged();
+            }
+        }
+        private global::System.Int64 _MM_TRADE_GAIN;
+        partial void OnMM_TRADE_GAINChanging(global::System.Int64 value);
+        partial void OnMM_TRADE_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 MM_TRADE_LOSS
+        {
+            get
+            {
+                return _MM_TRADE_LOSS;
+            }
+            set
+            {
+                OnMM_TRADE_LOSSChanging(value);
+                ReportPropertyChanging("MM_TRADE_LOSS");
+                _MM_TRADE_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MM_TRADE_LOSS");
+                OnMM_TRADE_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _MM_TRADE_LOSS;
+        partial void OnMM_TRADE_LOSSChanging(global::System.Int64 value);
+        partial void OnMM_TRADE_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 MM_TR_TAX
+        {
+            get
+            {
+                return _MM_TR_TAX;
+            }
+            set
+            {
+                OnMM_TR_TAXChanging(value);
+                ReportPropertyChanging("MM_TR_TAX");
+                _MM_TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MM_TR_TAX");
+                OnMM_TR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _MM_TR_TAX;
+        partial void OnMM_TR_TAXChanging(global::System.Int32 value);
+        partial void OnMM_TR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 QUART_BOOK_AMT
+        {
+            get
+            {
+                return _QUART_BOOK_AMT;
+            }
+            set
+            {
+                OnQUART_BOOK_AMTChanging(value);
+                ReportPropertyChanging("QUART_BOOK_AMT");
+                _QUART_BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUART_BOOK_AMT");
+                OnQUART_BOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _QUART_BOOK_AMT;
+        partial void OnQUART_BOOK_AMTChanging(global::System.Int64 value);
+        partial void OnQUART_BOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 QUART_TRADE_GAIN
+        {
+            get
+            {
+                return _QUART_TRADE_GAIN;
+            }
+            set
+            {
+                OnQUART_TRADE_GAINChanging(value);
+                ReportPropertyChanging("QUART_TRADE_GAIN");
+                _QUART_TRADE_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUART_TRADE_GAIN");
+                OnQUART_TRADE_GAINChanged();
+            }
+        }
+        private global::System.Int64 _QUART_TRADE_GAIN;
+        partial void OnQUART_TRADE_GAINChanging(global::System.Int64 value);
+        partial void OnQUART_TRADE_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 QUART_TRADE_LOSS
+        {
+            get
+            {
+                return _QUART_TRADE_LOSS;
+            }
+            set
+            {
+                OnQUART_TRADE_LOSSChanging(value);
+                ReportPropertyChanging("QUART_TRADE_LOSS");
+                _QUART_TRADE_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUART_TRADE_LOSS");
+                OnQUART_TRADE_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _QUART_TRADE_LOSS;
+        partial void OnQUART_TRADE_LOSSChanging(global::System.Int64 value);
+        partial void OnQUART_TRADE_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 QUART_TR_TAX
+        {
+            get
+            {
+                return _QUART_TR_TAX;
+            }
+            set
+            {
+                OnQUART_TR_TAXChanging(value);
+                ReportPropertyChanging("QUART_TR_TAX");
+                _QUART_TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUART_TR_TAX");
+                OnQUART_TR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _QUART_TR_TAX;
+        partial void OnQUART_TR_TAXChanging(global::System.Int32 value);
+        partial void OnQUART_TR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 HYEAR_BOOK_AMT
+        {
+            get
+            {
+                return _HYEAR_BOOK_AMT;
+            }
+            set
+            {
+                OnHYEAR_BOOK_AMTChanging(value);
+                ReportPropertyChanging("HYEAR_BOOK_AMT");
+                _HYEAR_BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HYEAR_BOOK_AMT");
+                OnHYEAR_BOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _HYEAR_BOOK_AMT;
+        partial void OnHYEAR_BOOK_AMTChanging(global::System.Int64 value);
+        partial void OnHYEAR_BOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 HYEAR_TRADE_GAIN
+        {
+            get
+            {
+                return _HYEAR_TRADE_GAIN;
+            }
+            set
+            {
+                OnHYEAR_TRADE_GAINChanging(value);
+                ReportPropertyChanging("HYEAR_TRADE_GAIN");
+                _HYEAR_TRADE_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HYEAR_TRADE_GAIN");
+                OnHYEAR_TRADE_GAINChanged();
+            }
+        }
+        private global::System.Int64 _HYEAR_TRADE_GAIN;
+        partial void OnHYEAR_TRADE_GAINChanging(global::System.Int64 value);
+        partial void OnHYEAR_TRADE_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 HYEAR_TRADE_LOSS
+        {
+            get
+            {
+                return _HYEAR_TRADE_LOSS;
+            }
+            set
+            {
+                OnHYEAR_TRADE_LOSSChanging(value);
+                ReportPropertyChanging("HYEAR_TRADE_LOSS");
+                _HYEAR_TRADE_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HYEAR_TRADE_LOSS");
+                OnHYEAR_TRADE_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _HYEAR_TRADE_LOSS;
+        partial void OnHYEAR_TRADE_LOSSChanging(global::System.Int64 value);
+        partial void OnHYEAR_TRADE_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 HYEAR_TR_TAX
+        {
+            get
+            {
+                return _HYEAR_TR_TAX;
+            }
+            set
+            {
+                OnHYEAR_TR_TAXChanging(value);
+                ReportPropertyChanging("HYEAR_TR_TAX");
+                _HYEAR_TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HYEAR_TR_TAX");
+                OnHYEAR_TR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _HYEAR_TR_TAX;
+        partial void OnHYEAR_TR_TAXChanging(global::System.Int32 value);
+        partial void OnHYEAR_TR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_BOOK_AMT
+        {
+            get
+            {
+                return _YEAR_BOOK_AMT;
+            }
+            set
+            {
+                OnYEAR_BOOK_AMTChanging(value);
+                ReportPropertyChanging("YEAR_BOOK_AMT");
+                _YEAR_BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_BOOK_AMT");
+                OnYEAR_BOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_BOOK_AMT;
+        partial void OnYEAR_BOOK_AMTChanging(global::System.Int64 value);
+        partial void OnYEAR_BOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_TRADE_GAIN
+        {
+            get
+            {
+                return _YEAR_TRADE_GAIN;
+            }
+            set
+            {
+                OnYEAR_TRADE_GAINChanging(value);
+                ReportPropertyChanging("YEAR_TRADE_GAIN");
+                _YEAR_TRADE_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_TRADE_GAIN");
+                OnYEAR_TRADE_GAINChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_TRADE_GAIN;
+        partial void OnYEAR_TRADE_GAINChanging(global::System.Int64 value);
+        partial void OnYEAR_TRADE_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_TRADE_LOSS
+        {
+            get
+            {
+                return _YEAR_TRADE_LOSS;
+            }
+            set
+            {
+                OnYEAR_TRADE_LOSSChanging(value);
+                ReportPropertyChanging("YEAR_TRADE_LOSS");
+                _YEAR_TRADE_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_TRADE_LOSS");
+                OnYEAR_TRADE_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_TRADE_LOSS;
+        partial void OnYEAR_TRADE_LOSSChanging(global::System.Int64 value);
+        partial void OnYEAR_TRADE_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 YEAR_TR_TAX
+        {
+            get
+            {
+                return _YEAR_TR_TAX;
+            }
+            set
+            {
+                OnYEAR_TR_TAXChanging(value);
+                ReportPropertyChanging("YEAR_TR_TAX");
+                _YEAR_TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_TR_TAX");
+                OnYEAR_TR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _YEAR_TR_TAX;
+        partial void OnYEAR_TR_TAXChanging(global::System.Int32 value);
+        partial void OnYEAR_TR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_BUY_QTY
+        {
+            get
+            {
+                return _YEAR_BUY_QTY;
+            }
+            set
+            {
+                OnYEAR_BUY_QTYChanging(value);
+                ReportPropertyChanging("YEAR_BUY_QTY");
+                _YEAR_BUY_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_BUY_QTY");
+                OnYEAR_BUY_QTYChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_BUY_QTY;
+        partial void OnYEAR_BUY_QTYChanging(global::System.Int64 value);
+        partial void OnYEAR_BUY_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_BUY_AMT
+        {
+            get
+            {
+                return _YEAR_BUY_AMT;
+            }
+            set
+            {
+                OnYEAR_BUY_AMTChanging(value);
+                ReportPropertyChanging("YEAR_BUY_AMT");
+                _YEAR_BUY_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_BUY_AMT");
+                OnYEAR_BUY_AMTChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_BUY_AMT;
+        partial void OnYEAR_BUY_AMTChanging(global::System.Int64 value);
+        partial void OnYEAR_BUY_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_SALE_QTY
+        {
+            get
+            {
+                return _YEAR_SALE_QTY;
+            }
+            set
+            {
+                OnYEAR_SALE_QTYChanging(value);
+                ReportPropertyChanging("YEAR_SALE_QTY");
+                _YEAR_SALE_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_SALE_QTY");
+                OnYEAR_SALE_QTYChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_SALE_QTY;
+        partial void OnYEAR_SALE_QTYChanging(global::System.Int64 value);
+        partial void OnYEAR_SALE_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YEAR_SALE_AMT
+        {
+            get
+            {
+                return _YEAR_SALE_AMT;
+            }
+            set
+            {
+                OnYEAR_SALE_AMTChanging(value);
+                ReportPropertyChanging("YEAR_SALE_AMT");
+                _YEAR_SALE_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YEAR_SALE_AMT");
+                OnYEAR_SALE_AMTChanged();
+            }
+        }
+        private global::System.Int64 _YEAR_SALE_AMT;
+        partial void OnYEAR_SALE_AMTChanging(global::System.Int64 value);
+        partial void OnYEAR_SALE_AMTChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_DARTS_POSITION")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_DARTS_POSITION : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_DARTS_POSITION 개체를 만듭니다.
+        /// </summary>
+        /// <param name="tRADE_DATE">TRADE_DATE 속성의 초기 값입니다.</param>
+        /// <param name="fUND_NM">FUND_NM 속성의 초기 값입니다.</param>
+        /// <param name="cRDR_SECT">CRDR_SECT 속성의 초기 값입니다.</param>
+        /// <param name="sTANDARD_ITEM_CD">STANDARD_ITEM_CD 속성의 초기 값입니다.</param>
+        /// <param name="iTEM_SECT">ITEM_SECT 속성의 초기 값입니다.</param>
+        /// <param name="uNIT_AMT">UNIT_AMT 속성의 초기 값입니다.</param>
+        /// <param name="bALAN_SECT">BALAN_SECT 속성의 초기 값입니다.</param>
+        /// <param name="bLQTY">BLQTY 속성의 초기 값입니다.</param>
+        /// <param name="bLAMT">BLAMT 속성의 초기 값입니다.</param>
+        /// <param name="bUY_QTY">BUY_QTY 속성의 초기 값입니다.</param>
+        /// <param name="bUY_AMT">BUY_AMT 속성의 초기 값입니다.</param>
+        /// <param name="sALE_QTY">SALE_QTY 속성의 초기 값입니다.</param>
+        /// <param name="sALE_AMT">SALE_AMT 속성의 초기 값입니다.</param>
+        /// <param name="bUY_UNCONCLSN_QTY">BUY_UNCONCLSN_QTY 속성의 초기 값입니다.</param>
+        /// <param name="bUY_UNCONCLSN_AMT">BUY_UNCONCLSN_AMT 속성의 초기 값입니다.</param>
+        /// <param name="sALE_UNCONCLSN_QTY">SALE_UNCONCLSN_QTY 속성의 초기 값입니다.</param>
+        /// <param name="sALE_UNCONCLSN_AMT">SALE_UNCONCLSN_AMT 속성의 초기 값입니다.</param>
+        /// <param name="yDAY_BALAN_SECT">YDAY_BALAN_SECT 속성의 초기 값입니다.</param>
+        /// <param name="yDAY_BLQTY">YDAY_BLQTY 속성의 초기 값입니다.</param>
+        /// <param name="yDAY_BLAMT">YDAY_BLAMT 속성의 초기 값입니다.</param>
+        /// <param name="bOOK_AMT">BOOK_AMT 속성의 초기 값입니다.</param>
+        /// <param name="tRADE_GAIN">TRADE_GAIN 속성의 초기 값입니다.</param>
+        /// <param name="tRADE_LOSS">TRADE_LOSS 속성의 초기 값입니다.</param>
+        /// <param name="tR_TAX">TR_TAX 속성의 초기 값입니다.</param>
+        /// <param name="aCNT_NO">ACNT_NO 속성의 초기 값입니다.</param>
+        public static NGOS_DARTS_POSITION CreateNGOS_DARTS_POSITION(global::System.String tRADE_DATE, global::System.String fUND_NM, global::System.String cRDR_SECT, global::System.String sTANDARD_ITEM_CD, global::System.String iTEM_SECT, global::System.Int32 uNIT_AMT, global::System.String bALAN_SECT, global::System.Int32 bLQTY, global::System.Int64 bLAMT, global::System.Int32 bUY_QTY, global::System.Int64 bUY_AMT, global::System.Int32 sALE_QTY, global::System.Int64 sALE_AMT, global::System.Int32 bUY_UNCONCLSN_QTY, global::System.Int64 bUY_UNCONCLSN_AMT, global::System.Int32 sALE_UNCONCLSN_QTY, global::System.Int64 sALE_UNCONCLSN_AMT, global::System.String yDAY_BALAN_SECT, global::System.Int32 yDAY_BLQTY, global::System.Int64 yDAY_BLAMT, global::System.Int64 bOOK_AMT, global::System.Int64 tRADE_GAIN, global::System.Int64 tRADE_LOSS, global::System.Int32 tR_TAX, global::System.Int64 aCNT_NO)
+        {
+            NGOS_DARTS_POSITION nGOS_DARTS_POSITION = new NGOS_DARTS_POSITION();
+            nGOS_DARTS_POSITION.TRADE_DATE = tRADE_DATE;
+            nGOS_DARTS_POSITION.FUND_NM = fUND_NM;
+            nGOS_DARTS_POSITION.CRDR_SECT = cRDR_SECT;
+            nGOS_DARTS_POSITION.STANDARD_ITEM_CD = sTANDARD_ITEM_CD;
+            nGOS_DARTS_POSITION.ITEM_SECT = iTEM_SECT;
+            nGOS_DARTS_POSITION.UNIT_AMT = uNIT_AMT;
+            nGOS_DARTS_POSITION.BALAN_SECT = bALAN_SECT;
+            nGOS_DARTS_POSITION.BLQTY = bLQTY;
+            nGOS_DARTS_POSITION.BLAMT = bLAMT;
+            nGOS_DARTS_POSITION.BUY_QTY = bUY_QTY;
+            nGOS_DARTS_POSITION.BUY_AMT = bUY_AMT;
+            nGOS_DARTS_POSITION.SALE_QTY = sALE_QTY;
+            nGOS_DARTS_POSITION.SALE_AMT = sALE_AMT;
+            nGOS_DARTS_POSITION.BUY_UNCONCLSN_QTY = bUY_UNCONCLSN_QTY;
+            nGOS_DARTS_POSITION.BUY_UNCONCLSN_AMT = bUY_UNCONCLSN_AMT;
+            nGOS_DARTS_POSITION.SALE_UNCONCLSN_QTY = sALE_UNCONCLSN_QTY;
+            nGOS_DARTS_POSITION.SALE_UNCONCLSN_AMT = sALE_UNCONCLSN_AMT;
+            nGOS_DARTS_POSITION.YDAY_BALAN_SECT = yDAY_BALAN_SECT;
+            nGOS_DARTS_POSITION.YDAY_BLQTY = yDAY_BLQTY;
+            nGOS_DARTS_POSITION.YDAY_BLAMT = yDAY_BLAMT;
+            nGOS_DARTS_POSITION.BOOK_AMT = bOOK_AMT;
+            nGOS_DARTS_POSITION.TRADE_GAIN = tRADE_GAIN;
+            nGOS_DARTS_POSITION.TRADE_LOSS = tRADE_LOSS;
+            nGOS_DARTS_POSITION.TR_TAX = tR_TAX;
+            nGOS_DARTS_POSITION.ACNT_NO = aCNT_NO;
+            return nGOS_DARTS_POSITION;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String TRADE_DATE
+        {
+            get
+            {
+                return _TRADE_DATE;
+            }
+            set
+            {
+                if (_TRADE_DATE != value)
+                {
+                    OnTRADE_DATEChanging(value);
+                    ReportPropertyChanging("TRADE_DATE");
+                    _TRADE_DATE = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("TRADE_DATE");
+                    OnTRADE_DATEChanged();
+                }
+            }
+        }
+        private global::System.String _TRADE_DATE;
+        partial void OnTRADE_DATEChanging(global::System.String value);
+        partial void OnTRADE_DATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String FUND_NM
+        {
+            get
+            {
+                return _FUND_NM;
+            }
+            set
+            {
+                if (_FUND_NM != value)
+                {
+                    OnFUND_NMChanging(value);
+                    ReportPropertyChanging("FUND_NM");
+                    _FUND_NM = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("FUND_NM");
+                    OnFUND_NMChanged();
+                }
+            }
+        }
+        private global::System.String _FUND_NM;
+        partial void OnFUND_NMChanging(global::System.String value);
+        partial void OnFUND_NMChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String CRDR_SECT
+        {
+            get
+            {
+                return _CRDR_SECT;
+            }
+            set
+            {
+                if (_CRDR_SECT != value)
+                {
+                    OnCRDR_SECTChanging(value);
+                    ReportPropertyChanging("CRDR_SECT");
+                    _CRDR_SECT = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("CRDR_SECT");
+                    OnCRDR_SECTChanged();
+                }
+            }
+        }
+        private global::System.String _CRDR_SECT;
+        partial void OnCRDR_SECTChanging(global::System.String value);
+        partial void OnCRDR_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String STANDARD_ITEM_CD
+        {
+            get
+            {
+                return _STANDARD_ITEM_CD;
+            }
+            set
+            {
+                if (_STANDARD_ITEM_CD != value)
+                {
+                    OnSTANDARD_ITEM_CDChanging(value);
+                    ReportPropertyChanging("STANDARD_ITEM_CD");
+                    _STANDARD_ITEM_CD = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("STANDARD_ITEM_CD");
+                    OnSTANDARD_ITEM_CDChanged();
+                }
+            }
+        }
+        private global::System.String _STANDARD_ITEM_CD;
+        partial void OnSTANDARD_ITEM_CDChanging(global::System.String value);
+        partial void OnSTANDARD_ITEM_CDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String ITEM_SECT
+        {
+            get
+            {
+                return _ITEM_SECT;
+            }
+            set
+            {
+                OnITEM_SECTChanging(value);
+                ReportPropertyChanging("ITEM_SECT");
+                _ITEM_SECT = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("ITEM_SECT");
+                OnITEM_SECTChanged();
+            }
+        }
+        private global::System.String _ITEM_SECT;
+        partial void OnITEM_SECTChanging(global::System.String value);
+        partial void OnITEM_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 UNIT_AMT
+        {
+            get
+            {
+                return _UNIT_AMT;
+            }
+            set
+            {
+                OnUNIT_AMTChanging(value);
+                ReportPropertyChanging("UNIT_AMT");
+                _UNIT_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UNIT_AMT");
+                OnUNIT_AMTChanged();
+            }
+        }
+        private global::System.Int32 _UNIT_AMT;
+        partial void OnUNIT_AMTChanging(global::System.Int32 value);
+        partial void OnUNIT_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String BALAN_SECT
+        {
+            get
+            {
+                return _BALAN_SECT;
+            }
+            set
+            {
+                OnBALAN_SECTChanging(value);
+                ReportPropertyChanging("BALAN_SECT");
+                _BALAN_SECT = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("BALAN_SECT");
+                OnBALAN_SECTChanged();
+            }
+        }
+        private global::System.String _BALAN_SECT;
+        partial void OnBALAN_SECTChanging(global::System.String value);
+        partial void OnBALAN_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 BLQTY
+        {
+            get
+            {
+                return _BLQTY;
+            }
+            set
+            {
+                OnBLQTYChanging(value);
+                ReportPropertyChanging("BLQTY");
+                _BLQTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BLQTY");
+                OnBLQTYChanged();
+            }
+        }
+        private global::System.Int32 _BLQTY;
+        partial void OnBLQTYChanging(global::System.Int32 value);
+        partial void OnBLQTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BLAMT
+        {
+            get
+            {
+                return _BLAMT;
+            }
+            set
+            {
+                OnBLAMTChanging(value);
+                ReportPropertyChanging("BLAMT");
+                _BLAMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BLAMT");
+                OnBLAMTChanged();
+            }
+        }
+        private global::System.Int64 _BLAMT;
+        partial void OnBLAMTChanging(global::System.Int64 value);
+        partial void OnBLAMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 BUY_QTY
+        {
+            get
+            {
+                return _BUY_QTY;
+            }
+            set
+            {
+                OnBUY_QTYChanging(value);
+                ReportPropertyChanging("BUY_QTY");
+                _BUY_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_QTY");
+                OnBUY_QTYChanged();
+            }
+        }
+        private global::System.Int32 _BUY_QTY;
+        partial void OnBUY_QTYChanging(global::System.Int32 value);
+        partial void OnBUY_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BUY_AMT
+        {
+            get
+            {
+                return _BUY_AMT;
+            }
+            set
+            {
+                OnBUY_AMTChanging(value);
+                ReportPropertyChanging("BUY_AMT");
+                _BUY_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_AMT");
+                OnBUY_AMTChanged();
+            }
+        }
+        private global::System.Int64 _BUY_AMT;
+        partial void OnBUY_AMTChanging(global::System.Int64 value);
+        partial void OnBUY_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 SALE_QTY
+        {
+            get
+            {
+                return _SALE_QTY;
+            }
+            set
+            {
+                OnSALE_QTYChanging(value);
+                ReportPropertyChanging("SALE_QTY");
+                _SALE_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_QTY");
+                OnSALE_QTYChanged();
+            }
+        }
+        private global::System.Int32 _SALE_QTY;
+        partial void OnSALE_QTYChanging(global::System.Int32 value);
+        partial void OnSALE_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 SALE_AMT
+        {
+            get
+            {
+                return _SALE_AMT;
+            }
+            set
+            {
+                OnSALE_AMTChanging(value);
+                ReportPropertyChanging("SALE_AMT");
+                _SALE_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_AMT");
+                OnSALE_AMTChanged();
+            }
+        }
+        private global::System.Int64 _SALE_AMT;
+        partial void OnSALE_AMTChanging(global::System.Int64 value);
+        partial void OnSALE_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 BUY_UNCONCLSN_QTY
+        {
+            get
+            {
+                return _BUY_UNCONCLSN_QTY;
+            }
+            set
+            {
+                OnBUY_UNCONCLSN_QTYChanging(value);
+                ReportPropertyChanging("BUY_UNCONCLSN_QTY");
+                _BUY_UNCONCLSN_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_UNCONCLSN_QTY");
+                OnBUY_UNCONCLSN_QTYChanged();
+            }
+        }
+        private global::System.Int32 _BUY_UNCONCLSN_QTY;
+        partial void OnBUY_UNCONCLSN_QTYChanging(global::System.Int32 value);
+        partial void OnBUY_UNCONCLSN_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BUY_UNCONCLSN_AMT
+        {
+            get
+            {
+                return _BUY_UNCONCLSN_AMT;
+            }
+            set
+            {
+                OnBUY_UNCONCLSN_AMTChanging(value);
+                ReportPropertyChanging("BUY_UNCONCLSN_AMT");
+                _BUY_UNCONCLSN_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BUY_UNCONCLSN_AMT");
+                OnBUY_UNCONCLSN_AMTChanged();
+            }
+        }
+        private global::System.Int64 _BUY_UNCONCLSN_AMT;
+        partial void OnBUY_UNCONCLSN_AMTChanging(global::System.Int64 value);
+        partial void OnBUY_UNCONCLSN_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 SALE_UNCONCLSN_QTY
+        {
+            get
+            {
+                return _SALE_UNCONCLSN_QTY;
+            }
+            set
+            {
+                OnSALE_UNCONCLSN_QTYChanging(value);
+                ReportPropertyChanging("SALE_UNCONCLSN_QTY");
+                _SALE_UNCONCLSN_QTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_UNCONCLSN_QTY");
+                OnSALE_UNCONCLSN_QTYChanged();
+            }
+        }
+        private global::System.Int32 _SALE_UNCONCLSN_QTY;
+        partial void OnSALE_UNCONCLSN_QTYChanging(global::System.Int32 value);
+        partial void OnSALE_UNCONCLSN_QTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 SALE_UNCONCLSN_AMT
+        {
+            get
+            {
+                return _SALE_UNCONCLSN_AMT;
+            }
+            set
+            {
+                OnSALE_UNCONCLSN_AMTChanging(value);
+                ReportPropertyChanging("SALE_UNCONCLSN_AMT");
+                _SALE_UNCONCLSN_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALE_UNCONCLSN_AMT");
+                OnSALE_UNCONCLSN_AMTChanged();
+            }
+        }
+        private global::System.Int64 _SALE_UNCONCLSN_AMT;
+        partial void OnSALE_UNCONCLSN_AMTChanging(global::System.Int64 value);
+        partial void OnSALE_UNCONCLSN_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String YDAY_BALAN_SECT
+        {
+            get
+            {
+                return _YDAY_BALAN_SECT;
+            }
+            set
+            {
+                OnYDAY_BALAN_SECTChanging(value);
+                ReportPropertyChanging("YDAY_BALAN_SECT");
+                _YDAY_BALAN_SECT = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("YDAY_BALAN_SECT");
+                OnYDAY_BALAN_SECTChanged();
+            }
+        }
+        private global::System.String _YDAY_BALAN_SECT;
+        partial void OnYDAY_BALAN_SECTChanging(global::System.String value);
+        partial void OnYDAY_BALAN_SECTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 YDAY_BLQTY
+        {
+            get
+            {
+                return _YDAY_BLQTY;
+            }
+            set
+            {
+                OnYDAY_BLQTYChanging(value);
+                ReportPropertyChanging("YDAY_BLQTY");
+                _YDAY_BLQTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YDAY_BLQTY");
+                OnYDAY_BLQTYChanged();
+            }
+        }
+        private global::System.Int32 _YDAY_BLQTY;
+        partial void OnYDAY_BLQTYChanging(global::System.Int32 value);
+        partial void OnYDAY_BLQTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 YDAY_BLAMT
+        {
+            get
+            {
+                return _YDAY_BLAMT;
+            }
+            set
+            {
+                OnYDAY_BLAMTChanging(value);
+                ReportPropertyChanging("YDAY_BLAMT");
+                _YDAY_BLAMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YDAY_BLAMT");
+                OnYDAY_BLAMTChanged();
+            }
+        }
+        private global::System.Int64 _YDAY_BLAMT;
+        partial void OnYDAY_BLAMTChanging(global::System.Int64 value);
+        partial void OnYDAY_BLAMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 BOOK_AMT
+        {
+            get
+            {
+                return _BOOK_AMT;
+            }
+            set
+            {
+                OnBOOK_AMTChanging(value);
+                ReportPropertyChanging("BOOK_AMT");
+                _BOOK_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BOOK_AMT");
+                OnBOOK_AMTChanged();
+            }
+        }
+        private global::System.Int64 _BOOK_AMT;
+        partial void OnBOOK_AMTChanging(global::System.Int64 value);
+        partial void OnBOOK_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 TRADE_GAIN
+        {
+            get
+            {
+                return _TRADE_GAIN;
+            }
+            set
+            {
+                OnTRADE_GAINChanging(value);
+                ReportPropertyChanging("TRADE_GAIN");
+                _TRADE_GAIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRADE_GAIN");
+                OnTRADE_GAINChanged();
+            }
+        }
+        private global::System.Int64 _TRADE_GAIN;
+        partial void OnTRADE_GAINChanging(global::System.Int64 value);
+        partial void OnTRADE_GAINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 TRADE_LOSS
+        {
+            get
+            {
+                return _TRADE_LOSS;
+            }
+            set
+            {
+                OnTRADE_LOSSChanging(value);
+                ReportPropertyChanging("TRADE_LOSS");
+                _TRADE_LOSS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRADE_LOSS");
+                OnTRADE_LOSSChanged();
+            }
+        }
+        private global::System.Int64 _TRADE_LOSS;
+        partial void OnTRADE_LOSSChanging(global::System.Int64 value);
+        partial void OnTRADE_LOSSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 TR_TAX
+        {
+            get
+            {
+                return _TR_TAX;
+            }
+            set
+            {
+                OnTR_TAXChanging(value);
+                ReportPropertyChanging("TR_TAX");
+                _TR_TAX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TR_TAX");
+                OnTR_TAXChanged();
+            }
+        }
+        private global::System.Int32 _TR_TAX;
+        partial void OnTR_TAXChanging(global::System.Int32 value);
+        partial void OnTR_TAXChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 ACNT_NO
+        {
+            get
+            {
+                return _ACNT_NO;
+            }
+            set
+            {
+                if (_ACNT_NO != value)
+                {
+                    OnACNT_NOChanging(value);
+                    ReportPropertyChanging("ACNT_NO");
+                    _ACNT_NO = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ACNT_NO");
+                    OnACNT_NOChanged();
+                }
+            }
+        }
+        private global::System.Int64 _ACNT_NO;
+        partial void OnACNT_NOChanging(global::System.Int64 value);
+        partial void OnACNT_NOChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_DIVD_ESTIMATE")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_DIVD_ESTIMATE : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_DIVD_ESTIMATE 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="dIVD_ID">DIVD_ID 속성의 초기 값입니다.</param>
+        public static NGOS_DIVD_ESTIMATE CreateNGOS_DIVD_ESTIMATE(global::System.Int32 id, global::System.Int32 dIVD_ID)
+        {
+            NGOS_DIVD_ESTIMATE nGOS_DIVD_ESTIMATE = new NGOS_DIVD_ESTIMATE();
+            nGOS_DIVD_ESTIMATE.ID = id;
+            nGOS_DIVD_ESTIMATE.DIVD_ID = dIVD_ID;
+            return nGOS_DIVD_ESTIMATE;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CURRID
+        {
+            get
+            {
+                return _CURRID;
+            }
+            set
+            {
+                OnCURRIDChanging(value);
+                ReportPropertyChanging("CURRID");
+                _CURRID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURRID");
+                OnCURRIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CURRID;
+        partial void OnCURRIDChanging(Nullable<global::System.Int32> value);
+        partial void OnCURRIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DAY
+        {
+            get
+            {
+                return _DAY;
+            }
+            set
+            {
+                OnDAYChanging(value);
+                ReportPropertyChanging("DAY");
+                _DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DAY");
+                OnDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DAY;
+        partial void OnDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String DESCRIPTION
+        {
+            get
+            {
+                return _DESCRIPTION;
+            }
+            set
+            {
+                OnDESCRIPTIONChanging(value);
+                ReportPropertyChanging("DESCRIPTION");
+                _DESCRIPTION = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DESCRIPTION");
+                OnDESCRIPTIONChanged();
+            }
+        }
+        private global::System.String _DESCRIPTION;
+        partial void OnDESCRIPTIONChanging(global::System.String value);
+        partial void OnDESCRIPTIONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 DIVD_ID
+        {
+            get
+            {
+                return _DIVD_ID;
+            }
+            set
+            {
+                OnDIVD_IDChanging(value);
+                ReportPropertyChanging("DIVD_ID");
+                _DIVD_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DIVD_ID");
+                OnDIVD_IDChanged();
+            }
+        }
+        private global::System.Int32 _DIVD_ID;
+        partial void OnDIVD_IDChanging(global::System.Int32 value);
+        partial void OnDIVD_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> EX_DIV_DAY
+        {
+            get
+            {
+                return _EX_DIV_DAY;
+            }
+            set
+            {
+                OnEX_DIV_DAYChanging(value);
+                ReportPropertyChanging("EX_DIV_DAY");
+                _EX_DIV_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EX_DIV_DAY");
+                OnEX_DIV_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _EX_DIV_DAY;
+        partial void OnEX_DIV_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnEX_DIV_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> PAY_DAY
+        {
+            get
+            {
+                return _PAY_DAY;
+            }
+            set
+            {
+                OnPAY_DAYChanging(value);
+                ReportPropertyChanging("PAY_DAY");
+                _PAY_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PAY_DAY");
+                OnPAY_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _PAY_DAY;
+        partial void OnPAY_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnPAY_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> VALUE
+        {
+            get
+            {
+                return _VALUE;
+            }
+            set
+            {
+                OnVALUEChanging(value);
+                ReportPropertyChanging("VALUE");
+                _VALUE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VALUE");
+                OnVALUEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _VALUE;
+        partial void OnVALUEChanging(Nullable<global::System.Decimal> value);
+        partial void OnVALUEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TAX_FACTOR
+        {
+            get
+            {
+                return _TAX_FACTOR;
+            }
+            set
+            {
+                OnTAX_FACTORChanging(value);
+                ReportPropertyChanging("TAX_FACTOR");
+                _TAX_FACTOR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TAX_FACTOR");
+                OnTAX_FACTORChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TAX_FACTOR;
+        partial void OnTAX_FACTORChanging(Nullable<global::System.Decimal> value);
+        partial void OnTAX_FACTORChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_DIVD_STREAM")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_DIVD_STREAM : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_DIVD_STREAM 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_DIVD_STREAM CreateNGOS_DIVD_STREAM(global::System.Int32 id)
+        {
+            NGOS_DIVD_STREAM nGOS_DIVD_STREAM = new NGOS_DIVD_STREAM();
+            nGOS_DIVD_STREAM.ID = id;
+            return nGOS_DIVD_STREAM;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> ADJ_FACTOR
+        {
+            get
+            {
+                return _ADJ_FACTOR;
+            }
+            set
+            {
+                OnADJ_FACTORChanging(value);
+                ReportPropertyChanging("ADJ_FACTOR");
+                _ADJ_FACTOR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ADJ_FACTOR");
+                OnADJ_FACTORChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _ADJ_FACTOR;
+        partial void OnADJ_FACTORChanging(Nullable<global::System.Decimal> value);
+        partial void OnADJ_FACTORChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> ANNUAL_GROWTH
+        {
+            get
+            {
+                return _ANNUAL_GROWTH;
+            }
+            set
+            {
+                OnANNUAL_GROWTHChanging(value);
+                ReportPropertyChanging("ANNUAL_GROWTH");
+                _ANNUAL_GROWTH = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ANNUAL_GROWTH");
+                OnANNUAL_GROWTHChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _ANNUAL_GROWTH;
+        partial void OnANNUAL_GROWTHChanging(Nullable<global::System.Decimal> value);
+        partial void OnANNUAL_GROWTHChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ORG_DIVDID
+        {
+            get
+            {
+                return _ORG_DIVDID;
+            }
+            set
+            {
+                OnORG_DIVDIDChanging(value);
+                ReportPropertyChanging("ORG_DIVDID");
+                _ORG_DIVDID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ORG_DIVDID");
+                OnORG_DIVDIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ORG_DIVDID;
+        partial void OnORG_DIVDIDChanging(Nullable<global::System.Int32> value);
+        partial void OnORG_DIVDIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DATE_FROM
+        {
+            get
+            {
+                return _DATE_FROM;
+            }
+            set
+            {
+                OnDATE_FROMChanging(value);
+                ReportPropertyChanging("DATE_FROM");
+                _DATE_FROM = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DATE_FROM");
+                OnDATE_FROMChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DATE_FROM;
+        partial void OnDATE_FROMChanging(Nullable<global::System.DateTime> value);
+        partial void OnDATE_FROMChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DATE_TO
+        {
+            get
+            {
+                return _DATE_TO;
+            }
+            set
+            {
+                OnDATE_TOChanging(value);
+                ReportPropertyChanging("DATE_TO");
+                _DATE_TO = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DATE_TO");
+                OnDATE_TOChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DATE_TO;
+        partial void OnDATE_TOChanging(Nullable<global::System.DateTime> value);
+        partial void OnDATE_TOChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_EXERCISE_EVENT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_EXERCISE_EVENT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_EXERCISE_EVENT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_EXERCISE_EVENT CreateNGOS_EXERCISE_EVENT(global::System.Int32 id)
+        {
+            NGOS_EXERCISE_EVENT nGOS_EXERCISE_EVENT = new NGOS_EXERCISE_EVENT();
+            nGOS_EXERCISE_EVENT.ID = id;
+            return nGOS_EXERCISE_EVENT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DAY
+        {
+            get
+            {
+                return _DAY;
+            }
+            set
+            {
+                OnDAYChanging(value);
+                ReportPropertyChanging("DAY");
+                _DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DAY");
+                OnDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DAY;
+        partial void OnDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> END_DAY
+        {
+            get
+            {
+                return _END_DAY;
+            }
+            set
+            {
+                OnEND_DAYChanging(value);
+                ReportPropertyChanging("END_DAY");
+                _END_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("END_DAY");
+                OnEND_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _END_DAY;
+        partial void OnEND_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnEND_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> EXP_TIME
+        {
+            get
+            {
+                return _EXP_TIME;
+            }
+            set
+            {
+                OnEXP_TIMEChanging(value);
+                ReportPropertyChanging("EXP_TIME");
+                _EXP_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EXP_TIME");
+                OnEXP_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _EXP_TIME;
+        partial void OnEXP_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnEXP_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PERIOD_COUNT
+        {
+            get
+            {
+                return _PERIOD_COUNT;
+            }
+            set
+            {
+                OnPERIOD_COUNTChanging(value);
+                ReportPropertyChanging("PERIOD_COUNT");
+                _PERIOD_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PERIOD_COUNT");
+                OnPERIOD_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PERIOD_COUNT;
+        partial void OnPERIOD_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnPERIOD_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PERIOD_UNIT
+        {
+            get
+            {
+                return _PERIOD_UNIT;
+            }
+            set
+            {
+                OnPERIOD_UNITChanging(value);
+                ReportPropertyChanging("PERIOD_UNIT");
+                _PERIOD_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PERIOD_UNIT");
+                OnPERIOD_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PERIOD_UNIT;
+        partial void OnPERIOD_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnPERIOD_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NOTICE_DAY
+        {
+            get
+            {
+                return _NOTICE_DAY;
+            }
+            set
+            {
+                OnNOTICE_DAYChanging(value);
+                ReportPropertyChanging("NOTICE_DAY");
+                _NOTICE_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NOTICE_DAY");
+                OnNOTICE_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NOTICE_DAY;
+        partial void OnNOTICE_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnNOTICE_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> NOTICE_COUNT
+        {
+            get
+            {
+                return _NOTICE_COUNT;
+            }
+            set
+            {
+                OnNOTICE_COUNTChanging(value);
+                ReportPropertyChanging("NOTICE_COUNT");
+                _NOTICE_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NOTICE_COUNT");
+                OnNOTICE_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _NOTICE_COUNT;
+        partial void OnNOTICE_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnNOTICE_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> NOTICE_UNIT
+        {
+            get
+            {
+                return _NOTICE_UNIT;
+            }
+            set
+            {
+                OnNOTICE_UNITChanging(value);
+                ReportPropertyChanging("NOTICE_UNIT");
+                _NOTICE_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NOTICE_UNIT");
+                OnNOTICE_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _NOTICE_UNIT;
+        partial void OnNOTICE_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnNOTICE_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> SETTLE_DAY
+        {
+            get
+            {
+                return _SETTLE_DAY;
+            }
+            set
+            {
+                OnSETTLE_DAYChanging(value);
+                ReportPropertyChanging("SETTLE_DAY");
+                _SETTLE_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SETTLE_DAY");
+                OnSETTLE_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _SETTLE_DAY;
+        partial void OnSETTLE_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnSETTLE_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SETTLE_COUNT
+        {
+            get
+            {
+                return _SETTLE_COUNT;
+            }
+            set
+            {
+                OnSETTLE_COUNTChanging(value);
+                ReportPropertyChanging("SETTLE_COUNT");
+                _SETTLE_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SETTLE_COUNT");
+                OnSETTLE_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SETTLE_COUNT;
+        partial void OnSETTLE_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnSETTLE_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SETTLE_UNIT
+        {
+            get
+            {
+                return _SETTLE_UNIT;
+            }
+            set
+            {
+                OnSETTLE_UNITChanging(value);
+                ReportPropertyChanging("SETTLE_UNIT");
+                _SETTLE_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SETTLE_UNIT");
+                OnSETTLE_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SETTLE_UNIT;
+        partial void OnSETTLE_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnSETTLE_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> START_DADY
+        {
+            get
+            {
+                return _START_DADY;
+            }
+            set
+            {
+                OnSTART_DADYChanging(value);
+                ReportPropertyChanging("START_DADY");
+                _START_DADY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("START_DADY");
+                OnSTART_DADYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _START_DADY;
+        partial void OnSTART_DADYChanging(Nullable<global::System.DateTime> value);
+        partial void OnSTART_DADYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> START_COUNT
+        {
+            get
+            {
+                return _START_COUNT;
+            }
+            set
+            {
+                OnSTART_COUNTChanging(value);
+                ReportPropertyChanging("START_COUNT");
+                _START_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("START_COUNT");
+                OnSTART_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _START_COUNT;
+        partial void OnSTART_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnSTART_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> START_UNIT
+        {
+            get
+            {
+                return _START_UNIT;
+            }
+            set
+            {
+                OnSTART_UNITChanging(value);
+                ReportPropertyChanging("START_UNIT");
+                _START_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("START_UNIT");
+                OnSTART_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _START_UNIT;
+        partial void OnSTART_UNITChanging(Nullable<global::System.Int32> value);
+        partial void OnSTART_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> STRIKE
+        {
+            get
+            {
+                return _STRIKE;
+            }
+            set
+            {
+                OnSTRIKEChanging(value);
+                ReportPropertyChanging("STRIKE");
+                _STRIKE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("STRIKE");
+                OnSTRIKEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _STRIKE;
+        partial void OnSTRIKEChanging(Nullable<global::System.Decimal> value);
+        partial void OnSTRIKEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> STRIKE2
+        {
+            get
+            {
+                return _STRIKE2;
+            }
+            set
+            {
+                OnSTRIKE2Changing(value);
+                ReportPropertyChanging("STRIKE2");
+                _STRIKE2 = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("STRIKE2");
+                OnSTRIKE2Changed();
+            }
+        }
+        private Nullable<global::System.Decimal> _STRIKE2;
+        partial void OnSTRIKE2Changing(Nullable<global::System.Decimal> value);
+        partial void OnSTRIKE2Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TEXT
+        {
+            get
+            {
+                return _TEXT;
+            }
+            set
+            {
+                OnTEXTChanging(value);
+                ReportPropertyChanging("TEXT");
+                _TEXT = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TEXT");
+                OnTEXTChanged();
+            }
+        }
+        private global::System.String _TEXT;
+        partial void OnTEXTChanging(global::System.String value);
+        partial void OnTEXTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _TYPE;
+        partial void OnTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_EXOTICEVENT")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -1800,6 +9250,528 @@ namespace MCached
         private Nullable<global::System.Decimal> _VALUE;
         partial void OnVALUEChanging(Nullable<global::System.Decimal> value);
         partial void OnVALUEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_FEEDBACK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_FEEDBACK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_FEEDBACK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_FEEDBACK CreateNGOS_FEEDBACK(global::System.Int32 id)
+        {
+            NGOS_FEEDBACK nGOS_FEEDBACK = new NGOS_FEEDBACK();
+            nGOS_FEEDBACK.ID = id;
+            return nGOS_FEEDBACK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _TYPE;
+        partial void OnTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TITLE
+        {
+            get
+            {
+                return _TITLE;
+            }
+            set
+            {
+                OnTITLEChanging(value);
+                ReportPropertyChanging("TITLE");
+                _TITLE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TITLE");
+                OnTITLEChanged();
+            }
+        }
+        private global::System.String _TITLE;
+        partial void OnTITLEChanging(global::System.String value);
+        partial void OnTITLEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CONTENT
+        {
+            get
+            {
+                return _CONTENT;
+            }
+            set
+            {
+                OnCONTENTChanging(value);
+                ReportPropertyChanging("CONTENT");
+                _CONTENT = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CONTENT");
+                OnCONTENTChanged();
+            }
+        }
+        private global::System.String _CONTENT;
+        partial void OnCONTENTChanging(global::System.String value);
+        partial void OnCONTENTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String IP
+        {
+            get
+            {
+                return _IP;
+            }
+            set
+            {
+                OnIPChanging(value);
+                ReportPropertyChanging("IP");
+                _IP = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("IP");
+                OnIPChanged();
+            }
+        }
+        private global::System.String _IP;
+        partial void OnIPChanging(global::System.String value);
+        partial void OnIPChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> RESTYPE
+        {
+            get
+            {
+                return _RESTYPE;
+            }
+            set
+            {
+                OnRESTYPEChanging(value);
+                ReportPropertyChanging("RESTYPE");
+                _RESTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RESTYPE");
+                OnRESTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _RESTYPE;
+        partial void OnRESTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnRESTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CTIME
+        {
+            get
+            {
+                return _CTIME;
+            }
+            set
+            {
+                OnCTIMEChanging(value);
+                ReportPropertyChanging("CTIME");
+                _CTIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CTIME");
+                OnCTIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CTIME;
+        partial void OnCTIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCTIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CUSER
+        {
+            get
+            {
+                return _CUSER;
+            }
+            set
+            {
+                OnCUSERChanging(value);
+                ReportPropertyChanging("CUSER");
+                _CUSER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CUSER");
+                OnCUSERChanged();
+            }
+        }
+        private global::System.String _CUSER;
+        partial void OnCUSERChanging(global::System.String value);
+        partial void OnCUSERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UTIME
+        {
+            get
+            {
+                return _UTIME;
+            }
+            set
+            {
+                OnUTIMEChanging(value);
+                ReportPropertyChanging("UTIME");
+                _UTIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UTIME");
+                OnUTIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UTIME;
+        partial void OnUTIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUTIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String UUSER
+        {
+            get
+            {
+                return _UUSER;
+            }
+            set
+            {
+                OnUUSERChanging(value);
+                ReportPropertyChanging("UUSER");
+                _UUSER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("UUSER");
+                OnUUSERChanged();
+            }
+        }
+        private global::System.String _UUSER;
+        partial void OnUUSERChanging(global::System.String value);
+        partial void OnUUSERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String RESCOMMENT
+        {
+            get
+            {
+                return _RESCOMMENT;
+            }
+            set
+            {
+                OnRESCOMMENTChanging(value);
+                ReportPropertyChanging("RESCOMMENT");
+                _RESCOMMENT = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("RESCOMMENT");
+                OnRESCOMMENTChanged();
+            }
+        }
+        private global::System.String _RESCOMMENT;
+        partial void OnRESCOMMENTChanging(global::System.String value);
+        partial void OnRESCOMMENTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String OPERATOR
+        {
+            get
+            {
+                return _OPERATOR;
+            }
+            set
+            {
+                OnOPERATORChanging(value);
+                ReportPropertyChanging("OPERATOR");
+                _OPERATOR = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("OPERATOR");
+                OnOPERATORChanged();
+            }
+        }
+        private global::System.String _OPERATOR;
+        partial void OnOPERATORChanging(global::System.String value);
+        partial void OnOPERATORChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> TARGETSTATUS
+        {
+            get
+            {
+                return _TARGETSTATUS;
+            }
+            set
+            {
+                OnTARGETSTATUSChanging(value);
+                ReportPropertyChanging("TARGETSTATUS");
+                _TARGETSTATUS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TARGETSTATUS");
+                OnTARGETSTATUSChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _TARGETSTATUS;
+        partial void OnTARGETSTATUSChanging(Nullable<global::System.Int16> value);
+        partial void OnTARGETSTATUSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> TARGETDAY
+        {
+            get
+            {
+                return _TARGETDAY;
+            }
+            set
+            {
+                OnTARGETDAYChanging(value);
+                ReportPropertyChanging("TARGETDAY");
+                _TARGETDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TARGETDAY");
+                OnTARGETDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _TARGETDAY;
+        partial void OnTARGETDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnTARGETDAYChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_FEEDBAKCOMMENT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_FEEDBAKCOMMENT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_FEEDBAKCOMMENT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="fID">FID 속성의 초기 값입니다.</param>
+        public static NGOS_FEEDBAKCOMMENT CreateNGOS_FEEDBAKCOMMENT(global::System.Int32 id, global::System.Int32 fID)
+        {
+            NGOS_FEEDBAKCOMMENT nGOS_FEEDBAKCOMMENT = new NGOS_FEEDBAKCOMMENT();
+            nGOS_FEEDBAKCOMMENT.ID = id;
+            nGOS_FEEDBAKCOMMENT.FID = fID;
+            return nGOS_FEEDBAKCOMMENT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CONTENT
+        {
+            get
+            {
+                return _CONTENT;
+            }
+            set
+            {
+                OnCONTENTChanging(value);
+                ReportPropertyChanging("CONTENT");
+                _CONTENT = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CONTENT");
+                OnCONTENTChanged();
+            }
+        }
+        private global::System.String _CONTENT;
+        partial void OnCONTENTChanging(global::System.String value);
+        partial void OnCONTENTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CTIME
+        {
+            get
+            {
+                return _CTIME;
+            }
+            set
+            {
+                OnCTIMEChanging(value);
+                ReportPropertyChanging("CTIME");
+                _CTIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CTIME");
+                OnCTIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CTIME;
+        partial void OnCTIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCTIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CUSER
+        {
+            get
+            {
+                return _CUSER;
+            }
+            set
+            {
+                OnCUSERChanging(value);
+                ReportPropertyChanging("CUSER");
+                _CUSER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CUSER");
+                OnCUSERChanged();
+            }
+        }
+        private global::System.String _CUSER;
+        partial void OnCUSERChanging(global::System.String value);
+        partial void OnCUSERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 FID
+        {
+            get
+            {
+                return _FID;
+            }
+            set
+            {
+                OnFIDChanging(value);
+                ReportPropertyChanging("FID");
+                _FID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("FID");
+                OnFIDChanged();
+            }
+        }
+        private global::System.Int32 _FID;
+        partial void OnFIDChanging(global::System.Int32 value);
+        partial void OnFIDChanged();
 
         #endregion
 
@@ -4528,6 +12500,691 @@ namespace MCached
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_MODEL_ADDINFO")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_MODEL_ADDINFO : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_MODEL_ADDINFO 개체를 만듭니다.
+        /// </summary>
+        /// <param name="eNTRY">ENTRY 속성의 초기 값입니다.</param>
+        /// <param name="fIELD_NAME">FIELD_NAME 속성의 초기 값입니다.</param>
+        public static NGOS_MODEL_ADDINFO CreateNGOS_MODEL_ADDINFO(global::System.String eNTRY, global::System.String fIELD_NAME)
+        {
+            NGOS_MODEL_ADDINFO nGOS_MODEL_ADDINFO = new NGOS_MODEL_ADDINFO();
+            nGOS_MODEL_ADDINFO.ENTRY = eNTRY;
+            nGOS_MODEL_ADDINFO.FIELD_NAME = fIELD_NAME;
+            return nGOS_MODEL_ADDINFO;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String ENTRY
+        {
+            get
+            {
+                return _ENTRY;
+            }
+            set
+            {
+                if (_ENTRY != value)
+                {
+                    OnENTRYChanging(value);
+                    ReportPropertyChanging("ENTRY");
+                    _ENTRY = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("ENTRY");
+                    OnENTRYChanged();
+                }
+            }
+        }
+        private global::System.String _ENTRY;
+        partial void OnENTRYChanging(global::System.String value);
+        partial void OnENTRYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String FIELD_NAME
+        {
+            get
+            {
+                return _FIELD_NAME;
+            }
+            set
+            {
+                if (_FIELD_NAME != value)
+                {
+                    OnFIELD_NAMEChanging(value);
+                    ReportPropertyChanging("FIELD_NAME");
+                    _FIELD_NAME = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("FIELD_NAME");
+                    OnFIELD_NAMEChanged();
+                }
+            }
+        }
+        private global::System.String _FIELD_NAME;
+        partial void OnFIELD_NAMEChanging(global::System.String value);
+        partial void OnFIELD_NAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String FIELD_DESC
+        {
+            get
+            {
+                return _FIELD_DESC;
+            }
+            set
+            {
+                OnFIELD_DESCChanging(value);
+                ReportPropertyChanging("FIELD_DESC");
+                _FIELD_DESC = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("FIELD_DESC");
+                OnFIELD_DESCChanged();
+            }
+        }
+        private global::System.String _FIELD_DESC;
+        partial void OnFIELD_DESCChanging(global::System.String value);
+        partial void OnFIELD_DESCChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                OnIDChanging(value);
+                ReportPropertyChanging("ID");
+                _ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ID");
+                OnIDChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _ID;
+        partial void OnIDChanging(Nullable<global::System.Decimal> value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String FIELD_VALUE
+        {
+            get
+            {
+                return _FIELD_VALUE;
+            }
+            set
+            {
+                OnFIELD_VALUEChanging(value);
+                ReportPropertyChanging("FIELD_VALUE");
+                _FIELD_VALUE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("FIELD_VALUE");
+                OnFIELD_VALUEChanged();
+            }
+        }
+        private global::System.String _FIELD_VALUE;
+        partial void OnFIELD_VALUEChanging(global::System.String value);
+        partial void OnFIELD_VALUEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_MODEL_LIST")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_MODEL_LIST : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_MODEL_LIST 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="nAME">NAME 속성의 초기 값입니다.</param>
+        /// <param name="uNASSET_CNT">UNASSET_CNT 속성의 초기 값입니다.</param>
+        /// <param name="dAYCNT">DAYCNT 속성의 초기 값입니다.</param>
+        /// <param name="sEQ">SEQ 속성의 초기 값입니다.</param>
+        public static NGOS_MODEL_LIST CreateNGOS_MODEL_LIST(global::System.String id, global::System.String nAME, global::System.Int16 uNASSET_CNT, global::System.Int16 dAYCNT, global::System.Int16 sEQ)
+        {
+            NGOS_MODEL_LIST nGOS_MODEL_LIST = new NGOS_MODEL_LIST();
+            nGOS_MODEL_LIST.ID = id;
+            nGOS_MODEL_LIST.NAME = nAME;
+            nGOS_MODEL_LIST.UNASSET_CNT = uNASSET_CNT;
+            nGOS_MODEL_LIST.DAYCNT = dAYCNT;
+            nGOS_MODEL_LIST.SEQ = sEQ;
+            return nGOS_MODEL_LIST;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.String _ID;
+        partial void OnIDChanging(global::System.String value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 UNASSET_CNT
+        {
+            get
+            {
+                return _UNASSET_CNT;
+            }
+            set
+            {
+                OnUNASSET_CNTChanging(value);
+                ReportPropertyChanging("UNASSET_CNT");
+                _UNASSET_CNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UNASSET_CNT");
+                OnUNASSET_CNTChanged();
+            }
+        }
+        private global::System.Int16 _UNASSET_CNT;
+        partial void OnUNASSET_CNTChanging(global::System.Int16 value);
+        partial void OnUNASSET_CNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 DAYCNT
+        {
+            get
+            {
+                return _DAYCNT;
+            }
+            set
+            {
+                OnDAYCNTChanging(value);
+                ReportPropertyChanging("DAYCNT");
+                _DAYCNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DAYCNT");
+                OnDAYCNTChanged();
+            }
+        }
+        private global::System.Int16 _DAYCNT;
+        partial void OnDAYCNTChanging(global::System.Int16 value);
+        partial void OnDAYCNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MDL_GRP
+        {
+            get
+            {
+                return _MDL_GRP;
+            }
+            set
+            {
+                OnMDL_GRPChanging(value);
+                ReportPropertyChanging("MDL_GRP");
+                _MDL_GRP = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MDL_GRP");
+                OnMDL_GRPChanged();
+            }
+        }
+        private global::System.String _MDL_GRP;
+        partial void OnMDL_GRPChanging(global::System.String value);
+        partial void OnMDL_GRPChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String LBARRIER
+        {
+            get
+            {
+                return _LBARRIER;
+            }
+            set
+            {
+                OnLBARRIERChanging(value);
+                ReportPropertyChanging("LBARRIER");
+                _LBARRIER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("LBARRIER");
+                OnLBARRIERChanged();
+            }
+        }
+        private global::System.String _LBARRIER;
+        partial void OnLBARRIERChanging(global::System.String value);
+        partial void OnLBARRIERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String UBARRIER
+        {
+            get
+            {
+                return _UBARRIER;
+            }
+            set
+            {
+                OnUBARRIERChanging(value);
+                ReportPropertyChanging("UBARRIER");
+                _UBARRIER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("UBARRIER");
+                OnUBARRIERChanged();
+            }
+        }
+        private global::System.String _UBARRIER;
+        partial void OnUBARRIERChanging(global::System.String value);
+        partial void OnUBARRIERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CBARRIER
+        {
+            get
+            {
+                return _CBARRIER;
+            }
+            set
+            {
+                OnCBARRIERChanging(value);
+                ReportPropertyChanging("CBARRIER");
+                _CBARRIER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CBARRIER");
+                OnCBARRIERChanged();
+            }
+        }
+        private global::System.String _CBARRIER;
+        partial void OnCBARRIERChanging(global::System.String value);
+        partial void OnCBARRIERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CLIQUET
+        {
+            get
+            {
+                return _CLIQUET;
+            }
+            set
+            {
+                OnCLIQUETChanging(value);
+                ReportPropertyChanging("CLIQUET");
+                _CLIQUET = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CLIQUET");
+                OnCLIQUETChanged();
+            }
+        }
+        private global::System.String _CLIQUET;
+        partial void OnCLIQUETChanging(global::System.String value);
+        partial void OnCLIQUETChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 SEQ
+        {
+            get
+            {
+                return _SEQ;
+            }
+            set
+            {
+                OnSEQChanging(value);
+                ReportPropertyChanging("SEQ");
+                _SEQ = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SEQ");
+                OnSEQChanged();
+            }
+        }
+        private global::System.Int16 _SEQ;
+        partial void OnSEQChanging(global::System.Int16 value);
+        partial void OnSEQChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_MODELCTLDATA")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_MODELCTLDATA : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_MODELCTLDATA 개체를 만듭니다.
+        /// </summary>
+        /// <param name="mODELCODE">MODELCODE 속성의 초기 값입니다.</param>
+        public static NGOS_MODELCTLDATA CreateNGOS_MODELCTLDATA(global::System.String mODELCODE)
+        {
+            NGOS_MODELCTLDATA nGOS_MODELCTLDATA = new NGOS_MODELCTLDATA();
+            nGOS_MODELCTLDATA.MODELCODE = mODELCODE;
+            return nGOS_MODELCTLDATA;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MODELCODE
+        {
+            get
+            {
+                return _MODELCODE;
+            }
+            set
+            {
+                if (_MODELCODE != value)
+                {
+                    OnMODELCODEChanging(value);
+                    ReportPropertyChanging("MODELCODE");
+                    _MODELCODE = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MODELCODE");
+                    OnMODELCODEChanged();
+                }
+            }
+        }
+        private global::System.String _MODELCODE;
+        partial void OnMODELCODEChanging(global::System.String value);
+        partial void OnMODELCODEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MODELNAME
+        {
+            get
+            {
+                return _MODELNAME;
+            }
+            set
+            {
+                OnMODELNAMEChanging(value);
+                ReportPropertyChanging("MODELNAME");
+                _MODELNAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MODELNAME");
+                OnMODELNAMEChanged();
+            }
+        }
+        private global::System.String _MODELNAME;
+        partial void OnMODELNAMEChanging(global::System.String value);
+        partial void OnMODELNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> MODELTYPE
+        {
+            get
+            {
+                return _MODELTYPE;
+            }
+            set
+            {
+                OnMODELTYPEChanging(value);
+                ReportPropertyChanging("MODELTYPE");
+                _MODELTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MODELTYPE");
+                OnMODELTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _MODELTYPE;
+        partial void OnMODELTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnMODELTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> DUMMYCPN
+        {
+            get
+            {
+                return _DUMMYCPN;
+            }
+            set
+            {
+                OnDUMMYCPNChanging(value);
+                ReportPropertyChanging("DUMMYCPN");
+                _DUMMYCPN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DUMMYCPN");
+                OnDUMMYCPNChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _DUMMYCPN;
+        partial void OnDUMMYCPNChanging(Nullable<global::System.Int16> value);
+        partial void OnDUMMYCPNChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CLOSEDELTAFLAG
+        {
+            get
+            {
+                return _CLOSEDELTAFLAG;
+            }
+            set
+            {
+                OnCLOSEDELTAFLAGChanging(value);
+                ReportPropertyChanging("CLOSEDELTAFLAG");
+                _CLOSEDELTAFLAG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CLOSEDELTAFLAG");
+                OnCLOSEDELTAFLAGChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CLOSEDELTAFLAG;
+        partial void OnCLOSEDELTAFLAGChanging(Nullable<global::System.Int16> value);
+        partial void OnCLOSEDELTAFLAGChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CALCTYPE
+        {
+            get
+            {
+                return _CALCTYPE;
+            }
+            set
+            {
+                OnCALCTYPEChanging(value);
+                ReportPropertyChanging("CALCTYPE");
+                _CALCTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CALCTYPE");
+                OnCALCTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CALCTYPE;
+        partial void OnCALCTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnCALCTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> SPREADFLAG
+        {
+            get
+            {
+                return _SPREADFLAG;
+            }
+            set
+            {
+                OnSPREADFLAGChanging(value);
+                ReportPropertyChanging("SPREADFLAG");
+                _SPREADFLAG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SPREADFLAG");
+                OnSPREADFLAGChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _SPREADFLAG;
+        partial void OnSPREADFLAGChanging(Nullable<global::System.Int16> value);
+        partial void OnSPREADFLAGChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> SPREADRATE
+        {
+            get
+            {
+                return _SPREADRATE;
+            }
+            set
+            {
+                OnSPREADRATEChanging(value);
+                ReportPropertyChanging("SPREADRATE");
+                _SPREADRATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SPREADRATE");
+                OnSPREADRATEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _SPREADRATE;
+        partial void OnSPREADRATEChanging(Nullable<global::System.Decimal> value);
+        partial void OnSPREADRATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> MODELSTATUS
+        {
+            get
+            {
+                return _MODELSTATUS;
+            }
+            set
+            {
+                OnMODELSTATUSChanging(value);
+                ReportPropertyChanging("MODELSTATUS");
+                _MODELSTATUS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MODELSTATUS");
+                OnMODELSTATUSChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _MODELSTATUS;
+        partial void OnMODELSTATUSChanging(Nullable<global::System.Int16> value);
+        partial void OnMODELSTATUSChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PARTY")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -5880,6 +14537,312 @@ namespace MCached
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PAYMENT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_PAYMENT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_PAYMENT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="cURRENCY">CURRENCY 속성의 초기 값입니다.</param>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="mANUAL_UPDATE">MANUAL_UPDATE 속성의 초기 값입니다.</param>
+        /// <param name="pTYID">PTYID 속성의 초기 값입니다.</param>
+        /// <param name="tRADEID">TRADEID 속성의 초기 값입니다.</param>
+        /// <param name="tYPE">TYPE 속성의 초기 값입니다.</param>
+        public static NGOS_PAYMENT CreateNGOS_PAYMENT(global::System.Int32 cURRENCY, global::System.Int32 id, global::System.Int16 mANUAL_UPDATE, global::System.Int32 pTYID, global::System.Int32 tRADEID, global::System.Int16 tYPE)
+        {
+            NGOS_PAYMENT nGOS_PAYMENT = new NGOS_PAYMENT();
+            nGOS_PAYMENT.CURRENCY = cURRENCY;
+            nGOS_PAYMENT.ID = id;
+            nGOS_PAYMENT.MANUAL_UPDATE = mANUAL_UPDATE;
+            nGOS_PAYMENT.PTYID = pTYID;
+            nGOS_PAYMENT.TRADEID = tRADEID;
+            nGOS_PAYMENT.TYPE = tYPE;
+            return nGOS_PAYMENT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> AMOUNT
+        {
+            get
+            {
+                return _AMOUNT;
+            }
+            set
+            {
+                OnAMOUNTChanging(value);
+                ReportPropertyChanging("AMOUNT");
+                _AMOUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("AMOUNT");
+                OnAMOUNTChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _AMOUNT;
+        partial void OnAMOUNTChanging(Nullable<global::System.Decimal> value);
+        partial void OnAMOUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 CURRENCY
+        {
+            get
+            {
+                return _CURRENCY;
+            }
+            set
+            {
+                OnCURRENCYChanging(value);
+                ReportPropertyChanging("CURRENCY");
+                _CURRENCY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURRENCY");
+                OnCURRENCYChanged();
+            }
+        }
+        private global::System.Int32 _CURRENCY;
+        partial void OnCURRENCYChanging(global::System.Int32 value);
+        partial void OnCURRENCYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 MANUAL_UPDATE
+        {
+            get
+            {
+                return _MANUAL_UPDATE;
+            }
+            set
+            {
+                OnMANUAL_UPDATEChanging(value);
+                ReportPropertyChanging("MANUAL_UPDATE");
+                _MANUAL_UPDATE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MANUAL_UPDATE");
+                OnMANUAL_UPDATEChanged();
+            }
+        }
+        private global::System.Int16 _MANUAL_UPDATE;
+        partial void OnMANUAL_UPDATEChanging(global::System.Int16 value);
+        partial void OnMANUAL_UPDATEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PTYID
+        {
+            get
+            {
+                return _PTYID;
+            }
+            set
+            {
+                OnPTYIDChanging(value);
+                ReportPropertyChanging("PTYID");
+                _PTYID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PTYID");
+                OnPTYIDChanged();
+            }
+        }
+        private global::System.Int32 _PTYID;
+        partial void OnPTYIDChanging(global::System.Int32 value);
+        partial void OnPTYIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 TRADEID
+        {
+            get
+            {
+                return _TRADEID;
+            }
+            set
+            {
+                OnTRADEIDChanging(value);
+                ReportPropertyChanging("TRADEID");
+                _TRADEID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRADEID");
+                OnTRADEIDChanged();
+            }
+        }
+        private global::System.Int32 _TRADEID;
+        partial void OnTRADEIDChanging(global::System.Int32 value);
+        partial void OnTRADEIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private global::System.Int16 _TYPE;
+        partial void OnTYPEChanging(global::System.Int16 value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PORTFOLIO")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -6172,6 +15135,1866 @@ namespace MCached
         private Nullable<global::System.Int32> _CURRENCY;
         partial void OnCURRENCYChanging(Nullable<global::System.Int32> value);
         partial void OnCURRENCYChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PORTFOLIOLINK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_PORTFOLIOLINK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_PORTFOLIOLINK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_PORTFOLIOLINK CreateNGOS_PORTFOLIOLINK(global::System.Int32 id)
+        {
+            NGOS_PORTFOLIOLINK nGOS_PORTFOLIOLINK = new NGOS_PORTFOLIOLINK();
+            nGOS_PORTFOLIOLINK.ID = id;
+            return nGOS_PORTFOLIOLINK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> MEMBER_PRFID
+        {
+            get
+            {
+                return _MEMBER_PRFID;
+            }
+            set
+            {
+                OnMEMBER_PRFIDChanging(value);
+                ReportPropertyChanging("MEMBER_PRFID");
+                _MEMBER_PRFID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MEMBER_PRFID");
+                OnMEMBER_PRFIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _MEMBER_PRFID;
+        partial void OnMEMBER_PRFIDChanging(Nullable<global::System.Int32> value);
+        partial void OnMEMBER_PRFIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PARENT_PRFID
+        {
+            get
+            {
+                return _PARENT_PRFID;
+            }
+            set
+            {
+                OnPARENT_PRFIDChanging(value);
+                ReportPropertyChanging("PARENT_PRFID");
+                _PARENT_PRFID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PARENT_PRFID");
+                OnPARENT_PRFIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PARENT_PRFID;
+        partial void OnPARENT_PRFIDChanging(Nullable<global::System.Int32> value);
+        partial void OnPARENT_PRFIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PRE_COLLATERAL")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_PRE_COLLATERAL : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_PRE_COLLATERAL 개체를 만듭니다.
+        /// </summary>
+        /// <param name="pRE_COLL_ID">PRE_COLL_ID 속성의 초기 값입니다.</param>
+        /// <param name="pRE_COLL_TYPE">PRE_COLL_TYPE 속성의 초기 값입니다.</param>
+        public static NGOS_PRE_COLLATERAL CreateNGOS_PRE_COLLATERAL(global::System.Int32 pRE_COLL_ID, global::System.String pRE_COLL_TYPE)
+        {
+            NGOS_PRE_COLLATERAL nGOS_PRE_COLLATERAL = new NGOS_PRE_COLLATERAL();
+            nGOS_PRE_COLLATERAL.PRE_COLL_ID = pRE_COLL_ID;
+            nGOS_PRE_COLLATERAL.PRE_COLL_TYPE = pRE_COLL_TYPE;
+            return nGOS_PRE_COLLATERAL;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PRE_COLL_ID
+        {
+            get
+            {
+                return _PRE_COLL_ID;
+            }
+            set
+            {
+                if (_PRE_COLL_ID != value)
+                {
+                    OnPRE_COLL_IDChanging(value);
+                    ReportPropertyChanging("PRE_COLL_ID");
+                    _PRE_COLL_ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("PRE_COLL_ID");
+                    OnPRE_COLL_IDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _PRE_COLL_ID;
+        partial void OnPRE_COLL_IDChanging(global::System.Int32 value);
+        partial void OnPRE_COLL_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String PRE_COLL_TYPE
+        {
+            get
+            {
+                return _PRE_COLL_TYPE;
+            }
+            set
+            {
+                OnPRE_COLL_TYPEChanging(value);
+                ReportPropertyChanging("PRE_COLL_TYPE");
+                _PRE_COLL_TYPE = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("PRE_COLL_TYPE");
+                OnPRE_COLL_TYPEChanged();
+            }
+        }
+        private global::System.String _PRE_COLL_TYPE;
+        partial void OnPRE_COLL_TYPEChanging(global::System.String value);
+        partial void OnPRE_COLL_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> TRADE_ID
+        {
+            get
+            {
+                return _TRADE_ID;
+            }
+            set
+            {
+                OnTRADE_IDChanging(value);
+                ReportPropertyChanging("TRADE_ID");
+                _TRADE_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRADE_ID");
+                OnTRADE_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _TRADE_ID;
+        partial void OnTRADE_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnTRADE_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> COUNTERPARTY_ID
+        {
+            get
+            {
+                return _COUNTERPARTY_ID;
+            }
+            set
+            {
+                OnCOUNTERPARTY_IDChanging(value);
+                ReportPropertyChanging("COUNTERPARTY_ID");
+                _COUNTERPARTY_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COUNTERPARTY_ID");
+                OnCOUNTERPARTY_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _COUNTERPARTY_ID;
+        partial void OnCOUNTERPARTY_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnCOUNTERPARTY_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> REQUIRE_DAY
+        {
+            get
+            {
+                return _REQUIRE_DAY;
+            }
+            set
+            {
+                OnREQUIRE_DAYChanging(value);
+                ReportPropertyChanging("REQUIRE_DAY");
+                _REQUIRE_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REQUIRE_DAY");
+                OnREQUIRE_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _REQUIRE_DAY;
+        partial void OnREQUIRE_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnREQUIRE_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> SETTLE_DAY
+        {
+            get
+            {
+                return _SETTLE_DAY;
+            }
+            set
+            {
+                OnSETTLE_DAYChanging(value);
+                ReportPropertyChanging("SETTLE_DAY");
+                _SETTLE_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SETTLE_DAY");
+                OnSETTLE_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _SETTLE_DAY;
+        partial void OnSETTLE_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnSETTLE_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> MATU_DAY
+        {
+            get
+            {
+                return _MATU_DAY;
+            }
+            set
+            {
+                OnMATU_DAYChanging(value);
+                ReportPropertyChanging("MATU_DAY");
+                _MATU_DAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MATU_DAY");
+                OnMATU_DAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _MATU_DAY;
+        partial void OnMATU_DAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnMATU_DAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> NOMINAL_AMT
+        {
+            get
+            {
+                return _NOMINAL_AMT;
+            }
+            set
+            {
+                OnNOMINAL_AMTChanging(value);
+                ReportPropertyChanging("NOMINAL_AMT");
+                _NOMINAL_AMT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NOMINAL_AMT");
+                OnNOMINAL_AMTChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _NOMINAL_AMT;
+        partial void OnNOMINAL_AMTChanging(Nullable<global::System.Decimal> value);
+        partial void OnNOMINAL_AMTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MEMO
+        {
+            get
+            {
+                return _MEMO;
+            }
+            set
+            {
+                OnMEMOChanging(value);
+                ReportPropertyChanging("MEMO");
+                _MEMO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MEMO");
+                OnMEMOChanged();
+            }
+        }
+        private global::System.String _MEMO;
+        partial void OnMEMOChanging(global::System.String value);
+        partial void OnMEMOChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_PRICEDEF")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_PRICEDEF : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_PRICEDEF 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="iNSID">INSID 속성의 초기 값입니다.</param>
+        /// <param name="kEEP_INTRADAY">KEEP_INTRADAY 속성의 초기 값입니다.</param>
+        /// <param name="sOURCE_PTY">SOURCE_PTY 속성의 초기 값입니다.</param>
+        /// <param name="dATAVANDER">DATAVANDER 속성의 초기 값입니다.</param>
+        /// <param name="sOURCE_CODE">SOURCE_CODE 속성의 초기 값입니다.</param>
+        /// <param name="nAME">NAME 속성의 초기 값입니다.</param>
+        /// <param name="cREATE_TIME">CREATE_TIME 속성의 초기 값입니다.</param>
+        /// <param name="cREATE_USER">CREATE_USER 속성의 초기 값입니다.</param>
+        /// <param name="uPDATE_TIME">UPDATE_TIME 속성의 초기 값입니다.</param>
+        /// <param name="uPDATE_USER">UPDATE_USER 속성의 초기 값입니다.</param>
+        /// <param name="uSE_YN">USE_YN 속성의 초기 값입니다.</param>
+        /// <param name="sEARCH_TYPE">SEARCH_TYPE 속성의 초기 값입니다.</param>
+        public static NGOS_PRICEDEF CreateNGOS_PRICEDEF(global::System.Int32 id, global::System.Int32 iNSID, global::System.Int16 kEEP_INTRADAY, global::System.Int32 sOURCE_PTY, global::System.Int16 dATAVANDER, global::System.String sOURCE_CODE, global::System.String nAME, global::System.DateTime cREATE_TIME, global::System.Int16 cREATE_USER, global::System.DateTime uPDATE_TIME, global::System.Int16 uPDATE_USER, global::System.String uSE_YN, global::System.Int16 sEARCH_TYPE)
+        {
+            NGOS_PRICEDEF nGOS_PRICEDEF = new NGOS_PRICEDEF();
+            nGOS_PRICEDEF.ID = id;
+            nGOS_PRICEDEF.INSID = iNSID;
+            nGOS_PRICEDEF.KEEP_INTRADAY = kEEP_INTRADAY;
+            nGOS_PRICEDEF.SOURCE_PTY = sOURCE_PTY;
+            nGOS_PRICEDEF.DATAVANDER = dATAVANDER;
+            nGOS_PRICEDEF.SOURCE_CODE = sOURCE_CODE;
+            nGOS_PRICEDEF.NAME = nAME;
+            nGOS_PRICEDEF.CREATE_TIME = cREATE_TIME;
+            nGOS_PRICEDEF.CREATE_USER = cREATE_USER;
+            nGOS_PRICEDEF.UPDATE_TIME = uPDATE_TIME;
+            nGOS_PRICEDEF.UPDATE_USER = uPDATE_USER;
+            nGOS_PRICEDEF.USE_YN = uSE_YN;
+            nGOS_PRICEDEF.SEARCH_TYPE = sEARCH_TYPE;
+            return nGOS_PRICEDEF;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private global::System.Int32 _INSID;
+        partial void OnINSIDChanging(global::System.Int32 value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 KEEP_INTRADAY
+        {
+            get
+            {
+                return _KEEP_INTRADAY;
+            }
+            set
+            {
+                OnKEEP_INTRADAYChanging(value);
+                ReportPropertyChanging("KEEP_INTRADAY");
+                _KEEP_INTRADAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("KEEP_INTRADAY");
+                OnKEEP_INTRADAYChanged();
+            }
+        }
+        private global::System.Int16 _KEEP_INTRADAY;
+        partial void OnKEEP_INTRADAYChanging(global::System.Int16 value);
+        partial void OnKEEP_INTRADAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 SOURCE_PTY
+        {
+            get
+            {
+                return _SOURCE_PTY;
+            }
+            set
+            {
+                OnSOURCE_PTYChanging(value);
+                ReportPropertyChanging("SOURCE_PTY");
+                _SOURCE_PTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SOURCE_PTY");
+                OnSOURCE_PTYChanged();
+            }
+        }
+        private global::System.Int32 _SOURCE_PTY;
+        partial void OnSOURCE_PTYChanging(global::System.Int32 value);
+        partial void OnSOURCE_PTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 DATAVANDER
+        {
+            get
+            {
+                return _DATAVANDER;
+            }
+            set
+            {
+                OnDATAVANDERChanging(value);
+                ReportPropertyChanging("DATAVANDER");
+                _DATAVANDER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DATAVANDER");
+                OnDATAVANDERChanged();
+            }
+        }
+        private global::System.Int16 _DATAVANDER;
+        partial void OnDATAVANDERChanging(global::System.Int16 value);
+        partial void OnDATAVANDERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PRICECURR
+        {
+            get
+            {
+                return _PRICECURR;
+            }
+            set
+            {
+                OnPRICECURRChanging(value);
+                ReportPropertyChanging("PRICECURR");
+                _PRICECURR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PRICECURR");
+                OnPRICECURRChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PRICECURR;
+        partial void OnPRICECURRChanging(Nullable<global::System.Int32> value);
+        partial void OnPRICECURRChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE
+        {
+            get
+            {
+                return _SOURCE_CODE;
+            }
+            set
+            {
+                OnSOURCE_CODEChanging(value);
+                ReportPropertyChanging("SOURCE_CODE");
+                _SOURCE_CODE = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("SOURCE_CODE");
+                OnSOURCE_CODEChanged();
+            }
+        }
+        private global::System.String _SOURCE_CODE;
+        partial void OnSOURCE_CODEChanging(global::System.String value);
+        partial void OnSOURCE_CODEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE1
+        {
+            get
+            {
+                return _SOURCE_CODE1;
+            }
+            set
+            {
+                OnSOURCE_CODE1Changing(value);
+                ReportPropertyChanging("SOURCE_CODE1");
+                _SOURCE_CODE1 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE_CODE1");
+                OnSOURCE_CODE1Changed();
+            }
+        }
+        private global::System.String _SOURCE_CODE1;
+        partial void OnSOURCE_CODE1Changing(global::System.String value);
+        partial void OnSOURCE_CODE1Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE2
+        {
+            get
+            {
+                return _SOURCE_CODE2;
+            }
+            set
+            {
+                OnSOURCE_CODE2Changing(value);
+                ReportPropertyChanging("SOURCE_CODE2");
+                _SOURCE_CODE2 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE_CODE2");
+                OnSOURCE_CODE2Changed();
+            }
+        }
+        private global::System.String _SOURCE_CODE2;
+        partial void OnSOURCE_CODE2Changing(global::System.String value);
+        partial void OnSOURCE_CODE2Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE3
+        {
+            get
+            {
+                return _SOURCE_CODE3;
+            }
+            set
+            {
+                OnSOURCE_CODE3Changing(value);
+                ReportPropertyChanging("SOURCE_CODE3");
+                _SOURCE_CODE3 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE_CODE3");
+                OnSOURCE_CODE3Changed();
+            }
+        }
+        private global::System.String _SOURCE_CODE3;
+        partial void OnSOURCE_CODE3Changing(global::System.String value);
+        partial void OnSOURCE_CODE3Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE4
+        {
+            get
+            {
+                return _SOURCE_CODE4;
+            }
+            set
+            {
+                OnSOURCE_CODE4Changing(value);
+                ReportPropertyChanging("SOURCE_CODE4");
+                _SOURCE_CODE4 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE_CODE4");
+                OnSOURCE_CODE4Changed();
+            }
+        }
+        private global::System.String _SOURCE_CODE4;
+        partial void OnSOURCE_CODE4Changing(global::System.String value);
+        partial void OnSOURCE_CODE4Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE_CODE5
+        {
+            get
+            {
+                return _SOURCE_CODE5;
+            }
+            set
+            {
+                OnSOURCE_CODE5Changing(value);
+                ReportPropertyChanging("SOURCE_CODE5");
+                _SOURCE_CODE5 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE_CODE5");
+                OnSOURCE_CODE5Changed();
+            }
+        }
+        private global::System.String _SOURCE_CODE5;
+        partial void OnSOURCE_CODE5Changing(global::System.String value);
+        partial void OnSOURCE_CODE5Changed();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SOURCE
+        {
+            get
+            {
+                return _SOURCE;
+            }
+            set
+            {
+                OnSOURCEChanging(value);
+                ReportPropertyChanging("SOURCE");
+                _SOURCE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SOURCE");
+                OnSOURCEChanged();
+            }
+        }
+        private global::System.String _SOURCE;
+        partial void OnSOURCEChanging(global::System.String value);
+        partial void OnSOURCEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String EXCHANGE
+        {
+            get
+            {
+                return _EXCHANGE;
+            }
+            set
+            {
+                OnEXCHANGEChanging(value);
+                ReportPropertyChanging("EXCHANGE");
+                _EXCHANGE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("EXCHANGE");
+                OnEXCHANGEChanged();
+            }
+        }
+        private global::System.String _EXCHANGE;
+        partial void OnEXCHANGEChanging(global::System.String value);
+        partial void OnEXCHANGEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ERRORMSG
+        {
+            get
+            {
+                return _ERRORMSG;
+            }
+            set
+            {
+                OnERRORMSGChanging(value);
+                ReportPropertyChanging("ERRORMSG");
+                _ERRORMSG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("ERRORMSG");
+                OnERRORMSGChanged();
+            }
+        }
+        private global::System.String _ERRORMSG;
+        partial void OnERRORMSGChanging(global::System.String value);
+        partial void OnERRORMSGChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SCHEDULE
+        {
+            get
+            {
+                return _SCHEDULE;
+            }
+            set
+            {
+                OnSCHEDULEChanging(value);
+                ReportPropertyChanging("SCHEDULE");
+                _SCHEDULE = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SCHEDULE");
+                OnSCHEDULEChanged();
+            }
+        }
+        private global::System.String _SCHEDULE;
+        partial void OnSCHEDULEChanging(global::System.String value);
+        partial void OnSCHEDULEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private global::System.DateTime _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(global::System.DateTime value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private global::System.Int16 _CREATE_USER;
+        partial void OnCREATE_USERChanging(global::System.Int16 value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private global::System.DateTime _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(global::System.DateTime value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private global::System.Int16 _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(global::System.Int16 value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String USE_YN
+        {
+            get
+            {
+                return _USE_YN;
+            }
+            set
+            {
+                OnUSE_YNChanging(value);
+                ReportPropertyChanging("USE_YN");
+                _USE_YN = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("USE_YN");
+                OnUSE_YNChanged();
+            }
+        }
+        private global::System.String _USE_YN;
+        partial void OnUSE_YNChanging(global::System.String value);
+        partial void OnUSE_YNChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 SEARCH_TYPE
+        {
+            get
+            {
+                return _SEARCH_TYPE;
+            }
+            set
+            {
+                OnSEARCH_TYPEChanging(value);
+                ReportPropertyChanging("SEARCH_TYPE");
+                _SEARCH_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SEARCH_TYPE");
+                OnSEARCH_TYPEChanged();
+            }
+        }
+        private global::System.Int16 _SEARCH_TYPE;
+        partial void OnSEARCH_TYPEChanging(global::System.Int16 value);
+        partial void OnSEARCH_TYPEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_QUOTATION")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_QUOTATION : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_QUOTATION 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_QUOTATION CreateNGOS_QUOTATION(global::System.Int16 id)
+        {
+            NGOS_QUOTATION nGOS_QUOTATION = new NGOS_QUOTATION();
+            nGOS_QUOTATION.ID = id;
+            return nGOS_QUOTATION;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> ISCLEAN
+        {
+            get
+            {
+                return _ISCLEAN;
+            }
+            set
+            {
+                OnISCLEANChanging(value);
+                ReportPropertyChanging("ISCLEAN");
+                _ISCLEAN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ISCLEAN");
+                OnISCLEANChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _ISCLEAN;
+        partial void OnISCLEANChanging(Nullable<global::System.Int16> value);
+        partial void OnISCLEANChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> QUOTATION_ADDEND
+        {
+            get
+            {
+                return _QUOTATION_ADDEND;
+            }
+            set
+            {
+                OnQUOTATION_ADDENDChanging(value);
+                ReportPropertyChanging("QUOTATION_ADDEND");
+                _QUOTATION_ADDEND = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUOTATION_ADDEND");
+                OnQUOTATION_ADDENDChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _QUOTATION_ADDEND;
+        partial void OnQUOTATION_ADDENDChanging(Nullable<global::System.Decimal> value);
+        partial void OnQUOTATION_ADDENDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> QUOTATION_FACTOR
+        {
+            get
+            {
+                return _QUOTATION_FACTOR;
+            }
+            set
+            {
+                OnQUOTATION_FACTORChanging(value);
+                ReportPropertyChanging("QUOTATION_FACTOR");
+                _QUOTATION_FACTOR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUOTATION_FACTOR");
+                OnQUOTATION_FACTORChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _QUOTATION_FACTOR;
+        partial void OnQUOTATION_FACTORChanging(Nullable<global::System.Decimal> value);
+        partial void OnQUOTATION_FACTORChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> QUOTATION_TYPE
+        {
+            get
+            {
+                return _QUOTATION_TYPE;
+            }
+            set
+            {
+                OnQUOTATION_TYPEChanging(value);
+                ReportPropertyChanging("QUOTATION_TYPE");
+                _QUOTATION_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUOTATION_TYPE");
+                OnQUOTATION_TYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _QUOTATION_TYPE;
+        partial void OnQUOTATION_TYPEChanging(Nullable<global::System.Int32> value);
+        partial void OnQUOTATION_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int16 _ID;
+        partial void OnIDChanging(global::System.Int16 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_REPORTMAP")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_REPORTMAP : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_REPORTMAP 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="nAME">NAME 속성의 초기 값입니다.</param>
+        /// <param name="lINKTYPE">LINKTYPE 속성의 초기 값입니다.</param>
+        /// <param name="sTATUS">STATUS 속성의 초기 값입니다.</param>
+        /// <param name="cREATE_TIME">CREATE_TIME 속성의 초기 값입니다.</param>
+        /// <param name="cREATE_USER">CREATE_USER 속성의 초기 값입니다.</param>
+        public static NGOS_REPORTMAP CreateNGOS_REPORTMAP(global::System.Int32 id, global::System.String nAME, global::System.Int16 lINKTYPE, global::System.String sTATUS, global::System.DateTime cREATE_TIME, global::System.String cREATE_USER)
+        {
+            NGOS_REPORTMAP nGOS_REPORTMAP = new NGOS_REPORTMAP();
+            nGOS_REPORTMAP.ID = id;
+            nGOS_REPORTMAP.NAME = nAME;
+            nGOS_REPORTMAP.LINKTYPE = lINKTYPE;
+            nGOS_REPORTMAP.STATUS = sTATUS;
+            nGOS_REPORTMAP.CREATE_TIME = cREATE_TIME;
+            nGOS_REPORTMAP.CREATE_USER = cREATE_USER;
+            return nGOS_REPORTMAP;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String DESCRIPTION
+        {
+            get
+            {
+                return _DESCRIPTION;
+            }
+            set
+            {
+                OnDESCRIPTIONChanging(value);
+                ReportPropertyChanging("DESCRIPTION");
+                _DESCRIPTION = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DESCRIPTION");
+                OnDESCRIPTIONChanged();
+            }
+        }
+        private global::System.String _DESCRIPTION;
+        partial void OnDESCRIPTIONChanging(global::System.String value);
+        partial void OnDESCRIPTIONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 LINKTYPE
+        {
+            get
+            {
+                return _LINKTYPE;
+            }
+            set
+            {
+                OnLINKTYPEChanging(value);
+                ReportPropertyChanging("LINKTYPE");
+                _LINKTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("LINKTYPE");
+                OnLINKTYPEChanged();
+            }
+        }
+        private global::System.Int16 _LINKTYPE;
+        partial void OnLINKTYPEChanging(global::System.Int16 value);
+        partial void OnLINKTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PARENT_ID
+        {
+            get
+            {
+                return _PARENT_ID;
+            }
+            set
+            {
+                OnPARENT_IDChanging(value);
+                ReportPropertyChanging("PARENT_ID");
+                _PARENT_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PARENT_ID");
+                OnPARENT_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PARENT_ID;
+        partial void OnPARENT_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnPARENT_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String STATUS
+        {
+            get
+            {
+                return _STATUS;
+            }
+            set
+            {
+                OnSTATUSChanging(value);
+                ReportPropertyChanging("STATUS");
+                _STATUS = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("STATUS");
+                OnSTATUSChanged();
+            }
+        }
+        private global::System.String _STATUS;
+        partial void OnSTATUSChanging(global::System.String value);
+        partial void OnSTATUSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private global::System.DateTime _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(global::System.DateTime value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private global::System.String _CREATE_USER;
+        partial void OnCREATE_USERChanging(global::System.String value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private global::System.String _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(global::System.String value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_REPORTMAPLINK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_REPORTMAPLINK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_REPORTMAPLINK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_REPORTMAPLINK CreateNGOS_REPORTMAPLINK(global::System.Int32 id)
+        {
+            NGOS_REPORTMAPLINK nGOS_REPORTMAPLINK = new NGOS_REPORTMAPLINK();
+            nGOS_REPORTMAPLINK.ID = id;
+            return nGOS_REPORTMAPLINK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> MEMBER_ID
+        {
+            get
+            {
+                return _MEMBER_ID;
+            }
+            set
+            {
+                OnMEMBER_IDChanging(value);
+                ReportPropertyChanging("MEMBER_ID");
+                _MEMBER_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MEMBER_ID");
+                OnMEMBER_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _MEMBER_ID;
+        partial void OnMEMBER_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnMEMBER_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PARENT_ID
+        {
+            get
+            {
+                return _PARENT_ID;
+            }
+            set
+            {
+                OnPARENT_IDChanging(value);
+                ReportPropertyChanging("PARENT_ID");
+                _PARENT_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PARENT_ID");
+                OnPARENT_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PARENT_ID;
+        partial void OnPARENT_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnPARENT_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
 
         #endregion
 
@@ -6570,6 +17393,2194 @@ namespace MCached
         private Nullable<global::System.DateTime> _READ_TIME;
         partial void OnREAD_TIMEChanging(Nullable<global::System.DateTime> value);
         partial void OnREAD_TIMEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_TENORLINK")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_TENORLINK : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_TENORLINK 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_TENORLINK CreateNGOS_TENORLINK(global::System.Int32 id)
+        {
+            NGOS_TENORLINK nGOS_TENORLINK = new NGOS_TENORLINK();
+            nGOS_TENORLINK.ID = id;
+            return nGOS_TENORLINK;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CURVE_ID
+        {
+            get
+            {
+                return _CURVE_ID;
+            }
+            set
+            {
+                OnCURVE_IDChanging(value);
+                ReportPropertyChanging("CURVE_ID");
+                _CURVE_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURVE_ID");
+                OnCURVE_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CURVE_ID;
+        partial void OnCURVE_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnCURVE_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _TYPE;
+        partial void OnTYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_TRADE")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_TRADE : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_TRADE 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="iNSID">INSID 속성의 초기 값입니다.</param>
+        /// <param name="pREMIUM">PREMIUM 속성의 초기 값입니다.</param>
+        /// <param name="pRF_ID">PRF_ID 속성의 초기 값입니다.</param>
+        /// <param name="pRICE">PRICE 속성의 초기 값입니다.</param>
+        /// <param name="qUANTITY">QUANTITY 속성의 초기 값입니다.</param>
+        /// <param name="sTATUS">STATUS 속성의 초기 값입니다.</param>
+        /// <param name="tRADETIME">TRADETIME 속성의 초기 값입니다.</param>
+        /// <param name="tYPE">TYPE 속성의 초기 값입니다.</param>
+        public static NGOS_TRADE CreateNGOS_TRADE(global::System.Int32 id, global::System.Int32 iNSID, global::System.Decimal pREMIUM, global::System.Int32 pRF_ID, global::System.Decimal pRICE, global::System.Decimal qUANTITY, global::System.Int16 sTATUS, global::System.DateTime tRADETIME, global::System.Int16 tYPE)
+        {
+            NGOS_TRADE nGOS_TRADE = new NGOS_TRADE();
+            nGOS_TRADE.ID = id;
+            nGOS_TRADE.INSID = iNSID;
+            nGOS_TRADE.PREMIUM = pREMIUM;
+            nGOS_TRADE.PRF_ID = pRF_ID;
+            nGOS_TRADE.PRICE = pRICE;
+            nGOS_TRADE.QUANTITY = qUANTITY;
+            nGOS_TRADE.STATUS = sTATUS;
+            nGOS_TRADE.TRADETIME = tRADETIME;
+            nGOS_TRADE.TYPE = tYPE;
+            return nGOS_TRADE;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> VALUEDAY
+        {
+            get
+            {
+                return _VALUEDAY;
+            }
+            set
+            {
+                OnVALUEDAYChanging(value);
+                ReportPropertyChanging("VALUEDAY");
+                _VALUEDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VALUEDAY");
+                OnVALUEDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _VALUEDAY;
+        partial void OnVALUEDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnVALUEDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> EXECUTIONTIME
+        {
+            get
+            {
+                return _EXECUTIONTIME;
+            }
+            set
+            {
+                OnEXECUTIONTIMEChanging(value);
+                ReportPropertyChanging("EXECUTIONTIME");
+                _EXECUTIONTIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EXECUTIONTIME");
+                OnEXECUTIONTIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _EXECUTIONTIME;
+        partial void OnEXECUTIONTIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnEXECUTIONTIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> FEE
+        {
+            get
+            {
+                return _FEE;
+            }
+            set
+            {
+                OnFEEChanging(value);
+                ReportPropertyChanging("FEE");
+                _FEE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("FEE");
+                OnFEEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _FEE;
+        partial void OnFEEChanging(Nullable<global::System.Decimal> value);
+        partial void OnFEEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ACQUIRE_PARTY
+        {
+            get
+            {
+                return _ACQUIRE_PARTY;
+            }
+            set
+            {
+                OnACQUIRE_PARTYChanging(value);
+                ReportPropertyChanging("ACQUIRE_PARTY");
+                _ACQUIRE_PARTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ACQUIRE_PARTY");
+                OnACQUIRE_PARTYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ACQUIRE_PARTY;
+        partial void OnACQUIRE_PARTYChanging(Nullable<global::System.Int32> value);
+        partial void OnACQUIRE_PARTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> ACQUIREDAY
+        {
+            get
+            {
+                return _ACQUIREDAY;
+            }
+            set
+            {
+                OnACQUIREDAYChanging(value);
+                ReportPropertyChanging("ACQUIREDAY");
+                _ACQUIREDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ACQUIREDAY");
+                OnACQUIREDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _ACQUIREDAY;
+        partial void OnACQUIREDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnACQUIREDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> BROKER_PARTY
+        {
+            get
+            {
+                return _BROKER_PARTY;
+            }
+            set
+            {
+                OnBROKER_PARTYChanging(value);
+                ReportPropertyChanging("BROKER_PARTY");
+                _BROKER_PARTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BROKER_PARTY");
+                OnBROKER_PARTYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _BROKER_PARTY;
+        partial void OnBROKER_PARTYChanging(Nullable<global::System.Int32> value);
+        partial void OnBROKER_PARTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CONN_TRADEID
+        {
+            get
+            {
+                return _CONN_TRADEID;
+            }
+            set
+            {
+                OnCONN_TRADEIDChanging(value);
+                ReportPropertyChanging("CONN_TRADEID");
+                _CONN_TRADEID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CONN_TRADEID");
+                OnCONN_TRADEIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CONN_TRADEID;
+        partial void OnCONN_TRADEIDChanging(Nullable<global::System.Int32> value);
+        partial void OnCONN_TRADEIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CORRECTION_TRADEID
+        {
+            get
+            {
+                return _CORRECTION_TRADEID;
+            }
+            set
+            {
+                OnCORRECTION_TRADEIDChanging(value);
+                ReportPropertyChanging("CORRECTION_TRADEID");
+                _CORRECTION_TRADEID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CORRECTION_TRADEID");
+                OnCORRECTION_TRADEIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CORRECTION_TRADEID;
+        partial void OnCORRECTION_TRADEIDChanging(Nullable<global::System.Int32> value);
+        partial void OnCORRECTION_TRADEIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> COUNTER_PARTY
+        {
+            get
+            {
+                return _COUNTER_PARTY;
+            }
+            set
+            {
+                OnCOUNTER_PARTYChanging(value);
+                ReportPropertyChanging("COUNTER_PARTY");
+                _COUNTER_PARTY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("COUNTER_PARTY");
+                OnCOUNTER_PARTYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _COUNTER_PARTY;
+        partial void OnCOUNTER_PARTYChanging(Nullable<global::System.Int32> value);
+        partial void OnCOUNTER_PARTYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private global::System.Int32 _INSID;
+        partial void OnINSIDChanging(global::System.Int32 value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal PREMIUM
+        {
+            get
+            {
+                return _PREMIUM;
+            }
+            set
+            {
+                OnPREMIUMChanging(value);
+                ReportPropertyChanging("PREMIUM");
+                _PREMIUM = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PREMIUM");
+                OnPREMIUMChanged();
+            }
+        }
+        private global::System.Decimal _PREMIUM;
+        partial void OnPREMIUMChanging(global::System.Decimal value);
+        partial void OnPREMIUMChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PRF_ID
+        {
+            get
+            {
+                return _PRF_ID;
+            }
+            set
+            {
+                OnPRF_IDChanging(value);
+                ReportPropertyChanging("PRF_ID");
+                _PRF_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PRF_ID");
+                OnPRF_IDChanged();
+            }
+        }
+        private global::System.Int32 _PRF_ID;
+        partial void OnPRF_IDChanging(global::System.Int32 value);
+        partial void OnPRF_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal PRICE
+        {
+            get
+            {
+                return _PRICE;
+            }
+            set
+            {
+                OnPRICEChanging(value);
+                ReportPropertyChanging("PRICE");
+                _PRICE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PRICE");
+                OnPRICEChanged();
+            }
+        }
+        private global::System.Decimal _PRICE;
+        partial void OnPRICEChanging(global::System.Decimal value);
+        partial void OnPRICEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> REFERENCE_PRICE
+        {
+            get
+            {
+                return _REFERENCE_PRICE;
+            }
+            set
+            {
+                OnREFERENCE_PRICEChanging(value);
+                ReportPropertyChanging("REFERENCE_PRICE");
+                _REFERENCE_PRICE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REFERENCE_PRICE");
+                OnREFERENCE_PRICEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _REFERENCE_PRICE;
+        partial void OnREFERENCE_PRICEChanging(Nullable<global::System.Decimal> value);
+        partial void OnREFERENCE_PRICEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> SALES_PERSON
+        {
+            get
+            {
+                return _SALES_PERSON;
+            }
+            set
+            {
+                OnSALES_PERSONChanging(value);
+                ReportPropertyChanging("SALES_PERSON");
+                _SALES_PERSON = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALES_PERSON");
+                OnSALES_PERSONChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _SALES_PERSON;
+        partial void OnSALES_PERSONChanging(Nullable<global::System.Int16> value);
+        partial void OnSALES_PERSONChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> SALES_MARGIN
+        {
+            get
+            {
+                return _SALES_MARGIN;
+            }
+            set
+            {
+                OnSALES_MARGINChanging(value);
+                ReportPropertyChanging("SALES_MARGIN");
+                _SALES_MARGIN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SALES_MARGIN");
+                OnSALES_MARGINChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _SALES_MARGIN;
+        partial void OnSALES_MARGINChanging(Nullable<global::System.Decimal> value);
+        partial void OnSALES_MARGINChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CURRENCY
+        {
+            get
+            {
+                return _CURRENCY;
+            }
+            set
+            {
+                OnCURRENCYChanging(value);
+                ReportPropertyChanging("CURRENCY");
+                _CURRENCY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURRENCY");
+                OnCURRENCYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CURRENCY;
+        partial void OnCURRENCYChanging(Nullable<global::System.Int32> value);
+        partial void OnCURRENCYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal QUANTITY
+        {
+            get
+            {
+                return _QUANTITY;
+            }
+            set
+            {
+                OnQUANTITYChanging(value);
+                ReportPropertyChanging("QUANTITY");
+                _QUANTITY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("QUANTITY");
+                OnQUANTITYChanged();
+            }
+        }
+        private global::System.Decimal _QUANTITY;
+        partial void OnQUANTITYChanging(global::System.Decimal value);
+        partial void OnQUANTITYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 STATUS
+        {
+            get
+            {
+                return _STATUS;
+            }
+            set
+            {
+                OnSTATUSChanging(value);
+                ReportPropertyChanging("STATUS");
+                _STATUS = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("STATUS");
+                OnSTATUSChanged();
+            }
+        }
+        private global::System.Int16 _STATUS;
+        partial void OnSTATUSChanging(global::System.Int16 value);
+        partial void OnSTATUSChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime TRADETIME
+        {
+            get
+            {
+                return _TRADETIME;
+            }
+            set
+            {
+                OnTRADETIMEChanging(value);
+                ReportPropertyChanging("TRADETIME");
+                _TRADETIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRADETIME");
+                OnTRADETIMEChanged();
+            }
+        }
+        private global::System.DateTime _TRADETIME;
+        partial void OnTRADETIMEChanging(global::System.DateTime value);
+        partial void OnTRADETIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private global::System.Int16 _TYPE;
+        partial void OnTYPEChanging(global::System.Int16 value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_VOLATILITY")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_VOLATILITY : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_VOLATILITY 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="rISKTYPE">RISKTYPE 속성의 초기 값입니다.</param>
+        /// <param name="vOLSTRUCTTYPE">VOLSTRUCTTYPE 속성의 초기 값입니다.</param>
+        /// <param name="vOLVALUETYPE">VOLVALUETYPE 속성의 초기 값입니다.</param>
+        public static NGOS_VOLATILITY CreateNGOS_VOLATILITY(global::System.Int32 id, global::System.Int32 rISKTYPE, global::System.Int32 vOLSTRUCTTYPE, global::System.Int32 vOLVALUETYPE)
+        {
+            NGOS_VOLATILITY nGOS_VOLATILITY = new NGOS_VOLATILITY();
+            nGOS_VOLATILITY.ID = id;
+            nGOS_VOLATILITY.RISKTYPE = rISKTYPE;
+            nGOS_VOLATILITY.VOLSTRUCTTYPE = vOLSTRUCTTYPE;
+            nGOS_VOLATILITY.VOLVALUETYPE = vOLVALUETYPE;
+            return nGOS_VOLATILITY;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> HISTDAY
+        {
+            get
+            {
+                return _HISTDAY;
+            }
+            set
+            {
+                OnHISTDAYChanging(value);
+                ReportPropertyChanging("HISTDAY");
+                _HISTDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HISTDAY");
+                OnHISTDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _HISTDAY;
+        partial void OnHISTDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnHISTDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ORGVOL_ID
+        {
+            get
+            {
+                return _ORGVOL_ID;
+            }
+            set
+            {
+                OnORGVOL_IDChanging(value);
+                ReportPropertyChanging("ORGVOL_ID");
+                _ORGVOL_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ORGVOL_ID");
+                OnORGVOL_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ORGVOL_ID;
+        partial void OnORGVOL_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnORGVOL_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> REFINSID
+        {
+            get
+            {
+                return _REFINSID;
+            }
+            set
+            {
+                OnREFINSIDChanging(value);
+                ReportPropertyChanging("REFINSID");
+                _REFINSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("REFINSID");
+                OnREFINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _REFINSID;
+        partial void OnREFINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnREFINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 RISKTYPE
+        {
+            get
+            {
+                return _RISKTYPE;
+            }
+            set
+            {
+                OnRISKTYPEChanging(value);
+                ReportPropertyChanging("RISKTYPE");
+                _RISKTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RISKTYPE");
+                OnRISKTYPEChanged();
+            }
+        }
+        private global::System.Int32 _RISKTYPE;
+        partial void OnRISKTYPEChanging(global::System.Int32 value);
+        partial void OnRISKTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VOLSTRUCTTYPE
+        {
+            get
+            {
+                return _VOLSTRUCTTYPE;
+            }
+            set
+            {
+                OnVOLSTRUCTTYPEChanging(value);
+                ReportPropertyChanging("VOLSTRUCTTYPE");
+                _VOLSTRUCTTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VOLSTRUCTTYPE");
+                OnVOLSTRUCTTYPEChanged();
+            }
+        }
+        private global::System.Int32 _VOLSTRUCTTYPE;
+        partial void OnVOLSTRUCTTYPEChanging(global::System.Int32 value);
+        partial void OnVOLSTRUCTTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VOLVALUETYPE
+        {
+            get
+            {
+                return _VOLVALUETYPE;
+            }
+            set
+            {
+                OnVOLVALUETYPEChanging(value);
+                ReportPropertyChanging("VOLVALUETYPE");
+                _VOLVALUETYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VOLVALUETYPE");
+                OnVOLVALUETYPEChanged();
+            }
+        }
+        private global::System.Int32 _VOLVALUETYPE;
+        partial void OnVOLVALUETYPEChanging(global::System.Int32 value);
+        partial void OnVOLVALUETYPEChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_VOLPOINT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_VOLPOINT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_VOLPOINT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_VOLPOINT CreateNGOS_VOLPOINT(global::System.Int32 id)
+        {
+            NGOS_VOLPOINT nGOS_VOLPOINT = new NGOS_VOLPOINT();
+            nGOS_VOLPOINT.ID = id;
+            return nGOS_VOLPOINT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> EXP_PERIOD_COUNT
+        {
+            get
+            {
+                return _EXP_PERIOD_COUNT;
+            }
+            set
+            {
+                OnEXP_PERIOD_COUNTChanging(value);
+                ReportPropertyChanging("EXP_PERIOD_COUNT");
+                _EXP_PERIOD_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EXP_PERIOD_COUNT");
+                OnEXP_PERIOD_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _EXP_PERIOD_COUNT;
+        partial void OnEXP_PERIOD_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnEXP_PERIOD_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> EXP_PERIOD_UNIT
+        {
+            get
+            {
+                return _EXP_PERIOD_UNIT;
+            }
+            set
+            {
+                OnEXP_PERIOD_UNITChanging(value);
+                ReportPropertyChanging("EXP_PERIOD_UNIT");
+                _EXP_PERIOD_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("EXP_PERIOD_UNIT");
+                OnEXP_PERIOD_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _EXP_PERIOD_UNIT;
+        partial void OnEXP_PERIOD_UNITChanging(Nullable<global::System.Int16> value);
+        partial void OnEXP_PERIOD_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> INSID
+        {
+            get
+            {
+                return _INSID;
+            }
+            set
+            {
+                OnINSIDChanging(value);
+                ReportPropertyChanging("INSID");
+                _INSID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("INSID");
+                OnINSIDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _INSID;
+        partial void OnINSIDChanging(Nullable<global::System.Int32> value);
+        partial void OnINSIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> STRIKE
+        {
+            get
+            {
+                return _STRIKE;
+            }
+            set
+            {
+                OnSTRIKEChanging(value);
+                ReportPropertyChanging("STRIKE");
+                _STRIKE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("STRIKE");
+                OnSTRIKEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _STRIKE;
+        partial void OnSTRIKEChanging(Nullable<global::System.Decimal> value);
+        partial void OnSTRIKEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> UNDMAT_PERIOD_COUNT
+        {
+            get
+            {
+                return _UNDMAT_PERIOD_COUNT;
+            }
+            set
+            {
+                OnUNDMAT_PERIOD_COUNTChanging(value);
+                ReportPropertyChanging("UNDMAT_PERIOD_COUNT");
+                _UNDMAT_PERIOD_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UNDMAT_PERIOD_COUNT");
+                OnUNDMAT_PERIOD_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _UNDMAT_PERIOD_COUNT;
+        partial void OnUNDMAT_PERIOD_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnUNDMAT_PERIOD_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UNDMAT_PERIOD_UNIT
+        {
+            get
+            {
+                return _UNDMAT_PERIOD_UNIT;
+            }
+            set
+            {
+                OnUNDMAT_PERIOD_UNITChanging(value);
+                ReportPropertyChanging("UNDMAT_PERIOD_UNIT");
+                _UNDMAT_PERIOD_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UNDMAT_PERIOD_UNIT");
+                OnUNDMAT_PERIOD_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UNDMAT_PERIOD_UNIT;
+        partial void OnUNDMAT_PERIOD_UNITChanging(Nullable<global::System.Int16> value);
+        partial void OnUNDMAT_PERIOD_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> VALUE
+        {
+            get
+            {
+                return _VALUE;
+            }
+            set
+            {
+                OnVALUEChanging(value);
+                ReportPropertyChanging("VALUE");
+                _VALUE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VALUE");
+                OnVALUEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _VALUE;
+        partial void OnVALUEChanging(Nullable<global::System.Decimal> value);
+        partial void OnVALUEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> VOL_ID
+        {
+            get
+            {
+                return _VOL_ID;
+            }
+            set
+            {
+                OnVOL_IDChanging(value);
+                ReportPropertyChanging("VOL_ID");
+                _VOL_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VOL_ID");
+                OnVOL_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _VOL_ID;
+        partial void OnVOL_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnVOL_IDChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_YC")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_YC : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_YC 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        /// <param name="rISKTYPE">RISKTYPE 속성의 초기 값입니다.</param>
+        /// <param name="tYPE">TYPE 속성의 초기 값입니다.</param>
+        /// <param name="uSE_BMDATES">USE_BMDATES 속성의 초기 값입니다.</param>
+        public static NGOS_YC CreateNGOS_YC(global::System.Int32 id, global::System.Int16 rISKTYPE, global::System.Int16 tYPE, global::System.Int16 uSE_BMDATES)
+        {
+            NGOS_YC nGOS_YC = new NGOS_YC();
+            nGOS_YC.ID = id;
+            nGOS_YC.RISKTYPE = rISKTYPE;
+            nGOS_YC.TYPE = tYPE;
+            nGOS_YC.USE_BMDATES = uSE_BMDATES;
+            return nGOS_YC;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> CURRENCY
+        {
+            get
+            {
+                return _CURRENCY;
+            }
+            set
+            {
+                OnCURRENCYChanging(value);
+                ReportPropertyChanging("CURRENCY");
+                _CURRENCY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CURRENCY");
+                OnCURRENCYChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _CURRENCY;
+        partial void OnCURRENCYChanging(Nullable<global::System.Int32> value);
+        partial void OnCURRENCYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> HISTDAY
+        {
+            get
+            {
+                return _HISTDAY;
+            }
+            set
+            {
+                OnHISTDAYChanging(value);
+                ReportPropertyChanging("HISTDAY");
+                _HISTDAY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HISTDAY");
+                OnHISTDAYChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _HISTDAY;
+        partial void OnHISTDAYChanging(Nullable<global::System.DateTime> value);
+        partial void OnHISTDAYChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NAME
+        {
+            get
+            {
+                return _NAME;
+            }
+            set
+            {
+                OnNAMEChanging(value);
+                ReportPropertyChanging("NAME");
+                _NAME = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NAME");
+                OnNAMEChanged();
+            }
+        }
+        private global::System.String _NAME;
+        partial void OnNAMEChanging(global::System.String value);
+        partial void OnNAMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ORGYC_ID
+        {
+            get
+            {
+                return _ORGYC_ID;
+            }
+            set
+            {
+                OnORGYC_IDChanging(value);
+                ReportPropertyChanging("ORGYC_ID");
+                _ORGYC_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ORGYC_ID");
+                OnORGYC_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ORGYC_ID;
+        partial void OnORGYC_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnORGYC_IDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 RISKTYPE
+        {
+            get
+            {
+                return _RISKTYPE;
+            }
+            set
+            {
+                OnRISKTYPEChanging(value);
+                ReportPropertyChanging("RISKTYPE");
+                _RISKTYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("RISKTYPE");
+                OnRISKTYPEChanged();
+            }
+        }
+        private global::System.Int16 _RISKTYPE;
+        partial void OnRISKTYPEChanging(global::System.Int16 value);
+        partial void OnRISKTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+            set
+            {
+                OnTYPEChanging(value);
+                ReportPropertyChanging("TYPE");
+                _TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TYPE");
+                OnTYPEChanged();
+            }
+        }
+        private global::System.Int16 _TYPE;
+        partial void OnTYPEChanging(global::System.Int16 value);
+        partial void OnTYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int16 USE_BMDATES
+        {
+            get
+            {
+                return _USE_BMDATES;
+            }
+            set
+            {
+                OnUSE_BMDATESChanging(value);
+                ReportPropertyChanging("USE_BMDATES");
+                _USE_BMDATES = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("USE_BMDATES");
+                OnUSE_BMDATESChanged();
+            }
+        }
+        private global::System.Int16 _USE_BMDATES;
+        partial void OnUSE_BMDATESChanging(global::System.Int16 value);
+        partial void OnUSE_BMDATESChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> ESTIMATION_TYPE
+        {
+            get
+            {
+                return _ESTIMATION_TYPE;
+            }
+            set
+            {
+                OnESTIMATION_TYPEChanging(value);
+                ReportPropertyChanging("ESTIMATION_TYPE");
+                _ESTIMATION_TYPE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ESTIMATION_TYPE");
+                OnESTIMATION_TYPEChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _ESTIMATION_TYPE;
+        partial void OnESTIMATION_TYPEChanging(Nullable<global::System.Int16> value);
+        partial void OnESTIMATION_TYPEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ESTFUNC_CHLNBR
+        {
+            get
+            {
+                return _ESTFUNC_CHLNBR;
+            }
+            set
+            {
+                OnESTFUNC_CHLNBRChanging(value);
+                ReportPropertyChanging("ESTFUNC_CHLNBR");
+                _ESTFUNC_CHLNBR = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ESTFUNC_CHLNBR");
+                OnESTFUNC_CHLNBRChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ESTFUNC_CHLNBR;
+        partial void OnESTFUNC_CHLNBRChanging(Nullable<global::System.Int32> value);
+        partial void OnESTFUNC_CHLNBRChanged();
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="NGOS_YCPOINT")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class NGOS_YCPOINT : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 NGOS_YCPOINT 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">ID 속성의 초기 값입니다.</param>
+        public static NGOS_YCPOINT CreateNGOS_YCPOINT(global::System.Int32 id)
+        {
+            NGOS_YCPOINT nGOS_YCPOINT = new NGOS_YCPOINT();
+            nGOS_YCPOINT.ID = id;
+            return nGOS_YCPOINT;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATE_TIME
+        {
+            get
+            {
+                return _CREATE_TIME;
+            }
+            set
+            {
+                OnCREATE_TIMEChanging(value);
+                ReportPropertyChanging("CREATE_TIME");
+                _CREATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_TIME");
+                OnCREATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATE_TIME;
+        partial void OnCREATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> CREATE_USER
+        {
+            get
+            {
+                return _CREATE_USER;
+            }
+            set
+            {
+                OnCREATE_USERChanging(value);
+                ReportPropertyChanging("CREATE_USER");
+                _CREATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATE_USER");
+                OnCREATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _CREATE_USER;
+        partial void OnCREATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnCREATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _ID;
+        partial void OnIDChanging(global::System.Int32 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> PERIOD_COUNT
+        {
+            get
+            {
+                return _PERIOD_COUNT;
+            }
+            set
+            {
+                OnPERIOD_COUNTChanging(value);
+                ReportPropertyChanging("PERIOD_COUNT");
+                _PERIOD_COUNT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PERIOD_COUNT");
+                OnPERIOD_COUNTChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _PERIOD_COUNT;
+        partial void OnPERIOD_COUNTChanging(Nullable<global::System.Int32> value);
+        partial void OnPERIOD_COUNTChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> PERIOD_UNIT
+        {
+            get
+            {
+                return _PERIOD_UNIT;
+            }
+            set
+            {
+                OnPERIOD_UNITChanging(value);
+                ReportPropertyChanging("PERIOD_UNIT");
+                _PERIOD_UNIT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PERIOD_UNIT");
+                OnPERIOD_UNITChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _PERIOD_UNIT;
+        partial void OnPERIOD_UNITChanging(Nullable<global::System.Int16> value);
+        partial void OnPERIOD_UNITChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATE_TIME
+        {
+            get
+            {
+                return _UPDATE_TIME;
+            }
+            set
+            {
+                OnUPDATE_TIMEChanging(value);
+                ReportPropertyChanging("UPDATE_TIME");
+                _UPDATE_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_TIME");
+                OnUPDATE_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATE_TIME;
+        partial void OnUPDATE_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATE_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int16> UPDATE_USER
+        {
+            get
+            {
+                return _UPDATE_USER;
+            }
+            set
+            {
+                OnUPDATE_USERChanging(value);
+                ReportPropertyChanging("UPDATE_USER");
+                _UPDATE_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATE_USER");
+                OnUPDATE_USERChanged();
+            }
+        }
+        private Nullable<global::System.Int16> _UPDATE_USER;
+        partial void OnUPDATE_USERChanging(Nullable<global::System.Int16> value);
+        partial void OnUPDATE_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> VALUE
+        {
+            get
+            {
+                return _VALUE;
+            }
+            set
+            {
+                OnVALUEChanging(value);
+                ReportPropertyChanging("VALUE");
+                _VALUE = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("VALUE");
+                OnVALUEChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _VALUE;
+        partial void OnVALUEChanging(Nullable<global::System.Decimal> value);
+        partial void OnVALUEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> YC_ID
+        {
+            get
+            {
+                return _YC_ID;
+            }
+            set
+            {
+                OnYC_IDChanging(value);
+                ReportPropertyChanging("YC_ID");
+                _YC_ID = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("YC_ID");
+                OnYC_IDChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _YC_ID;
+        partial void OnYC_IDChanging(Nullable<global::System.Int32> value);
+        partial void OnYC_IDChanged();
 
         #endregion
 

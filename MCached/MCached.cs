@@ -12,22 +12,24 @@ using System.Diagnostics;
 using CommonInterface;
 
 namespace MCached {
-    public class CachePool {
+    public class DBCachePool {
 
-        private CachePool() {
-            
-
+        private DBCachePool() {
+            CacheInit();
         }
 
-        public void CacheGen() {
-
+        public void CacheInit() {
             _dic.Add("NGOS_INSTRUMENT", new GCacheDB());
             _dic.Add("NGOS_LEG", new GCacheDB());
             _dic.Add("NGOS_CASHFLOW", new GCacheDB());
             _dic.Add("NGOS_RESET", new GCacheDB());
             _dic.Add("NGOS_ADDINFO", new GCacheDB());
             _dic.Add("NGOS_ADDINFOSPEC", new GCacheDB());
+            _dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
+            _dic.Add("NGOS_PORTFOLIO", new GCacheDB());
+            _dic.Add("NGOS_PARTY", new GCacheDB());
 
+            List<Thread> tlist = new List<Thread>();
             foreach(KeyValuePair<string, GCacheDB> v in _dic) {
 
                 ThreadStart ts = null;
@@ -51,41 +53,48 @@ namespace MCached {
                     case "NGOS_ADDINFOSPEC":
                         ts = new ThreadStart(v.Value.Load<NGOS_ADDINFOSPEC>);
                         break;
+                    case "NGOS_EXOTICEVENT":
+                        ts = new ThreadStart(v.Value.Load<NGOS_EXOTICEVENT>);
+                        break;
+                    case "NGOS_PORTFOLIO":
+                        ts = new ThreadStart(v.Value.Load<NGOS_PORTFOLIO>);
+                        break;
+                    case "NGOS_PARTY":
+                        ts = new ThreadStart(v.Value.Load<NGOS_PARTY>);
+                        break;
                     default:
                         break;
                 }
-
-                Thread t = new Thread(ts);
-                t.Start();
+                if(ts != null) {
+                    Thread t = new Thread(ts);
+                    t.Start();
+                    tlist.Add(t);
+                }
             }
 
-
- 
-
-
-
-
-
-
-
-            
-
-            //GCache<NGOS_INSTRUMENT> gcache = new GCache<NGOS_INSTRUMENT>();
-            //ThreadStart ts = new ThreadStart(gcache.LoadDB);
-            //Thread t = new Thread(ts);
-            //t.Start();
-
-            //GCache<NGOS_ADDINFO> gcacheA = new GCache<NGOS_ADDINFO>();
-            //ThreadStart ts = new ThreadStart(gcacheA.LoadDB);
-            //Thread t = new Thread(ts);
-            //t.Start();
+            foreach(Thread t in tlist) {
+                t.Join();
+            }
         }
 
-        public static CachePool BE {
+        
+
+        public GCacheDB this[string tablename] {
+            get {
+                GCacheDB gcacdb = null;
+                if(_dic.ContainsKey(tablename)) {
+                    gcacdb = _dic[tablename];
+                }
+                return gcacdb;
+            }
+        }
+
+        public static DBCachePool BE {
             get { return _instance; }
         }
 
-        private static CachePool _instance = new CachePool();
         private static Dictionary<string, GCacheDB> _dic = new Dictionary<string, GCacheDB>();
+        private static DBCachePool _instance = new DBCachePool();
+        
     }
 }

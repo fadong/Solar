@@ -28,6 +28,12 @@ namespace MCached {
             return cls;
         }
 
+        public T Get(int key) {
+            T cls = null;
+            _dic.TryGetValue(key, out cls);
+            return cls;
+        }
+
         public abstract void Load<Ts>() where Ts : class;
 
         IEnumerator IEnumerable.GetEnumerator() {
@@ -38,6 +44,6 @@ namespace MCached {
             return _dic.Values.GetEnumerator();
         }
 
-        private static ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
+        private ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
     }
 }
