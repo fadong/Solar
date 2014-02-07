@@ -19,15 +19,17 @@ namespace MCached {
         }
 
         public void CacheInit() {
-            _dic.Add("NGOS_INSTRUMENT", new GCacheDB());
-            _dic.Add("NGOS_LEG", new GCacheDB());
-            _dic.Add("NGOS_CASHFLOW", new GCacheDB());
-            _dic.Add("NGOS_RESET", new GCacheDB());
             _dic.Add("NGOS_ADDINFO", new GCacheDB());
             _dic.Add("NGOS_ADDINFOSPEC", new GCacheDB());
-            _dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
-            _dic.Add("NGOS_PORTFOLIO", new GCacheDB());
-            _dic.Add("NGOS_PARTY", new GCacheDB());
+
+            _dic.Add("NGOS_INSTRUMENT", new GCacheDB());
+            _dic.Add("NGOS_LEG", new GCacheDB());
+            //_dic.Add("NGOS_CASHFLOW", new GCacheDB());
+            //_dic.Add("NGOS_RESET", new GCacheDB());
+            
+            //_dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
+            //_dic.Add("NGOS_PORTFOLIO", new GCacheDB());
+            //_dic.Add("NGOS_PARTY", new GCacheDB());
 
             List<Thread> tlist = new List<Thread>();
             foreach(KeyValuePair<string, GCacheDB> v in _dic) {
@@ -76,8 +78,6 @@ namespace MCached {
                 t.Join();
             }
         }
-
-        
 
         public GCacheDB this[string tablename] {
             get {

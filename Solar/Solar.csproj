@@ -52,6 +52,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">
+      <Project>{1517c034-c7a2-45d3-af13-15c80982cd00}</Project>
+      <Name>CommonInterface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MCached\MCached.csproj">
       <Project>{74b57b7f-9298-4857-8529-1ec109d9596b}</Project>
       <Name>MCached</Name>

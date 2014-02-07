@@ -34,6 +34,10 @@ namespace MCached {
             return cls;
         }
 
+        public int Count() {
+            return this._dic.Count;
+        }
+
         public abstract void Load<Ts>() where Ts : class;
 
         IEnumerator IEnumerable.GetEnumerator() {

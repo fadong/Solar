@@ -6,11 +6,14 @@ using System.Data;
 using System.Data.Objects.DataClasses;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using CommonInterface;
 
 namespace MCached {
     public class GCacheDB : GCache<EntityObject> {
 
         public override void Load<Ts>() {
+            string tablename = typeof(Ts).Name;
+            Logger.Info(this, tablename + " Loading Started!!");
             Stopwatch sw = new Stopwatch();
             sw.Start();
             using(dbctx ctx = new dbctx()) {
@@ -21,8 +24,7 @@ namespace MCached {
                 }
             }
             sw.Stop();
-            string tablename = typeof(Ts).Name;
-            Console.WriteLine(tablename + " : " + sw.Elapsed.TotalSeconds);
+            Logger.Info(this, tablename + " [" + sw.Elapsed.TotalSeconds + " / " + this.Count() + "] Loading Completed!!");
             TableName = tablename;
         }
 
