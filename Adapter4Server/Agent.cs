@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +13,7 @@ using CommonInterface;
 using CommonLib;
 
 namespace Adapter4Server {
-    public class Agent : IClientServiceCallback {
+    public class Agent : IClientCB {
 
         /// <summary>
         /// 
@@ -50,13 +52,24 @@ namespace Adapter4Server {
         private List<Claim> RemoteConnect(ClientInfo cinfo, bool isLocalhost) {
             try {
                 List<Claim> claims = new List<Claim>();
+                InstanceContext context = new InstanceContext(this);
+                var serviceName = "EP_ClientServiceLocal";
+                var factory = new DuplexChannelFactory<IClientService>(context, serviceName);
+                factory.Credentials.UserName.UserName = cinfo.UserId;
+                factory.Credentials.UserName.Password = cinfo.PassWord;
 
-
+                IClientService proxy = factory.CreateChannel();
+                ((IDuplexContextChannel)proxy).AutomaticInputSessionShutdown = false;
+                ((IDuplexContextChannel)proxy).OperationTimeout = TimeSpan.MaxValue;
                 return claims;
             } catch (Exception) {
                 throw;
             }
         }
 
+        public void StringMessageReceived(string msg, DateTime recvtime) {
+        
+
+        }
     }
 }

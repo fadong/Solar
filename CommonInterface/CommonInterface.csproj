@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
-      <HintPath>..\..\NewTradingSys\Lib\log4net.dll</HintPath>
+      <HintPath>..\Lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +47,9 @@
   <ItemGroup>
     <Compile Include="CUtil.cs" />
     <Compile Include="DataContract.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="EnumPooler.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="IClientService.cs" />
     <Compile Include="ICommonLib.cs" />
     <Compile Include="Logger.cs" />

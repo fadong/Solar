@@ -17,12 +17,25 @@ namespace ZClient {
             tblLayoutPanel.RowStyles[1].Height = 0;
             this.Height = this.Height - (int)_height;
             this.btnOptionShow.Text = _dnarrow;
+
+            SetInit();
+        }
+
+        private void SetInit() {
+            cmbServer.Items.AddRange(new string[2] { "Localhost", "10.110.99.91" });
+            cmbServer.SelectedIndex = 0;
+
         }
 
         private void btnConnect_Click(object sender, EventArgs e) {
             try {
-                DialogResult = System.Windows.Forms.DialogResult.OK;
-                Close();
+                string id = txtUserId.Text;
+                string pw = txtPW.Text;
+                bool isLocalhost = ((string)cmbServer.SelectedItem).Equals("Localhost") ? true : false;
+                if (ZServer.BE.Connect(id, pw, isLocalhost)) {
+                    DialogResult = System.Windows.Forms.DialogResult.OK;
+                    Close();
+                }
             } catch (Exception err) {
                 MessageBox.Show(err.Message);
             }

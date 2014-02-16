@@ -50,7 +50,6 @@ namespace CommonInterface {
         }
 
         /* Log a message object */
-
         public static void Debug(object source, string message) {
             Debug(source.GetType(), message);
         }

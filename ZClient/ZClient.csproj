@@ -33,10 +33,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.Win.C1Command.2, Version=2.0.20132.19568, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,8 +52,13 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CtlCmdHandler.cs" />
+    <Compile Include="CtlZServer.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,13 +71,232 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCtls\UCtlProd_Bond.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Bond.Designer.cs">
+      <DependentUpon>UCtlProd_Bond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Cap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Cap.Designer.cs">
+      <DependentUpon>UCtlProd_Cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Cash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Cash.Designer.cs">
+      <DependentUpon>UCtlProd_Cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CDFX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CDFX.Designer.cs">
+      <DependentUpon>UCtlProd_CDFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CDS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CDS.Designer.cs">
+      <DependentUpon>UCtlProd_CDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CLN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CLN.Designer.cs">
+      <DependentUpon>UCtlProd_CLN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Collar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Collar.Designer.cs">
+      <DependentUpon>UCtlProd_Collar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Combination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Combination.Designer.cs">
+      <DependentUpon>UCtlProd_Combination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Commodity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Commodity.Designer.cs">
+      <DependentUpon>UCtlProd_Commodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Convertible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Convertible.Designer.cs">
+      <DependentUpon>UCtlProd_Convertible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CurrSwap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_CurrSwap.Designer.cs">
+      <DependentUpon>UCtlProd_CurrSwap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DepositLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DepositLoan.Designer.cs">
+      <DependentUpon>UCtlProd_DepositLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DLS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DLS.Designer.cs">
+      <DependentUpon>UCtlProd_DLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Duet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Duet.Designer.cs">
+      <DependentUpon>UCtlProd_Duet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_EquitySwap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_EquitySwap.Designer.cs">
+      <DependentUpon>UCtlProd_EquitySwap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Floor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Floor.Designer.cs">
+      <DependentUpon>UCtlProd_Floor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FRA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FRA.Designer.cs">
+      <DependentUpon>UCtlProd_FRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FRN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FRN.Designer.cs">
+      <DependentUpon>UCtlProd_FRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FXOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_FXOption.Designer.cs">
+      <DependentUpon>UCtlProd_FXOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_MBSABS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_MBSABS.Designer.cs">
+      <DependentUpon>UCtlProd_MBSABS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_NDF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_NDF.Designer.cs">
+      <DependentUpon>UCtlProd_NDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_RateIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_RateIndex.Designer.cs">
+      <DependentUpon>UCtlProd_RateIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Repo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Repo.Designer.cs">
+      <DependentUpon>UCtlProd_Repo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_StructrualBond.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_StructrualBond.Designer.cs">
+      <DependentUpon>UCtlProd_StructrualBond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Swap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Swap.Designer.cs">
+      <DependentUpon>UCtlProd_Swap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_TRS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_TRS.Designer.cs">
+      <DependentUpon>UCtlProd_TRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Warrant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Warrant.Designer.cs">
+      <DependentUpon>UCtlProd_Warrant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd.Designer.cs">
+      <DependentUpon>UCtlProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_ETF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_ETF.Designer.cs">
+      <DependentUpon>UCtlProd_ETF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_DR.Designer.cs">
+      <DependentUpon>UCtlProd_DR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_ForwardFuture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_ForwardFuture.Designer.cs">
+      <DependentUpon>UCtlProd_ForwardFuture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Option.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Option.Designer.cs">
+      <DependentUpon>UCtlProd_Option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Stock.Designer.cs">
+      <DependentUpon>UCtlProd_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_EqtIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_EqtIndex.Designer.cs">
+      <DependentUpon>UCtlProd_EqtIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Zero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_Zero.Designer.cs">
+      <DependentUpon>UCtlProd_Zero.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,6 +308,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UCtls\UCtlProd.resx">
+      <DependentUpon>UCtlProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtls\UCtlProd_FXOption.resx">
+      <DependentUpon>UCtlProd_FXOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtls\UCtlProd_Option.resx">
+      <DependentUpon>UCtlProd_Option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtls\UCtlProd_Stock.resx">
+      <DependentUpon>UCtlProd_Stock.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +332,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adapter4Server\Adapter4Server.csproj">
+      <Project>{c997015a-630b-44d9-9cda-160238d75714}</Project>
+      <Name>Adapter4Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">
+      <Project>{1517c034-c7a2-45d3-af13-15c80982cd00}</Project>
+      <Name>CommonInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{9d0709c9-7d4c-454f-9b76-752ab8b47010}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Security.Principal;
 
 namespace CommonInterface {
-    [ServiceContract(CallbackContract=typeof(IClientServiceCallback),
+    [ServiceContract(CallbackContract = typeof(IClientCB),
                       SessionMode=SessionMode.Required)]
     public interface IClientService {
 
@@ -18,8 +18,8 @@ namespace CommonInterface {
 
     }
 
-    public interface IClientServiceCallback {
-
-
+    public interface IClientCB {
+        [OperationContract(IsOneWay = true)]
+        void StringMessageReceived(string msg, DateTime time);
     }
 }

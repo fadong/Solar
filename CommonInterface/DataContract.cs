@@ -15,7 +15,7 @@ namespace CommonInterface
         public string SessionId { get; set; }
 
         [DataMember]
-        public string Identifer { get; set; }
+        public string Identifier { get; set; }
 
         [DataMember]
         public string IP { get; set; }

@@ -9,14 +9,23 @@ using System.Diagnostics;
 using CommonInterface;
 
 namespace MCached {
+    /// <summary>
+    /// 
+    /// </summary>
     public class GCacheDB : GCache<EntityObject> {
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="Ts"></typeparam>
         public override void Load<Ts>() {
             string tablename = typeof(Ts).Name;
             Logger.Info(this, tablename + " Loading Started!!");
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            using(dbctx ctx = new dbctx()) {
+            
+
+            using (dctx ctx = new dctx()) {
                 foreach(IEntityWithKey t in ctx.CreateObjectSet<Ts>()) {
                     if(t.EntityKey.EntityKeyValues.Length == 1) {
                         this.Add((int)t.EntityKey.EntityKeyValues[0].Value, (EntityObject)t);
