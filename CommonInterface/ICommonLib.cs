@@ -22,6 +22,9 @@ namespace CommonInterface {
 
     }
 
+
+
+
     public interface IInstrumentObject : ICommonObject {
         string Name { get; set; }
         INSTYPE InsType { get; set; }

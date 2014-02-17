@@ -30,10 +30,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.instPanel = new System.Windows.Forms.Panel();
             this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.instPanel = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
@@ -44,9 +45,9 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(923, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1120, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -61,26 +62,26 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 545);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 622);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(923, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1120, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.06284F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.93716F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 650F));
             this.tableLayoutPanel1.Controls.Add(this.c1DockingTab1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.instPanel, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 38);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 62);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(923, 507);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1120, 560);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // c1DockingTab1
@@ -90,10 +91,11 @@
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage4);
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage5);
             this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DockingTab1.Location = new System.Drawing.Point(502, 3);
+            this.c1DockingTab1.Location = new System.Drawing.Point(473, 3);
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.SelectedIndex = 4;
-            this.c1DockingTab1.Size = new System.Drawing.Size(418, 501);
+            this.c1DockingTab1.SelectedTabBold = true;
+            this.c1DockingTab1.Size = new System.Drawing.Size(644, 554);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabsSpacing = 0;
             this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
@@ -104,24 +106,15 @@
             // 
             this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 27);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(412, 470);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(638, 523);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "Trade";
-            // 
-            // instPanel
-            // 
-            this.instPanel.AutoSize = true;
-            this.instPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.instPanel.Location = new System.Drawing.Point(3, 3);
-            this.instPanel.Name = "instPanel";
-            this.instPanel.Size = new System.Drawing.Size(493, 501);
-            this.instPanel.TabIndex = 1;
             // 
             // c1DockingTabPage3
             // 
             this.c1DockingTabPage3.Location = new System.Drawing.Point(2, 27);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(412, 470);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(638, 523);
             this.c1DockingTabPage3.TabIndex = 2;
             this.c1DockingTabPage3.Text = "Valuation";
             // 
@@ -129,7 +122,7 @@
             // 
             this.c1DockingTabPage4.Location = new System.Drawing.Point(2, 27);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(412, 470);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(638, 523);
             this.c1DockingTabPage4.TabIndex = 3;
             this.c1DockingTabPage4.Text = "HistPrice";
             // 
@@ -137,18 +130,37 @@
             // 
             this.c1DockingTabPage5.Location = new System.Drawing.Point(2, 27);
             this.c1DockingTabPage5.Name = "c1DockingTabPage5";
-            this.c1DockingTabPage5.Size = new System.Drawing.Size(412, 470);
+            this.c1DockingTabPage5.Size = new System.Drawing.Size(638, 523);
             this.c1DockingTabPage5.TabIndex = 4;
             this.c1DockingTabPage5.Text = "RTPrice";
+            // 
+            // instPanel
+            // 
+            this.instPanel.AutoSize = true;
+            this.instPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.instPanel.Location = new System.Drawing.Point(3, 3);
+            this.instPanel.Name = "instPanel";
+            this.instPanel.Size = new System.Drawing.Size(464, 554);
+            this.instPanel.TabIndex = 1;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1120, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 567);
+            this.ClientSize = new System.Drawing.Size(1120, 644);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormProduct";
             this.Text = "FormProduct";
             this.toolStrip1.ResumeLayout(false);
@@ -174,5 +186,6 @@
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
         private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

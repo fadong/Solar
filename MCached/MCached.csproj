@@ -50,18 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataHouse.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataHouse.edmx</DependentUpon>
-    </Compile>
     <Compile Include="GCache.cs" />
     <Compile Include="GCacheDB.cs" />
     <Compile Include="MCached.cs" />
-    <Compile Include="Model1.cs">
+    <Compile Include="MCacheTargetDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,18 +69,20 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
-    <EntityDeploy Include="DataHouse.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DataHouse.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DataHouse.edmx.diagram">
-      <DependentUpon>DataHouse.edmx</DependentUpon>
+    <None Include="App.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Model1.tt">
+    <EntityDeploy Include="MCacheTargetDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MCacheTargetDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MCacheTargetDB.edmx.diagram">
+      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
+    </None>
+    <None Include="Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-      <DependentUpon>DataHouse.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -92,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataCreation\DBCreation.sql" />
+    <Content Include="DataCreation\DBDataCreation.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

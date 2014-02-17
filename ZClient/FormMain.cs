@@ -64,5 +64,14 @@ namespace ZClient {
         private void CmdHandler() {
 
         }
+
+        private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
+            try {
+                var data = ZServer.BE.Svr.GetInstrumentKeyValues();
+                testOutput.Text = data.Count.ToString();
+            } catch (Exception err) {
+                MessageBox.Show(err.Message);
+            }
+        }
     }
 }

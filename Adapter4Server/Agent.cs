@@ -58,9 +58,9 @@ namespace Adapter4Server {
                 factory.Credentials.UserName.UserName = cinfo.UserId;
                 factory.Credentials.UserName.Password = cinfo.PassWord;
 
-                IClientService proxy = factory.CreateChannel();
-                ((IDuplexContextChannel)proxy).AutomaticInputSessionShutdown = false;
-                ((IDuplexContextChannel)proxy).OperationTimeout = TimeSpan.MaxValue;
+                this.Svr = factory.CreateChannel();
+                ((IDuplexContextChannel)this.Svr).AutomaticInputSessionShutdown = false;
+                ((IDuplexContextChannel)this.Svr).OperationTimeout = TimeSpan.MaxValue;
                 return claims;
             } catch (Exception) {
                 throw;
@@ -71,5 +71,7 @@ namespace Adapter4Server {
         
 
         }
+
+        public IClientService Svr { get; internal set; }
     }
 }

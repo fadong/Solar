@@ -16,7 +16,7 @@ namespace Solar {
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant,
                      InstanceContextMode = InstanceContextMode.PerSession,
                      IncludeExceptionDetailInFaults = true)]
-    public class ClientService : IClientService, IDisposable {
+    public partial class ClientService : IClientService, IDisposable {
 
         /// <summary>
         /// 

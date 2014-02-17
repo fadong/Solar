@@ -45,27 +45,27 @@ namespace MCached {
                 ThreadStart ts = null;
                 GCacheDB gcdb = v.Value;
                 switch(v.Key) {
-                    case "NGOS_INSTRUMENT":
+                    case "D_INSTRUMENT":
                         ts = new ThreadStart(gcdb.Load<D_INSTRUMENT>);
                         break;
 
-                    case "NGOS_LEG":
+                    case "D_LEG":
                         ts = new ThreadStart(v.Value.Load<D_LEG>);
                         break;
 
-                    case "NGOS_CASHFLOW":
+                    case "D_CASHFLOW":
                         ts = new ThreadStart(v.Value.Load<D_CASHFLOW>);
                         break;
 
-                    case "NGOS_RESET":
+                    case "D_RESET":
                         ts = new ThreadStart(v.Value.Load<D_RESET>);
                         break;
 
-                    case "NGOS_ADDINFO":
+                    case "D_ADDINFO":
                         ts = new ThreadStart(v.Value.Load<D_ADDINFO>);
                         break;
 
-                    case "NGOS_ADDINFOSPEC":
+                    case "D_ADDINFOSPEC":
                         ts = new ThreadStart(v.Value.Load<D_ADDINFOSPEC>);
                         break;
                     //case "NGOS_EXOTICEVENT":
@@ -84,6 +84,7 @@ namespace MCached {
                     Thread t = new Thread(ts);
                     t.Start();
                     tlist.Add(t);
+                    Logger.Info(this, v.Key + "Loading");
                 }
             }
 

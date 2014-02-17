@@ -23,12 +23,12 @@ namespace MCached {
             Logger.Info(this, tablename + " Loading Started!!");
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            
 
-            using (dctx ctx = new dctx()) {
+
+            using (MCtx ctx = new MCtx()) {
                 foreach(IEntityWithKey t in ctx.CreateObjectSet<Ts>()) {
                     if(t.EntityKey.EntityKeyValues.Length == 1) {
-                        this.Add((int)t.EntityKey.EntityKeyValues[0].Value, (EntityObject)t);
+                        this.Add(Decimal.ToInt32((decimal)t.EntityKey.EntityKeyValues[0].Value), (EntityObject)t);
                     }
                 }
             }

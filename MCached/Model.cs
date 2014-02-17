@@ -24,32 +24,32 @@ namespace MCached
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.
     /// </summary>
-    public partial class dctx : ObjectContext
+    public partial class MCtx : ObjectContext
     {
         #region 생성자
     
         /// <summary>
-        /// 응용 프로그램 구성 파일의 'dctx' 섹션에서 검색된 연결 문자열을 사용하여 새 dctx 개체를 초기화합니다.
+        /// 응용 프로그램 구성 파일의 'MCtx' 섹션에서 검색된 연결 문자열을 사용하여 새 MCtx 개체를 초기화합니다.
         /// </summary>
-        public dctx() : base("name=dctx", "dctx")
+        public MCtx() : base("name=MCtx", "MCtx")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
     
         /// <summary>
-        /// 새 dctx 개체를 초기화합니다.
+        /// 새 MCtx 개체를 초기화합니다.
         /// </summary>
-        public dctx(string connectionString) : base(connectionString, "dctx")
+        public MCtx(string connectionString) : base(connectionString, "MCtx")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
     
         /// <summary>
-        /// 새 dctx 개체를 초기화합니다.
+        /// 새 MCtx 개체를 초기화합니다.
         /// </summary>
-        public dctx(EntityConnection connection) : base(connection, "dctx")
+        public MCtx(EntityConnection connection) : base(connection, "MCtx")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
@@ -64,6 +64,38 @@ namespace MCached
         #endregion
     
         #region ObjectSet 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<C_LINK> C_LINK
+        {
+            get
+            {
+                if ((_C_LINK == null))
+                {
+                    _C_LINK = base.CreateObjectSet<C_LINK>("C_LINK");
+                }
+                return _C_LINK;
+            }
+        }
+        private ObjectSet<C_LINK> _C_LINK;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<C_PORTFOLIO> C_PORTFOLIO
+        {
+            get
+            {
+                if ((_C_PORTFOLIO == null))
+                {
+                    _C_PORTFOLIO = base.CreateObjectSet<C_PORTFOLIO>("C_PORTFOLIO");
+                }
+                return _C_PORTFOLIO;
+            }
+        }
+        private ObjectSet<C_PORTFOLIO> _C_PORTFOLIO;
     
         /// <summary>
         /// 사용 가능한 메타데이터 설명서가 없습니다.
@@ -208,42 +240,26 @@ namespace MCached
             }
         }
         private ObjectSet<S_LOG> _S_LOG;
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        public ObjectSet<C_LINK> C_LINK
-        {
-            get
-            {
-                if ((_C_LINK == null))
-                {
-                    _C_LINK = base.CreateObjectSet<C_LINK>("C_LINK");
-                }
-                return _C_LINK;
-            }
-        }
-        private ObjectSet<C_LINK> _C_LINK;
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        public ObjectSet<C_PORTFOLIO> C_PORTFOLIO
-        {
-            get
-            {
-                if ((_C_PORTFOLIO == null))
-                {
-                    _C_PORTFOLIO = base.CreateObjectSet<C_PORTFOLIO>("C_PORTFOLIO");
-                }
-                return _C_PORTFOLIO;
-            }
-        }
-        private ObjectSet<C_PORTFOLIO> _C_PORTFOLIO;
 
         #endregion
 
         #region AddTo 메서드
+    
+        /// <summary>
+        /// C_LINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToC_LINK(C_LINK c_LINK)
+        {
+            base.AddObject("C_LINK", c_LINK);
+        }
+    
+        /// <summary>
+        /// C_PORTFOLIO EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToC_PORTFOLIO(C_PORTFOLIO c_PORTFOLIO)
+        {
+            base.AddObject("C_PORTFOLIO", c_PORTFOLIO);
+        }
     
         /// <summary>
         /// D_ADDINFO EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
@@ -315,22 +331,6 @@ namespace MCached
         public void AddToS_LOG(S_LOG s_LOG)
         {
             base.AddObject("S_LOG", s_LOG);
-        }
-    
-        /// <summary>
-        /// C_LINK EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
-        /// </summary>
-        public void AddToC_LINK(C_LINK c_LINK)
-        {
-            base.AddObject("C_LINK", c_LINK);
-        }
-    
-        /// <summary>
-        /// C_PORTFOLIO EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
-        /// </summary>
-        public void AddToC_PORTFOLIO(C_PORTFOLIO c_PORTFOLIO)
-        {
-            base.AddObject("C_PORTFOLIO", c_PORTFOLIO);
         }
 
         #endregion
@@ -1374,102 +1374,6 @@ namespace MCached
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> CREATED_TIME
-        {
-            get
-            {
-                return _CREATED_TIME;
-            }
-            set
-            {
-                OnCREATED_TIMEChanging(value);
-                ReportPropertyChanging("CREATED_TIME");
-                _CREATED_TIME = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("CREATED_TIME");
-                OnCREATED_TIMEChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _CREATED_TIME;
-        partial void OnCREATED_TIMEChanging(Nullable<global::System.DateTime> value);
-        partial void OnCREATED_TIMEChanged();
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Decimal> CREATED_USER
-        {
-            get
-            {
-                return _CREATED_USER;
-            }
-            set
-            {
-                OnCREATED_USERChanging(value);
-                ReportPropertyChanging("CREATED_USER");
-                _CREATED_USER = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("CREATED_USER");
-                OnCREATED_USERChanged();
-            }
-        }
-        private Nullable<global::System.Decimal> _CREATED_USER;
-        partial void OnCREATED_USERChanging(Nullable<global::System.Decimal> value);
-        partial void OnCREATED_USERChanged();
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> UPDATED_TIME
-        {
-            get
-            {
-                return _UPDATED_TIME;
-            }
-            set
-            {
-                OnUPDATED_TIMEChanging(value);
-                ReportPropertyChanging("UPDATED_TIME");
-                _UPDATED_TIME = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("UPDATED_TIME");
-                OnUPDATED_TIMEChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _UPDATED_TIME;
-        partial void OnUPDATED_TIMEChanging(Nullable<global::System.DateTime> value);
-        partial void OnUPDATED_TIMEChanged();
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Decimal> UPDATED_USER
-        {
-            get
-            {
-                return _UPDATED_USER;
-            }
-            set
-            {
-                OnUPDATED_USERChanging(value);
-                ReportPropertyChanging("UPDATED_USER");
-                _UPDATED_USER = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("UPDATED_USER");
-                OnUPDATED_USERChanged();
-            }
-        }
-        private Nullable<global::System.Decimal> _UPDATED_USER;
-        partial void OnUPDATED_USERChanging(Nullable<global::System.Decimal> value);
-        partial void OnUPDATED_USERChanged();
-    
-        /// <summary>
-        /// 사용 가능한 메타데이터 설명서가 없습니다.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public Nullable<global::System.Decimal> OPRICE
         {
             get
@@ -1584,6 +1488,102 @@ namespace MCached
         private Nullable<global::System.Decimal> _SETTLE;
         partial void OnSETTLEChanging(Nullable<global::System.Decimal> value);
         partial void OnSETTLEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATED_TIME
+        {
+            get
+            {
+                return _CREATED_TIME;
+            }
+            set
+            {
+                OnCREATED_TIMEChanging(value);
+                ReportPropertyChanging("CREATED_TIME");
+                _CREATED_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATED_TIME");
+                OnCREATED_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATED_TIME;
+        partial void OnCREATED_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATED_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> CREATED_USER
+        {
+            get
+            {
+                return _CREATED_USER;
+            }
+            set
+            {
+                OnCREATED_USERChanging(value);
+                ReportPropertyChanging("CREATED_USER");
+                _CREATED_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("CREATED_USER");
+                OnCREATED_USERChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _CREATED_USER;
+        partial void OnCREATED_USERChanging(Nullable<global::System.Decimal> value);
+        partial void OnCREATED_USERChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> UPDATED_TIME
+        {
+            get
+            {
+                return _UPDATED_TIME;
+            }
+            set
+            {
+                OnUPDATED_TIMEChanging(value);
+                ReportPropertyChanging("UPDATED_TIME");
+                _UPDATED_TIME = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATED_TIME");
+                OnUPDATED_TIMEChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _UPDATED_TIME;
+        partial void OnUPDATED_TIMEChanging(Nullable<global::System.DateTime> value);
+        partial void OnUPDATED_TIMEChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> UPDATED_USER
+        {
+            get
+            {
+                return _UPDATED_USER;
+            }
+            set
+            {
+                OnUPDATED_USERChanging(value);
+                ReportPropertyChanging("UPDATED_USER");
+                _UPDATED_USER = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UPDATED_USER");
+                OnUPDATED_USERChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _UPDATED_USER;
+        partial void OnUPDATED_USERChanging(Nullable<global::System.Decimal> value);
+        partial void OnUPDATED_USERChanged();
 
         #endregion
 

@@ -10,14 +10,14 @@ using CommonInterface;
 namespace ZClient {
     public class ZServer {
         private ZServer() {
-            this.Svr = new Agent();
+            this._agent = new Agent();
         }
 
         public static ZServer BE {
             get { return _instance;  }
         }
 
-        public Agent Svr {
+        public IClientService Svr {
             get;
             internal set;
         }
@@ -28,7 +28,8 @@ namespace ZClient {
 
         public bool Connect(string id, string pw, bool isLocalhost) {
             try {
-                this._claims = Svr.Connect(id, pw, isLocalhost);
+                this._claims = this._agent.Connect(id, pw, isLocalhost);
+                this.Svr = this._agent.Svr;
                 return true;
             } catch (Exception err) {
                 Logger.Info(this, "Connection Failed [" + err.Message + "]");
@@ -37,6 +38,7 @@ namespace ZClient {
         }
 
         private static ZServer _instance = new ZServer();
+        private Agent _agent = null;
         List<Claim> _claims = new List<Claim>();
     }
 }

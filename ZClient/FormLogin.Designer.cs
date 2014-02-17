@@ -174,6 +174,7 @@
             this.txtPW.Name = "txtPW";
             this.txtPW.Size = new System.Drawing.Size(185, 22);
             this.txtPW.TabIndex = 1;
+            this.txtPW.Text = "test";
             // 
             // txtUserId
             // 
@@ -181,6 +182,7 @@
             this.txtUserId.Name = "txtUserId";
             this.txtUserId.Size = new System.Drawing.Size(185, 22);
             this.txtUserId.TabIndex = 0;
+            this.txtUserId.Text = "test";
             // 
             // panel1
             // 
