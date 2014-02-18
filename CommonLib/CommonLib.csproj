@@ -56,6 +56,7 @@
     <Compile Include="FInstrumentCLN.cs" />
     <Compile Include="FInstrumentCollar.cs" />
     <Compile Include="FInstrumentCombi.cs" />
+    <Compile Include="FInstrumentCombination.cs" />
     <Compile Include="FInstrumentCommodity.cs" />
     <Compile Include="FInstrumentConvertible.cs" />
     <Compile Include="FInstrumentCreditIndex.cs" />
@@ -85,12 +86,15 @@
     <Compile Include="FInstrumentTRS.cs" />
     <Compile Include="FInstrumentWarrant.cs" />
     <Compile Include="FInstrumentZero.cs" />
+    <Compile Include="FParameter.cs" />
+    <Compile Include="FParamItem.cs" />
     <Compile Include="FPmCorrPoint.cs" />
     <Compile Include="FPmDivd.cs" />
     <Compile Include="FPmDivdCorr.cs" />
     <Compile Include="FPmDivdPoint.cs" />
     <Compile Include="FPmVol.cs" />
     <Compile Include="FPmVolPoint.cs" />
+    <Compile Include="FPmVolSurface.cs" />
     <Compile Include="FPmYC.cs" />
     <Compile Include="FPmYCPoint.cs" />
     <Compile Include="FPortfolio.cs" />
