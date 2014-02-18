@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentCurrency {
+    [Serializable]
+    public class FInstrumentCurrency : FInstrument {
     }
 }

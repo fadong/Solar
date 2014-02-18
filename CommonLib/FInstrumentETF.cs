@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentETF {
+    [Serializable]
+    public class FInstrumentETF : FInstrumentCombi {
     }
 }

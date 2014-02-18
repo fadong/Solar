@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentRateIndex {
+    [Serializable]
+    public class FInstrumentRateIndex : FInstrument {
     }
 }

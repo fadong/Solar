@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentRepoReverse {
+    [Serializable]
+    public class FInstrumentRepoReverse : FInstrumentCF {
     }
 }

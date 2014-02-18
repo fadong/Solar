@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentTRS {
+    [Serializable]
+    public class FInstrumentTRS : FInstrumentCF {
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentWarrant {
+    [Serializable]
+    public class FInstrumentWarrant : FInstrumentDeriv {
     }
 }

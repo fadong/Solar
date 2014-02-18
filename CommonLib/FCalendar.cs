@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommonLib {
     [Serializable]
-    public class FCalendar {
+    public class FCalendar : BObj {
 
 
     }

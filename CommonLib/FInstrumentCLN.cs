@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommonInterface;
+using CommonLib;
 
 namespace CommonLib {
-    class FInstrumentCLN {
+    [Serializable]
+    public class FInstrumentCLN : FInstrumentCF {
     }
 }

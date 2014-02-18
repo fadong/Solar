@@ -76,6 +76,8 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MCacheTargetDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="MCacheTargetDB.edmx.diagram">
       <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
     </None>
