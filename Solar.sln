@@ -34,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B593B9BC-DA2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_Solar", "UnitTest_Solar\UnitTest_Solar.csproj", "{852A1CBA-E499-4873-B25C-5FCF8EDC6D03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy", "Galaxy\Galaxy.csproj", "{A4A77468-3AEF-4CE0-9CF1-D4A871A67099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Tests", "Galaxy.Tests\Galaxy.Tests.csproj", "{0AAAB43D-F8F0-489F-AAA8-1540E400D2C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +100,14 @@ Global
 		{852A1CBA-E499-4873-B25C-5FCF8EDC6D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{852A1CBA-E499-4873-B25C-5FCF8EDC6D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{852A1CBA-E499-4873-B25C-5FCF8EDC6D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A77468-3AEF-4CE0-9CF1-D4A871A67099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A77468-3AEF-4CE0-9CF1-D4A871A67099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A77468-3AEF-4CE0-9CF1-D4A871A67099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A77468-3AEF-4CE0-9CF1-D4A871A67099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAAB43D-F8F0-489F-AAA8-1540E400D2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAAB43D-F8F0-489F-AAA8-1540E400D2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAAB43D-F8F0-489F-AAA8-1540E400D2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAAB43D-F8F0-489F-AAA8-1540E400D2C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

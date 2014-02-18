@@ -111,7 +111,7 @@ namespace Solar {
         private bool _isrunning = true;
 
         public SubMain() {
-            //DBCachePool dbpool = DBCachePool.BE;
+            DBCachePool dbpool = DBCachePool.BE;
         }
 
         public void Run() {

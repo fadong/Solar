@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.Security;
 using System.Security.Claims;
+using System.Security.Principal;
 using CommonInterface;
 
 namespace Solar {

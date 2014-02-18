@@ -13,14 +13,13 @@ namespace UnitTest_Solar {
         public void TestMethod_GetInstruments() {
             IClientService proxy = ConnectSolar();
             Assert.IsNotNull(proxy);
-            //List<Tuple<int, string>> kv = proxy.GetInstrumentKeyValues();
-            //Assert.IsTrue(kv.Count > 0);
-
+            List<Tuple<int, string>> kv = proxy.GetInstrumentKeyValues();
+            Assert.IsTrue(kv.Count > 0);
         }
 
         private IClientService ConnectSolar() {
             Agent agent = new Agent();
-            List<Claim> claims = agent.Connect("d3176383", "0000", false);
+            List<Claim> claims = agent.Connect("test1", "1tset", false);
             return agent.Svr;
         }
 

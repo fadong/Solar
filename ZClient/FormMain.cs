@@ -67,8 +67,8 @@ namespace ZClient {
 
         private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
             try {
-                //var data = ZServer.BE.Svr.GetInstrumentKeyValues();
-                //testOutput.Text = data.Count.ToString();
+                var data = ZServer.BE.Svr.GetInstrumentKeyValues();
+                testOutput.Text = data.Count.ToString();
             } catch (Exception err) {
                 MessageBox.Show(err.Message);
             }
