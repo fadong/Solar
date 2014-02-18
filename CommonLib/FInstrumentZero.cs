@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace CommonLib {
     [Serializable]
-    public class FInstrumentZero {
+    public class FInstrumentZero : FInstrumentCF {
     }
 }

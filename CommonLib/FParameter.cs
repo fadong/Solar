@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace CommonLib {
     [Serializable]
-    public class FInstrumentDR : FInstrument {
-
+    public class FParameter : BObj {
     }
 }

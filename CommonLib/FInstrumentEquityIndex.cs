@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    public class FInstrumentEquityIndex {
+    [Serializable]
+    public class FInstrumentEquityIndex : FInstrumentCombi {
 
     }
 }

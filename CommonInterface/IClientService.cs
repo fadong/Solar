@@ -16,11 +16,11 @@ namespace CommonInterface {
         [OperationContract]
         List<Claim> Connect(ClientInfo cinfo);
 
-        [OperationContract]
-        List<IInstrumentObject> GetInstruments(List<int> instlist);
+        //[OperationContract]
+        //List<IInstrumentObject> GetInstruments(List<int> instlist);
 
-        [OperationContract]
-        List<Tuple<int, string>> GetInstrumentKeyValues();
+        //[OperationContract]
+        //List<Tuple<int, string>> GetInstrumentKeyValues();
     }
 
     public interface IClientCB {

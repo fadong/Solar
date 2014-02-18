@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonLib {
-    class FInstrumentDualCurrBond {
+    [Serializable]
+    public class FInstrumentDualCurrBond : FInstrumentCF {
     }
 }

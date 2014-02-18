@@ -16,7 +16,7 @@ namespace CommonLib
     /// Date : 2014.02.05
     /// </summary>
     [Serializable]
-    public class FInstrument : IInstrumentObject {
+    public class FInstrument : BObj, IInstrumentObject {
 
         /// <summary>
         /// 다양한 상품 클래스를 생성할 수 있는 전역생성자
@@ -31,11 +31,6 @@ namespace CommonLib
         }
 
         /// <summary>
-        /// 상품 Id
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
         /// 상품명
         /// </summary>
         public string Name { get; set; }
@@ -45,29 +40,5 @@ namespace CommonLib
         /// </summary>
         public INSTYPE InsType { get; set; }
 
-        /// <summary>
-        /// 생성일
-        /// </summary>
-        public DateTime CreatedTime { get; set; }
-
-        /// <summary>
-        /// 수정일
-        /// </summary>
-        public DateTime UpdatedTime { get; set; }
-
-        /// <summary>
-        /// 생성자
-        /// </summary>
-        public int CreateUserId { get; set; }
-
-        /// <summary>
-        /// 수정자
-        /// </summary>
-        public int UpdateUserId { get; set; }
-
-        /// <summary>
-        /// Object 상태정보
-        /// </summary>
-        public OBJECTSTATUS Status { get; set; }
     }
 }
