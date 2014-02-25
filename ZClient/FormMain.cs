@@ -17,7 +17,10 @@ namespace ZClient {
         public FormMain() {
             InitializeComponent();
             SetLogin();
+            CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
         }
+
+        
 
         /// <summary>
         /// 
@@ -25,8 +28,7 @@ namespace ZClient {
         private void SetLogin() {
             try {
                 FormLogin frm = new FormLogin();
-                DialogResult rst = frm.ShowDialog();
-                if (rst == System.Windows.Forms.DialogResult.OK) {
+                if(frm.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
                     
                    
                 } else {
@@ -38,14 +40,16 @@ namespace ZClient {
             }
         }
 
+        void BE_onOpenFormListChanged(List<string> frmlist) {
+
+        }
+
         /// <summary>
         /// 
         /// </summary>
         private void CmdHandler(object sender, EventArgs e) {
             ToolStripMenuItem mitem = (ToolStripMenuItem)sender;
-            MessageBox.Show(mitem.Name);
-            FormProduct frm = new FormProduct();
-            frm.ShowDialog();
+            CommandManager.BE.Execute(mitem.Name);
         }
 
         /// <summary>
@@ -53,7 +57,7 @@ namespace ZClient {
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void mnuClose_Click(object sender, EventArgs e) {
+        private void mnuL2Sys_Close(object sender, EventArgs e) {
             try {
                 Close();
             } catch (Exception err) {
@@ -61,10 +65,18 @@ namespace ZClient {
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void CmdHandler() {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
             try {
                 var data = ZServer.BE.Svr.GetInstrumentKeyValues();

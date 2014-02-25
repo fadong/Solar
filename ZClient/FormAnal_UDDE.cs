@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient.UCtls {
-    public partial class UCtlProd_StructrualBond : UCtlProd {
-        public UCtlProd_StructrualBond() {
+namespace ZClient {
+    public partial class FormAnal_UDDE : Form {
+        public FormAnal_UDDE() {
             InitializeComponent();
         }
     }

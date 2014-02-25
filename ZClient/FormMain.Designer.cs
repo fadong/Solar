@@ -26,11 +26,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuL1Sys = new System.Windows.Forms.ToolStripMenuItem();
-            this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2Sys_Config = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.인쇄ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2Sys_Print = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.mnuClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2Sys_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Insert = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL2InsEqt = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3InsEqtStock = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +61,7 @@
             this.mnuL3InsIrOption = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3InsIrRepo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.mnuL3InsIrSructrualBond = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL3InsIrStructrualBond = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL2InsFx = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3InsFxCash = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3InsFxNDF = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,6 +135,7 @@
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.testOutput = new System.Windows.Forms.RichTextBox();
             this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTab3 = new C1.Win.C1Command.C1DockingTab();
@@ -142,7 +143,9 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.testOutput = new System.Windows.Forms.RichTextBox();
+            this.mnuL2UDDA = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2Sys_RecentForm = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
@@ -185,44 +188,45 @@
             // mnuL1Sys
             // 
             this.mnuL1Sys.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configurationToolStripMenuItem,
+            this.mnuL2Sys_Config,
             this.toolStripSeparator1,
-            this.인쇄ToolStripMenuItem,
+            this.mnuL2Sys_Print,
             this.toolStripSeparator2,
-            this.mnuClose});
+            this.mnuL2Sys_RecentForm,
+            this.toolStripSeparator14,
+            this.mnuL2Sys_Close});
             this.mnuL1Sys.Name = "mnuL1Sys";
             this.mnuL1Sys.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
             this.mnuL1Sys.Size = new System.Drawing.Size(63, 20);
             this.mnuL1Sys.Text = "시스템(F)";
             // 
-            // configurationToolStripMenuItem
+            // mnuL2Sys_Config
             // 
-            this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.configurationToolStripMenuItem.Text = "환경설정";
+            this.mnuL2Sys_Config.Name = "mnuL2Sys_Config";
+            this.mnuL2Sys_Config.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2Sys_Config.Text = "환경설정";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(115, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
             // 
-            // 인쇄ToolStripMenuItem
+            // mnuL2Sys_Print
             // 
-            this.인쇄ToolStripMenuItem.Name = "인쇄ToolStripMenuItem";
-            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.인쇄ToolStripMenuItem.Text = "인쇄";
+            this.mnuL2Sys_Print.Name = "mnuL2Sys_Print";
+            this.mnuL2Sys_Print.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2Sys_Print.Text = "인쇄";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(115, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(156, 6);
             // 
-            // mnuClose
+            // mnuL2Sys_Close
             // 
-            this.mnuClose.Name = "mnuClose";
-            this.mnuClose.Size = new System.Drawing.Size(118, 22);
-            this.mnuClose.Text = "종료";
-            this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
+            //this.mnuL2Sys_Close.Name = "mnuL2Sys_Close";
+            //this.mnuL2Sys_Close.Size = new System.Drawing.Size(159, 22);
+            //this.mnuL2Sys_Close.Text = "종료";
             // 
             // mnuL1Insert
             // 
@@ -261,73 +265,73 @@
             // mnuL3InsEqtStock
             // 
             this.mnuL3InsEqtStock.Name = "mnuL3InsEqtStock";
-            this.mnuL3InsEqtStock.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtStock.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtStock.Text = "Stock";
             this.mnuL3InsEqtStock.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsDR
             // 
             this.mnuL3InsDR.Name = "mnuL3InsDR";
-            this.mnuL3InsDR.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsDR.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsDR.Text = "DR";
             this.mnuL3InsDR.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsEqtIdx
             // 
             this.mnuL3InsEqtIdx.Name = "mnuL3InsEqtIdx";
-            this.mnuL3InsEqtIdx.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtIdx.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtIdx.Text = "Equity Index";
             this.mnuL3InsEqtIdx.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsEqtETF
             // 
             this.mnuL3InsEqtETF.Name = "mnuL3InsEqtETF";
-            this.mnuL3InsEqtETF.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtETF.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtETF.Text = "ETF";
             this.mnuL3InsEqtETF.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL3InsEqtFFt
             // 
             this.mnuL3InsEqtFFt.Name = "mnuL3InsEqtFFt";
-            this.mnuL3InsEqtFFt.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtFFt.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtFFt.Text = "Forward/Future";
             this.mnuL3InsEqtFFt.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsEqtConv
             // 
             this.mnuL3InsEqtConv.Name = "mnuL3InsEqtConv";
-            this.mnuL3InsEqtConv.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtConv.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtConv.Text = "Convertible";
             this.mnuL3InsEqtConv.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsEqtOpt
             // 
             this.mnuL3InsEqtOpt.Name = "mnuL3InsEqtOpt";
-            this.mnuL3InsEqtOpt.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtOpt.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtOpt.Text = "Option";
             this.mnuL3InsEqtOpt.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsEqtWarrant
             // 
             this.mnuL3InsEqtWarrant.Name = "mnuL3InsEqtWarrant";
-            this.mnuL3InsEqtWarrant.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtWarrant.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtWarrant.Text = "Warrant";
             this.mnuL3InsEqtWarrant.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL3InsEqtSwap
             // 
             this.mnuL3InsEqtSwap.Name = "mnuL3InsEqtSwap";
-            this.mnuL3InsEqtSwap.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsEqtSwap.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsEqtSwap.Text = "Equity Swap";
             this.mnuL3InsEqtSwap.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -350,7 +354,7 @@
             this.mnuL3InsIrOption,
             this.mnuL3InsIrRepo,
             this.toolStripSeparator10,
-            this.mnuL3InsIrSructrualBond});
+            this.mnuL3InsIrStructrualBond});
             this.mnuL2InsIr.Name = "mnuL2InsIr";
             this.mnuL2InsIr.Size = new System.Drawing.Size(159, 22);
             this.mnuL2InsIr.Text = "IR";
@@ -461,12 +465,12 @@
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(149, 6);
             // 
-            // mnuL3InsIrSructrualBond
+            // mnuL3InsIrStructrualBond
             // 
-            this.mnuL3InsIrSructrualBond.Name = "mnuL3InsIrSructrualBond";
-            this.mnuL3InsIrSructrualBond.Size = new System.Drawing.Size(152, 22);
-            this.mnuL3InsIrSructrualBond.Text = "Structrual Bond";
-            this.mnuL3InsIrSructrualBond.Click += new System.EventHandler(this.CmdHandler);
+            this.mnuL3InsIrStructrualBond.Name = "mnuL3InsIrStructrualBond";
+            this.mnuL3InsIrStructrualBond.Size = new System.Drawing.Size(152, 22);
+            this.mnuL3InsIrStructrualBond.Text = "Structrual Bond";
+            this.mnuL3InsIrStructrualBond.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL2InsFx
             // 
@@ -485,45 +489,45 @@
             // mnuL3InsFxCash
             // 
             this.mnuL3InsFxCash.Name = "mnuL3InsFxCash";
-            this.mnuL3InsFxCash.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsFxCash.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsFxCash.Text = "Cash";
             this.mnuL3InsFxCash.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsFxNDF
             // 
             this.mnuL3InsFxNDF.Name = "mnuL3InsFxNDF";
-            this.mnuL3InsFxNDF.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsFxNDF.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsFxNDF.Text = "NDF";
             this.mnuL3InsFxNDF.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL3InsFxFFt
             // 
             this.mnuL3InsFxFFt.Name = "mnuL3InsFxFFt";
-            this.mnuL3InsFxFFt.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsFxFFt.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsFxFFt.Text = "Forward/Future";
             this.mnuL3InsFxFFt.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsFxOption
             // 
             this.mnuL3InsFxOption.Name = "mnuL3InsFxOption";
-            this.mnuL3InsFxOption.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsFxOption.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsFxOption.Text = "FX Option";
             this.mnuL3InsFxOption.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL3InsFxCurrSwap
             // 
             this.mnuL3InsFxCurrSwap.Name = "mnuL3InsFxCurrSwap";
-            this.mnuL3InsFxCurrSwap.Size = new System.Drawing.Size(150, 22);
+            this.mnuL3InsFxCurrSwap.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsFxCurrSwap.Text = "Curr Swap";
             this.mnuL3InsFxCurrSwap.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -538,7 +542,7 @@
             // mnuL3InsCommdity
             // 
             this.mnuL3InsCommdity.Name = "mnuL3InsCommdity";
-            this.mnuL3InsCommdity.Size = new System.Drawing.Size(134, 22);
+            this.mnuL3InsCommdity.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsCommdity.Text = "Commodity";
             this.mnuL3InsCommdity.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -556,26 +560,26 @@
             // mnuL3InsCreditCDS
             // 
             this.mnuL3InsCreditCDS.Name = "mnuL3InsCreditCDS";
-            this.mnuL3InsCreditCDS.Size = new System.Drawing.Size(119, 22);
+            this.mnuL3InsCreditCDS.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsCreditCDS.Text = "CDS";
             this.mnuL3InsCreditCDS.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsCreditCLN
             // 
             this.mnuL3InsCreditCLN.Name = "mnuL3InsCreditCLN";
-            this.mnuL3InsCreditCLN.Size = new System.Drawing.Size(119, 22);
+            this.mnuL3InsCreditCLN.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsCreditCLN.Text = "CLN";
             this.mnuL3InsCreditCLN.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(116, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL3InsCreditMBSABS
             // 
             this.mnuL3InsCreditMBSABS.Name = "mnuL3InsCreditMBSABS";
-            this.mnuL3InsCreditMBSABS.Size = new System.Drawing.Size(119, 22);
+            this.mnuL3InsCreditMBSABS.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsCreditMBSABS.Text = "MBS/ABS";
             this.mnuL3InsCreditMBSABS.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -591,14 +595,14 @@
             // mnuL3InsOtherCombi
             // 
             this.mnuL3InsOtherCombi.Name = "mnuL3InsOtherCombi";
-            this.mnuL3InsOtherCombi.Size = new System.Drawing.Size(140, 22);
+            this.mnuL3InsOtherCombi.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsOtherCombi.Text = "Combination";
             this.mnuL3InsOtherCombi.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsOtherTRS
             // 
             this.mnuL3InsOtherTRS.Name = "mnuL3InsOtherTRS";
-            this.mnuL3InsOtherTRS.Size = new System.Drawing.Size(140, 22);
+            this.mnuL3InsOtherTRS.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsOtherTRS.Text = "TRS";
             this.mnuL3InsOtherTRS.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -614,14 +618,14 @@
             // mnuL3InsLnkSecELS
             // 
             this.mnuL3InsLnkSecELS.Name = "mnuL3InsLnkSecELS";
-            this.mnuL3InsLnkSecELS.Size = new System.Drawing.Size(93, 22);
+            this.mnuL3InsLnkSecELS.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsLnkSecELS.Text = "ELS";
             this.mnuL3InsLnkSecELS.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsLnkSecDLS
             // 
             this.mnuL3InsLnkSecDLS.Name = "mnuL3InsLnkSecDLS";
-            this.mnuL3InsLnkSecDLS.Size = new System.Drawing.Size(93, 22);
+            this.mnuL3InsLnkSecDLS.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsLnkSecDLS.Text = "DLS";
             this.mnuL3InsLnkSecDLS.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -637,14 +641,14 @@
             // mnuL3InsHybridDuet
             // 
             this.mnuL3InsHybridDuet.Name = "mnuL3InsHybridDuet";
-            this.mnuL3InsHybridDuet.Size = new System.Drawing.Size(106, 22);
+            this.mnuL3InsHybridDuet.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsHybridDuet.Text = "Duet";
             this.mnuL3InsHybridDuet.Click += new System.EventHandler(this.CmdHandler);
             // 
             // mnuL3InsHybridCDFX
             // 
             this.mnuL3InsHybridCDFX.Name = "mnuL3InsHybridCDFX";
-            this.mnuL3InsHybridCDFX.Size = new System.Drawing.Size(106, 22);
+            this.mnuL3InsHybridCDFX.Size = new System.Drawing.Size(152, 22);
             this.mnuL3InsHybridCDFX.Text = "CD-FX";
             this.mnuL3InsHybridCDFX.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -664,31 +668,31 @@
             // mnuL1ViewProdInfo
             // 
             this.mnuL1ViewProdInfo.Name = "mnuL1ViewProdInfo";
-            this.mnuL1ViewProdInfo.Size = new System.Drawing.Size(140, 22);
+            this.mnuL1ViewProdInfo.Size = new System.Drawing.Size(152, 22);
             this.mnuL1ViewProdInfo.Text = "상품정보";
             // 
             // mnuL1ViewTradeList
             // 
             this.mnuL1ViewTradeList.Name = "mnuL1ViewTradeList";
-            this.mnuL1ViewTradeList.Size = new System.Drawing.Size(140, 22);
+            this.mnuL1ViewTradeList.Size = new System.Drawing.Size(152, 22);
             this.mnuL1ViewTradeList.Text = "거래목록";
             // 
             // mnuL1ViewPnL
             // 
             this.mnuL1ViewPnL.Name = "mnuL1ViewPnL";
-            this.mnuL1ViewPnL.Size = new System.Drawing.Size(140, 22);
+            this.mnuL1ViewPnL.Size = new System.Drawing.Size(152, 22);
             this.mnuL1ViewPnL.Text = "손익구성";
             // 
             // mnuL1ViewRisk
             // 
             this.mnuL1ViewRisk.Name = "mnuL1ViewRisk";
-            this.mnuL1ViewRisk.Size = new System.Drawing.Size(140, 22);
+            this.mnuL1ViewRisk.Size = new System.Drawing.Size(152, 22);
             this.mnuL1ViewRisk.Text = "위험정보";
             // 
             // mnuL1ViewValParams
             // 
             this.mnuL1ViewValParams.Name = "mnuL1ViewValParams";
-            this.mnuL1ViewValParams.Size = new System.Drawing.Size(140, 22);
+            this.mnuL1ViewValParams.Size = new System.Drawing.Size(152, 22);
             this.mnuL1ViewValParams.Text = "평가파라미터";
             // 
             // mnuL1Front
@@ -711,6 +715,8 @@
             // 
             // mnuL1Anal
             // 
+            this.mnuL1Anal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuL2UDDA});
             this.mnuL1Anal.Name = "mnuL1Anal";
             this.mnuL1Anal.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.mnuL1Anal.Size = new System.Drawing.Size(54, 20);
@@ -864,7 +870,7 @@
             // loadFormToolStripMenuItem
             // 
             this.loadFormToolStripMenuItem.Name = "loadFormToolStripMenuItem";
-            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.loadFormToolStripMenuItem.Text = "Load Form";
             this.loadFormToolStripMenuItem.Click += new System.EventHandler(this.loadFormToolStripMenuItem_Click);
             // 
@@ -1055,6 +1061,16 @@
             this.c1DockingTabPage5.TabIndex = 1;
             this.c1DockingTabPage5.Text = "Page5";
             // 
+            // testOutput
+            // 
+            this.testOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.testOutput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.testOutput.Location = new System.Drawing.Point(0, 0);
+            this.testOutput.Name = "testOutput";
+            this.testOutput.Size = new System.Drawing.Size(828, 136);
+            this.testOutput.TabIndex = 0;
+            this.testOutput.Text = "";
+            // 
             // c1DockingTab1
             // 
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
@@ -1137,15 +1153,23 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // testOutput
+            // mnuL2UDDA
             // 
-            this.testOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.testOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testOutput.Location = new System.Drawing.Point(0, 0);
-            this.testOutput.Name = "testOutput";
-            this.testOutput.Size = new System.Drawing.Size(828, 136);
-            this.testOutput.TabIndex = 0;
-            this.testOutput.Text = "";
+            this.mnuL2UDDA.Name = "mnuL2UDDA";
+            this.mnuL2UDDA.Size = new System.Drawing.Size(201, 22);
+            this.mnuL2UDDA.Text = "User Defined DataAccess";
+            this.mnuL2UDDA.Click += new System.EventHandler(this.CmdHandler);
+            // 
+            // mnuL2Sys_RecentForm
+            // 
+            this.mnuL2Sys_RecentForm.Name = "mnuL2Sys_RecentForm";
+            this.mnuL2Sys_RecentForm.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2Sys_RecentForm.Text = "최근 사용한 화면";
+            // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            this.toolStripSeparator14.Size = new System.Drawing.Size(156, 6);
             // 
             // FormMain
             // 
@@ -1192,15 +1216,15 @@
         private System.Windows.Forms.ToolStripMenuItem mnuL1Sys;
         private System.Windows.Forms.ToolStrip toolStripMain;
         private System.Windows.Forms.StatusStrip statusMain;
-        private System.Windows.Forms.ToolStripMenuItem configurationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2Sys_Config;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem mnuClose;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2Sys_Close;
         private System.Windows.Forms.ToolStripMenuItem mnuL1Help;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripButton tBtn_WideView;
-        private System.Windows.Forms.ToolStripMenuItem 인쇄ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2Sys_Print;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -1271,7 +1295,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuL1Middle;
         private System.Windows.Forms.ToolStripMenuItem mnuL1Back;
         private System.Windows.Forms.ToolStripMenuItem mnuL3InsEqtWarrant;
-        private System.Windows.Forms.ToolStripMenuItem mnuL3InsIrSructrualBond;
+        private System.Windows.Forms.ToolStripMenuItem mnuL3InsIrStructrualBond;
         private System.Windows.Forms.ToolStripMenuItem mnuL3InsEqtConv;
         private System.Windows.Forms.ToolStripMenuItem mnuL3InsIrFRA;
         private System.Windows.Forms.ToolStripMenuItem mnuL3InsIrRepo;
@@ -1307,6 +1331,9 @@
         private System.Windows.Forms.ToolStripMenuItem mnuL2MngUser;
         private System.Windows.Forms.ToolStripMenuItem mnuL2MngStcDataParties;
         private System.Windows.Forms.RichTextBox testOutput;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2UDDA;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2Sys_RecentForm;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
     }
 }
 

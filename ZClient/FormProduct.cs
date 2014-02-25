@@ -8,24 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
+using System.Reflection;
 
 namespace ZClient {
     public partial class FormProduct : Form {
-        public FormProduct() {
+        public FormProduct(string uctlname) {
             InitializeComponent();
-            _wpfhost = new ElementHost();
+            Type t = Assembly.GetExecutingAssembly().GetType("ZClient.UCtls." + uctlname);
+            UCtls.UCtlProd uctl = (UCtls.UCtlProd)Activator.CreateInstance(t);
 
-            UCtls.UCtlProd_Option ucl = new UCtls.UCtlProd_Option();
-            ucl.Dock = DockStyle.Fill;
-            instPanel.Controls.Add(ucl);
+            uctl.Dock = DockStyle.Fill;
+            instPanel.Controls.Add(uctl);
 
-            
-            //this.Height = _wpfhost.Height + toolStrip1.Height + statusStrip1.Height + 60;
-            //_wpfhost.Dock = DockStyle.Fill;
             this.Refresh();
-
         }
 
-        private ElementHost _wpfhost = null;
+        private UCtls.UCtlProd uctl = null;
     }
 }

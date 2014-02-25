@@ -59,6 +59,12 @@
   <ItemGroup>
     <Compile Include="CtlCmdHandler.cs" />
     <Compile Include="CtlZServer.cs" />
+    <Compile Include="FormAnal_UDDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnal_UDDE.Designer.cs">
+      <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,12 @@
     <Compile Include="UCtls\UCtlProd_Duet.Designer.cs">
       <DependentUpon>UCtlProd_Duet.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCtls\UCtlProd_ELS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtls\UCtlProd_ELS.Designer.cs">
+      <DependentUpon>UCtlProd_ELS.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCtls\UCtlProd_EquitySwap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,11 +229,11 @@
     <Compile Include="UCtls\UCtlProd_Repo.Designer.cs">
       <DependentUpon>UCtlProd_Repo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCtls\UCtlProd_StructrualBond.cs">
+    <Compile Include="UCtls\UCtlProd_StructuralBond.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCtls\UCtlProd_StructrualBond.Designer.cs">
-      <DependentUpon>UCtlProd_StructrualBond.cs</DependentUpon>
+    <Compile Include="UCtls\UCtlProd_StructuralBond.Designer.cs">
+      <DependentUpon>UCtlProd_StructuralBond.cs</DependentUpon>
     </Compile>
     <Compile Include="UCtls\UCtlProd_Swap.cs">
       <SubType>UserControl</SubType>
@@ -289,6 +301,9 @@
     <Compile Include="UCtls\UCtlProd_Zero.Designer.cs">
       <DependentUpon>UCtlProd_Zero.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAnal_UDDE.resx">
+      <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +325,9 @@
     </Compile>
     <EmbeddedResource Include="UCtls\UCtlProd.resx">
       <DependentUpon>UCtlProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtls\UCtlProd_ELS.resx">
+      <DependentUpon>UCtlProd_ELS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCtls\UCtlProd_FXOption.resx">
       <DependentUpon>UCtlProd_FXOption.cs</DependentUpon>

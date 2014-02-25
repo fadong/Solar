@@ -1,5 +1,5 @@
 ﻿namespace ZClient.UCtls {
-    partial class UCtlProd_StructrualBond {
+    partial class UCtlProd_ELS {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
         /// </summary>
@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
         protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+            if(disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -23,8 +23,16 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
         private void InitializeComponent() {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // UCtlProd_ELS
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "UCtlProd_ELS";
+            this.Size = new System.Drawing.Size(592, 489);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
