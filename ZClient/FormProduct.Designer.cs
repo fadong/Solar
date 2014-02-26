@@ -28,17 +28,29 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.docTabTrade = new C1.Win.C1Command.C1DockingTab();
+            this.tp_Trade = new C1.Win.C1Command.C1DockingTabPage();
+            this.tp_Valuation = new C1.Win.C1Command.C1DockingTabPage();
+            this.tp_HistPrice = new C1.Win.C1Command.C1DockingTabPage();
+            this.tp_RTPrice = new C1.Win.C1Command.C1DockingTabPage();
             this.instPanel = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuL1_File = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2_Open = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuL2_Save = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2_SaveAsNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2_SaveAsFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuL2_RecentProd = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuL2_Close = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
-            this.c1DockingTab1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.docTabTrade)).BeginInit();
+            this.docTabTrade.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -73,7 +85,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 650F));
-            this.tableLayoutPanel1.Controls.Add(this.c1DockingTab1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.docTabTrade, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.instPanel, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -84,55 +96,55 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1120, 560);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // c1DockingTab1
+            // docTabTrade
             // 
-            this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
-            this.c1DockingTab1.Controls.Add(this.c1DockingTabPage3);
-            this.c1DockingTab1.Controls.Add(this.c1DockingTabPage4);
-            this.c1DockingTab1.Controls.Add(this.c1DockingTabPage5);
-            this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DockingTab1.Location = new System.Drawing.Point(473, 3);
-            this.c1DockingTab1.Name = "c1DockingTab1";
-            this.c1DockingTab1.SelectedIndex = 4;
-            this.c1DockingTab1.SelectedTabBold = true;
-            this.c1DockingTab1.Size = new System.Drawing.Size(644, 554);
-            this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabsSpacing = 0;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.docTabTrade.Controls.Add(this.tp_Trade);
+            this.docTabTrade.Controls.Add(this.tp_Valuation);
+            this.docTabTrade.Controls.Add(this.tp_HistPrice);
+            this.docTabTrade.Controls.Add(this.tp_RTPrice);
+            this.docTabTrade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.docTabTrade.Location = new System.Drawing.Point(473, 3);
+            this.docTabTrade.Name = "docTabTrade";
+            this.docTabTrade.SelectedIndex = 4;
+            this.docTabTrade.SelectedTabBold = true;
+            this.docTabTrade.Size = new System.Drawing.Size(644, 554);
+            this.docTabTrade.TabIndex = 0;
+            this.docTabTrade.TabsSpacing = 3;
+            this.docTabTrade.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
+            this.docTabTrade.VisualStyle = C1.Win.C1Command.VisualStyle.System;
+            this.docTabTrade.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
             // 
-            // c1DockingTabPage1
+            // tp_Trade
             // 
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 27);
-            this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(638, 523);
-            this.c1DockingTabPage1.TabIndex = 0;
-            this.c1DockingTabPage1.Text = "Trade";
+            this.tp_Trade.Location = new System.Drawing.Point(2, 27);
+            this.tp_Trade.Name = "tp_Trade";
+            this.tp_Trade.Size = new System.Drawing.Size(638, 523);
+            this.tp_Trade.TabIndex = 0;
+            this.tp_Trade.Text = "Trade";
             // 
-            // c1DockingTabPage3
+            // tp_Valuation
             // 
-            this.c1DockingTabPage3.Location = new System.Drawing.Point(2, 27);
-            this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(638, 523);
-            this.c1DockingTabPage3.TabIndex = 2;
-            this.c1DockingTabPage3.Text = "Valuation";
+            this.tp_Valuation.Location = new System.Drawing.Point(2, 27);
+            this.tp_Valuation.Name = "tp_Valuation";
+            this.tp_Valuation.Size = new System.Drawing.Size(638, 523);
+            this.tp_Valuation.TabIndex = 2;
+            this.tp_Valuation.Text = "Valuation";
             // 
-            // c1DockingTabPage4
+            // tp_HistPrice
             // 
-            this.c1DockingTabPage4.Location = new System.Drawing.Point(2, 27);
-            this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(638, 523);
-            this.c1DockingTabPage4.TabIndex = 3;
-            this.c1DockingTabPage4.Text = "HistPrice";
+            this.tp_HistPrice.Location = new System.Drawing.Point(2, 27);
+            this.tp_HistPrice.Name = "tp_HistPrice";
+            this.tp_HistPrice.Size = new System.Drawing.Size(638, 523);
+            this.tp_HistPrice.TabIndex = 3;
+            this.tp_HistPrice.Text = "HistPrice";
             // 
-            // c1DockingTabPage5
+            // tp_RTPrice
             // 
-            this.c1DockingTabPage5.Location = new System.Drawing.Point(2, 27);
-            this.c1DockingTabPage5.Name = "c1DockingTabPage5";
-            this.c1DockingTabPage5.Size = new System.Drawing.Size(638, 523);
-            this.c1DockingTabPage5.TabIndex = 4;
-            this.c1DockingTabPage5.Text = "RTPrice";
+            this.tp_RTPrice.Location = new System.Drawing.Point(2, 27);
+            this.tp_RTPrice.Name = "tp_RTPrice";
+            this.tp_RTPrice.Size = new System.Drawing.Size(638, 523);
+            this.tp_RTPrice.TabIndex = 4;
+            this.tp_RTPrice.Text = "RTPrice";
             // 
             // instPanel
             // 
@@ -145,11 +157,89 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuL1_File,
+            this.mnuHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1120, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnuL1_File
+            // 
+            this.mnuL1_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuL2_Open,
+            this.toolStripSeparator1,
+            this.mnuL2_Save,
+            this.mnuL2_SaveAsNew,
+            this.mnuL2_SaveAsFile,
+            this.toolStripSeparator2,
+            this.mnuL2_RecentProd,
+            this.toolStripSeparator3,
+            this.mnuL2_Close});
+            this.mnuL1_File.Name = "mnuL1_File";
+            this.mnuL1_File.Size = new System.Drawing.Size(36, 20);
+            this.mnuL1_File.Text = "File";
+            // 
+            // mnuL2_Open
+            // 
+            this.mnuL2_Open.Name = "mnuL2_Open";
+            this.mnuL2_Open.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_Open.Text = "열기";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
+            // 
+            // mnuL2_Save
+            // 
+            this.mnuL2_Save.Name = "mnuL2_Save";
+            this.mnuL2_Save.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_Save.Text = "저장";
+            // 
+            // mnuL2_SaveAsNew
+            // 
+            this.mnuL2_SaveAsNew.Name = "mnuL2_SaveAsNew";
+            this.mnuL2_SaveAsNew.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_SaveAsNew.Text = "신규저장";
+            // 
+            // mnuL2_SaveAsFile
+            // 
+            this.mnuL2_SaveAsFile.Name = "mnuL2_SaveAsFile";
+            this.mnuL2_SaveAsFile.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_SaveAsFile.Text = "파일로 저장";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(156, 6);
+            // 
+            // mnuL2_RecentProd
+            // 
+            this.mnuL2_RecentProd.Name = "mnuL2_RecentProd";
+            this.mnuL2_RecentProd.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_RecentProd.Text = "최근 사용된 상품";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(156, 6);
+            // 
+            // mnuL2_Close
+            // 
+            this.mnuL2_Close.Name = "mnuL2_Close";
+            this.mnuL2_Close.Size = new System.Drawing.Size(159, 22);
+            this.mnuL2_Close.Text = "종료";
+            this.mnuL2_Close.Click += new System.EventHandler(this.mnuL2_Close_Click);
+            // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Name = "mnuHelp";
+            this.mnuHelp.Size = new System.Drawing.Size(43, 20);
+            this.mnuHelp.Text = "Help";
             // 
             // FormProduct
             // 
@@ -167,8 +257,10 @@
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).EndInit();
-            this.c1DockingTab1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.docTabTrade)).EndInit();
+            this.docTabTrade.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,12 +272,23 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.C1Command.C1DockingTab docTabTrade;
+        private C1.Win.C1Command.C1DockingTabPage tp_Trade;
         private System.Windows.Forms.Panel instPanel;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.C1Command.C1DockingTabPage tp_Valuation;
+        private C1.Win.C1Command.C1DockingTabPage tp_HistPrice;
+        private C1.Win.C1Command.C1DockingTabPage tp_RTPrice;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnuL1_File;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_Close;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_Save;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_SaveAsNew;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_Open;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_RecentProd;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem mnuHelp;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2_SaveAsFile;
     }
 }

@@ -33,6 +33,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.Win.C1Command.2, Version=2.0.20132.19568, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1FlexGrid.4">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2012\Projects\NNO\Lib\C1\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Sizer.2, Version=2.1.20132.77, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20132.61313, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\log4net.dll</HintPath>
@@ -57,6 +62,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientConfig.cs" />
+    <Compile Include="ClientUtil.cs" />
     <Compile Include="CtlCmdHandler.cs" />
     <Compile Include="CtlZServer.cs" />
     <Compile Include="FormAnal_UDDE.cs">
@@ -301,6 +308,90 @@
     <Compile Include="UCtls\UCtlProd_Zero.Designer.cs">
       <DependentUpon>UCtlProd_Zero.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Client.Designer.cs">
+      <DependentUpon>UCtlSysInfo_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Debug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Debug.Designer.cs">
+      <DependentUpon>UCtlSysInfo_Debug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Performance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Performance.Designer.cs">
+      <DependentUpon>UCtlSysInfo_Performance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Server.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Server.Designer.cs">
+      <DependentUpon>UCtlSysInfo_Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer.Designer.cs">
+      <DependentUpon>UCtlViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewerGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewerGrid.Designer.cs">
+      <DependentUpon>UCtlViewerGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewerTBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewerTBox.Designer.cs">
+      <DependentUpon>UCtlViewerTBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_All.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_All.Designer.cs">
+      <DependentUpon>UCtlViewer_All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Params.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Params.Designer.cs">
+      <DependentUpon>UCtlViewer_Params.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_PnL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_PnL.Designer.cs">
+      <DependentUpon>UCtlViewer_PnL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Prod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Prod.Designer.cs">
+      <DependentUpon>UCtlViewer_Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Risk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Risk.Designer.cs">
+      <DependentUpon>UCtlViewer_Risk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Trades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_Trades.Designer.cs">
+      <DependentUpon>UCtlViewer_Trades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Trace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlSysInfo_Trace.Designer.cs">
+      <DependentUpon>UCtlSysInfo_Trace.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAnal_UDDE.resx">
       <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +428,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCtls\UCtlProd_Stock.resx">
       <DependentUpon>UCtlProd_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Debug.resx">
+      <DependentUpon>UCtlSysInfo_Debug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Performance.resx">
+      <DependentUpon>UCtlSysInfo_Performance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Server.resx">
+      <DependentUpon>UCtlSysInfo_Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Trace.resx">
+      <DependentUpon>UCtlSysInfo_Trace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer.resx">
+      <DependentUpon>UCtlViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewerGrid.resx">
+      <DependentUpon>UCtlViewerGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewerTBox.resx">
+      <DependentUpon>UCtlViewerTBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_All.resx">
+      <DependentUpon>UCtlViewer_All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_Params.resx">
+      <DependentUpon>UCtlViewer_Params.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_PnL.resx">
+      <DependentUpon>UCtlViewer_PnL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_Prod.resx">
+      <DependentUpon>UCtlViewer_Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_Risk.resx">
+      <DependentUpon>UCtlViewer_Risk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_Trades.resx">
+      <DependentUpon>UCtlViewer_Trades.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
