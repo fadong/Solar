@@ -1,5 +1,5 @@
-﻿namespace ZClient.UCtls {
-    partial class UCtlProd_ELS {
+﻿namespace ZClient.UCtlViewer {
+    partial class UCtlSysInfo_Debug {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
         /// </summary>
@@ -25,12 +25,12 @@
         private void InitializeComponent() {
             this.SuspendLayout();
             // 
-            // UCtlProd_ELS
+            // UCtlSysInfo_Debug
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UCtlProd_ELS";
-            this.Size = new System.Drawing.Size(613, 460);
+            this.Name = "UCtlSysInfo_Debug";
+            this.Size = new System.Drawing.Size(888, 207);
             this.ResumeLayout(false);
 
         }
