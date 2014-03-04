@@ -25,17 +25,17 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnal_UDDE));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.파일FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.접속DBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tStripTxt_ConnDB = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
@@ -55,6 +55,33 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // 파일FToolStripMenuItem
+            // 
+            this.파일FToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.접속DBToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.종료ToolStripMenuItem});
+            this.파일FToolStripMenuItem.Name = "파일FToolStripMenuItem";
+            this.파일FToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.파일FToolStripMenuItem.Text = "파일(F)";
+            // 
+            // 접속DBToolStripMenuItem
+            // 
+            this.접속DBToolStripMenuItem.Name = "접속DBToolStripMenuItem";
+            this.접속DBToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.접속DBToolStripMenuItem.Text = "접속 DB 선택";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+            // 
+            // 종료ToolStripMenuItem
+            // 
+            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.종료ToolStripMenuItem.Text = "종료";
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -68,21 +95,18 @@
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // 파일FToolStripMenuItem
+            // tStripTxt_ConnDB
             // 
-            this.파일FToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.접속DBToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.종료ToolStripMenuItem});
-            this.파일FToolStripMenuItem.Name = "파일FToolStripMenuItem";
-            this.파일FToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.파일FToolStripMenuItem.Text = "파일(F)";
+            this.tStripTxt_ConnDB.Name = "tStripTxt_ConnDB";
+            this.tStripTxt_ConnDB.Size = new System.Drawing.Size(53, 17);
+            this.tStripTxt_ConnDB.Text = "접속 DB :";
             // 
-            // 종료ToolStripMenuItem
+            // toolStripStatusLabel1
             // 
-            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.종료ToolStripMenuItem.Text = "종료";
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(82, 17);
+            this.toolStripStatusLabel1.Text = "Elapsed Time :";
             // 
             // c1Sizer1
             // 
@@ -98,14 +122,12 @@
             this.c1Sizer1.TabIndex = 2;
             this.c1Sizer1.Text = "c1Sizer1";
             // 
-            // richTextBox1
+            // treeView1
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(258, 4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(782, 250);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.treeView1.Location = new System.Drawing.Point(4, 4);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(250, 286);
+            this.treeView1.TabIndex = 2;
             // 
             // c1TrueDBGrid1
             // 
@@ -129,36 +151,14 @@
             this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.System;
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
-            // treeView1
+            // richTextBox1
             // 
-            this.treeView1.Location = new System.Drawing.Point(4, 4);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(250, 286);
-            this.treeView1.TabIndex = 2;
-            // 
-            // 접속DBToolStripMenuItem
-            // 
-            this.접속DBToolStripMenuItem.Name = "접속DBToolStripMenuItem";
-            this.접속DBToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.접속DBToolStripMenuItem.Text = "접속 DB 선택";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // tStripTxt_ConnDB
-            // 
-            this.tStripTxt_ConnDB.Name = "tStripTxt_ConnDB";
-            this.tStripTxt_ConnDB.Size = new System.Drawing.Size(53, 17);
-            this.tStripTxt_ConnDB.Text = "접속 DB :";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(82, 17);
-            this.toolStripStatusLabel1.Text = "Elapsed Time :";
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Location = new System.Drawing.Point(258, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(782, 250);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
             // FormAnal_UDDE
             // 
@@ -172,6 +172,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormAnal_UDDE";
             this.Text = "FormAnal_UDDE";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

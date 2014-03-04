@@ -18,7 +18,17 @@ namespace ZClient {
         public FormMain() {
             InitializeComponent();
             SetLogin();
+
+            ClientConfig.CONNECTED_TIME = DateTime.Now;
+            ClientConfig.MASTER_TIMER.Elapsed += MASTER_TIMER_Elapsed;
+            ClientConfig.MASTER_TIMER.Start();
+
             CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
+        }
+
+        void MASTER_TIMER_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
+            tStripTxt_ConnTime.Text = "현재시각 : " + DateTime.Now.ToString("G");
+            tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss");
         }
 
 

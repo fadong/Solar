@@ -15,6 +15,8 @@ namespace ZClient {
         public static Timer SYSTIMER = null;
         public static int SYSTIMER_INTERNVAL = 500;
 
+        public static DateTime CONNECTED_TIME = DateTime.MaxValue;
+        public static System.Timers.Timer MASTER_TIMER = new System.Timers.Timer(500);
 
     }
 }

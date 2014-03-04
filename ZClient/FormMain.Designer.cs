@@ -124,7 +124,7 @@
             this.mnuL1DataDivd = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1DataCorr = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Mng = new System.Windows.Forms.ToolStripMenuItem();
-            this.portfolio관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuL2MngBook = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2MngStcData = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL2MngStcDataCal = new System.Windows.Forms.ToolStripMenuItem();
@@ -144,6 +144,7 @@
             this.statusMain = new System.Windows.Forms.StatusStrip();
             this.tStripTxt_ConnTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tStripTxt_ElapsedTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
             this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
             this.docTabSubInfo = new C1.Win.C1Command.C1DockingTab();
@@ -160,7 +161,6 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.mnuMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
@@ -947,7 +947,7 @@
             // mnuL1Mng
             // 
             this.mnuL1Mng.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.portfolio관리ToolStripMenuItem,
+            this.mnuL2MngBook,
             this.toolStripSeparator18,
             this.mnuL2MngStcData,
             this.mnuL2MngUser});
@@ -955,16 +955,16 @@
             this.mnuL1Mng.Size = new System.Drawing.Size(57, 20);
             this.mnuL1Mng.Text = "관리(M)";
             // 
-            // portfolio관리ToolStripMenuItem
+            // mnuL2MngBook
             // 
-            this.portfolio관리ToolStripMenuItem.Name = "portfolio관리ToolStripMenuItem";
-            this.portfolio관리ToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.portfolio관리ToolStripMenuItem.Text = "Portfolio 관리";
+            this.mnuL2MngBook.Name = "mnuL2MngBook";
+            this.mnuL2MngBook.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngBook.Text = "Book 관리";
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuL2MngStcData
             // 
@@ -974,36 +974,36 @@
             this.toolStripSeparator19,
             this.enums관리ToolStripMenuItem});
             this.mnuL2MngStcData.Name = "mnuL2MngStcData";
-            this.mnuL2MngStcData.Size = new System.Drawing.Size(144, 22);
+            this.mnuL2MngStcData.Size = new System.Drawing.Size(152, 22);
             this.mnuL2MngStcData.Text = "Static데이터";
             // 
             // mnuL2MngStcDataCal
             // 
             this.mnuL2MngStcDataCal.Name = "mnuL2MngStcDataCal";
-            this.mnuL2MngStcDataCal.Size = new System.Drawing.Size(145, 22);
+            this.mnuL2MngStcDataCal.Size = new System.Drawing.Size(152, 22);
             this.mnuL2MngStcDataCal.Text = "Calendar 관리";
             // 
             // mnuL2MngStcDataParties
             // 
             this.mnuL2MngStcDataParties.Name = "mnuL2MngStcDataParties";
-            this.mnuL2MngStcDataParties.Size = new System.Drawing.Size(145, 22);
+            this.mnuL2MngStcDataParties.Size = new System.Drawing.Size(152, 22);
             this.mnuL2MngStcDataParties.Text = "Parties 관리";
             // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(142, 6);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(149, 6);
             // 
             // enums관리ToolStripMenuItem
             // 
             this.enums관리ToolStripMenuItem.Name = "enums관리ToolStripMenuItem";
-            this.enums관리ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.enums관리ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.enums관리ToolStripMenuItem.Text = "Enums 관리";
             // 
             // mnuL2MngUser
             // 
             this.mnuL2MngUser.Name = "mnuL2MngUser";
-            this.mnuL2MngUser.Size = new System.Drawing.Size(144, 22);
+            this.mnuL2MngUser.Size = new System.Drawing.Size(152, 22);
             this.mnuL2MngUser.Text = "사용자 관리";
             // 
             // mnuL1Windows
@@ -1025,7 +1025,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // devToolStripMenuItem
@@ -1108,6 +1108,13 @@
             this.tStripTxt_ElapsedTime.Size = new System.Drawing.Size(57, 17);
             this.tStripTxt_ElapsedTime.Text = "경과시간 :";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Indigo;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(61, 17);
+            this.toolStripStatusLabel1.Text = "사용자 ID :";
+            // 
             // c1Sizer1
             // 
             this.c1Sizer1.Controls.Add(this.c1Sizer2);
@@ -1137,6 +1144,7 @@
             // docTabSubInfo
             // 
             this.docTabSubInfo.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.docTabSubInfo.CanMoveTabs = true;
             this.docTabSubInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.docTabSubInfo.Location = new System.Drawing.Point(0, 25);
             this.docTabSubInfo.Name = "docTabSubInfo";
@@ -1236,6 +1244,7 @@
             this.docTabLeft.Name = "docTabLeft";
             this.docTabLeft.Padding = new System.Drawing.Point(3, 2);
             this.docTabLeft.SelectedIndex = 1;
+            this.docTabLeft.SelectedTabBold = true;
             this.docTabLeft.Size = new System.Drawing.Size(300, 586);
             this.docTabLeft.TabAreaSpacing = 3;
             this.docTabLeft.TabIndex = 9;
@@ -1251,7 +1260,7 @@
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
             this.c1DockingTabPage3.Size = new System.Drawing.Size(294, 556);
             this.c1DockingTabPage3.TabIndex = 0;
-            this.c1DockingTabPage3.Text = "Portfolio";
+            this.c1DockingTabPage3.Text = "Book";
             // 
             // treeView1
             // 
@@ -1280,13 +1289,6 @@
             this.listView1.Size = new System.Drawing.Size(294, 556);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Indigo;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(61, 17);
-            this.toolStripStatusLabel1.Text = "사용자 ID :";
             // 
             // FormMain
             // 
@@ -1441,7 +1443,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuL3ViewSysTrace;
         private System.Windows.Forms.ToolStripMenuItem mnuL3ViewSysDebug;
         private System.Windows.Forms.ToolStripMenuItem mnuL3ViewSysPerformance;
-        private System.Windows.Forms.ToolStripMenuItem portfolio관리ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuL2MngBook;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
         private System.Windows.Forms.ToolStripMenuItem enums관리ToolStripMenuItem;

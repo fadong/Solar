@@ -211,13 +211,13 @@ namespace ZClient {
                         tp.Name = tp.Text = mnu.Text;
                         Type ut = Assembly.GetExecutingAssembly().GetType(ClientConfig.UCTLVIEWER_PREFIX + this.TargetName);
                         UCtlViewer.UCtlViewer viewer = (UCtlViewer.UCtlViewer)Activator.CreateInstance(ut);
+                        
                         viewer.Dock = DockStyle.Fill;
                         tp.Controls.Add(viewer);
                         doctabs[0].SelectedIndex = ((C1DockingTab)doctabs[0]).TabPages.Add(tp);
                     } else {
                         int tidx = ((C1DockingTab)doctabs[0]).TabPages[mnu.Text].TabIndex;
                         ((C1DockingTab)doctabs[0]).TabPages.RemoveAt(tidx);
-
                     }
                 }
             }

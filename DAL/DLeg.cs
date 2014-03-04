@@ -8,7 +8,7 @@ using CommonLib;
 
 namespace DAL {
 
-    //public class DInstruments : IInstrumentObject, IEnumerable<IInstrumentObject> {
+    //public class DLegs : IInstrumentObject, IEnumerable<ILeg> {
 
     //}
 }

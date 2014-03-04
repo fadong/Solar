@@ -84,6 +84,36 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMngBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMngBook.Designer.cs">
+      <DependentUpon>FormMngBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMngCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMngCalendar.Designer.cs">
+      <DependentUpon>FormMngCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMngEnums.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMngEnums.Designer.cs">
+      <DependentUpon>FormMngEnums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMngParties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMngParties.Designer.cs">
+      <DependentUpon>FormMngParties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMngUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMngUser.Designer.cs">
+      <DependentUpon>FormMngUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +430,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMngBook.resx">
+      <DependentUpon>FormMngBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMngCalendar.resx">
+      <DependentUpon>FormMngCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMngEnums.resx">
+      <DependentUpon>FormMngEnums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMngParties.resx">
+      <DependentUpon>FormMngParties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMngUser.resx">
+      <DependentUpon>FormMngUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>

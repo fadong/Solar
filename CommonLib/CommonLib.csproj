@@ -45,6 +45,7 @@
     <Compile Include="FCalendar.cs" />
     <Compile Include="FCalendarDate.cs" />
     <Compile Include="FCashFlow.cs" />
+    <Compile Include="FEnum.cs" />
     <Compile Include="FInstrument.cs" />
     <Compile Include="FCLeg.cs" />
     <Compile Include="FInstrumentBill.cs" />
@@ -97,9 +98,9 @@
     <Compile Include="FPmVolSurface.cs" />
     <Compile Include="FPmYC.cs" />
     <Compile Include="FPmYCPoint.cs" />
-    <Compile Include="FPortfolio.cs" />
-    <Compile Include="FPortfolioCompound.cs" />
-    <Compile Include="FPortfolioPhysical.cs" />
+    <Compile Include="FBook.cs" />
+    <Compile Include="FBookCompound.cs" />
+    <Compile Include="FBookPhysical.cs" />
     <Compile Include="FPrice.cs" />
     <Compile Include="FPriceHist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

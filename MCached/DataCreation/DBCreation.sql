@@ -164,3 +164,18 @@ create table S_Log (
 	UPDATED_USER int,
 	constraint S_Log_PK primary key (ID)
 );
+
+-- Enums Table
+-- Jaekyoon, Lee (2014-03-04)
+drop table S_Enum;
+create table S_Enum (
+	ID int, 
+	TAG string,
+	VALUE int,
+	DESC string,
+	CREATED_TIME date,
+	CREATED_USER int,
+	UPDATED_TIME date,
+	UPDATED_USER int,
+	constraint S_Enum_PK primary key (ID)
+);
