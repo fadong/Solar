@@ -7,7 +7,7 @@
     <ProjectGuid>{F57A033B-7873-447C-93E2-CFE0E7C1B6A1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZClient</RootNamespace>
+    <RootNamespace>Com.Fadong.ZClient</RootNamespace>
     <AssemblyName>ZClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -458,6 +458,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UCtls\UCtlProd.resx">
       <DependentUpon>UCtlProd.cs</DependentUpon>
@@ -527,9 +528,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adapter4Server\Adapter4Server.csproj">
+    <ProjectReference Include="..\Adapter4Server\Adapter.csproj">
       <Project>{c997015a-630b-44d9-9cda-160238d75714}</Project>
-      <Name>Adapter4Server</Name>
+      <Name>Adapter</Name>
     </ProjectReference>
     <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">
       <Project>{1517c034-c7a2-45d3-af13-15c80982cd00}</Project>

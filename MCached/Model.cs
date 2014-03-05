@@ -17,7 +17,7 @@ using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
-namespace MCached
+namespace Com.Fadong.MCached
 {
     #region 컨텍스트
     

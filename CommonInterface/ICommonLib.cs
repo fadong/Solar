@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
-namespace CommonInterface {
+namespace Com.Fadong.CommonInterface {
     public interface ICommonObject {
         int Id { get; set; }
 

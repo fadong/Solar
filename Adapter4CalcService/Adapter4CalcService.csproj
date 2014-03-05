@@ -7,7 +7,7 @@
     <ProjectGuid>{D64F9D6C-9A87-4F58-AB98-F20548651AE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adapter4CalcService</RootNamespace>
+    <RootNamespace>Com.Fadong.Adatper.Adapter4CalcService</RootNamespace>
     <AssemblyName>Adapter4CalcService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

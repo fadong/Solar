@@ -958,13 +958,13 @@
             // mnuL2MngBook
             // 
             this.mnuL2MngBook.Name = "mnuL2MngBook";
-            this.mnuL2MngBook.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngBook.Size = new System.Drawing.Size(135, 22);
             this.mnuL2MngBook.Text = "Book 관리";
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(132, 6);
             // 
             // mnuL2MngStcData
             // 
@@ -974,36 +974,36 @@
             this.toolStripSeparator19,
             this.enums관리ToolStripMenuItem});
             this.mnuL2MngStcData.Name = "mnuL2MngStcData";
-            this.mnuL2MngStcData.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngStcData.Size = new System.Drawing.Size(135, 22);
             this.mnuL2MngStcData.Text = "Static데이터";
             // 
             // mnuL2MngStcDataCal
             // 
             this.mnuL2MngStcDataCal.Name = "mnuL2MngStcDataCal";
-            this.mnuL2MngStcDataCal.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngStcDataCal.Size = new System.Drawing.Size(145, 22);
             this.mnuL2MngStcDataCal.Text = "Calendar 관리";
             // 
             // mnuL2MngStcDataParties
             // 
             this.mnuL2MngStcDataParties.Name = "mnuL2MngStcDataParties";
-            this.mnuL2MngStcDataParties.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngStcDataParties.Size = new System.Drawing.Size(145, 22);
             this.mnuL2MngStcDataParties.Text = "Parties 관리";
             // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(142, 6);
             // 
             // enums관리ToolStripMenuItem
             // 
             this.enums관리ToolStripMenuItem.Name = "enums관리ToolStripMenuItem";
-            this.enums관리ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.enums관리ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.enums관리ToolStripMenuItem.Text = "Enums 관리";
             // 
             // mnuL2MngUser
             // 
             this.mnuL2MngUser.Name = "mnuL2MngUser";
-            this.mnuL2MngUser.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngUser.Size = new System.Drawing.Size(135, 22);
             this.mnuL2MngUser.Text = "사용자 관리";
             // 
             // mnuL1Windows
@@ -1025,7 +1025,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // devToolStripMenuItem
@@ -1234,6 +1234,7 @@
             this.c1DockingTabPage1.Size = new System.Drawing.Size(887, 303);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "Start";
+            this.c1DockingTabPage1.Click += new System.EventHandler(this.c1DockingTabPage1_Click);
             // 
             // docTabLeft
             // 

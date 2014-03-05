@@ -7,7 +7,7 @@
     <ProjectGuid>{BD4A0A4B-9A96-47CE-985C-041DA1F8D930}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Solar</RootNamespace>
+    <RootNamespace>Com.Fadong.Solar</RootNamespace>
     <AssemblyName>Solar</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

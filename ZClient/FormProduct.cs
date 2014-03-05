@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
 using System.Reflection;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
 namespace ZClient {
     public partial class FormProduct : Form {
@@ -24,7 +24,7 @@ namespace ZClient {
             this.Refresh();
         }
 
-        private UCtls.UCtlProd uctl = null;
+        //private UCtls.UCtlProd uctl = null;
 
         /// <summary>
         /// FormProduct 종료

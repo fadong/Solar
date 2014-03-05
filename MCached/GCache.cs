@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Caching;
 using System.Diagnostics;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
 
-namespace MCached {
+namespace Com.Fadong.MCached {
     ///<summary>
     /// Object을 Caching하기 위한 Class
     /// Object Loading시 Load사용

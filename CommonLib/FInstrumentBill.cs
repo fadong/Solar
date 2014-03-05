@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
-namespace CommonLib {
+namespace Com.Fadong.CommonLib {
     [Serializable]
     public class FInstrumentBill : FInstrumentCF {
 

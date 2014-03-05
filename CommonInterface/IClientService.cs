@@ -8,7 +8,7 @@ using System.Security;
 using System.Security.Claims;
 using System.Security.Principal;
 
-namespace CommonInterface {
+namespace Com.Fadong.CommonInterface {
     [ServiceContract(CallbackContract = typeof(IClientCB),
                       SessionMode=SessionMode.Required)]
     public interface IClientService {

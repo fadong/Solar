@@ -7,7 +7,7 @@
     <ProjectGuid>{3C32D236-13A2-4EA8-8518-2C1B004BCC36}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GridCalculator</RootNamespace>
+    <RootNamespace>Com.Fadong.Calculator.GridCalculator</RootNamespace>
     <AssemblyName>GridCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

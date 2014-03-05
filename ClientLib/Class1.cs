@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClientLib
+namespace Com.Fadong.ZClient.ZLib
 {
     public class Class1
     {

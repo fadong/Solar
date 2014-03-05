@@ -7,7 +7,7 @@
     <ProjectGuid>{8B14FC65-B515-4241-BD25-0C1F52017292}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClientLib</RootNamespace>
+    <RootNamespace>Com.Fadong.ZClient.ZLib</RootNamespace>
     <AssemblyName>ClientLib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

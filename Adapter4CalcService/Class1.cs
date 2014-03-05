@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Adapter4CalcService
+namespace Com.Fadong.Adapter.Adapter4CalcService
 {
     public class Class1
     {

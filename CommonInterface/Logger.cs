@@ -8,7 +8,7 @@ using System.IO;
 using log4net;
 using log4net.Config;
 
-namespace CommonInterface {
+namespace Com.Fadong.CommonInterface {
     public static class Logger {
         private static readonly Dictionary<Type, ILog> _loggers = new Dictionary<Type, ILog>();
         private static bool _logInitialized;

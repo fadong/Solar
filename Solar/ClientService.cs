@@ -7,9 +7,9 @@ using System.ServiceModel;
 using System.Security;
 using System.Security.Claims;
 using System.Security.Principal;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
-namespace Solar {
+namespace Com.Fadong.Solar {
 
     /// <summary>
     /// 

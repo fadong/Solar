@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Annotations;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
 namespace ZClient {
     /// <summary>
@@ -42,12 +42,12 @@ namespace ZClient {
             try {
                 FormLogin frm = new FormLogin();
                 if(frm.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                    
-                   
+                    frm.Close();
                 } else {
-
+                    frm.Close();
+                    this.Close();
                 }
-                frm.Close();
+                
             } catch (Exception) {
 
             }
@@ -85,8 +85,9 @@ namespace ZClient {
         private void mnuL2Sys_Close_Click(object sender, EventArgs e) {
             try {
                 Close();
-            } catch (Exception err) {
                 Logger.Info(this, "System Exit!!");
+            } catch (Exception err) {
+                Logger.Error(this, err);
             }
         }
 
@@ -94,6 +95,10 @@ namespace ZClient {
         /// 
         /// </summary>
         private void CmdHandler() {
+
+        }
+
+        private void c1DockingTabPage1_Click(object sender, EventArgs e) {
 
         }
 

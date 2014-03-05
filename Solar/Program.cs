@@ -9,10 +9,10 @@ using System.Data.Entity;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Data.Objects.DataClasses;
-using MCached;
-using CommonInterface;
+using Com.Fadong.MCached;
+using Com.Fadong.CommonInterface;
 
-namespace Solar {
+namespace Com.Fadong.Solar {
 
     /// <summary>
     /// Solar MainServer 주진입점

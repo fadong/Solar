@@ -7,7 +7,7 @@
     <ProjectGuid>{C997015A-630B-44D9-9CDA-160238D75714}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adapter4Server</RootNamespace>
+    <RootNamespace>Com.Fadong.Adapter.Adapter</RootNamespace>
     <AssemblyName>Adapter4Server</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agent.cs" />
+    <Compile Include="ServerAgent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

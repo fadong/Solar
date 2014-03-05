@@ -7,7 +7,7 @@
     <ProjectGuid>{1517C034-C7A2-45D3-AF13-15C80982CD00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CommonInterface</RootNamespace>
+    <RootNamespace>Com.Fadong.CommonInterface</RootNamespace>
     <AssemblyName>CommonInterface</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -1,4 +1,4 @@
-﻿using CommonInterface;
+﻿using Com.Fadong.CommonInterface;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MCached {
+namespace Com.Fadong.MCached {
 
     /// <summary>
     ///

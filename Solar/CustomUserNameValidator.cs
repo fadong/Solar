@@ -9,7 +9,7 @@ using System.IdentityModel.Selectors;
 using System.IdentityModel.Tokens;
 using System.Threading.Tasks;
 
-namespace Solar {
+namespace Com.Fadong.Solar {
     public class CustomUserNameValidator : UserNamePasswordValidator {
         // This method validates users. It allows in two users, test1 and test2 
         // with passwords 1tset and 2tset respectively.

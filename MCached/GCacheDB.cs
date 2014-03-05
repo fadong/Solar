@@ -6,9 +6,9 @@ using System.Data;
 using System.Data.Objects.DataClasses;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
-namespace MCached {
+namespace Com.Fadong.MCached {
     /// <summary>
     /// 
     /// </summary>

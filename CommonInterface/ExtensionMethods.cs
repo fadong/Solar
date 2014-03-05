@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ComponentModel;
 
-namespace CommonInterface {
+namespace Com.Fadong.CommonInterface {
     public static class ExtensionMethods {
 
         /// <summary>

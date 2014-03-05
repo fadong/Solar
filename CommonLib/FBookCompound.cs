@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonLib {
+namespace Com.Fadong.CommonLib {
     public class FBookCompound : FBook {
 
         public FBook Add(FBook book) {

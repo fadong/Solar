@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Claims;
-using Adapter4Server;
-using CommonInterface;
+using Com.Fadong.Adapter;
+using Com.Fadong.CommonInterface;
 
 namespace ZClient {
     public class ZServer {
         private ZServer() {
-            this._agent = new Agent();
+            this._svragent = new ServerAgent();
         }
 
         public static ZServer BE {
@@ -27,18 +27,17 @@ namespace ZClient {
         }
 
         public bool Connect(string id, string pw, bool isLocalhost) {
-            try {
-                this._claims = this._agent.Connect(id, pw, isLocalhost);
-                this.Svr = this._agent.Svr;
+            this._claims = this._svragent.Connect(id, pw, isLocalhost);
+            this.Svr = this._svragent.Svr;
+            if (this._claims != null) {
                 return true;
-            } catch (Exception err) {
-                Logger.Info(this, "Connection Failed [" + err.Message + "]");
+            } else {
                 return false;
             }
         }
 
         private static ZServer _instance = new ZServer();
-        private Agent _agent = null;
+        private ServerAgent _svragent = null;
         List<Claim> _claims = new List<Claim>();
     }
 }

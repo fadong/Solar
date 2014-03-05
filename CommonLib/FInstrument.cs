@@ -5,9 +5,9 @@ using System.Text;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Threading.Tasks;
-using CommonInterface;
+using Com.Fadong.CommonInterface;
 
-namespace CommonLib
+namespace Com.Fadong.CommonLib
 {
     /// <summary>
     /// IInstrumentObject를 구현하는 기본 클래스

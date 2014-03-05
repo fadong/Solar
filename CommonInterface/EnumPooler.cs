@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonInterface {
+namespace Com.Fadong.CommonInterface {
 
     #region "INSTYPE(Instrument Type에 대한 Enumeration)"
     /// <summary>

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Com.Fadong.CommonInterface;
+using Com.Fadong.CommonLib;
 
 namespace ZClient {
     public partial class FormLogin : Form {
@@ -24,7 +26,6 @@ namespace ZClient {
         private void SetInit() {
             cmbServer.Items.AddRange(new string[2] { "Localhost", "10.110.99.91" });
             cmbServer.SelectedIndex = 0;
-
         }
 
         private void btnConnect_Click(object sender, EventArgs e) {
@@ -35,8 +36,11 @@ namespace ZClient {
                 if (ZServer.BE.Connect(id, pw, isLocalhost)) {
                     DialogResult = System.Windows.Forms.DialogResult.OK;
                     Close();
+                } else {
+                    MessageBox.Show("Connection Fail!!");
                 }
             } catch (Exception err) {
+                Logger.Error(this, err);
                 MessageBox.Show(err.Message);
             }
         }

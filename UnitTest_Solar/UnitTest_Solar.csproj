@@ -6,7 +6,7 @@
     <ProjectGuid>{852A1CBA-E499-4873-B25C-5FCF8EDC6D03}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTest_Solar</RootNamespace>
+    <RootNamespace>Com.Fadong.UnitTest_Solar</RootNamespace>
     <AssemblyName>UnitTest_Solar</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adapter4Server\Adapter4Server.csproj">
+    <ProjectReference Include="..\Adapter4Server\Adapter.csproj">
       <Project>{c997015a-630b-44d9-9cda-160238d75714}</Project>
-      <Name>Adapter4Server</Name>
+      <Name>Adapter</Name>
     </ProjectReference>
     <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">
       <Project>{1517c034-c7a2-45d3-af13-15c80982cd00}</Project>

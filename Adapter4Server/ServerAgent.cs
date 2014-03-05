@@ -9,11 +9,11 @@ using System.Security;
 using System.Security.Claims;
 using System.Net;
 using System.Net.Sockets;
-using CommonInterface;
-using CommonLib;
+using Com.Fadong.CommonInterface;
+using Com.Fadong.CommonLib;
 
-namespace Adapter4Server {
-    public class Agent : IClientCB {
+namespace Com.Fadong.Adapter {
+    public class ServerAgent : IClientCB {
 
         /// <summary>
         /// 

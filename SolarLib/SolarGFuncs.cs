@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarLib
+namespace Com.Fadong.Solar.Lib
 {
-    public class SolarGFuncs
-    {
+    public class SolarGFunc {
+
     }
 }

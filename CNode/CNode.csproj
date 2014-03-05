@@ -7,7 +7,7 @@
     <ProjectGuid>{A153D1D7-69B4-409C-B589-0BCDA1942CA2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CNode</RootNamespace>
+    <RootNamespace>Com.Fadong.Caculator.CNode</RootNamespace>
     <AssemblyName>CNode</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

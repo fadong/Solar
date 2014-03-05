@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CNode {
+namespace Com.Fadong.Caculator.CNode {
     class Program {
         static void Main(string[] args) {
 
