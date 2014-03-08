@@ -7,7 +7,7 @@ using System.Security.Claims;
 using Com.Fadong.Adapter;
 using Com.Fadong.CommonInterface;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public class ZServer {
         private ZServer() {
             this._svragent = new ServerAgent();

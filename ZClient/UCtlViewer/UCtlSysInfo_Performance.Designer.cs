@@ -1,4 +1,4 @@
-﻿namespace ZClient.UCtlViewer {
+﻿namespace Com.Fadong.ZClient.UCtlViewer {
     partial class UCtlSysInfo_Performance {
         /// <summary> 
         /// 필수 디자이너 변수입니다.

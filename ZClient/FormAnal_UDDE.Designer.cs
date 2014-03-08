@@ -1,4 +1,4 @@
-﻿namespace ZClient {
+﻿namespace Com.Fadong.ZClient {
     partial class FormAnal_UDDE {
         /// <summary>
         /// Required designer variable.

@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public static class ClientConfig {
 
         public static string MAINFORM_NAME = "FormMain";
         public static string DOCTAB_SUBINFONAME = "docTabSubInfo";
-        public static string UCTLVIEWER_PREFIX = "ZClient.UCtlViewer.";
+        public static string UCTLVIEWER_PREFIX = "Com.Fadong.ZClient.UCtlViewer.";
 
         public static Timer SYSTIMER = null;
         public static int SYSTIMER_INTERNVAL = 500;

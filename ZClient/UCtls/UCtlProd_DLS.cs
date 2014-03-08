@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient.UCtls {
+namespace Com.Fadong.ZClient.UCtls {
     public partial class UCtlProd_DLS : UCtlProd {
         public UCtlProd_DLS() {
             InitializeComponent();

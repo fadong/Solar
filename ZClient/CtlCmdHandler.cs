@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using C1.Win.C1Command;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public delegate void GNotiFormList(List<Tuple<ToolStripMenuItem, Command_LoadForm>> frmlist);
 
     public class CommandManager : IEnumerable<Command> {
@@ -17,42 +17,42 @@ namespace ZClient {
         /// 
         /// </summary>
         private CommandManager() {
-            this._dic.Add("mnuL2UDDA", new Command_LoadForm("mnuL2UDDA", true, false, "ZClient.FormAnal_UDDE"));
-            this._dic.Add("mnuL3InsEqtStock", new Command_ProdLoadForm("mnuL3InsEqtStock", true, true, "ZClient.FormProduct", "UCtlProd_Stock"));
-            this._dic.Add("mnuL3InsEqtOpt", new Command_ProdLoadForm("mnuL3InsEqtOpt", true, true, "ZClient.FormProduct", "UCtlProd_Option"));
-            this._dic.Add("mnuL3InsIrBond", new Command_ProdLoadForm("mnuL3InsIrBond", true, true, "ZClient.FormProduct", "UCtlProd_Bond"));
-            this._dic.Add("mnuL3InsIrCap", new Command_ProdLoadForm("mnuL3InsIrCap", true, true, "ZClient.FormProduct", "UCtlProd_Cap"));
-            this._dic.Add("mnuL3InsFxCash", new Command_ProdLoadForm("mnuL3InsFxCash", true, true, "ZClient.FormProduct", "UCtlProd_Cash"));
-            this._dic.Add("mnuL3InsHybridCDFX", new Command_ProdLoadForm("mnuL3InsHybridCDFX", true, true, "ZClient.FormProduct", "UCtlProd_CDFX"));
-            this._dic.Add("mnuL3InsCreditCDS", new Command_ProdLoadForm("mnuL3InsCreditCDS", true, true, "ZClient.FormProduct", "UCtlProd_CDS"));
-            this._dic.Add("mnuL3InsCreditCLN", new Command_ProdLoadForm("mnuL3InsCreditCLN", true, true, "ZClient.FormProduct", "UCtlProd_CLN"));
-            this._dic.Add("mnuL3InsIrCollar", new Command_ProdLoadForm("mnuL3InsIrCollar", true, true, "ZClient.FormProduct", "UCtlProd_Collar"));
-            this._dic.Add("mnuL3InsOtherCombi", new Command_ProdLoadForm("mnuL3InsOtherCombi", true, true, "ZClient.FormProduct", "UCtlProd_Combination"));
-            this._dic.Add("mnuL3InsCommdity", new Command_ProdLoadForm("mnuL3InsCommdity", true, true, "ZClient.FormProduct", "UCtlProd_Commodity"));
-            this._dic.Add("mnuL3InsEqtConv", new Command_ProdLoadForm("mnuL3InsEqtConv", true, true, "ZClient.FormProduct", "UCtlProd_Convertible"));
-            this._dic.Add("mnuL3InsFxCurrSwap", new Command_ProdLoadForm("mnuL3InsFxCurrSwap", true, true, "ZClient.FormProduct", "UCtlProd_CurrSwap"));
-            this._dic.Add("mnuL3InsIrDepositLoan", new Command_ProdLoadForm("mnuL3InsIrDepositLoan", true, true, "ZClient.FormProduct", "UCtlProd_DepositLoan"));
-            this._dic.Add("mnuL3InsLnkSecDLS", new Command_ProdLoadForm("mnuL3InsLnkSecDLS", true, true, "ZClient.FormProduct", "UCtlProd_DLS"));
-            this._dic.Add("mnuL3InsHybridDuet", new Command_ProdLoadForm("mnuL3InsHybridDuet", true, true, "ZClient.FormProduct", "UCtlProd_Duet"));
-            this._dic.Add("mnuL3InsEqtIdx", new Command_ProdLoadForm("mnuL3InsEqtIdx", true, true, "ZClient.FormProduct", "UCtlProd_EqtIndex"));
-            this._dic.Add("mnuL3InsEqtSwap", new Command_ProdLoadForm("mnuL3InsEqtSwap", true, true, "ZClient.FormProduct", "UCtlProd_EquitySwap"));
-            this._dic.Add("mnuL3InsEqtETF", new Command_ProdLoadForm("mnuL3InsEqtETF", true, true, "ZClient.FormProduct", "UCtlProd_ETF"));
-            this._dic.Add("mnuL3InsIrFloor", new Command_ProdLoadForm("mnuL3InsIrFloor", true, true, "ZClient.FormProduct", "UCtlProd_Floor"));
-            this._dic.Add("mnuL3InsEqtFFt", new Command_ProdLoadForm("mnuL3InsEqtFFt", true, true, "ZClient.FormProduct", "UCtlProd_ForwardFuture"));
-            this._dic.Add("mnuL3InsIrFRA", new Command_ProdLoadForm("mnuL3InsIrFRA", true, true, "ZClient.FormProduct", "UCtlProd_FRA"));
-            this._dic.Add("mnuL3InsIrFRN", new Command_ProdLoadForm("mnuL3InsIrFRN", true, true, "ZClient.FormProduct", "UCtlProd_FRN"));
-            this._dic.Add("mnuL3InsFxOption", new Command_ProdLoadForm("mnuL3InsFxOption", true, true, "ZClient.FormProduct", "UCtlProd_FXOption"));
-            this._dic.Add("mnuL3InsCreditMBSABS", new Command_ProdLoadForm("mnuL3InsCreditMBSABS", true, true, "ZClient.FormProduct", "UCtlProd_MBSABS"));
-            this._dic.Add("mnuL3InsFxNDF", new Command_ProdLoadForm("mnuL3InsFxNDF", true, true, "ZClient.FormProduct", "UCtlProd_NDF"));
-            this._dic.Add("mnuL3InsIrRateIndex", new Command_ProdLoadForm("mnuL3InsIrRateIndex", true, true, "ZClient.FormProduct", "UCtlProd_RateIndex"));
-            this._dic.Add("mnuL3InsIrRepo", new Command_ProdLoadForm("mnuL3InsIrRepo", true, true, "ZClient.FormProduct", "UCtlProd_Repo"));
-            this._dic.Add("mnuL3InsIrStructrualBond", new Command_ProdLoadForm("mnuL3InsIrStructrualBond", true, true, "ZClient.FormProduct", "UCtlProd_StructuralBond"));
-            this._dic.Add("mnuL3InsIrSwap", new Command_ProdLoadForm("mnuL3InsIrSwap", true, true, "ZClient.FormProduct", "UCtlProd_Swap"));
-            this._dic.Add("mnuL3InsOtherTRS", new Command_ProdLoadForm("mnuL3InsOtherTRS", true, true, "ZClient.FormProduct", "UCtlProd_TRS"));
-            this._dic.Add("mnuL3InsEqtWarrant", new Command_ProdLoadForm("mnuL3InsEqtWarrant", true, true, "ZClient.FormProduct", "UCtlProd_Warrant"));
-            this._dic.Add("mnuL3InsDR", new Command_ProdLoadForm("mnuL3InsDR", true, true, "ZClient.FormProduct", "UCtlProd_DR"));
-            this._dic.Add("mnuL3InsIrZero", new Command_ProdLoadForm("mnuL3InsIrZero", true, true, "ZClient.FormProduct", "UCtlProd_Zero"));
-            this._dic.Add("mnuL3InsLnkSecELS", new Command_ProdLoadForm("mnuL3InsLnkSecELS", true, true, "ZClient.FormProduct", "UCtlProd_ELS"));
+            this._dic.Add("mnuL2UDDA", new Command_LoadForm("mnuL2UDDA", true, false, "Com.Fadong.ZClient.FormAnal_UDDE"));
+            this._dic.Add("mnuL3InsEqtStock", new Command_ProdLoadForm("mnuL3InsEqtStock", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Stock"));
+            this._dic.Add("mnuL3InsEqtOpt", new Command_ProdLoadForm("mnuL3InsEqtOpt", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Option"));
+            this._dic.Add("mnuL3InsIrBond", new Command_ProdLoadForm("mnuL3InsIrBond", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Bond"));
+            this._dic.Add("mnuL3InsIrCap", new Command_ProdLoadForm("mnuL3InsIrCap", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Cap"));
+            this._dic.Add("mnuL3InsFxCash", new Command_ProdLoadForm("mnuL3InsFxCash", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Cash"));
+            this._dic.Add("mnuL3InsHybridCDFX", new Command_ProdLoadForm("mnuL3InsHybridCDFX", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_CDFX"));
+            this._dic.Add("mnuL3InsCreditCDS", new Command_ProdLoadForm("mnuL3InsCreditCDS", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_CDS"));
+            this._dic.Add("mnuL3InsCreditCLN", new Command_ProdLoadForm("mnuL3InsCreditCLN", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_CLN"));
+            this._dic.Add("mnuL3InsIrCollar", new Command_ProdLoadForm("mnuL3InsIrCollar", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Collar"));
+            this._dic.Add("mnuL3InsOtherCombi", new Command_ProdLoadForm("mnuL3InsOtherCombi", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Combination"));
+            this._dic.Add("mnuL3InsCommdity", new Command_ProdLoadForm("mnuL3InsCommdity", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Commodity"));
+            this._dic.Add("mnuL3InsEqtConv", new Command_ProdLoadForm("mnuL3InsEqtConv", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Convertible"));
+            this._dic.Add("mnuL3InsFxCurrSwap", new Command_ProdLoadForm("mnuL3InsFxCurrSwap", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_CurrSwap"));
+            this._dic.Add("mnuL3InsIrDepositLoan", new Command_ProdLoadForm("mnuL3InsIrDepositLoan", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_DepositLoan"));
+            this._dic.Add("mnuL3InsLnkSecDLS", new Command_ProdLoadForm("mnuL3InsLnkSecDLS", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_DLS"));
+            this._dic.Add("mnuL3InsHybridDuet", new Command_ProdLoadForm("mnuL3InsHybridDuet", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Duet"));
+            this._dic.Add("mnuL3InsEqtIdx", new Command_ProdLoadForm("mnuL3InsEqtIdx", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_EqtIndex"));
+            this._dic.Add("mnuL3InsEqtSwap", new Command_ProdLoadForm("mnuL3InsEqtSwap", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_EquitySwap"));
+            this._dic.Add("mnuL3InsEqtETF", new Command_ProdLoadForm("mnuL3InsEqtETF", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_ETF"));
+            this._dic.Add("mnuL3InsIrFloor", new Command_ProdLoadForm("mnuL3InsIrFloor", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Floor"));
+            this._dic.Add("mnuL3InsEqtFFt", new Command_ProdLoadForm("mnuL3InsEqtFFt", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_ForwardFuture"));
+            this._dic.Add("mnuL3InsIrFRA", new Command_ProdLoadForm("mnuL3InsIrFRA", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_FRA"));
+            this._dic.Add("mnuL3InsIrFRN", new Command_ProdLoadForm("mnuL3InsIrFRN", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_FRN"));
+            this._dic.Add("mnuL3InsFxOption", new Command_ProdLoadForm("mnuL3InsFxOption", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_FXOption"));
+            this._dic.Add("mnuL3InsCreditMBSABS", new Command_ProdLoadForm("mnuL3InsCreditMBSABS", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_MBSABS"));
+            this._dic.Add("mnuL3InsFxNDF", new Command_ProdLoadForm("mnuL3InsFxNDF", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_NDF"));
+            this._dic.Add("mnuL3InsIrRateIndex", new Command_ProdLoadForm("mnuL3InsIrRateIndex", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_RateIndex"));
+            this._dic.Add("mnuL3InsIrRepo", new Command_ProdLoadForm("mnuL3InsIrRepo", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Repo"));
+            this._dic.Add("mnuL3InsIrStructrualBond", new Command_ProdLoadForm("mnuL3InsIrStructrualBond", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_StructuralBond"));
+            this._dic.Add("mnuL3InsIrSwap", new Command_ProdLoadForm("mnuL3InsIrSwap", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Swap"));
+            this._dic.Add("mnuL3InsOtherTRS", new Command_ProdLoadForm("mnuL3InsOtherTRS", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_TRS"));
+            this._dic.Add("mnuL3InsEqtWarrant", new Command_ProdLoadForm("mnuL3InsEqtWarrant", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Warrant"));
+            this._dic.Add("mnuL3InsDR", new Command_ProdLoadForm("mnuL3InsDR", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_DR"));
+            this._dic.Add("mnuL3InsIrZero", new Command_ProdLoadForm("mnuL3InsIrZero", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_Zero"));
+            this._dic.Add("mnuL3InsLnkSecELS", new Command_ProdLoadForm("mnuL3InsLnkSecELS", true, true, "Com.Fadong.ZClient.FormProduct", "UCtlProd_ELS"));
             this._dic.Add("mnuL2ViewAll", new Command_ViewerAttach("mnuL2ViewAll", false, true, "UCtlViewer_All"));
             this._dic.Add("mnuL2ViewProdInfo", new Command_ViewerAttach("mnuL2ViewProdInfo", false, true, "UCtlViewer_Prod"));
             this._dic.Add("mnuL2ViewTradeList", new Command_ViewerAttach("mnuL2ViewTradeList", false, true, "UCtlViewer_Trades"));

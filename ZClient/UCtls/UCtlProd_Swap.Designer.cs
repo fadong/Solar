@@ -1,4 +1,4 @@
-﻿namespace ZClient.UCtls {
+﻿namespace Com.Fadong.ZClient.UCtls {
     partial class UCtlProd_Swap {
         /// <summary> 
         /// 필수 디자이너 변수입니다.

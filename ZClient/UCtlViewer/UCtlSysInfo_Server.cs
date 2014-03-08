@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient.UCtlViewer {
+namespace Com.Fadong.ZClient.UCtlViewer {
     public partial class UCtlSysInfo_Server : UCtlViewerGrid {
         public UCtlSysInfo_Server() {
             InitializeComponent();

@@ -1,4 +1,4 @@
-﻿namespace ZClient {
+﻿namespace Com.Fadong.ZClient {
     partial class FormMngBook {
         /// <summary>
         /// Required designer variable.

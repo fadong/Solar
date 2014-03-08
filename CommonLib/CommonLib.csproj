@@ -110,6 +110,7 @@
     <Compile Include="FPriceHist.cs" />
     <Compile Include="FTradeGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonInterface\CommonInterface.csproj">

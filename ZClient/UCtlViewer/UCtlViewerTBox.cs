@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient.UCtlViewer {
+namespace Com.Fadong.ZClient.UCtlViewer {
     public partial class UCtlViewerTBox : UCtlViewer {
         public UCtlViewerTBox() {
             InitializeComponent();

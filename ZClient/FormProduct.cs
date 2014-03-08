@@ -11,11 +11,11 @@ using System.Windows.Forms.Integration;
 using System.Reflection;
 using Com.Fadong.CommonInterface;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public partial class FormProduct : Form {
         public FormProduct(string uctlname) {
             InitializeComponent();
-            Type t = Assembly.GetExecutingAssembly().GetType("ZClient.UCtls." + uctlname);
+            Type t = Assembly.GetExecutingAssembly().GetType("Com.Fadong.ZClient.UCtls." + uctlname);
             UCtls.UCtlProd uctl = (UCtls.UCtlProd)Activator.CreateInstance(t);
             tableLayoutPanel1.ColumnStyles[1].Width = 600;
             this.Width = uctl.Width + (int)tableLayoutPanel1.ColumnStyles[1].Width + 22;

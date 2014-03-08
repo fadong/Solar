@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public partial class FormMngCalendar : Form {
         public FormMngCalendar() {
             InitializeComponent();

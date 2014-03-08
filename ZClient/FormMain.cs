@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Annotations;
 using Com.Fadong.CommonInterface;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     /// <summary>
     /// 
     /// </summary>
@@ -24,6 +24,17 @@ namespace ZClient {
             ClientConfig.MASTER_TIMER.Start();
 
             CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
+
+
+
+            //Test
+            //UMViewer.UMViewer viewer = new UMViewer.UMViewer();
+            //viewer.Dock = DockStyle.Fill;
+            //C1.Win.C1Command.C1DockingTabPage tp = new C1.Win.C1Command.C1DockingTabPage();
+            //tp.Text = "TestTabPage";
+            //tp.Controls.Add(viewer);
+            //docTabMain.TabPages.Add(tp);
+           
         }
 
         void MASTER_TIMER_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {

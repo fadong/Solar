@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public partial class FormLogin : Form {
         public FormLogin() {
             InitializeComponent();

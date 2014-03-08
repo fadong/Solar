@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZClient {
+namespace Com.Fadong.ZClient {
     public static class ClientUtil {
 
         public static IEnumerable<T> GetChildrens<T>(Control control) {
