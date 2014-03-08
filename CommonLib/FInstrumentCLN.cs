@@ -7,7 +7,6 @@ using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
 namespace Com.Fadong.CommonLib {
-    [Serializable]
     public class FInstrumentCLN : FInstrumentCF {
     }
 }

@@ -33,13 +33,15 @@
             this.tStripTxt_ConnDB = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.dbResult = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
             this.c1Sizer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,8 +112,8 @@
             // 
             // c1Sizer1
             // 
+            this.c1Sizer1.Controls.Add(this.dbResult);
             this.c1Sizer1.Controls.Add(this.treeView1);
-            this.c1Sizer1.Controls.Add(this.c1TrueDBGrid1);
             this.c1Sizer1.Controls.Add(this.richTextBox1);
             this.c1Sizer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Sizer1.GridDefinition = "47.3484848484849:True:True;6.06060606060606:False:False;43.5606060606061:False:Tr" +
@@ -122,34 +124,29 @@
             this.c1Sizer1.TabIndex = 2;
             this.c1Sizer1.Text = "c1Sizer1";
             // 
+            // dbResult
+            // 
+            this.dbResult.CaptionHeight = 18;
+            this.dbResult.Images.Add(((System.Drawing.Image)(resources.GetObject("dbResult.Images"))));
+            this.dbResult.Location = new System.Drawing.Point(258, 258);
+            this.dbResult.Name = "dbResult";
+            this.dbResult.PreviewInfo.Caption = "PrintPreview 창";
+            this.dbResult.PreviewInfo.Location = new System.Drawing.Point(0, 0);
+            this.dbResult.PreviewInfo.Size = new System.Drawing.Size(0, 0);
+            this.dbResult.PreviewInfo.ZoomFactor = 75D;
+            this.dbResult.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("dbResult.PrintInfo.PageSettings")));
+            this.dbResult.RowHeight = 16;
+            this.dbResult.Size = new System.Drawing.Size(782, 266);
+            this.dbResult.TabIndex = 3;
+            this.dbResult.Text = "c1TrueDBGrid2";
+            this.dbResult.PropBag = resources.GetString("dbResult.PropBag");
+            // 
             // treeView1
             // 
             this.treeView1.Location = new System.Drawing.Point(4, 4);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(250, 286);
             this.treeView1.TabIndex = 2;
-            // 
-            // c1TrueDBGrid1
-            // 
-            this.c1TrueDBGrid1.AllowUpdate = false;
-            this.c1TrueDBGrid1.AlternatingRows = true;
-            this.c1TrueDBGrid1.CaptionHeight = 18;
-            this.c1TrueDBGrid1.FilterBar = true;
-            this.c1TrueDBGrid1.GroupByCaption = "행으로 그룹화 하기 위해 그 행의 머리글을 여기에 드래그 합니다";
-            this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
-            this.c1TrueDBGrid1.Location = new System.Drawing.Point(258, 258);
-            this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview 창";
-            this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
-            this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
-            this.c1TrueDBGrid1.RowHeight = 16;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(782, 266);
-            this.c1TrueDBGrid1.TabIndex = 1;
-            this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.System;
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // richTextBox1
             // 
@@ -159,6 +156,20 @@
             this.richTextBox1.Size = new System.Drawing.Size(782, 250);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            // 
+            // c1TrueDBGrid1
+            // 
+            this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
+            this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
+            this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
+            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview 창";
+            this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
+            this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
+            this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
+            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(240, 150);
+            this.c1TrueDBGrid1.TabIndex = 0;
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // FormAnal_UDDE
             // 
@@ -179,6 +190,7 @@
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).EndInit();
             this.c1Sizer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dbResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,12 +205,14 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private C1.Win.C1Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.TreeView treeView1;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        //private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem 접속DBToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripStatusLabel tStripTxt_ConnDB;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.C1TrueDBGrid.C1TrueDBGrid dbResult;
 
     }
 }

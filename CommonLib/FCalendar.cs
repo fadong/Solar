@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib {
-    [Serializable]
     public class FCalendar : BObj {
         public FCalendar(string name, List<DateTime> holidays) {
             if (holidays == null || holidays.Count < 1) {

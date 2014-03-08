@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib {
-    [Serializable]
     public class FEnum {
         /// <summary>
         /// Enumeration의 Tag 정보

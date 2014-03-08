@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 using Com.Fadong.CommonInterface;
 
 namespace Com.Fadong.CommonLib {
-    public class FBookPhysical : FBook {
+    public class FTradeGroup : ITradeGroup {
 
-
-
-
-
-        private List<ITrade> _trades = new List<ITrade>();
+        public IEnum PnLMethod { get; set; }
     }
 }

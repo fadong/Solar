@@ -23,42 +23,47 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
         private void InitializeComponent() {
-            this.c1FlexGrid2 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCtlViewerGrid));
+            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.gridG = new C1.Win.C1FlexGrid.C1FlexGrid();
+            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridG)).BeginInit();
             this.SuspendLayout();
             // 
-            // c1FlexGrid2
+            // c1FlexGrid1
             // 
-            this.c1FlexGrid2.ColumnInfo = "10,1,0,0,0,100,Columns:";
-            this.c1FlexGrid2.Location = new System.Drawing.Point(0, 0);
-            this.c1FlexGrid2.Name = "c1FlexGrid2";
-            this.c1FlexGrid2.Rows.DefaultSize = 20;
-            this.c1FlexGrid2.TabIndex = 0;
+            this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,100,Columns:";
+            this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1FlexGrid1.Location = new System.Drawing.Point(141, 23);
+            this.c1FlexGrid1.Name = "c1FlexGrid1";
+            this.c1FlexGrid1.Rows.DefaultSize = 20;
+            this.c1FlexGrid1.Size = new System.Drawing.Size(240, 150);
+            this.c1FlexGrid1.TabIndex = 0;
             // 
-            // dataGridView1
+            // gridG
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(884, 214);
-            this.dataGridView1.TabIndex = 1;
+            this.gridG.ColumnInfo = "5,0,0,0,0,105,Columns:";
+            this.gridG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridG.ExtendLastCol = true;
+            this.gridG.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridG.Location = new System.Drawing.Point(0, 25);
+            this.gridG.Name = "gridG";
+            this.gridG.Rows.Count = 1;
+            this.gridG.Rows.DefaultSize = 21;
+            this.gridG.Size = new System.Drawing.Size(884, 214);
+            this.gridG.StyleInfo = resources.GetString("gridG.StyleInfo");
+            this.gridG.TabIndex = 1;
             // 
             // UCtlViewerGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridG);
             this.Name = "UCtlViewerGrid";
             this.Size = new System.Drawing.Size(884, 239);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.SetChildIndex(this.gridG, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -66,7 +71,8 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.C1FlexGrid.C1FlexGrid gridG;
+
     }
 }

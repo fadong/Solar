@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Com.Fadong.CommonInterface;
 
 namespace Com.Fadong.CommonLib {
-    [Serializable]
     public class FInstrumentBond : FInstrumentCF {
 
     }

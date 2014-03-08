@@ -24,36 +24,24 @@
         /// </summary>
         private void InitializeComponent() {
             this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,100,Columns:";
+            this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 20;
             this.c1FlexGrid1.TabIndex = 0;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 25);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(862, 190);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
             // UCtlViewer_All
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.richTextBox1);
             this.Name = "UCtlViewer_All";
             this.Size = new System.Drawing.Size(862, 215);
-            this.Controls.SetChildIndex(this.richTextBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -63,6 +51,6 @@
         #endregion
 
         private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+
     }
 }

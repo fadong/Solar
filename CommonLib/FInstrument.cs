@@ -15,7 +15,6 @@ namespace Com.Fadong.CommonLib
     /// Author : Jaekyoon, Lee
     /// Date : 2014.02.05
     /// </summary>
-    [Serializable]
     public class FInstrument : BObj, IInstrumentObject {
 
         /// <summary>

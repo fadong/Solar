@@ -111,4 +111,36 @@ namespace Com.Fadong.CommonInterface {
     //    //bool AddOrUpdate(int key, T t);
     //    T Remove(int key);
     //}
+
+    public interface IBook : ICommonObject {
+        string Name { get; set; }
+        string Description { get; set; }
+        IParty Owner { get; set; }
+        IEnum BookType { get; set; }
+        ICurrency Currency { get; set; }
+        List<ITradeGroup> TradeGroups(DateTime fiscalday, DateTime settleday, List<IEnum> tradestatus, bool isMixUp);
+    }
+
+    public interface ITradeGroup {
+        IEnum PnLMethod { get; set; }
+
+    }
+
+    public interface IPnLCalculator {
+        DateTime SettleDay { get; set; }
+        DateTime FiscalDay { get; set; }
+        decimal SettlePrice { get; set; }
+        decimal FiscalPrice { get; set; }
+        decimal Position { get; set; }
+        decimal InitFaceValue { get; set; }
+        decimal RedempFaceValue { get; set; }
+        decimal FaceValue { get; set; }
+        decimal PubValue { get; set; }
+        decimal EValue { get; set; }
+        decimal UnRealizedPnL { get; set; }
+        decimal RealizedPnL { get; set; }
+        decimal TotalPnL { get; set; }
+        void Calculate();
+    }
+
 }

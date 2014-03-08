@@ -99,9 +99,16 @@
     <Compile Include="FPmYCPoint.cs" />
     <Compile Include="FBook.cs" />
     <Compile Include="FBookCompound.cs" />
-    <Compile Include="FBookPhysical.cs" />
+    <Compile Include="FBookReal.cs" />
+    <Compile Include="FPnLCalculator.cs" />
+    <Compile Include="FPnLCalculatorFIFO.cs" />
+    <Compile Include="FPnLCalculatorLIFO.cs" />
+    <Compile Include="FPnLCalculatorOpenAvg.cs" />
+    <Compile Include="FPnLCalculatorOpenAvgLongShort.cs" />
+    <Compile Include="FPnLTradeItem.cs" />
     <Compile Include="FPrice.cs" />
     <Compile Include="FPriceHist.cs" />
+    <Compile Include="FTradeGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

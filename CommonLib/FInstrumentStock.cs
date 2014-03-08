@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib {
-
-    [Serializable]
     public class FInstrumentStock : FInstrument {
 
     }
