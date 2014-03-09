@@ -14,6 +14,7 @@ namespace Com.Fadong.MCached {
     /// </summary>
     public class GCacheDB : GCache<EntityObject> {
 
+        #region "public override void Load<Ts>()"
         /// <summary>
         /// 
         /// </summary>
@@ -23,7 +24,6 @@ namespace Com.Fadong.MCached {
             Logger.Info(this, tablename + " Loading Started!!");
             Stopwatch sw = new Stopwatch();
             sw.Start();
-
 
             using (MCtx ctx = new MCtx()) {
                 foreach(IEntityWithKey t in ctx.CreateObjectSet<Ts>()) {
@@ -36,6 +36,7 @@ namespace Com.Fadong.MCached {
             Logger.Info(this, tablename + " [" + sw.Elapsed.TotalSeconds + " / " + this.Count() + "] Loading Completed!!");
             TableName = tablename;
         }
+        #endregion
 
         private string TableName = string.Empty;
     }

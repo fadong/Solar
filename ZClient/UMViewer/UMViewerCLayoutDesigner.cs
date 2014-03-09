@@ -21,5 +21,35 @@ namespace Com.Fadong.ZClient.UMViewer {
                 MessageBox.Show(err.Message);
             }
         }
+
+        private void btnForeColorPicking_Click(object sender, EventArgs e) {
+            try {
+                DialogResult rst = colorDialog.ShowDialog(this);
+                
+            } catch (Exception err) {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private void btnBackColorPicking_Click(object sender, EventArgs e) {
+            try {
+                DialogResult rst = colorDialog.ShowDialog(this);
+            } catch (Exception err) {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private void DrawSample() {
+
+
+        }
+
+        private void lstColumn_SelectedIndexChanged(object sender, EventArgs e) {
+            try {
+                DrawSample();
+            } catch (Exception err) {
+                MessageBox.Show(err.Message);
+            }
+        }
     }
 }

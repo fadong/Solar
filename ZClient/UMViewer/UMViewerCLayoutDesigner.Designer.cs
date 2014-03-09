@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.lstColumn = new System.Windows.Forms.CheckedListBox();
             this.btnUp = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
             this.ColWitdh = new System.Windows.Forms.TextBox();
@@ -37,11 +37,12 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.btnForeColorPicking = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBackColorPicking = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,14 +55,15 @@
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // checkedListBox1
+            // lstColumn
             // 
-            this.checkedListBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(11, 37);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(249, 454);
-            this.checkedListBox1.TabIndex = 1;
+            this.lstColumn.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lstColumn.FormattingEnabled = true;
+            this.lstColumn.Location = new System.Drawing.Point(11, 37);
+            this.lstColumn.Name = "lstColumn";
+            this.lstColumn.Size = new System.Drawing.Size(249, 454);
+            this.lstColumn.TabIndex = 1;
+            this.lstColumn.SelectedIndexChanged += new System.EventHandler(this.lstColumn_SelectedIndexChanged);
             // 
             // btnUp
             // 
@@ -172,19 +174,20 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "문자 맞춤 :";
             // 
-            // button1
+            // btnForeColorPicking
             // 
-            this.button1.Location = new System.Drawing.Point(339, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "색선택";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnForeColorPicking.Location = new System.Drawing.Point(339, 197);
+            this.btnForeColorPicking.Name = "btnForeColorPicking";
+            this.btnForeColorPicking.Size = new System.Drawing.Size(68, 23);
+            this.btnForeColorPicking.TabIndex = 13;
+            this.btnForeColorPicking.Text = "색선택";
+            this.btnForeColorPicking.UseVisualStyleBackColor = true;
+            this.btnForeColorPicking.Click += new System.EventHandler(this.btnForeColorPicking_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(266, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
@@ -194,31 +197,43 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(266, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "배경색 선택 :";
             // 
-            // button2
+            // btnBackColorPicking
             // 
-            this.button2.Location = new System.Drawing.Point(339, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "색선택";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBackColorPicking.Location = new System.Drawing.Point(339, 226);
+            this.btnBackColorPicking.Name = "btnBackColorPicking";
+            this.btnBackColorPicking.Size = new System.Drawing.Size(68, 23);
+            this.btnBackColorPicking.TabIndex = 15;
+            this.btnBackColorPicking.Text = "색선택";
+            this.btnBackColorPicking.UseVisualStyleBackColor = true;
+            this.btnBackColorPicking.Click += new System.EventHandler(this.btnBackColorPicking_Click);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(273, 273);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(129, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "결과 (넓이 반영 X)";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UMViewerCLayoutDesigner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 580);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnBackColorPicking);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnForeColorPicking);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.numericUpDown1);
@@ -229,7 +244,7 @@
             this.Controls.Add(this.ColWitdh);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.lstColumn);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -247,7 +262,7 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox lstColumn;
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.TextBox ColWitdh;
@@ -260,10 +275,11 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.Button btnForeColorPicking;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBackColorPicking;
+        private System.Windows.Forms.Label label6;
     }
 }

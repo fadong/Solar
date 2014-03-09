@@ -18,11 +18,7 @@ namespace Com.Fadong.MCached {
     ///<remarks>Author : Jaekyoon,Lee (2014-02-05)</remarks>
     public abstract class GCache<T> : IEnumerable<T> where T : class {
 
-        /// <summary>
-        /// Caching된 Object를 담아두는 ConcurrentDictionary
-        /// </summary>
-        private ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
-
+        #region "public bool Add(int key, T t)"
         /// <summary>
         /// EntityObject Add
         /// </summary>
@@ -32,48 +28,9 @@ namespace Com.Fadong.MCached {
         public bool Add(int key, T t) {
             return _dic.TryAdd(key, t);
         }
+        #endregion
 
-        /// <summary>
-        /// Dictionary의 총갯수(Caching Size)
-        /// </summary>
-        /// <returns>총갯수</returns>
-        public int Count() {
-            return this._dic.Count;
-        }
-
-        /// <summary>
-        /// EntityObject Get
-        /// </summary>
-        /// <param name="key">Key</param>
-        /// <returns>Key에 해당되는 Object (대상없는 경우 null)</returns>
-        public T Get(int key) {
-            T cls = null;
-            _dic.TryGetValue(key, out cls);
-            return cls;
-        }
-
-        /// <summary>
-        /// GetEnumerator 구현
-        /// </summary>
-        /// <returns>IEnuerable<typeparamref name=">"/></returns>
-        public IEnumerator<T> GetEnumerator() {
-            return _dic.Values.GetEnumerator();
-        }
-
-        /// <summary>
-        /// GetEnumerator 구현
-        /// </summary>
-        /// <returns></returns>
-        IEnumerator IEnumerable.GetEnumerator() {
-            return GetEnumerator();
-        }
-
-        /// <summary>
-        ///  Data Loading에 관련된 Abstraction Method
-        /// </summary>
-        /// <typeparam name="Ts"></typeparam>
-        public abstract void Load<Ts>() where Ts : class;
-
+        #region "public T Remove(int key)"
         /// <summary>
         /// Object Remove
         /// </summary>
@@ -84,5 +41,61 @@ namespace Com.Fadong.MCached {
             _dic.TryRemove(key, out cls);
             return cls;
         }
+        #endregion
+
+        #region "public int Count()"
+        /// <summary>
+        /// Dictionary의 총갯수(Caching Size)
+        /// </summary>
+        /// <returns>총갯수</returns>
+        public int Count() {
+            return this._dic.Count;
+        }
+        #endregion
+
+        #region "public T Get(int key)"
+        /// <summary>
+        /// EntityObject Get
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <returns>Key에 해당되는 Object (대상없는 경우 null)</returns>
+        public T Get(int key) {
+            T cls = null;
+            _dic.TryGetValue(key, out cls);
+            return cls;
+        }
+        #endregion
+
+        #region "public IEnumerator<T> GetEnumerator()"
+        
+        /// <summary>
+        /// GetEnumerator 구현
+        /// </summary>
+        /// <returns>IEnuerable<typeparamref name=">"/></returns>
+        public IEnumerator<T> GetEnumerator() {
+            return _dic.Values.GetEnumerator();
+        }
+        #endregion
+
+        #region "IEnumerator IEnumerable.GetEnumerator()"
+        /// <summary>
+        /// GetEnumerator 구현
+        /// </summary>
+        /// <returns></returns>
+        IEnumerator IEnumerable.GetEnumerator() {
+            return GetEnumerator();
+        }
+        #endregion
+
+        /// <summary>
+        /// Caching된 Object를 담아두는 ConcurrentDictionary
+        /// </summary>
+        private ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
+
+        /// <summary>
+        ///  Data Loading에 관련된 Abstraction Method
+        /// </summary>
+        /// <typeparam name="Ts"></typeparam>
+        public abstract void Load<Ts>() where Ts : class;
     }
 }

@@ -50,6 +50,7 @@
     <Compile Include="Delegate.cs" />
     <Compile Include="EnumPooler.cs" />
     <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="ICalcService.cs" />
     <Compile Include="IClientService.cs" />
     <Compile Include="ICommonLib.cs" />
     <Compile Include="Logger.cs" />

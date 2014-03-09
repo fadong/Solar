@@ -46,25 +46,20 @@ namespace Com.Fadong.MCached {
                 GCacheDB gcdb = v.Value;
                 switch(v.Key) {
                     case "D_INSTRUMENT":
-                        ts = new ThreadStart(gcdb.Load<D_INSTRUMENT>);
+                        ts = new ThreadStart(v.Value.Load<D_INSTRUMENT>);
                         break;
-
                     case "D_LEG":
                         ts = new ThreadStart(v.Value.Load<D_LEG>);
                         break;
-
                     case "D_CASHFLOW":
                         ts = new ThreadStart(v.Value.Load<D_CASHFLOW>);
                         break;
-
                     case "D_RESET":
                         ts = new ThreadStart(v.Value.Load<D_RESET>);
                         break;
-
                     case "D_ADDINFO":
                         ts = new ThreadStart(v.Value.Load<D_ADDINFO>);
                         break;
-
                     case "D_ADDINFOSPEC":
                         ts = new ThreadStart(v.Value.Load<D_ADDINFOSPEC>);
                         break;

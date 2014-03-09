@@ -28,12 +28,12 @@ namespace Com.Fadong.ZClient {
 
 
             //Test
-            //UMViewer.UMViewer viewer = new UMViewer.UMViewer();
-            //viewer.Dock = DockStyle.Fill;
-            //C1.Win.C1Command.C1DockingTabPage tp = new C1.Win.C1Command.C1DockingTabPage();
-            //tp.Text = "TestTabPage";
-            //tp.Controls.Add(viewer);
-            //docTabMain.TabPages.Add(tp);
+            UMViewer.UMViewer viewer = new UMViewer.UMViewer();
+            viewer.Dock = DockStyle.Fill;
+            C1.Win.C1Command.C1DockingTabPage tp = new C1.Win.C1Command.C1DockingTabPage();
+            tp.Text = "TestTabPage";
+            tp.Controls.Add(viewer);
+            docTabMain.TabPages.Add(tp);
            
         }
 
