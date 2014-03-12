@@ -5,6 +5,7 @@ using System.Text;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 
 namespace Com.Fadong.CommonLib
@@ -39,5 +40,13 @@ namespace Com.Fadong.CommonLib
         /// </summary>
         public INSTYPE InsType { get; set; }
 
+        public new XElement ToXML() {
+            XElement xout = new XElement("Instrument");
+            xout.Add(new XElement("Id", this.Id));
+            xout.Add(new XElement("Type", this.InsType));
+            xout.Add(new XElement("Name", this.Name));
+            xout.Add(base.ToXML());
+            return xout;
+        }
     }
 }

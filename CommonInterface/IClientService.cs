@@ -7,6 +7,7 @@ using System.ServiceModel;
 using System.Security;
 using System.Security.Claims;
 using System.Security.Principal;
+using System.Xml.Linq;
 
 namespace Com.Fadong.CommonInterface {
     [ServiceContract(CallbackContract = typeof(IClientCB),
@@ -21,6 +22,9 @@ namespace Com.Fadong.CommonInterface {
 
         [OperationContract]
         List<Tuple<int, string>> GetInstrumentKeyValues();
+
+        [OperationContract]
+        bool SaveInstrument(XElement instrument);
     }
 
     public interface IClientCB {

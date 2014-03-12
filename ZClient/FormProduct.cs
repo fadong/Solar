@@ -16,15 +16,13 @@ namespace Com.Fadong.ZClient {
         public FormProduct(string uctlname) {
             InitializeComponent();
             Type t = Assembly.GetExecutingAssembly().GetType("Com.Fadong.ZClient.UCtls." + uctlname);
-            UCtls.UCtlProd uctl = (UCtls.UCtlProd)Activator.CreateInstance(t);
+            uctl = (UCtls.UCtlProd)Activator.CreateInstance(t);
             tableLayoutPanel1.ColumnStyles[1].Width = 600;
             this.Width = uctl.Width + (int)tableLayoutPanel1.ColumnStyles[1].Width + 22;
             instPanel.Controls.Add(uctl);
             uctl.Dock = DockStyle.Fill;
             this.Refresh();
         }
-
-        //private UCtls.UCtlProd uctl = null;
 
         /// <summary>
         /// FormProduct 종료
@@ -39,5 +37,20 @@ namespace Com.Fadong.ZClient {
                 Logger.Error(this, err.Message);
             }
         }
+
+        /// <summary>
+        /// Instrument 정보 Save
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSave_Click(object sender, EventArgs e) {
+            try {
+                uctl.Save();
+            } catch (Exception err) {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        UCtls.UCtlProd uctl = null;
     }
 }

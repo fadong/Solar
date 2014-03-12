@@ -26,7 +26,8 @@ namespace Com.Fadong.Solar {
         /// <returns></returns>
         public List<Claim> Connect(ClientInfo cinfo) {
             try {
-                List<Claim> clist = OperationContext.Current.ClaimsPrincipal.Claims.ToList();
+                //List<Claim> clist = OperationContext.Current.ClaimsPrincipal.Claims.ToList();
+                List<Claim> clist = new List<Claim>();
                 cinfo.Identifier = OperationContext.Current.SessionId;
                 cinfo.ConnectedTime = DateTime.Now;
                 IClientCB client = OperationContext.Current.GetCallbackChannel<IClientCB>();

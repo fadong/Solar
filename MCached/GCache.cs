@@ -66,8 +66,26 @@ namespace Com.Fadong.MCached {
         }
         #endregion
 
+        #region "public Dictionary<int, T> GetValues(List<int> keys)"
+        public Dictionary<int, T> GetValues(List<int> keys) {
+            return this._dic.Where(k => keys.Contains(k.Key)).ToDictionary(k => k.Key, k => k.Value);
+        }
+        #endregion
+
+        #region "public List<int> GetAllKeys()"
+        public List<int> GetAllKeys() {
+            return this._dic.Keys.ToList();
+        }
+        #endregion
+
+        #region "public List<T> GetAllValues()"
+        public List<T> GetAllValues() {
+            return this._dic.Values.ToList();
+        }
+        #endregion
+
         #region "public IEnumerator<T> GetEnumerator()"
-        
+
         /// <summary>
         /// GetEnumerator 구현
         /// </summary>
@@ -87,10 +105,12 @@ namespace Com.Fadong.MCached {
         }
         #endregion
 
+        #region "ConcurrentDictionary"
         /// <summary>
         /// Caching된 Object를 담아두는 ConcurrentDictionary
         /// </summary>
         private ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
+        #endregion
 
         /// <summary>
         ///  Data Loading에 관련된 Abstraction Method

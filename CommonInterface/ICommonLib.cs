@@ -14,7 +14,7 @@ namespace Com.Fadong.CommonInterface {
         DateTime UpdatedTime { get; set; }
         int CreateUserId { get; set; }
         int UpdateUserId { get; set; }
-        OBJECTSTATUS Status { get; set; }
+        OBJECTSTATUS ObjectStatus { get; set; }
     }
 
     public interface IStaticInfoObject {

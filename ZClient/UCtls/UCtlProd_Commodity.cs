@@ -13,5 +13,8 @@ namespace Com.Fadong.ZClient.UCtls {
         public UCtlProd_Commodity() {
             InitializeComponent();
         }
+        public override bool Save() {
+            throw new NotImplementedException();
+        }
     }
 }

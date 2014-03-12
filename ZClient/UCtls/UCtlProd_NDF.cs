@@ -13,5 +13,9 @@ namespace Com.Fadong.ZClient.UCtls {
         public UCtlProd_NDF() {
             InitializeComponent();
         }
+
+        public override bool Save() {
+            throw new NotImplementedException();
+        }
     }
 }

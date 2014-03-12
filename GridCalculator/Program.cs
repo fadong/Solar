@@ -65,7 +65,8 @@ namespace Com.Fadong.Calculator.GridCalculator {
                     ThreadStart ts = new ThreadStart(_sm.Run);
                     _t = new Thread(ts);
                     _t.Start();
-                    Logger.Info("", "Solar Server Opened!!");
+                    Console.WriteLine("CalcService Opened!!");
+                    Logger.Info("", "CalcServer Opened!!");
                     // 이벤트 수신을 위한 Looping
                     while (_running) {
                         string cmd = Console.ReadLine();
@@ -85,11 +86,11 @@ namespace Com.Fadong.Calculator.GridCalculator {
         /// Server Stop을 위한 함수
         /// </summary>
         static void StopProc() {
-            Logger.Info("", "Solar Server Stopping!!");
+            Logger.Info("", "CalcServer Stopping!!");
             _sm.Stop();
             _t.Join();
             _running = false;
-            Logger.Info("", "Solar Server Stopped!!");
+            Logger.Info("", "CalcServer Stopped!!");
         }
     }
 

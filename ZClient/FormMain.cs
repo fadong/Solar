@@ -38,8 +38,8 @@ namespace Com.Fadong.ZClient {
         }
 
         void MASTER_TIMER_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
-            tStripTxt_ConnTime.Text = "현재시각 : " + DateTime.Now.ToString("G");
-            tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss");
+            this.InvokeEx(k => k.tStripTxt_ConnTime .Text = "현재시각 : " + DateTime.Now.ToString("G"));
+            this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
         }
 
 

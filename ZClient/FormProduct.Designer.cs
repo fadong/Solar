@@ -25,7 +25,7 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnOpen = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.docTabTrade = new C1.Win.C1Command.C1DockingTab();
@@ -46,6 +46,8 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docTabTrade)).BeginInit();
@@ -56,21 +58,24 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.btnOpen,
+            this.toolStripSeparator4,
+            this.btnSave});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1120, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1120, 36);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // btnOpen
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 35);
-            this.toolStripButton1.Text = "-";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnOpen.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
+            this.btnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(39, 33);
+            this.btnOpen.Text = "Open";
+            this.btnOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // statusStrip1
             // 
@@ -89,11 +94,11 @@
             this.tableLayoutPanel1.Controls.Add(this.instPanel, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 62);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1120, 560);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1120, 562);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // docTabTrade
@@ -107,7 +112,7 @@
             this.docTabTrade.Name = "docTabTrade";
             this.docTabTrade.SelectedIndex = 4;
             this.docTabTrade.SelectedTabBold = true;
-            this.docTabTrade.Size = new System.Drawing.Size(644, 554);
+            this.docTabTrade.Size = new System.Drawing.Size(644, 556);
             this.docTabTrade.TabIndex = 0;
             this.docTabTrade.TabsSpacing = 3;
             this.docTabTrade.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
@@ -118,7 +123,7 @@
             // 
             this.tp_Trade.Location = new System.Drawing.Point(2, 27);
             this.tp_Trade.Name = "tp_Trade";
-            this.tp_Trade.Size = new System.Drawing.Size(638, 523);
+            this.tp_Trade.Size = new System.Drawing.Size(638, 525);
             this.tp_Trade.TabIndex = 0;
             this.tp_Trade.Text = "Trade";
             // 
@@ -126,7 +131,7 @@
             // 
             this.tp_Valuation.Location = new System.Drawing.Point(2, 27);
             this.tp_Valuation.Name = "tp_Valuation";
-            this.tp_Valuation.Size = new System.Drawing.Size(638, 523);
+            this.tp_Valuation.Size = new System.Drawing.Size(638, 525);
             this.tp_Valuation.TabIndex = 2;
             this.tp_Valuation.Text = "Valuation";
             // 
@@ -134,7 +139,7 @@
             // 
             this.tp_HistPrice.Location = new System.Drawing.Point(2, 27);
             this.tp_HistPrice.Name = "tp_HistPrice";
-            this.tp_HistPrice.Size = new System.Drawing.Size(638, 523);
+            this.tp_HistPrice.Size = new System.Drawing.Size(638, 525);
             this.tp_HistPrice.TabIndex = 3;
             this.tp_HistPrice.Text = "HistPrice";
             // 
@@ -142,7 +147,7 @@
             // 
             this.tp_RTPrice.Location = new System.Drawing.Point(2, 27);
             this.tp_RTPrice.Name = "tp_RTPrice";
-            this.tp_RTPrice.Size = new System.Drawing.Size(638, 523);
+            this.tp_RTPrice.Size = new System.Drawing.Size(638, 525);
             this.tp_RTPrice.TabIndex = 4;
             this.tp_RTPrice.Text = "RTPrice";
             // 
@@ -152,7 +157,7 @@
             this.instPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.instPanel.Location = new System.Drawing.Point(3, 3);
             this.instPanel.Name = "instPanel";
-            this.instPanel.Size = new System.Drawing.Size(464, 554);
+            this.instPanel.Size = new System.Drawing.Size(464, 556);
             this.instPanel.TabIndex = 1;
             // 
             // menuStrip1
@@ -241,6 +246,22 @@
             this.mnuHelp.Size = new System.Drawing.Size(43, 20);
             this.mnuHelp.Text = "Help";
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 36);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(34, 33);
+            this.btnSave.Text = "Save";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -269,7 +290,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnOpen;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private C1.Win.C1Command.C1DockingTab docTabTrade;
@@ -290,5 +311,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
         private System.Windows.Forms.ToolStripMenuItem mnuL2_SaveAsFile;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton btnSave;
     }
 }

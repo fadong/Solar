@@ -53,7 +53,7 @@ namespace Com.Fadong.Adapter {
             try {
                 List<Claim> claims = new List<Claim>();
                 InstanceContext context = new InstanceContext(this);
-                var serviceName = "EP_ClientServiceLocal";
+                var serviceName = "Com.Fadong.ZClient";
                 var factory = new DuplexChannelFactory<IClientService>(context, serviceName);
                 factory.Credentials.UserName.UserName = cinfo.UserId;
                 factory.Credentials.UserName.Password = cinfo.PassWord;
@@ -61,6 +61,7 @@ namespace Com.Fadong.Adapter {
                 this.Svr = factory.CreateChannel();
                 ((IDuplexContextChannel)this.Svr).AutomaticInputSessionShutdown = false;
                 ((IDuplexContextChannel)this.Svr).OperationTimeout = TimeSpan.MaxValue;
+                this.Svr.Connect(cinfo);
                 return claims;
             } catch (Exception) {
                 throw;

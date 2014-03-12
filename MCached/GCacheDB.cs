@@ -7,6 +7,7 @@ using System.Data.Objects.DataClasses;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using Com.Fadong.CommonInterface;
+using System.Data.Objects;
 
 namespace Com.Fadong.MCached {
     /// <summary>
@@ -14,19 +15,19 @@ namespace Com.Fadong.MCached {
     /// </summary>
     public class GCacheDB : GCache<EntityObject> {
 
-        #region "public override void Load<Ts>()"
+        #region "public override void Load<T>()"
         /// <summary>
         /// 
         /// </summary>
         /// <typeparam name="Ts"></typeparam>
-        public override void Load<Ts>() {
-            string tablename = typeof(Ts).Name;
+        public override void Load<T>() {
+            string tablename = typeof(T).Name;
             Logger.Info(this, tablename + " Loading Started!!");
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
             using (MCtx ctx = new MCtx()) {
-                foreach(IEntityWithKey t in ctx.CreateObjectSet<Ts>()) {
+                foreach(IEntityWithKey t in ctx.CreateObjectSet<T>()) {
                     if(t.EntityKey.EntityKeyValues.Length == 1) {
                         this.Add(Decimal.ToInt32((decimal)t.EntityKey.EntityKeyValues[0].Value), (EntityObject)t);
                     }
@@ -37,6 +38,13 @@ namespace Com.Fadong.MCached {
             TableName = tablename;
         }
         #endregion
+
+        public ObjectQuery<T> ReadFromDB<T>(string sql) where T : EntityObject {
+            using (MCtx ctx = new MCtx()) {
+                return ctx.CreateObjectSet<T>().Where(sql, null);
+            }
+        }
+
 
         private string TableName = string.Empty;
     }

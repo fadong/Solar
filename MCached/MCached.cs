@@ -10,6 +10,7 @@ using System.Runtime.Caching;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Oracle.DataAccess.Client;
 
 namespace Com.Fadong.MCached {
 
@@ -21,6 +22,7 @@ namespace Com.Fadong.MCached {
         /// <summary></summary>
         private DBCachePool() {
             CacheInit();
+            
         }
 
         /// <summary>
@@ -33,12 +35,12 @@ namespace Com.Fadong.MCached {
 
             _dic.Add("D_INSTRUMENT", new GCacheDB());
             _dic.Add("D_LEG", new GCacheDB());
-            //_dic.Add("NGOS_CASHFLOW", new GCacheDB());
-            //_dic.Add("NGOS_RESET", new GCacheDB());
+            _dic.Add("NGOS_CASHFLOW", new GCacheDB());
+            _dic.Add("NGOS_RESET", new GCacheDB());
 
-            //_dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
-            //_dic.Add("NGOS_PORTFOLIO", new GCacheDB());
-            //_dic.Add("NGOS_PARTY", new GCacheDB());
+            _dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
+            _dic.Add("NGOS_PORTFOLIO", new GCacheDB());
+            _dic.Add("NGOS_PARTY", new GCacheDB());
 
             List<Thread> tlist = new List<Thread>();
             foreach(KeyValuePair<string, GCacheDB> v in _dic) {

@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="ClientService.cs" />
     <Compile Include="ClientService_DAL.cs" />
+    <Compile Include="ClientService_DBMng.cs" />
     <Compile Include="CustomUserNameValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

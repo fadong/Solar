@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="935867962470456e95abdcdf156f0948" Name="다이어그램1">
+      <Diagram DiagramId="935867962470456e95abdcdf156f0948" Name="다이어그램1" ZoomLevel="82">
         <EntityTypeShape EntityType="Model.C_LINK" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.C_PORTFOLIO" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.D_ADDINFO" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
@@ -37,6 +38,14 @@ namespace Com.Fadong.CommonLib {
         /// <summary>
         /// Object 상태정보
         /// </summary>
-        public OBJECTSTATUS Status { get; set; }
+        public OBJECTSTATUS ObjectStatus { get; set; }
+
+        public XElement ToXML() {
+            XElement xout = new XElement("BInfo");
+            xout.Add(new XElement("CreatedTime", this.CreatedTime.ToString("G")));
+            xout.Add(new XElement("UPdatedTime", this.UpdatedTime.ToString("G")));
+            xout.Add(new XElement("ObjectStatus", this.ObjectStatus));
+            return xout;
+        }
     }
 }
