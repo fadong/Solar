@@ -90,6 +90,8 @@
             this.mnuL3InsHybridDuet = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3InsHybridCDFX = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1View = new System.Windows.Forms.ToolStripMenuItem();
+            this.항상위ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2ViewAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2ViewProdInfo = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,6 +109,8 @@
             this.mnuL3ViewSysTrace = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3ViewSysDebug = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL3ViewSysPerformance = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuL2Search = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Front = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Middle = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Back = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,6 +136,9 @@
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.enums관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL2MngUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.거래상대방관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
+            this.설정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Windows = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuL1Help = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -161,13 +168,6 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.mnuL2Search = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.거래상대방관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.설정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
-            this.항상위ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
@@ -226,47 +226,47 @@
             // mnuL2Sys_Config
             // 
             this.mnuL2Sys_Config.Name = "mnuL2Sys_Config";
-            this.mnuL2Sys_Config.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2Sys_Config.Size = new System.Drawing.Size(148, 22);
             this.mnuL2Sys_Config.Text = "환경설정";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
             // 
             // mnuL2Sys_Print
             // 
             this.mnuL2Sys_Print.Name = "mnuL2Sys_Print";
-            this.mnuL2Sys_Print.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2Sys_Print.Size = new System.Drawing.Size(148, 22);
             this.mnuL2Sys_Print.Text = "인쇄";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
             // 
             // mnuL2Sys_RecentForm
             // 
             this.mnuL2Sys_RecentForm.Name = "mnuL2Sys_RecentForm";
-            this.mnuL2Sys_RecentForm.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2Sys_RecentForm.Size = new System.Drawing.Size(148, 22);
             this.mnuL2Sys_RecentForm.Text = "최근 사용 화면";
             // 
             // mnuL2Sys_RecentAction
             // 
             this.mnuL2Sys_RecentAction.Name = "mnuL2Sys_RecentAction";
-            this.mnuL2Sys_RecentAction.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2Sys_RecentAction.Size = new System.Drawing.Size(148, 22);
             this.mnuL2Sys_RecentAction.Text = "최근 수행 동작";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(145, 6);
             // 
             // mnuL2Sys_Close
             // 
             this.mnuL2Sys_Close.Name = "mnuL2Sys_Close";
             this.mnuL2Sys_Close.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.mnuL2Sys_Close.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2Sys_Close.Size = new System.Drawing.Size(148, 22);
             this.mnuL2Sys_Close.Text = "종료";
             this.mnuL2Sys_Close.Click += new System.EventHandler(this.mnuL2Sys_Close_Click);
             // 
@@ -717,24 +717,35 @@
             this.mnuL1View.Size = new System.Drawing.Size(54, 20);
             this.mnuL1View.Text = "보기(V)";
             // 
+            // 항상위ToolStripMenuItem
+            // 
+            this.항상위ToolStripMenuItem.Name = "항상위ToolStripMenuItem";
+            this.항상위ToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.항상위ToolStripMenuItem.Text = "항상 위";
+            // 
+            // toolStripSeparator22
+            // 
+            this.toolStripSeparator22.Name = "toolStripSeparator22";
+            this.toolStripSeparator22.Size = new System.Drawing.Size(137, 6);
+            // 
             // mnuL2ViewAll
             // 
             this.mnuL2ViewAll.CheckOnClick = true;
             this.mnuL2ViewAll.Name = "mnuL2ViewAll";
-            this.mnuL2ViewAll.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewAll.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewAll.Text = "종합";
             this.mnuL2ViewAll.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator16.Size = new System.Drawing.Size(137, 6);
             // 
             // mnuL2ViewProdInfo
             // 
             this.mnuL2ViewProdInfo.CheckOnClick = true;
             this.mnuL2ViewProdInfo.Name = "mnuL2ViewProdInfo";
-            this.mnuL2ViewProdInfo.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewProdInfo.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewProdInfo.Text = "상품정보";
             this.mnuL2ViewProdInfo.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -742,7 +753,7 @@
             // 
             this.mnuL2ViewTradeList.CheckOnClick = true;
             this.mnuL2ViewTradeList.Name = "mnuL2ViewTradeList";
-            this.mnuL2ViewTradeList.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewTradeList.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewTradeList.Text = "거래목록";
             this.mnuL2ViewTradeList.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -750,7 +761,7 @@
             // 
             this.mnuL2ViewPnL.CheckOnClick = true;
             this.mnuL2ViewPnL.Name = "mnuL2ViewPnL";
-            this.mnuL2ViewPnL.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewPnL.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewPnL.Text = "손익구성";
             this.mnuL2ViewPnL.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -758,7 +769,7 @@
             // 
             this.mnuL2ViewRisk.CheckOnClick = true;
             this.mnuL2ViewRisk.Name = "mnuL2ViewRisk";
-            this.mnuL2ViewRisk.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewRisk.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewRisk.Text = "위험정보";
             this.mnuL2ViewRisk.Click += new System.EventHandler(this.CmdHandler);
             // 
@@ -766,25 +777,25 @@
             // 
             this.mnuL2ViewValParams.CheckOnClick = true;
             this.mnuL2ViewValParams.Name = "mnuL2ViewValParams";
-            this.mnuL2ViewValParams.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2ViewValParams.Size = new System.Drawing.Size(140, 22);
             this.mnuL2ViewValParams.Text = "평가파라미터";
             this.mnuL2ViewValParams.Click += new System.EventHandler(this.CmdHandler);
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(137, 6);
             // 
             // mnuL2OtherViews
             // 
             this.mnuL2OtherViews.Name = "mnuL2OtherViews";
-            this.mnuL2OtherViews.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2OtherViews.Size = new System.Drawing.Size(140, 22);
             this.mnuL2OtherViews.Text = "다른 창";
             // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator17.Size = new System.Drawing.Size(137, 6);
             // 
             // mnuL2SysInfos
             // 
@@ -796,7 +807,7 @@
             this.mnuL3ViewSysDebug,
             this.mnuL3ViewSysPerformance});
             this.mnuL2SysInfos.Name = "mnuL2SysInfos";
-            this.mnuL2SysInfos.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2SysInfos.Size = new System.Drawing.Size(140, 22);
             this.mnuL2SysInfos.Text = "시스템 정보";
             // 
             // sever정보ToolStripMenuItem
@@ -841,6 +852,17 @@
             this.mnuL3ViewSysPerformance.Size = new System.Drawing.Size(163, 22);
             this.mnuL3ViewSysPerformance.Text = "Performance 정보";
             this.mnuL3ViewSysPerformance.Click += new System.EventHandler(this.CmdHandler);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(137, 6);
+            // 
+            // mnuL2Search
+            // 
+            this.mnuL2Search.Name = "mnuL2Search";
+            this.mnuL2Search.Size = new System.Drawing.Size(140, 22);
+            this.mnuL2Search.Text = "찾기";
             // 
             // mnuL1Front
             // 
@@ -896,7 +918,7 @@
             this.실시간정보ToolStripMenuItem,
             this.종가정보ToolStripMenuItem});
             this.mnuL1DataPrice.Name = "mnuL1DataPrice";
-            this.mnuL1DataPrice.Size = new System.Drawing.Size(152, 22);
+            this.mnuL1DataPrice.Size = new System.Drawing.Size(118, 22);
             this.mnuL1DataPrice.Text = "상품가격";
             // 
             // 실시간정보ToolStripMenuItem
@@ -914,12 +936,12 @@
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(115, 6);
             // 
             // mnuL1DataVol
             // 
             this.mnuL1DataVol.Name = "mnuL1DataVol";
-            this.mnuL1DataVol.Size = new System.Drawing.Size(152, 22);
+            this.mnuL1DataVol.Size = new System.Drawing.Size(118, 22);
             this.mnuL1DataVol.Text = "변동성";
             // 
             // mnuL1DataCurve
@@ -928,7 +950,7 @@
             this.이자율ToolStripMenuItem1,
             this.creditToolStripMenuItem1});
             this.mnuL1DataCurve.Name = "mnuL1DataCurve";
-            this.mnuL1DataCurve.Size = new System.Drawing.Size(152, 22);
+            this.mnuL1DataCurve.Size = new System.Drawing.Size(118, 22);
             this.mnuL1DataCurve.Text = "커브";
             // 
             // 이자율ToolStripMenuItem1
@@ -946,13 +968,13 @@
             // mnuL1DataDivd
             // 
             this.mnuL1DataDivd.Name = "mnuL1DataDivd";
-            this.mnuL1DataDivd.Size = new System.Drawing.Size(152, 22);
+            this.mnuL1DataDivd.Size = new System.Drawing.Size(118, 22);
             this.mnuL1DataDivd.Text = "배당";
             // 
             // mnuL1DataCorr
             // 
             this.mnuL1DataCorr.Name = "mnuL1DataCorr";
-            this.mnuL1DataCorr.Size = new System.Drawing.Size(152, 22);
+            this.mnuL1DataCorr.Size = new System.Drawing.Size(118, 22);
             this.mnuL1DataCorr.Text = "상관계수";
             // 
             // mnuL1Mng
@@ -972,13 +994,13 @@
             // mnuL2MngBook
             // 
             this.mnuL2MngBook.Name = "mnuL2MngBook";
-            this.mnuL2MngBook.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngBook.Size = new System.Drawing.Size(155, 22);
             this.mnuL2MngBook.Text = "Book 관리";
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(152, 6);
             // 
             // mnuL2MngStcData
             // 
@@ -988,7 +1010,7 @@
             this.toolStripSeparator19,
             this.enums관리ToolStripMenuItem});
             this.mnuL2MngStcData.Name = "mnuL2MngStcData";
-            this.mnuL2MngStcData.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngStcData.Size = new System.Drawing.Size(155, 22);
             this.mnuL2MngStcData.Text = "Static데이터";
             // 
             // mnuL2MngStcDataCal
@@ -1017,8 +1039,25 @@
             // mnuL2MngUser
             // 
             this.mnuL2MngUser.Name = "mnuL2MngUser";
-            this.mnuL2MngUser.Size = new System.Drawing.Size(152, 22);
+            this.mnuL2MngUser.Size = new System.Drawing.Size(155, 22);
             this.mnuL2MngUser.Text = "사용자 관리";
+            // 
+            // 거래상대방관리ToolStripMenuItem
+            // 
+            this.거래상대방관리ToolStripMenuItem.Name = "거래상대방관리ToolStripMenuItem";
+            this.거래상대방관리ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.거래상대방관리ToolStripMenuItem.Text = "거래상대방 관리";
+            // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(152, 6);
+            // 
+            // 설정ToolStripMenuItem
+            // 
+            this.설정ToolStripMenuItem.Name = "설정ToolStripMenuItem";
+            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.설정ToolStripMenuItem.Text = "평가 설정";
             // 
             // mnuL1Windows
             // 
@@ -1039,7 +1078,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // devToolStripMenuItem
@@ -1053,8 +1092,9 @@
             // loadFormToolStripMenuItem
             // 
             this.loadFormToolStripMenuItem.Name = "loadFormToolStripMenuItem";
-            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadFormToolStripMenuItem.Text = "Load Form";
+            this.loadFormToolStripMenuItem.Click += new System.EventHandler(this.loadFormToolStripMenuItem_Click);
             // 
             // toolStripMain
             // 
@@ -1304,45 +1344,6 @@
             this.listView1.Size = new System.Drawing.Size(294, 556);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // mnuL2Search
-            // 
-            this.mnuL2Search.Name = "mnuL2Search";
-            this.mnuL2Search.Size = new System.Drawing.Size(152, 22);
-            this.mnuL2Search.Text = "찾기";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
-            // 
-            // 거래상대방관리ToolStripMenuItem
-            // 
-            this.거래상대방관리ToolStripMenuItem.Name = "거래상대방관리ToolStripMenuItem";
-            this.거래상대방관리ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.거래상대방관리ToolStripMenuItem.Text = "거래상대방 관리";
-            // 
-            // 설정ToolStripMenuItem
-            // 
-            this.설정ToolStripMenuItem.Name = "설정ToolStripMenuItem";
-            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.설정ToolStripMenuItem.Text = "평가 설정";
-            // 
-            // toolStripSeparator21
-            // 
-            this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(152, 6);
-            // 
-            // 항상위ToolStripMenuItem
-            // 
-            this.항상위ToolStripMenuItem.Name = "항상위ToolStripMenuItem";
-            this.항상위ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.항상위ToolStripMenuItem.Text = "항상 위";
-            // 
-            // toolStripSeparator22
-            // 
-            this.toolStripSeparator22.Name = "toolStripSeparator22";
-            this.toolStripSeparator22.Size = new System.Drawing.Size(149, 6);
             // 
             // FormMain
             // 

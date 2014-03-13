@@ -63,5 +63,13 @@ namespace Com.Fadong.CommonInterface {
     }
     #endregion
 
+    [Flags]
+    public enum ACTIVITYLEVEL {
+        Entry,
+        Exit,
+        Duration,
+        All
+    }
+
     
 }

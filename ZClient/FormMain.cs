@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Annotations;
 using Com.Fadong.CommonInterface;
+using Com.Fadong.CommonInterface.AOP;
 
 namespace Com.Fadong.ZClient {
     /// <summary>
@@ -111,6 +112,11 @@ namespace Com.Fadong.ZClient {
 
         private void c1DockingTabPage1_Click(object sender, EventArgs e) {
 
+        }
+
+        [LogActivity(ACTIVITYLEVEL.All)]
+        private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
+            Console.WriteLine(ZServer.BE.Svr.GetInstruments(new List<int>() { 1 }));
         }
 
 

@@ -18,7 +18,7 @@ namespace Com.Fadong.CommonInterface {
         List<Claim> Connect(ClientInfo cinfo);
 
         [OperationContract]
-        List<IInstrumentObject> GetInstruments(List<int> instlist);
+        List<XElement> GetInstruments(List<int> instlist);
 
         [OperationContract]
         List<Tuple<int, string>> GetInstrumentKeyValues();

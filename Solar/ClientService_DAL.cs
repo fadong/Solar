@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
@@ -29,10 +30,14 @@ namespace Com.Fadong.Solar {
             }
         }
 
-        public List<IInstrumentObject> GetInstruments(List<int> instlist) {
+        public List<XElement> GetInstruments(List<int> instlist) {
             try {
-                List<IInstrumentObject> list = new List<IInstrumentObject>();
-
+                List<XElement> list = new List<XElement>();
+                for (int i = 0; i < 10; i++) {
+                    XElement xout = new XElement("Root");
+                    xout.Add(new XElement("afafa"));
+                    list.Add(xout);
+                }
                 return list;
             } catch (Exception err) {
                 throw err.CreateFaultException("GetIntruments Return Failed!!");
