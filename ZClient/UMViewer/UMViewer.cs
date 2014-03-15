@@ -55,6 +55,8 @@ namespace Com.Fadong.ZClient.UMViewer {
             }
         }
 
-        protected abstract void CustomCtxMenu();
+        protected virtual void CustomCtxMenu() {
+
+        }
     }
 }
