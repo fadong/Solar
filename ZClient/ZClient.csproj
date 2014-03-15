@@ -441,6 +441,12 @@
     <Compile Include="UCtlViewer\UCtlSysInfo_Trace.Designer.cs">
       <DependentUpon>UCtlSysInfo_Trace.cs</DependentUpon>
     </Compile>
+    <Compile Include="UMViewer\UMUserQueryer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UMViewer\UMUserQueryer.Designer.cs">
+      <DependentUpon>UMUserQueryer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UMViewer\UMViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -562,6 +568,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCtlViewer\UCtlViewer_Trades.resx">
       <DependentUpon>UCtlViewer_Trades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMViewer\UMUserQueryer.resx">
+      <DependentUpon>UMUserQueryer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UMViewer\UMViewer.resx">
       <DependentUpon>UMViewer.cs</DependentUpon>
