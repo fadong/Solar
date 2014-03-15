@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Com.Fadong.Caculator.CNode {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NodeManager {
 
 

@@ -39,8 +39,6 @@ namespace Com.Fadong.CommonLib {
             return tg;
         }
 
-
-
         private Dictionary<string, IBook> _books = new Dictionary<string, IBook>();
     }
 }

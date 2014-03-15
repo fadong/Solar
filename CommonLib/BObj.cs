@@ -40,7 +40,7 @@ namespace Com.Fadong.CommonLib {
         /// </summary>
         public OBJECTSTATUS ObjectStatus { get; set; }
 
-        public XElement ToXML() {
+        public virtual XElement ToXML() {
             XElement xout = new XElement("BInfo");
             xout.Add(new XElement("CreatedTime", this.CreatedTime.ToString("G")));
             xout.Add(new XElement("UPdatedTime", this.UpdatedTime.ToString("G")));

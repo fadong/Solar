@@ -13,13 +13,15 @@ using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
 namespace Com.Fadong.Adapter {
-    public class ServerAgent : IClientCB {
+    public class ServerAgent : IClientCB
+    {
 
+        #region "접속관련 함수군(Connect, RemoteConnect)"
         /// <summary>
-        /// 
+        /// Client Server 접속 Adapter용 함수
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="pw"></param>
+        /// <param name="id">사용자 Id</param>
+        /// <param name="pw">사용자 비번</param>
         /// <param name="isLocalhost"></param>
         /// <returns></returns>
         public List<Claim> Connect(string id, string pw, bool isLocalhost) {
@@ -44,7 +46,7 @@ namespace Com.Fadong.Adapter {
         }
 
         /// <summary>
-        /// 
+        /// 실제 Channel Open을 통하여 네크워크 상으로 연결 진행
         /// </summary>
         /// <param name="cinfo"></param>
         /// <param name="isLocalhost"></param>
@@ -67,12 +69,23 @@ namespace Com.Fadong.Adapter {
                 throw;
             }
         }
+        #endregion
 
+        #region "메세지 전송 함수군(StringMessageReceived)"
+        /// <summary>
+        /// 수신 Message Handler
+        /// </summary>
+        /// <param name="msg">수신메세지</param>
+        /// <param name="recvtime">수신시점</param>
         public void StringMessageReceived(string msg, DateTime recvtime) {
         
 
         }
+        #endregion
 
+        /// <summary>
+        /// ClientService Proxy
+        /// </summary>
         public IClientService Svr { get; internal set; }
     }
 }

@@ -40,7 +40,7 @@ namespace Com.Fadong.CommonLib
         /// </summary>
         public INSTYPE InsType { get; set; }
 
-        public new XElement ToXML() {
+        public override XElement ToXML() {
             XElement xout = new XElement("Instrument");
             xout.Add(new XElement("Id", this.Id));
             xout.Add(new XElement("Type", this.InsType));

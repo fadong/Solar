@@ -52,8 +52,6 @@ namespace Com.Fadong.CommonLib {
             return DateTime.Now;
         }
 
-        
-
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime FirstDay { get; set; }

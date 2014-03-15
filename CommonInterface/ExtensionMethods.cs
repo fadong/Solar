@@ -7,10 +7,11 @@ using System.ServiceModel;
 using System.ComponentModel;
 
 namespace Com.Fadong.CommonInterface {
-    public static class ExtensionMethods {
-
+    public static class ExtensionMethods
+    {
+        #region "InvokeEx<T> (CrossThread 문제를 해결하기 위한 ExtensionMethods)"
         /// <summary>
-        /// 
+        /// CrossThread 문제를 해결하기 위한 ExtentionMethods
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="this"></param>
@@ -22,9 +23,11 @@ namespace Com.Fadong.CommonInterface {
                 action(@this);
             }
         }
+        #endregion
 
+        #region "CreateFaultException (WCF 에러전송을 위한 FaultException 생성 ExtensionMethods)"
         /// <summary>
-        /// 
+        /// WCF 에러전송을 위한 FaultException 생성 ExtensionMethods
         /// </summary>
         /// <param name="err"></param>
         /// <returns></returns>
@@ -38,9 +41,11 @@ namespace Com.Fadong.CommonInterface {
             }
             return new FaultException(sb.ToString(), new FaultCode(sb.ToString(), exstr));
         }
+        #endregion
 
+        #region "SplitIntoChunks (배열입력파라미터를 주어진 크기(chunkSize)로 분할하여 Return해주는 ExtensionMethods)"
         /// <summary>
-        /// 
+        /// 배열입력파라미터를 주어진 크기(chunkSize)로 분할하여 Return해주는 ExtensionMethods
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
@@ -61,5 +66,6 @@ namespace Com.Fadong.CommonInterface {
             }
             return retVal;
         }
+        #endregion
     }
 }

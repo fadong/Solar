@@ -39,7 +39,11 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Oracle.DataAccess, Version=2.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\app\NOracle\product\12.1.0\client_2\odp.net\managed\common\Oracle.ManagedDataAccess.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="PostSharp">
       <HintPath>..\packages\PostSharp.3.1.33\lib\net20\PostSharp.dll</HintPath>
       <Private>True</Private>
@@ -78,6 +82,7 @@
   <ItemGroup>
     <None Include="App.Config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <EntityDeploy Include="MCacheTargetDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

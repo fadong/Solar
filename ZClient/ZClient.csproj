@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <SkipPostSharp>True</SkipPostSharp>
+    <SkipPostSharp>False</SkipPostSharp>
     <PostSharpConstraintVerificationEnabled>True</PostSharpConstraintVerificationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -459,6 +459,18 @@
     <Compile Include="UMViewer\UMViewerSearch.Designer.cs">
       <DependentUpon>UMViewerSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="UMViewer\UMViewer_Instrument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UMViewer\UMViewer_Instrument.Designer.cs">
+      <DependentUpon>UMViewer_Instrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UMViewer\UMViewer_Trade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UMViewer\UMViewer_Trade.Designer.cs">
+      <DependentUpon>UMViewer_Trade.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAnal_UDDE.resx">
       <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
     </EmbeddedResource>
@@ -559,6 +571,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UMViewer\UMViewerSearch.resx">
       <DependentUpon>UMViewerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMViewer\UMViewer_Instrument.resx">
+      <DependentUpon>UMViewer_Instrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMViewer\UMViewer_Trade.resx">
+      <DependentUpon>UMViewer_Trade.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

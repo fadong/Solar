@@ -16,7 +16,6 @@ namespace Com.Fadong.CommonLib {
 
         public override List<ITradeGroup> TradeGroups(DateTime fiscalday, DateTime settleday, List<IEnum> tradestatus, bool isMixUp = false) {
             List<ITradeGroup> tg = new List<ITradeGroup>();
-            
 
             return tg;
         }

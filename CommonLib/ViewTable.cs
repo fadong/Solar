@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Data;
 
 namespace Com.Fadong.CommonLib {
     [Serializable]
@@ -36,32 +37,134 @@ namespace Com.Fadong.CommonLib {
 
         }
 
+        //public ROWKEYTYPE rkeyType { get; private set; }
+        public bool IsFilterEnabled { get; private set; }
+        public bool IsFreezingEnable { get; private set; }
+        public bool IsTotalEnabled { get; private set; }
+        public int TitlePos { get; private set; }
+        public Color PlusNumericFontColor { get; private set; }
+        public Color MinusNumericFontColor { get; private set; }
 
+        public ViewColumns Columns {
+            get { return _cols; }
+        }
 
+        public ViewRows Rows {
+            get { return _rows; }
+        }
 
+        public DataTable ToDataTable() {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Index", typeof(int));
+            foreach (ViewColumn c in _cols) {
+                if (c.DataType == DATATYPE.DATE) {
+                    dt.Columns.Add(c.Title, typeof(DateTime));
+                } else if (c.DataType == DATATYPE.NUMBER) {
+                    dt.Columns.Add(c.Title, typeof(decimal));
+                } else {
+                    dt.Columns.Add(c.Title);
+                }
+            }
+
+            foreach (ViewRow r in _rows) {
+                dt.Rows.Add(r.ToObjectArray());
+            }
+            return dt;
+        }
+
+        ViewColumns _cols = null;
+        ViewRows _rows = null;
     }
 
+    #region "public class ViewRows : IEnumerable<ViewRow>"
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Serializable]
     public class ViewRows : IEnumerable<ViewRow> {
 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
 
+        public IEnumerator<ViewRow> GetEnumerator()
+        {
+            return this._rows.GetEnumerator();
+        }
 
+        List<ViewRow> _rows = new List<ViewRow>();
     }
+    #endregion
 
+    #region "public class ViewRow"
+    /// <summary>
+    /// 
+    /// </summary>
     [Serializable]
     public class ViewRow {
         public ViewRow(int index, ViewColumns cols) {
+            this.Index = index;
+            this._cols = cols;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public object this[int i] {
+            get {
+                return this._cells[i];
+            }
+            set {
+                this._cells[i] = value;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="colname"></param>
+        /// <returns></returns>
+        public object this[string colname] {
+            get {
+                ViewColumn vc = this._cols.FirstOrDefault(k => k.Title.Equals(colname));
+                return vc != null ? this._cells[vc.Index] : null;
+            }
+            set {
+                ViewColumn vc = this._cols.FirstOrDefault(k => k.Title.Equals(colname));
+                if (vc != null) this._cells[vc.Index] = value;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public object[] ToObjectArray() {
+            object[] objs = new object[_cells.Count + 1];
+            objs[0] = this.Index;
+            for(int i = 1; i < objs.Length; i++) {
+                objs[i] = _cells[i - 1];
+            }
+            return objs;
+        }
 
 
+        public int Index { get; set; }
+        public int KeyValue { get; set; }
+        public ViewColumns Columns {
+            get { return _cols; }
         }
 
         private List<object> _cells = new List<object>();
-        private int _index = 0;
-        private int _keyvalue = 0;
         private ViewColumns _cols = null;
     }
+    #endregion
 
-    #region "public class ViewColumns : IEnumerable<ViewColumn>"
+    #region "class ViewColumns : IEnumerable<ViewColumn>"
     [Serializable]
     public class ViewColumns : IEnumerable<ViewColumn> {
         public ViewColumns(string name, int width) {
@@ -97,7 +200,7 @@ namespace Com.Fadong.CommonLib {
             get { return this._cols.FirstOrDefault(k => k.Title.Equals(title)); }
         }
 
-        public IEnumerator IEnumerable.GetEnumerator() {
+        IEnumerator IEnumerable.GetEnumerator() {
             return GetEnumerator();
         }
 
@@ -117,7 +220,7 @@ namespace Com.Fadong.CommonLib {
     }
     #endregion
 
-    #region "public class ViewColumn"
+    #region "class ViewColumn"
     [Serializable]
     public class ViewColumn {
         private void ViewColumnInit(int index,

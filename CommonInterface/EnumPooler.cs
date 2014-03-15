@@ -63,6 +63,10 @@ namespace Com.Fadong.CommonInterface {
     }
     #endregion
 
+    #region "ACTIVITYLEVEL(사용자 활동 Flag)"
+    /// <summary>
+    /// 
+    /// </summary>
     [Flags]
     public enum ACTIVITYLEVEL {
         Entry,
@@ -70,6 +74,6 @@ namespace Com.Fadong.CommonInterface {
         Duration,
         All
     }
-
+    #endregion
     
 }

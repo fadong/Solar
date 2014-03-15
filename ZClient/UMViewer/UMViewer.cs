@@ -54,5 +54,7 @@ namespace Com.Fadong.ZClient.UMViewer {
                 MessageBox.Show(err.Message);
             }
         }
+
+        protected abstract void CustomCtxMenu();
     }
 }

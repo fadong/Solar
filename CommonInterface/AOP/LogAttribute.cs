@@ -8,6 +8,7 @@ using PostSharp.Aspects;
 
 namespace Com.Fadong.CommonInterface.AOP {
 
+    [Serializable]
     public sealed class LogActivityAttribute : OnMethodBoundaryAspect {
         public LogActivityAttribute(ACTIVITYLEVEL activityLevel) {
             ActivityLevel = activityLevel;
@@ -19,7 +20,6 @@ namespace Com.Fadong.CommonInterface.AOP {
 
         public override void OnEntry(MethodExecutionArgs args) {
             try {
-               
                 Logger.Info(this, "LogIn : " + DateTime.Now.ToString("G"));
                 if ((ActivityLevel & ACTIVITYLEVEL.Duration) != 0) {
                     sw = new Stopwatch();
@@ -52,6 +52,8 @@ namespace Com.Fadong.CommonInterface.AOP {
         }
 
         public ACTIVITYLEVEL ActivityLevel { get; set; }
+
+        [NonSerialized]
         Stopwatch sw = null;
     }
 }

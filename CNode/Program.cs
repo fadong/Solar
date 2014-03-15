@@ -8,8 +8,11 @@ using System.Threading;
 using Com.Fadong.CommonInterface;
 
 namespace Com.Fadong.Caculator.CNode {
-    class Program {
 
+    /// <summary>
+    /// 
+    /// </summary>
+    class Program {
         [DllImport("Kernel32")]
         private static extern bool SetConsoleCtrlHandler(EventHandler handler, bool add);
 

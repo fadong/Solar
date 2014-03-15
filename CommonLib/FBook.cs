@@ -58,9 +58,7 @@ namespace Com.Fadong.CommonLib {
                     default:
                         break;
                 }
-
                 calculator.Calculate();
-
             }
             return calcResult;
         }
