@@ -119,6 +119,15 @@ namespace Com.Fadong.ZClient {
             Console.WriteLine(ZServer.BE.Svr.GetInstruments(new List<int>() { 1 }));
         }
 
+        private void mnuL2Sys_Config_Click(object sender, EventArgs e) {
+            try {
+                FormConfiguration frm = new FormConfiguration();
+                frm.ShowDialog();
+            } catch (Exception err) {
+                Logger.Error(this, err);
+            }
+        }
+
 
         /// <summary>
         /// 

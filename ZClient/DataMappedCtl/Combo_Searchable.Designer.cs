@@ -1,5 +1,5 @@
-﻿namespace Com.Fadong.ZClient.UCtlViewer {
-    partial class UCtlSysInfo_Client {
+﻿namespace Com.Fadong.ZClient.DataMappedCtl {
+    partial class Combo_Searchable {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
         /// </summary>
@@ -25,17 +25,14 @@
         private void InitializeComponent() {
             this.SuspendLayout();
             // 
-            // UCtlSysInfo_Client
+            // Combo_Searchable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UCtlSysInfo_Client";
+            this.Name = "Combo_Searchable";
+            this.Size = new System.Drawing.Size(483, 567);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
     }
 }

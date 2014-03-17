@@ -17,8 +17,6 @@ namespace Com.Fadong.ZClient.UMViewer {
         }
 
         public void Binding(ViewTable vt) {
-        
-
 
         }
 
@@ -40,7 +38,7 @@ namespace Com.Fadong.ZClient.UMViewer {
         private void cmnuSearch_Click(object sender, EventArgs e) {
             try {
                 UMViewerSearch frm = new UMViewerSearch();
-                frm.Show();
+                frm.Show(this);
             } catch (Exception err) {
                 MessageBox.Show(err.Message);
             }

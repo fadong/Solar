@@ -168,6 +168,10 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.gSearchOut = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.mnuMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
@@ -183,6 +187,9 @@
             this.docTabLeft.SuspendLayout();
             this.c1DockingTabPage3.SuspendLayout();
             this.c1DockingTabPage4.SuspendLayout();
+            this.c1DockingTabPage2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gSearchOut)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -226,8 +233,9 @@
             // mnuL2Sys_Config
             // 
             this.mnuL2Sys_Config.Name = "mnuL2Sys_Config";
-            this.mnuL2Sys_Config.Size = new System.Drawing.Size(148, 22);
+            this.mnuL2Sys_Config.Size = new System.Drawing.Size(152, 22);
             this.mnuL2Sys_Config.Text = "환경설정";
+            this.mnuL2Sys_Config.Click += new System.EventHandler(this.mnuL2Sys_Config_Click);
             // 
             // toolStripSeparator1
             // 
@@ -1092,7 +1100,7 @@
             // loadFormToolStripMenuItem
             // 
             this.loadFormToolStripMenuItem.Name = "loadFormToolStripMenuItem";
-            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.loadFormToolStripMenuItem.Text = "Load Form";
             this.loadFormToolStripMenuItem.Click += new System.EventHandler(this.loadFormToolStripMenuItem_Click);
             // 
@@ -1295,10 +1303,11 @@
             this.docTabLeft.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.docTabLeft.Controls.Add(this.c1DockingTabPage3);
             this.docTabLeft.Controls.Add(this.c1DockingTabPage4);
+            this.docTabLeft.Controls.Add(this.c1DockingTabPage2);
             this.docTabLeft.Location = new System.Drawing.Point(4, 4);
             this.docTabLeft.Name = "docTabLeft";
             this.docTabLeft.Padding = new System.Drawing.Point(3, 2);
-            this.docTabLeft.SelectedIndex = 1;
+            this.docTabLeft.SelectedIndex = 2;
             this.docTabLeft.SelectedTabBold = true;
             this.docTabLeft.Size = new System.Drawing.Size(300, 586);
             this.docTabLeft.TabAreaSpacing = 3;
@@ -1345,6 +1354,55 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // c1DockingTabPage2
+            // 
+            this.c1DockingTabPage2.Controls.Add(this.tableLayoutPanel1);
+            this.c1DockingTabPage2.Location = new System.Drawing.Point(4, 4);
+            this.c1DockingTabPage2.Name = "c1DockingTabPage2";
+            this.c1DockingTabPage2.Size = new System.Drawing.Size(294, 556);
+            this.c1DockingTabPage2.TabIndex = 2;
+            this.c1DockingTabPage2.Text = "Search";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.gSearchOut, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.72662F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.27338F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(294, 556);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // gSearchOut
+            // 
+            this.gSearchOut.ColumnInfo = "3,0,0,0,0,105,Columns:";
+            this.tableLayoutPanel1.SetColumnSpan(this.gSearchOut, 2);
+            this.gSearchOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gSearchOut.ExtendLastCol = true;
+            this.gSearchOut.Location = new System.Drawing.Point(3, 95);
+            this.gSearchOut.Name = "gSearchOut";
+            this.gSearchOut.Rows.Count = 1;
+            this.gSearchOut.Rows.DefaultSize = 21;
+            this.gSearchOut.Size = new System.Drawing.Size(288, 458);
+            this.gSearchOut.StyleInfo = resources.GetString("gSearchOut.StyleInfo");
+            this.gSearchOut.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(294, 92);
+            this.panel1.TabIndex = 1;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1379,6 +1437,9 @@
             this.docTabLeft.ResumeLayout(false);
             this.c1DockingTabPage3.ResumeLayout(false);
             this.c1DockingTabPage4.ResumeLayout(false);
+            this.c1DockingTabPage2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gSearchOut)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1530,6 +1591,10 @@
         private System.Windows.Forms.ToolStripMenuItem 설정ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 항상위ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator22;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private C1.Win.C1FlexGrid.C1FlexGrid gSearchOut;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

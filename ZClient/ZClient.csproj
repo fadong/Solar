@@ -85,11 +85,23 @@
     <Compile Include="ClientUtil.cs" />
     <Compile Include="CtlCmdHandler.cs" />
     <Compile Include="CtlZServer.cs" />
+    <Compile Include="DataMappedCtl\Combo_Searchable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataMappedCtl\Combo_Searchable.Designer.cs">
+      <DependentUpon>Combo_Searchable.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAnal_UDDE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAnal_UDDE.Designer.cs">
       <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration.Designer.cs">
+      <DependentUpon>FormConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -477,8 +489,14 @@
     <Compile Include="UMViewer\UMViewer_Trade.Designer.cs">
       <DependentUpon>UMViewer_Trade.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DataMappedCtl\Combo_Searchable.resx">
+      <DependentUpon>Combo_Searchable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAnal_UDDE.resx">
       <DependentUpon>FormAnal_UDDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration.resx">
+      <DependentUpon>FormConfiguration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -529,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCtls\UCtlProd_Stock.resx">
       <DependentUpon>UCtlProd_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Client.resx">
+      <DependentUpon>UCtlSysInfo_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCtlViewer\UCtlSysInfo_Debug.resx">
       <DependentUpon>UCtlSysInfo_Debug.cs</DependentUpon>
@@ -617,6 +638,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="log4net.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UConfigPanels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\PostSharp.3.1.33\tools\PostSharp.targets" Condition="Exists('..\packages\PostSharp.3.1.33\tools\PostSharp.targets')" />

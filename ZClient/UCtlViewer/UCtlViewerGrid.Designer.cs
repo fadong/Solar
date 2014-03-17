@@ -23,11 +23,15 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCtlViewerGrid));
             this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.gridG = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.ctxMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmnuSearch = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridG)).BeginInit();
+            this.ctxMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // c1FlexGrid1
@@ -53,6 +57,21 @@
             this.gridG.Size = new System.Drawing.Size(884, 214);
             this.gridG.StyleInfo = resources.GetString("gridG.StyleInfo");
             this.gridG.TabIndex = 1;
+            this.gridG.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gridG_MouseClick);
+            // 
+            // ctxMenu
+            // 
+            this.ctxMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmnuSearch});
+            this.ctxMenu.Name = "ctxMenu";
+            this.ctxMenu.Size = new System.Drawing.Size(153, 48);
+            // 
+            // cmnuSearch
+            // 
+            this.cmnuSearch.Name = "cmnuSearch";
+            this.cmnuSearch.Size = new System.Drawing.Size(152, 22);
+            this.cmnuSearch.Text = "Search...";
+            this.cmnuSearch.Click += new System.EventHandler(this.cmnuSearch_Click);
             // 
             // UCtlViewerGrid
             // 
@@ -64,6 +83,7 @@
             this.Controls.SetChildIndex(this.gridG, 0);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridG)).EndInit();
+            this.ctxMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,6 +93,8 @@
 
         private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.C1FlexGrid.C1FlexGrid gridG;
+        private System.Windows.Forms.ContextMenuStrip ctxMenu;
+        private System.Windows.Forms.ToolStripMenuItem cmnuSearch;
 
     }
 }
