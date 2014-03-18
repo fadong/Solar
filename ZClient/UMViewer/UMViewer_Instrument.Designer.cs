@@ -30,7 +30,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UMViewer_Instrument";
-            this.Size = new System.Drawing.Size(759, 493);
+            this.Size = new System.Drawing.Size(861, 546);
             this.ResumeLayout(false);
 
         }

@@ -56,11 +56,12 @@ Class를 출력
     <root>
       <!-- 로그수준 level : ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF-->
       <level value="ALL" />
+      <appender-ref ref="Console" />
       <appender-ref ref="RollingFile" />
     </root>
-    <logger name="로그네임">
+    <!--<logger name="로그네임">
       <level value="ALL"/>
-      <appender-ref ref="Console" />
-    </logger>
+      
+    </logger>-->
   </log4net>
 </configuration>

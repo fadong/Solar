@@ -10,9 +10,14 @@ using System.Windows.Forms;
 using System.Windows.Forms.Integration;
 using System.Reflection;
 using Com.Fadong.CommonInterface;
+using Com.Fadong.CommonInterface.AOP;
 
 namespace Com.Fadong.ZClient {
+
+    
     public partial class FormProduct : Form {
+
+        [PermissionCheck]
         public FormProduct(string uctlname) {
             InitializeComponent();
             Type t = Assembly.GetExecutingAssembly().GetType("Com.Fadong.ZClient.UCtls." + uctlname);

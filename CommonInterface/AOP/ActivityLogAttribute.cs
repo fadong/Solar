@@ -9,20 +9,26 @@ using PostSharp.Aspects;
 namespace Com.Fadong.CommonInterface.AOP {
 
     [Serializable]
-    public sealed class LogActivityAttribute : OnMethodBoundaryAspect {
-        public LogActivityAttribute(ACTIVITYLEVEL activityLevel) {
+    public sealed class ActivityLogAttribute : OnMethodBoundaryAspect {
+        public ActivityLogAttribute(ACTIVITYLEVEL activityLevel) {
             ActivityLevel = activityLevel;
         }
 
-        public LogActivityAttribute() {
+        public ActivityLogAttribute() {
             ActivityLevel = ACTIVITYLEVEL.Entry | ACTIVITYLEVEL.Exit;
         }
 
         public override void OnEntry(MethodExecutionArgs args) {
             try {
-                Logger.Info(this, "LogIn : " + DateTime.Now.ToString("G"));
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("Method Entry [{0}] : {1}", args.Method.Name, DateTime.Now.ToString("G"));
+                Logger.Info(this, sb.ToString());
+                if (Trace2TextBox) {
+                    Trace.WriteLine(sb.ToString());
+                }
                 if ((ActivityLevel & ACTIVITYLEVEL.Duration) != 0) {
                     sw = new Stopwatch();
+                    sw.Start();
                 }
             } catch (Exception err) {
                 Logger.Error(this, err.Message);
@@ -31,12 +37,18 @@ namespace Com.Fadong.CommonInterface.AOP {
 
         public override void OnExit(MethodExecutionArgs args) {
             try {
-                Logger.Info(this, "LogOut : " + DateTime.Now.ToString("G"));
+                StringBuilder sb = new StringBuilder();
                 if ((ActivityLevel & ACTIVITYLEVEL.Duration) != 0) {
                     if (sw != null) {
                         sw.Stop();
-                        Logger.Info(this, "Duration(Milliseconds) : " + sw.ElapsedMilliseconds);
+                        sb.AppendFormat("Duration(Milliseconds) : {0}" + Environment.NewLine, sw.ElapsedMilliseconds);
+                        Logger.Info(this, sb.ToString());
                     }
+                }
+                sb.AppendFormat("Method Exit [{0}] : {1}", args.Method.Name, DateTime.Now.ToString("G"));
+                Logger.Info(this, sb.ToString());
+                if (Trace2TextBox) {
+                    Trace.WriteLine(sb.ToString());
                 }
             } catch (Exception err) {
                 Logger.Error(this, err.Message);
@@ -52,6 +64,7 @@ namespace Com.Fadong.CommonInterface.AOP {
         }
 
         public ACTIVITYLEVEL ActivityLevel { get; set; }
+        public bool Trace2TextBox { get; set; }
 
         [NonSerialized]
         Stopwatch sw = null;

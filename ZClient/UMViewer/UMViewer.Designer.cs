@@ -30,37 +30,37 @@
             this.cmnuCWidthAutoSize = new System.Windows.Forms.ToolStripMenuItem();
             this.cmnuCWidthAutoSizeAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.셀선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.행선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.열선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.다중행선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.다중열선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.임의셀선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.cmnuSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cmnuColLayout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.dataExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.pdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.cSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.보관함등록ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.복사ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.전체ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.자유셀선택변환ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.부분복사ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.셀선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.행선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.열선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.다중행선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.다중열선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.임의셀선택모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.속성ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.보관함등록ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.속성ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gBase)).BeginInit();
             this.ctxMenu.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +118,65 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(195, 6);
             // 
+            // 셀선택모드ToolStripMenuItem
+            // 
+            this.셀선택모드ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.행선택모드ToolStripMenuItem,
+            this.열선택모드ToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.다중행선택모드ToolStripMenuItem,
+            this.다중열선택모드ToolStripMenuItem,
+            this.toolStripSeparator11,
+            this.임의셀선택모드ToolStripMenuItem});
+            this.셀선택모드ToolStripMenuItem.Name = "셀선택모드ToolStripMenuItem";
+            this.셀선택모드ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.셀선택모드ToolStripMenuItem.Text = "셀 선택 모드";
+            // 
+            // 행선택모드ToolStripMenuItem
+            // 
+            this.행선택모드ToolStripMenuItem.Name = "행선택모드ToolStripMenuItem";
+            this.행선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.행선택모드ToolStripMenuItem.Text = "단일 행 선택 모드";
+            // 
+            // 열선택모드ToolStripMenuItem
+            // 
+            this.열선택모드ToolStripMenuItem.Name = "열선택모드ToolStripMenuItem";
+            this.열선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.열선택모드ToolStripMenuItem.Text = "단일 열 선택 모드";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(167, 6);
+            // 
+            // 다중행선택모드ToolStripMenuItem
+            // 
+            this.다중행선택모드ToolStripMenuItem.Name = "다중행선택모드ToolStripMenuItem";
+            this.다중행선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.다중행선택모드ToolStripMenuItem.Text = "다중 행 선택 모드";
+            // 
+            // 다중열선택모드ToolStripMenuItem
+            // 
+            this.다중열선택모드ToolStripMenuItem.Name = "다중열선택모드ToolStripMenuItem";
+            this.다중열선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.다중열선택모드ToolStripMenuItem.Text = "다중 열 선택 모드";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(167, 6);
+            // 
+            // 임의셀선택모드ToolStripMenuItem
+            // 
+            this.임의셀선택모드ToolStripMenuItem.Name = "임의셀선택모드ToolStripMenuItem";
+            this.임의셀선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.임의셀선택모드ToolStripMenuItem.Text = "임의 셀 선택 모드";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(195, 6);
+            // 
             // cmnuSearch
             // 
             this.cmnuSearch.Name = "cmnuSearch";
@@ -163,11 +222,21 @@
             this.excelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.excelToolStripMenuItem.Text = "Excel";
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(154, 6);
+            // 
             // pdfToolStripMenuItem
             // 
             this.pdfToolStripMenuItem.Name = "pdfToolStripMenuItem";
             this.pdfToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.pdfToolStripMenuItem.Text = "PDF";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(154, 6);
             // 
             // cSVToolStripMenuItem
             // 
@@ -181,16 +250,6 @@
             this.textToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.textToolStripMenuItem.Text = "Text(공백 분리)";
             // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(154, 6);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(154, 6);
-            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
@@ -201,17 +260,6 @@
             this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
             this.xMLToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.xMLToolStripMenuItem.Text = "XML";
-            // 
-            // 보관함등록ToolStripMenuItem
-            // 
-            this.보관함등록ToolStripMenuItem.Name = "보관함등록ToolStripMenuItem";
-            this.보관함등록ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.보관함등록ToolStripMenuItem.Text = "보관함 등록";
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(195, 6);
             // 
             // 복사ToolStripMenuItem
             // 
@@ -230,6 +278,11 @@
             this.전체ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.전체ToolStripMenuItem.Text = "전체 복사";
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(195, 6);
+            // 
             // 자유셀선택변환ToolStripMenuItem
             // 
             this.자유셀선택변환ToolStripMenuItem.Name = "자유셀선택변환ToolStripMenuItem";
@@ -242,80 +295,27 @@
             this.부분복사ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.부분복사ToolStripMenuItem.Text = "부분 복사";
             // 
-            // toolStripSeparator8
+            // toolStripSeparator7
             // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(195, 6);
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(195, 6);
             // 
-            // 셀선택모드ToolStripMenuItem
+            // 보관함등록ToolStripMenuItem
             // 
-            this.셀선택모드ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.행선택모드ToolStripMenuItem,
-            this.열선택모드ToolStripMenuItem,
-            this.toolStripSeparator10,
-            this.다중행선택모드ToolStripMenuItem,
-            this.다중열선택모드ToolStripMenuItem,
-            this.toolStripSeparator11,
-            this.임의셀선택모드ToolStripMenuItem});
-            this.셀선택모드ToolStripMenuItem.Name = "셀선택모드ToolStripMenuItem";
-            this.셀선택모드ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.셀선택모드ToolStripMenuItem.Text = "셀 선택 모드";
+            this.보관함등록ToolStripMenuItem.Name = "보관함등록ToolStripMenuItem";
+            this.보관함등록ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.보관함등록ToolStripMenuItem.Text = "북마크";
             // 
-            // toolStripSeparator9
+            // toolStripSeparator12
             // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(195, 6);
-            // 
-            // 행선택모드ToolStripMenuItem
-            // 
-            this.행선택모드ToolStripMenuItem.Name = "행선택모드ToolStripMenuItem";
-            this.행선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.행선택모드ToolStripMenuItem.Text = "단일 행 선택 모드";
-            // 
-            // 열선택모드ToolStripMenuItem
-            // 
-            this.열선택모드ToolStripMenuItem.Name = "열선택모드ToolStripMenuItem";
-            this.열선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.열선택모드ToolStripMenuItem.Text = "단일 열 선택 모드";
-            // 
-            // 다중행선택모드ToolStripMenuItem
-            // 
-            this.다중행선택모드ToolStripMenuItem.Name = "다중행선택모드ToolStripMenuItem";
-            this.다중행선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.다중행선택모드ToolStripMenuItem.Text = "다중 행 선택 모드";
-            // 
-            // 다중열선택모드ToolStripMenuItem
-            // 
-            this.다중열선택모드ToolStripMenuItem.Name = "다중열선택모드ToolStripMenuItem";
-            this.다중열선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.다중열선택모드ToolStripMenuItem.Text = "다중 열 선택 모드";
-            // 
-            // 임의셀선택모드ToolStripMenuItem
-            // 
-            this.임의셀선택모드ToolStripMenuItem.Name = "임의셀선택모드ToolStripMenuItem";
-            this.임의셀선택모드ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.임의셀선택모드ToolStripMenuItem.Text = "임의 셀 선택 모드";
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(167, 6);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(167, 6);
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(195, 6);
             // 
             // 속성ToolStripMenuItem
             // 
             this.속성ToolStripMenuItem.Name = "속성ToolStripMenuItem";
             this.속성ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.속성ToolStripMenuItem.Text = "정보";
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(195, 6);
             // 
             // UMViewer
             // 

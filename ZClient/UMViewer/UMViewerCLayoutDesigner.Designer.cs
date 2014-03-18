@@ -112,13 +112,13 @@
             // 
             // lineShape1
             // 
-            this.lineShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.lineShape1.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lineShape1.BorderWidth = 2;
             this.lineShape1.Name = "lineShape1";
             this.lineShape1.X1 = 12;
-            this.lineShape1.X2 = 405;
+            this.lineShape1.X2 = 404;
             this.lineShape1.Y1 = 501;
-            this.lineShape1.Y2 = 502;
+            this.lineShape1.Y2 = 501;
             // 
             // btnCancel
             // 
@@ -248,6 +248,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

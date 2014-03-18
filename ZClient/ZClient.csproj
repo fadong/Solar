@@ -637,9 +637,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="log4net.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="UConfigPanels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

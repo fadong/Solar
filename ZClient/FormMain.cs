@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Annotations;
+using System.Diagnostics;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonInterface.AOP;
 
@@ -39,8 +40,8 @@ namespace Com.Fadong.ZClient {
         }
 
         void MASTER_TIMER_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
-            this.InvokeEx(k => k.tStripTxt_ConnTime .Text = "현재시각 : " + DateTime.Now.ToString("G"));
-            this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
+            //this.InvokeEx(k => k.tStripTxt_ConnTime .Text = "현재시각 : " + DateTime.Now.ToString("G"));
+            //this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
         }
 
 
@@ -114,11 +115,13 @@ namespace Com.Fadong.ZClient {
 
         }
 
-        [LogActivity(ACTIVITYLEVEL.All)]
+        [ActivityLog(ACTIVITYLEVEL.All, Trace2TextBox = true)]
         private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
             Console.WriteLine(ZServer.BE.Svr.GetInstruments(new List<int>() { 1 }));
         }
 
+
+        [ActivityLog(ACTIVITYLEVEL.All, Trace2TextBox = true)]
         private void mnuL2Sys_Config_Click(object sender, EventArgs e) {
             try {
                 FormConfiguration frm = new FormConfiguration();

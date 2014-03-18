@@ -51,6 +51,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox tbox;
+        protected System.Windows.Forms.RichTextBox tbox;
+
     }
 }
