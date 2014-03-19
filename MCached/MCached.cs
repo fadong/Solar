@@ -30,64 +30,65 @@ namespace Com.Fadong.MCached {
         /// </summary>
         public void CacheInit() {
             //TODO -Table Caching 로직 필요
-            _dic.Add("D_ADDINFO", new GCacheDB());
-            _dic.Add("D_ADDINFOSPEC", new GCacheDB());
+            //_dic.Add("D_ADDINFO", new GCacheDB());
+            //_dic.Add("D_ADDINFOSPEC", new GCacheDB());
 
-            _dic.Add("D_INSTRUMENT", new GCacheDB());
-            _dic.Add("D_LEG", new GCacheDB());
-            _dic.Add("NGOS_CASHFLOW", new GCacheDB());
-            _dic.Add("NGOS_RESET", new GCacheDB());
+            //_dic.Add("D_INSTRUMENT", new GCacheDB());
+            //_dic.Add("D_LEG", new GCacheDB());
+            //_dic.Add("NGOS_CASHFLOW", new GCacheDB());
+            //_dic.Add("NGOS_RESET", new GCacheDB());
 
-            _dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
-            _dic.Add("NGOS_PORTFOLIO", new GCacheDB());
-            _dic.Add("NGOS_PARTY", new GCacheDB());
+            //_dic.Add("NGOS_EXOTICEVENT", new GCacheDB());
+            //_dic.Add("NGOS_PORTFOLIO", new GCacheDB());
+            //_dic.Add("NGOS_PARTY", new GCacheDB());
 
-            List<Thread> tlist = new List<Thread>();
-            foreach(KeyValuePair<string, GCacheDB> v in _dic) {
-                ThreadStart ts = null;
-                GCacheDB gcdb = v.Value;
-                switch(v.Key) {
-                    case "D_INSTRUMENT":
-                        ts = new ThreadStart(v.Value.Load<D_INSTRUMENT>);
-                        break;
-                    case "D_LEG":
-                        ts = new ThreadStart(v.Value.Load<D_LEG>);
-                        break;
-                    case "D_CASHFLOW":
-                        ts = new ThreadStart(v.Value.Load<D_CASHFLOW>);
-                        break;
-                    case "D_RESET":
-                        ts = new ThreadStart(v.Value.Load<D_RESET>);
-                        break;
-                    case "D_ADDINFO":
-                        ts = new ThreadStart(v.Value.Load<D_ADDINFO>);
-                        break;
-                    case "D_ADDINFOSPEC":
-                        ts = new ThreadStart(v.Value.Load<D_ADDINFOSPEC>);
-                        break;
-                    //case "NGOS_EXOTICEVENT":
-                    //    ts = new ThreadStart(v.Value.Load<NGOS_EXOTICEVENT>);
-                    //    break;
-                    //case "NGOS_PORTFOLIO":
-                    //    ts = new ThreadStart(v.Value.Load<D_PORTFOLIO>);
-                    //    break;
-                    //case "NGOS_PARTY":
-                    //    ts = new ThreadStart(v.Value.Load<NGOS_PARTY>);
-                    //    break;
-                    default:
-                        break;
-                }
-                if(ts != null) {
-                    Thread t = new Thread(ts);
-                    t.Start();
-                    tlist.Add(t);
-                    Logger.Info(this, v.Key + "Loading");
-                }
-            }
+            //List<Thread> tlist = new List<Thread>();
+            //foreach(KeyValuePair<string, GCacheDB> v in _dic) {
+            //    ThreadStart ts = null;
+            //    GCacheDB gcdb = v.Value;
+            //    switch(v.Key) {
+            //        case "D_INSTRUMENT":
+            //            ts = new ThreadStart(v.Value.Load<D_INSTRUMENT>);
+            //            break;
+            //        case "D_LEG":
+            //            ts = new ThreadStart(v.Value.Load<D_LEG>);
+            //            break;
+            //        case "D_CASHFLOW":
+            //            ts = new ThreadStart(v.Value.Load<D_CASHFLOW>);
+            //            break;
+            //        case "D_RESET":
+            //            ts = new ThreadStart(v.Value.Load<D_RESET>);
+            //            break;
+            //        case "D_ADDINFO":
+            //            ts = new ThreadStart(v.Value.Load<D_ADDINFO>);
+            //            break;
+            //        case "D_ADDINFOSPEC":
+            //            ts = new ThreadStart(v.Value.Load<D_ADDINFOSPEC>);
+            //            break;
+            //        //case "NGOS_EXOTICEVENT":
+            //        //    ts = new ThreadStart(v.Value.Load<NGOS_EXOTICEVENT>);
+            //        //    break;
+            //        //case "NGOS_PORTFOLIO":
+            //        //    ts = new ThreadStart(v.Value.Load<D_PORTFOLIO>);
+            //        //    break;
+            //        //case "NGOS_PARTY":
+            //        //    ts = new ThreadStart(v.Value.Load<NGOS_PARTY>);
+            //        //    break;
+            //        default:
+            //            break;
+            //    }
+            //    if(ts != null) {
+            //        Thread t = new Thread(ts);
+            //        t.Start();
+            //        tlist.Add(t);
+            //        Logger.Info(this, v.Key + "Loading");
+            //    }
+            //}
 
-            foreach(Thread t in tlist) {
-                t.Join();
-            }
+            //foreach(Thread t in tlist) {
+            //    t.Join();
+            //}
+
         }
 
         /// <summary>

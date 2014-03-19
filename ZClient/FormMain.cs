@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Objects;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,10 +25,21 @@ namespace Com.Fadong.ZClient {
             ClientConfig.CONNECTED_TIME = DateTime.Now;
             ClientConfig.MASTER_TIMER.Elapsed += MASTER_TIMER_Elapsed;
             ClientConfig.MASTER_TIMER.Start();
+            //CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
 
-            CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
-
-
+            using (ZClientEntities ctx = new ZClientEntities()) {
+                ToolStripMenuItem titem = new ToolStripMenuItem("Root");
+                foreach (MenuMaster d in ctx.MenuMasters) {
+                    if (d.mnuType == 1) {
+                        ToolStripItem mnu = new ToolStripMenuItem(d.mnuText);
+                        titem.DropDownItems.Add(mnu);
+                    } else if (d.mnuType == 0) {
+                        ToolStripItem mnuline = new ToolStripSeparator();
+                        titem.DropDownItems.Add(mnuline);
+                    }
+                }
+                mnuMain.Items.Add(titem);
+            }
 
             //Test
             UMViewer.UMViewer viewer = new UMViewer.UMViewer();
@@ -40,8 +52,8 @@ namespace Com.Fadong.ZClient {
         }
 
         void MASTER_TIMER_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
-            //this.InvokeEx(k => k.tStripTxt_ConnTime .Text = "현재시각 : " + DateTime.Now.ToString("G"));
-            //this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
+            this.InvokeEx(k => k.tStripTxt_ConnTime.Text = "현재시각 : " + DateTime.Now.ToString("G"));
+            this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
         }
 
 
@@ -66,28 +78,28 @@ namespace Com.Fadong.ZClient {
             }
         }
 
-        void BE_onOpenFormListChanged(List<Tuple<ToolStripMenuItem, Command_LoadForm>> frmlist) {
-                try {
-                    mnuL2Sys_RecentForm.DropDownItems.Clear();
-                    foreach (var frm in frmlist) {
-                        Command_LoadForm frminfo = frm.Item2;
-                        ToolStripMenuItem mnu = new ToolStripMenuItem();
-                        mnu.Text = frm.Item1.Text;
-                        mnu.Name = frminfo.MenuName;
-                        mnu.Click += CmdHandler;
-                        mnuL2Sys_RecentForm.DropDownItems.Add(mnu);
-                    }
-                } catch (Exception err) {
-                    Logger.Error(this, err.Message, err);
-                }
-        }
+        //void BE_onOpenFormListChanged(List<Tuple<ToolStripMenuItem, Command_LoadForm>> frmlist) {
+        //        try {
+        //            mnuL2Sys_RecentForm.DropDownItems.Clear();
+        //            foreach (var frm in frmlist) {
+        //                Command_LoadForm frminfo = frm.Item2;
+        //                ToolStripMenuItem mnu = new ToolStripMenuItem();
+        //                mnu.Text = frm.Item1.Text;
+        //                mnu.Name = frminfo.MenuName;
+        //                mnu.Click += CmdHandler;
+        //                mnuL2Sys_RecentForm.DropDownItems.Add(mnu);
+        //            }
+        //        } catch (Exception err) {
+        //            Logger.Error(this, err.Message, err);
+        //        }
+        //}
 
         /// <summary>
         /// 
         /// </summary>
         private void CmdHandler(object sender, EventArgs e) {
             ToolStripMenuItem mitem = (ToolStripMenuItem)sender;
-            CommandManager.BE.Execute(mitem);
+            //CommandManager.BE.Execute(mitem);
         }
 
         /// <summary>
@@ -129,6 +141,10 @@ namespace Com.Fadong.ZClient {
             } catch (Exception err) {
                 Logger.Error(this, err);
             }
+        }
+
+        private void 도구TToolStripMenuItem_Click(object sender, EventArgs e) {
+
         }
 
 

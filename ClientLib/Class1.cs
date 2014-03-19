@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Com.Fadong.ZClient.ZLib
 {
-    public class Class1
-    {
+    public class Class1 {
     }
 }

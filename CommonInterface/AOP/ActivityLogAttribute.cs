@@ -41,7 +41,7 @@ namespace Com.Fadong.CommonInterface.AOP {
                 if ((ActivityLevel & ACTIVITYLEVEL.Duration) != 0) {
                     if (sw != null) {
                         sw.Stop();
-                        sb.AppendFormat("Duration(Milliseconds) : {0}" + Environment.NewLine, sw.ElapsedMilliseconds);
+                        sb.AppendFormat("Duration (Milliseconds) : {0}" + Environment.NewLine, sw.ElapsedMilliseconds.ToString("###,###,###,##0"));
                         Logger.Info(this, sb.ToString());
                     }
                 }
