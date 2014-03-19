@@ -60,7 +60,7 @@ namespace Com.Fadong.CommonInterface.AOP {
         }
 
         public override void OnException(MethodExecutionArgs args) {
-            Logger.Info(this, "");
+            Logger.Info(this, args.Exception.Message);
         }
 
         public ACTIVITYLEVEL ActivityLevel { get; set; }

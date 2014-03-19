@@ -8,6 +8,10 @@ using System.Configuration;
 using System.Windows.Forms;
 
 namespace Com.Fadong.CommonInterface {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class RichTextBoxTraceListener : TraceListener {
         private RichTextBox _textbox;
         private StringSendDelegate _invokeWrite;
@@ -16,7 +20,7 @@ namespace Com.Fadong.CommonInterface {
         public RichTextBoxTraceListener(RichTextBox textbox) {
             _textbox = textbox;
             string value = ConfigurationManager.AppSettings["Tracable"];
-            _isTracable = (value != null && value.Equals("true"))  ? true : false;
+            _isTracable = (value != null && value.ToUpper().Equals("TRUE"))  ? true : false;
             _invokeWrite = new StringSendDelegate(SendString);
         }
 

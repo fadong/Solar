@@ -36,7 +36,20 @@ namespace Com.Fadong.CommonLib {
 
         public override List<ITradeGroup> TradeGroups(DateTime fiscalday, DateTime settleday, List<IEnum> tradestatus, bool isMixUp = true) {
             List<ITradeGroup> tg = new List<ITradeGroup>();
+            //if(isMixUp) {
+            //    foreach(IBook book in this._books.Values) {
+                    
+
+            //    }
+            //}
             return tg;
+        }
+
+        public override List<IPnLCalculator> CalculatePnL(DateTime fiscalday, DateTime settleday, List<IEnum> tradestatus, bool isMixUp = true) {
+            List<IPnLCalculator> pnlist = new List<IPnLCalculator>();
+
+
+            return pnlist;
         }
 
         private Dictionary<string, IBook> _books = new Dictionary<string, IBook>();

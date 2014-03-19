@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib {
 
-    public class FInstrumentStock : FInstrument {
+    public class BzBisinessDayConv {
 
     }
 }

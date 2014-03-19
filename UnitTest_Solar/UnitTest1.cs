@@ -18,16 +18,14 @@ namespace UnitTest_Solar {
             //Assert.IsTrue(kv.Count > 0);
         }
 
+        [TestMethod]
         private IClientService ConnectSolar() {
             ServerAgent agent = new ServerAgent();
             List<Claim> claims = agent.Connect("test1", "1tset", false);
+            Assert.IsNotNull(agent);
             return agent.Svr;
         }
 
-        [TestMethod]
-        public void TestMethod_Connection() {
-            Assert.IsNotNull(ConnectSolar());
-        }
 
         [TestMethod]
         public void Calendar_IsBizDay() {

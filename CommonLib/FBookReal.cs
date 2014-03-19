@@ -13,11 +13,13 @@ namespace Com.Fadong.CommonLib {
     /// <remarks>Author : Jaekyoon,Lee (2014-03-08)</remarks>
     public class FBookReal : FBook, IEnumerable<ITrade> {
 
-
         public override List<ITradeGroup> TradeGroups(DateTime fiscalday, DateTime settleday, List<IEnum> tradestatus, bool isMixUp = false) {
-            List<ITradeGroup> tg = new List<ITradeGroup>();
+            List<ITradeGroup> tglist = new List<ITradeGroup>();
 
-            return tg;
+
+            
+            
+            return tglist;
         }
 
         public IEnumerator GetEnumerator() {
