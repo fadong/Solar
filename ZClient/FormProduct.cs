@@ -21,7 +21,7 @@ namespace Com.Fadong.ZClient {
         public FormProduct(string uctlname) {
             InitializeComponent();
             Type t = Assembly.GetExecutingAssembly().GetType("Com.Fadong.ZClient.UCtls." + uctlname);
-            uctl = (UCtls.UCtlProd)Activator.CreateInstance(t);
+            uctl = (UCtlProd.UCtlProdBase)Activator.CreateInstance(t);
             tableLayoutPanel1.ColumnStyles[1].Width = 600;
             this.Width = uctl.Width + (int)tableLayoutPanel1.ColumnStyles[1].Width + 22;
             instPanel.Controls.Add(uctl);
@@ -56,6 +56,6 @@ namespace Com.Fadong.ZClient {
             }
         }
 
-        UCtls.UCtlProd uctl = null;
+        UCtlProd.UCtlProdBase uctl = null;
     }
 }

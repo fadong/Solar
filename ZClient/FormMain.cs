@@ -25,21 +25,18 @@ namespace Com.Fadong.ZClient {
             ClientConfig.CONNECTED_TIME = DateTime.Now;
             ClientConfig.MASTER_TIMER.Elapsed += MASTER_TIMER_Elapsed;
             ClientConfig.MASTER_TIMER.Start();
-            //CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
+            
 
             using (ZClientEntities ctx = new ZClientEntities()) {
-                ToolStripMenuItem titem = new ToolStripMenuItem("Root");
                 foreach (MenuMaster d in ctx.MenuMasters) {
-                    if (d.mnuType == 1) {
+                    if (d.mnuType == 1 && d.Id == d.RefId) {
                         ToolStripItem mnu = new ToolStripMenuItem(d.mnuText);
-                        titem.DropDownItems.Add(mnu);
-                    } else if (d.mnuType == 0) {
-                        ToolStripItem mnuline = new ToolStripSeparator();
-                        titem.DropDownItems.Add(mnuline);
+                        mnuMain.Items.Add(mnu);
+                        AddMenu(mnu, d, ctx);
                     }
                 }
-                mnuMain.Items.Add(titem);
-            }
+            }            
+            CommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
 
             //Test
             UMViewer.UMViewer viewer = new UMViewer.UMViewer();
@@ -56,9 +53,63 @@ namespace Com.Fadong.ZClient {
             this.InvokeEx(k => k.tStripTxt_ElapsedTime.Text = "경과시각 : " + DateTime.Now.Subtract(ClientConfig.CONNECTED_TIME).ToString("dd\\.hh\\:mm\\:ss"));
         }
 
+        #region "void AddMenu(ToolStripItem mnu, MenuMaster mmst, ZClientEntities ctx)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mnu"></param>
+        /// <param name="mmst"></param>
+        /// <param name="ctx"></param>
+        void AddMenu(ToolStripItem mnu, MenuMaster mmst, ZClientEntities ctx) {
+            foreach(MenuMaster d in ctx.MenuMasters.Where(k => k.RefId == mmst.Id && k.RefId != k.Id).OrderBy(k => k.Order)) {
+                if(mnu is ToolStripMenuItem) {
+                    ToolStripItem smnu = null;
+                    if(d.mnuType == 1) { 
+                        smnu = new ToolStripMenuItem(d.mnuText);
+                        smnu.Name = d.mnuName;
 
-
-        
+                        if(d.ShortCutKey != null && d.ShortCutKey.Length > 0) {
+                            string[] skeyStrs = d.ShortCutKey.Split(new string[] { "+" }, StringSplitOptions.RemoveEmptyEntries);
+                            Keys sumkey = Keys.None;
+                            for(int i = 0; i < skeyStrs.Length; i++) {
+                                Keys key;
+                                Console.WriteLine(skeyStrs[i]);
+                                if(Enum.TryParse(skeyStrs[i], out key)) {
+                                    if(i == 0)
+                                        sumkey = key;
+                                    else
+                                        sumkey |= key;
+                                }
+                            }
+                            ((ToolStripMenuItem)smnu).ShortcutKeys = sumkey;
+                        }
+                        Command cmd = null;
+                        if(d.loadType == 0) {
+                            cmd = new MenuItemCommand4Action(smnu);
+                        }
+                        else if(d.loadType == 1) {
+                            if(d.hasChild == 1) {
+                                cmd = new MenuItemCommand4FormWithUCtl(smnu, d.TgAssembly + "." + d.Parent, d.TgName);
+                            }
+                            else {
+                                cmd = new MenuItemCommand4Form(smnu, d.TgAssembly + "." + d.TgName, false);
+                            }
+                        }
+                        else if(d.loadType == 2) {
+                            cmd = new MenuItemCommand4Viewer(smnu, d.TgName);
+                        }
+                        CommandManager.BE.Add(cmd);
+                        ((ToolStripMenuItem)smnu).Click += CmdHandler;
+                    }
+                    else { 
+                        smnu = new ToolStripSeparator(); 
+                    }
+                    ((ToolStripMenuItem)mnu).DropDownItems.Add(smnu);
+                    AddMenu(smnu, d, ctx);
+                }
+            }
+        }
+        #endregion
 
         /// <summary>
         /// 
@@ -78,88 +129,36 @@ namespace Com.Fadong.ZClient {
             }
         }
 
-        //void BE_onOpenFormListChanged(List<Tuple<ToolStripMenuItem, Command_LoadForm>> frmlist) {
-        //        try {
-        //            mnuL2Sys_RecentForm.DropDownItems.Clear();
-        //            foreach (var frm in frmlist) {
-        //                Command_LoadForm frminfo = frm.Item2;
-        //                ToolStripMenuItem mnu = new ToolStripMenuItem();
-        //                mnu.Text = frm.Item1.Text;
-        //                mnu.Name = frminfo.MenuName;
-        //                mnu.Click += CmdHandler;
-        //                mnuL2Sys_RecentForm.DropDownItems.Add(mnu);
-        //            }
-        //        } catch (Exception err) {
-        //            Logger.Error(this, err.Message, err);
-        //        }
-        //}
+        void BE_onOpenFormListChanged(List<Tuple<ToolStripMenuItem, MenuItemCommand>> frmlist) {
+            try {
+                if(CommandManager.BE.Commands.ContainsKey("mnuL2_Sys_RecentForm")) {
+                    MenuItemCommand mcmd = (MenuItemCommand)CommandManager.BE.Commands["mnuL2_Sys_RecentForm"];
+                    ToolStripMenuItem qmnu = (ToolStripMenuItem)mcmd.Menu;
+                    qmnu.DropDownItems.Clear();
+                    foreach(var frm in frmlist) {
+                        if(qmnu.Name != frm.Item1.Name) {
+                            MenuItemCommand frminfo = frm.Item2;
+                            ToolStripMenuItem mnu = new ToolStripMenuItem();
+                            mnu.Text = frm.Item1.Text;
+                            mnu.Name = frminfo.Name;
+                            mnu.Click += CmdHandler;
+                            qmnu.DropDownItems.Add(mnu);
+                        }
+                    }
+                }
+            }
+            catch(Exception err) {
+                Logger.Error(this, err.Message, err);
+            }
+        }
 
         /// <summary>
         /// 
         /// </summary>
         private void CmdHandler(object sender, EventArgs e) {
             ToolStripMenuItem mitem = (ToolStripMenuItem)sender;
-            //CommandManager.BE.Execute(mitem);
+            CommandManager.BE.Execute(mitem.Name);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void mnuL2Sys_Close_Click(object sender, EventArgs e) {
-            try {
-                Close();
-                Logger.Info(this, "System Exit!!");
-            } catch (Exception err) {
-                Logger.Error(this, err);
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        private void CmdHandler() {
-
-        }
-
-        private void c1DockingTabPage1_Click(object sender, EventArgs e) {
-
-        }
-
-        [ActivityLog(ACTIVITYLEVEL.All, Trace2TextBox = true)]
-        private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
-            Console.WriteLine(ZServer.BE.Svr.GetInstruments(new List<int>() { 1 }));
-        }
-
-
-        [ActivityLog(ACTIVITYLEVEL.All, Trace2TextBox = true)]
-        private void mnuL2Sys_Config_Click(object sender, EventArgs e) {
-            try {
-                FormConfiguration frm = new FormConfiguration();
-                frm.ShowDialog();
-            } catch (Exception err) {
-                Logger.Error(this, err);
-            }
-        }
-
-        private void 도구TToolStripMenuItem_Click(object sender, EventArgs e) {
-
-        }
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        //private void loadFormToolStripMenuItem_Click(object sender, EventArgs e) {
-        //    try {
-        //        var data = ZServer.BE.Svr.GetInstrumentKeyValues();
-        //        testOutput.Text = data.Count.ToString();
-        //    } catch (Exception err) {
-        //        MessageBox.Show(err.Message);
-        //    }
-        //}
     }
 }

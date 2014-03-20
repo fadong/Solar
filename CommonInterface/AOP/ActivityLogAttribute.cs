@@ -69,4 +69,47 @@ namespace Com.Fadong.CommonInterface.AOP {
         [NonSerialized]
         Stopwatch sw = null;
     }
+
+
+    public static class ActivityLog {
+        public static void OnEntry(string formName, bool trace2TextBox, ACTIVITYLEVEL activitylevel, ref Stopwatch sw) {
+            try {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("Method Entry [{0}] : {1}", formName, DateTime.Now.ToString("G"));
+                Logger.Info(formName, sb.ToString());
+                if(trace2TextBox) {
+                    Trace.WriteLine(sb.ToString());
+                }
+            }
+            catch(Exception err) {
+                Logger.Error(formName, err.Message);
+            }
+        }
+
+        public static void OnExit(string formName, bool trace2TextBox, ACTIVITYLEVEL activitylevel, ref Stopwatch sw) {
+            try {
+                StringBuilder sb = new StringBuilder();
+                if((activitylevel & ACTIVITYLEVEL.Duration) != 0) {
+                    if(sw != null) {
+                        sw.Stop();
+                        sb.AppendFormat("Duration (Milliseconds) : {0}" + Environment.NewLine, sw.ElapsedMilliseconds.ToString("###,###,###,##0"));
+                        Logger.Info(formName, sb.ToString());
+                    }
+                }
+                sb.AppendFormat("Method Exit [{0}] : {1}", formName, DateTime.Now.ToString("G"));
+                Logger.Info(formName, sb.ToString());
+                if(trace2TextBox) {
+                    Trace.WriteLine(sb.ToString());
+                }
+            }
+            catch(Exception err) {
+                Logger.Error(formName, err.Message);
+            }
+            finally {
+                if(sw != null && sw.IsRunning) {
+                    sw.Stop();
+                }
+            }
+        }
+    }
 }

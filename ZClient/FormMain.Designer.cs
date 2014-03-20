@@ -266,7 +266,6 @@
             this.c1DockingTabPage1.Size = new System.Drawing.Size(887, 303);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "Start";
-            this.c1DockingTabPage1.Click += new System.EventHandler(this.c1DockingTabPage1_Click);
             // 
             // docTabLeft
             // 
