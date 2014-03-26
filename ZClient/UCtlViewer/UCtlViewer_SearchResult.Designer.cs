@@ -1,5 +1,5 @@
-﻿namespace Com.Fadong.ZClient.UCtlProd {
-    partial class UCtlProdBase {
+﻿namespace Com.Fadong.ZClient.UCtlViewer {
+    partial class UCtlViewer_SearchResult {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
         /// </summary>
@@ -25,17 +25,17 @@
         private void InitializeComponent() {
             this.SuspendLayout();
             // 
-            // UCtlProdBase
+            // UCtlViewer_SearchResult
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UCtlProdBase";
-            this.Size = new System.Drawing.Size(792, 511);
+            this.Name = "UCtlViewer_SearchResult";
+            this.Size = new System.Drawing.Size(854, 239);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
     }
 }

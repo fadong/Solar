@@ -26,6 +26,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnOpen = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.docTabTrade = new C1.Win.C1Command.C1DockingTab();
@@ -46,8 +48,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnSave = new System.Windows.Forms.ToolStripButton();
+            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docTabTrade)).BeginInit();
@@ -76,6 +77,22 @@
             this.btnOpen.Size = new System.Drawing.Size(39, 33);
             this.btnOpen.Text = "Open";
             this.btnOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 36);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(34, 33);
+            this.btnSave.Text = "Save";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // statusStrip1
             // 
@@ -107,6 +124,7 @@
             this.docTabTrade.Controls.Add(this.tp_Valuation);
             this.docTabTrade.Controls.Add(this.tp_HistPrice);
             this.docTabTrade.Controls.Add(this.tp_RTPrice);
+            this.docTabTrade.Controls.Add(this.c1DockingTabPage1);
             this.docTabTrade.Dock = System.Windows.Forms.DockStyle.Fill;
             this.docTabTrade.Location = new System.Drawing.Point(473, 3);
             this.docTabTrade.Name = "docTabTrade";
@@ -246,21 +264,13 @@
             this.mnuHelp.Size = new System.Drawing.Size(43, 20);
             this.mnuHelp.Text = "Help";
             // 
-            // toolStripSeparator4
+            // c1DockingTabPage1
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 36);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(34, 33);
-            this.btnSave.Text = "Save";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 27);
+            this.c1DockingTabPage1.Name = "c1DockingTabPage1";
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(638, 525);
+            this.c1DockingTabPage1.TabIndex = 5;
+            this.c1DockingTabPage1.Text = "FA";
             // 
             // FormProduct
             // 
@@ -313,5 +323,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuL2_SaveAsFile;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnSave;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
     }
 }

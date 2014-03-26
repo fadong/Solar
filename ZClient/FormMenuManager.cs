@@ -1,21 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Com.Fadong.ZClient.UCtlProd {
-    public partial class UCtlProdBase : UserControl {
-        public UCtlProdBase() {
+namespace Com.Fadong.ZClient {
+    public partial class FormMenuManager : Form {
+        public FormMenuManager() {
             InitializeComponent();
-        }
-
-        public virtual bool Save() {
-            throw new NotImplementedException("");
         }
     }
 }

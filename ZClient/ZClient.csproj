@@ -91,7 +91,7 @@
   <ItemGroup>
     <Compile Include="ClientConfig.cs" />
     <Compile Include="ClientUtil.cs" />
-    <Compile Include="CommandManager.cs" />
+    <Compile Include="MngCommandManager.cs" />
     <Compile Include="CtlZServer.cs" />
     <Compile Include="DataMappedCtl\Combo_Searchable.cs">
       <SubType>Component</SubType>
@@ -122,6 +122,12 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuManager.Designer.cs">
+      <DependentUpon>FormMenuManager.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMngBook.cs">
       <SubType>Form</SubType>
@@ -159,6 +165,7 @@
     <Compile Include="FormProduct.Designer.cs">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="MngLayoutManager.cs" />
     <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -171,6 +178,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCtlComps\UCtlProdComp_generalInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlComps\UCtlProdComp_generalInfo.Designer.cs">
+      <DependentUpon>UCtlProdComp_generalInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCtlProd\UCtlProd_Bond.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -459,6 +472,12 @@
     <Compile Include="UCtlViewer\UCtlViewer_Risk.Designer.cs">
       <DependentUpon>UCtlViewer_Risk.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_SearchResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlViewer\UCtlViewer_SearchResult.Designer.cs">
+      <DependentUpon>UCtlViewer_SearchResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCtlViewer\UCtlViewer_Trades.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -522,6 +541,9 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuManager.resx">
+      <DependentUpon>FormMenuManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMngBook.resx">
       <DependentUpon>FormMngBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -551,6 +573,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCtlComps\UCtlProdComp_generalInfo.resx">
+      <DependentUpon>UCtlProdComp_generalInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCtlProd\UCtlProd.resx">
       <DependentUpon>UCtlProd.cs</DependentUpon>
     </EmbeddedResource>
@@ -604,6 +629,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCtlViewer\UCtlViewer_Risk.resx">
       <DependentUpon>UCtlViewer_Risk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlViewer\UCtlViewer_SearchResult.resx">
+      <DependentUpon>UCtlViewer_SearchResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCtlViewer\UCtlViewer_Trades.resx">
       <DependentUpon>UCtlViewer_Trades.cs</DependentUpon>
@@ -668,7 +696,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UConfigPanels\" />
-    <Folder Include="UCtlComps\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

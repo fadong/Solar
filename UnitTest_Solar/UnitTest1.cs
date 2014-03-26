@@ -14,8 +14,8 @@ namespace UnitTest_Solar {
         public void TestMethod_GetInstruments() {
             IClientService proxy = ConnectSolar();
             Assert.IsNotNull(proxy);
-            //List<Tuple<int, string>> kv = proxy.GetInstrumentKeyValues();
-            //Assert.IsTrue(kv.Count > 0);
+            List<Tuple<int, string>> kv = proxy.GetInstrumentKeyValues();
+            Assert.IsTrue(kv.Count > 0);
         }
 
         [TestMethod]

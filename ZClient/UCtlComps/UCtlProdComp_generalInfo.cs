@@ -8,14 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Com.Fadong.ZClient.UCtlProd {
-    public partial class UCtlProdBase : UserControl {
-        public UCtlProdBase() {
+namespace Com.Fadong.ZClient.UCtlComps {
+    public partial class UCtlProdComp_generalInfo : UserControl {
+        public UCtlProdComp_generalInfo() {
             InitializeComponent();
-        }
-
-        public virtual bool Save() {
-            throw new NotImplementedException("");
         }
     }
 }

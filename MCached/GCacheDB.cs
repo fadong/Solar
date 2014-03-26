@@ -8,7 +8,6 @@ using System.Data.Objects.DataClasses;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using Com.Fadong.CommonInterface;
-using System.Data.Objects;
 
 namespace Com.Fadong.MCached {
     /// <summary>

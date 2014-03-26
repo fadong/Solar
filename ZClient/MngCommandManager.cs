@@ -16,7 +16,7 @@ namespace Com.Fadong.ZClient {
     public delegate void GNotiFormList(List<Tuple<ToolStripMenuItem, MenuItemCommand>> frmlist);
 
     #region "public class CommandManager : IEnumerable<Command>"
-    public class CommandManager : IEnumerable<Command> {
+    public class MngCommandManager : IEnumerable<Command> {
 
         /// <summary>
         /// 
@@ -51,9 +51,6 @@ namespace Com.Fadong.ZClient {
             if(!this._dic.ContainsKey(command.Name)) {
                 this._dic.Add(command.Name, command);
             }
-            else {
-                Console.WriteLine(command.Name);
-            }
         }
 
         /// <summary>
@@ -80,11 +77,11 @@ namespace Com.Fadong.ZClient {
             get { return this._recentForm; }
         }
 
-        public static CommandManager BE {
+        public static MngCommandManager BE {
             get { return _instance; }
         }
 
-        private static CommandManager _instance = new CommandManager();
+        private static MngCommandManager _instance = new MngCommandManager();
         private Dictionary<string, Command> _dic = new Dictionary<string, Command>();
         private Queue<Tuple<ToolStripMenuItem, MenuItemCommand>> _recentForm = new Queue<Tuple<ToolStripMenuItem, MenuItemCommand>>();
         public event GNotiFormList onOpenFormListChanged;
@@ -139,7 +136,7 @@ namespace Com.Fadong.ZClient {
 
         }
 
-        public string Name { get; internal set; }
+        //public string Name { get; internal set; }
         public ToolStripItem Menu { get; internal set; }
         public bool IsLoadForm { get; internal set; }
         public bool HasChildCtl { get; internal set; }
