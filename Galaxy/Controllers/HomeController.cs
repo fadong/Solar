@@ -8,19 +8,19 @@ using System.Web.Mvc;
 namespace Galaxy.Controllers {
     public class HomeController : Controller {
         public ActionResult Index() {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "Cabalt(장외파생상품 시스템)";
 
             return View();
         }
 
         public ActionResult About() {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "Cabalt는 장외파생상품 시스템입니다.";
             AboutModels mdl = new AboutModels();
             return View(mdl);
         }
 
         public ActionResult Contact() {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "jaekyoon.lee@gmail.com";
 
             return View();
         }

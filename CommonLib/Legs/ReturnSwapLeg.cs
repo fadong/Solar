@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
-    public class FInstrumentOption : FInstrumentDeriv {
-
+namespace Com.Fadong.CommonLib.Legs {
+    class ReturnSwapLeg {
     }
 }

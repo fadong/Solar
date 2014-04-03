@@ -16,7 +16,7 @@ namespace Com.Fadong.ZClient.UMViewer {
             InitializeComponent();
         }
 
-        public void Binding(ViewTable vt) {
+        public void Binding(RViewTable vt) {
 
         }
 

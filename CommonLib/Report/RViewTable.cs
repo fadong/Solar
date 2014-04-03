@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Com.Fadong.CommonLib {
     [Serializable]
-    public class ViewTable {
+    public class RViewTable {
         public enum TOTALVALUETYPE {
             NONE = 0,
             SUM = 1,
@@ -32,7 +32,7 @@ namespace Com.Fadong.CommonLib {
         }
 
 
-        public ViewTable(string templatename) {
+        public RViewTable(string templatename) {
 
 
         }
@@ -226,9 +226,9 @@ namespace Com.Fadong.CommonLib {
         private void ViewColumnInit(int index,
                                     string name,
                                     string title,
-                                    ViewTable.DATATYPE datatype = ViewTable.DATATYPE.STRING,
+                                    RViewTable.DATATYPE datatype = RViewTable.DATATYPE.STRING,
                                     string format = "",
-                                    ViewTable.TOTALVALUETYPE tvaluetype = ViewTable.TOTALVALUETYPE.NONE,
+                                    RViewTable.TOTALVALUETYPE tvaluetype = RViewTable.TOTALVALUETYPE.NONE,
                                     bool isVisible = true,
                                     bool isEnable = true,
                                     bool isOriginal = true) {
@@ -241,7 +241,7 @@ namespace Com.Fadong.CommonLib {
             IsEnable = isEnable;
             IsOriginal = isOriginal;
             RoundRule = 0;
-            TextAlign = ViewTable.TextAlign.Left;
+            TextAlign = RViewTable.TextAlign.Left;
             ForeColor = Color.Black;
             BackColor = Color.White;
         }
@@ -250,14 +250,14 @@ namespace Com.Fadong.CommonLib {
         public string Name { get; internal set; }
         public string Title { get; set; }
         public float Width { get; set; }
-        public ViewTable.TOTALVALUETYPE TotalType { get; set; }
-        public ViewTable.DATATYPE DataType { get; set; }
+        public RViewTable.TOTALVALUETYPE TotalType { get; set; }
+        public RViewTable.DATATYPE DataType { get; set; }
         public string Format { get; set; }
         public bool IsVisible { get; set; }
         public bool IsEnable { get; set; }
         public bool IsOriginal { get; set; }
         public int RoundRule { get; set; }
-        public ViewTable.TextAlign TextAlign { get; set; }
+        public RViewTable.TextAlign TextAlign { get; set; }
         public Color ForeColor { get; set; }
         public Color BackColor { get; set; }
     }
