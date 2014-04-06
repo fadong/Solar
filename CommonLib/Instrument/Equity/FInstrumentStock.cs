@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Com.Fadong.CommonInterface;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Instrument.Equity {
 
     public class FInstrumentStock : FInstrument {
         public FInstrumentStock() {
@@ -14,9 +14,6 @@ namespace Com.Fadong.CommonLib {
             this.UpdatedTime = DateTime.Now;
             this.ObjectStatus = OBJECTSTATUS.Created;
         }
-
-
-
 
     }
 }

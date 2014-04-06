@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Instrument.Equity;
 
 namespace Com.Fadong.ZClient.UCtlProd {
     public partial class UCtlProd_Stock : UCtlProdBase {
@@ -20,21 +21,17 @@ namespace Com.Fadong.ZClient.UCtlProd {
 
         public void Init(FInstrumentStock stock) {
             this._stock = new FInstrumentStock();
-            gInfo.txtName.DataBindings.Add("Name", this._stock, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
+            gInfo.SetDataBindings(this._stock);
         }
 
         public override Task<bool> Save() {
             List<Exception> exps = new List<Exception>();
 
-            //if (txtName.Text.Length != 0) {
-            //    stock.Name = txtName.Text;
-            //} else {
-            //    exps.Add(new Exception("상품명이 설정되지 않음"));
-            //}
-            Func<bool> func = delegate() {
-                for (int i = 0; i < 100; i++) {
-                    ZServer.BE.Svr.SaveInstrument(stock.ToXML());
-                }
+            this._stock.CreatedTime = DateTime.Now;
+            this._stock.UpdatedTime = DateTime.Now;
+            Func<bool> func = delegate()
+            {
+                ZServer.BE.Svr.SaveInstrument(this._stock.ToXML());
                 return true;
             };
 
@@ -42,7 +39,5 @@ namespace Com.Fadong.ZClient.UCtlProd {
         }
 
         FInstrumentStock _stock = null;
-
-        FInstrument stock = null;
     }
 }

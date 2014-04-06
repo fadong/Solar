@@ -6,5 +6,9 @@ using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib.Parameters {
     public class FParameter : BObj {
+
+
+
+
     }
 }

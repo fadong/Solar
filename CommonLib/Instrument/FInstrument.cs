@@ -10,7 +10,7 @@ using System.Xml.Linq;
 using System.Runtime.CompilerServices;
 using Com.Fadong.CommonInterface;
 
-namespace Com.Fadong.CommonLib
+namespace Com.Fadong.CommonLib.Instrument
 {
     /// <summary>
     /// IInstrumentObject를 구현하는 기본 클래스
@@ -64,12 +64,20 @@ namespace Com.Fadong.CommonLib
             }
             set {
                 if (value != this._instype) {
-                    if (this._name.Equals("")) {
-
-                    }
+                    this._instype = value;
                     NotifyPropertyChanged();
                 }
             } 
+        }
+
+        public string ISINCode {
+            get { return this._isincode; }
+            set {
+                if(value != this._isincode) {
+                    this._isincode = value;
+                    NotifyPropertyChanged();
+                }
+            }
         }
 
         public override XElement ToXML() {
@@ -77,6 +85,7 @@ namespace Com.Fadong.CommonLib
             xout.Add(new XElement("Id", this.Id));
             xout.Add(new XElement("Type", this.InsType));
             xout.Add(new XElement("Name", this.Name));
+            xout.Add(new XElement("ISINCode", this.ISINCode));
             xout.Add(base.ToXML());
             return xout;
         }
@@ -84,5 +93,6 @@ namespace Com.Fadong.CommonLib
         public event PropertyChangedEventHandler PropertyChanged;
         private string _name = string.Empty;
         private INSTYPE _instype = INSTYPE.NONE;
+        private string _isincode = string.Empty;
     }
 }

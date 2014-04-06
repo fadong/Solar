@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib.Parameters.Parameters {
+namespace Com.Fadong.CommonLib.Parameters {
     public class FPmCorrPoint {
 
 

@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib.Instrument.Credit {
-    public class FInstrumentCDS : FInstrumentCF {
-
+namespace Com.Fadong.CommonLib.Utils {
+    public class BzUtil : BObj {
     }
 }

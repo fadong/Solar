@@ -53,6 +53,7 @@ namespace Com.Fadong.ZClient {
                 bool outrst = await uctl.Save();
                 Console.WriteLine("Hellow");
             } catch (Exception err) {
+                Logger.Error(this, err.Message);
                 MessageBox.Show(err.Message);
             }
         }

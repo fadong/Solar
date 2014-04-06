@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Com.Fadong.CommonLib.Parameters {
-    class FPmVolPoint {
+    public class FPmVolPoint {
+
+
     }
 }

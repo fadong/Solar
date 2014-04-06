@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Instrument.InterestRate {
     public class FInstrumentCollar : FInstrumentCF {
     }
 }

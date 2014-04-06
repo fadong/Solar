@@ -24,14 +24,15 @@
         /// </summary>
         private void InitializeComponent() {
             this.txtName = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtISINCode = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.testCombo = new System.Windows.Forms.ComboBox();
+            this.comboBoxEnum1 = new Com.Fadong.ZClient.UCtlComps.ComboBoxEnum();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -45,18 +46,18 @@
             this.txtName.TabIndex = 0;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
-            // textBox2
+            // txtISINCode
             // 
-            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBox2.Location = new System.Drawing.Point(508, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(107, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtISINCode.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtISINCode.Location = new System.Drawing.Point(508, 23);
+            this.txtISINCode.Name = "txtISINCode";
+            this.txtISINCode.Size = new System.Drawing.Size(107, 22);
+            this.txtISINCode.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtName);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtISINCode);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.groupBox1.Location = new System.Drawing.Point(12, 13);
             this.groupBox1.Name = "groupBox1";
@@ -67,11 +68,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboBoxEnum1);
             this.groupBox2.Controls.Add(this.comboBox5);
             this.groupBox2.Controls.Add(this.comboBox4);
             this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.testCombo);
             this.groupBox2.Location = new System.Drawing.Point(12, 83);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(628, 133);
@@ -79,29 +81,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // comboBox1
+            // comboBox5
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(59, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(59, 48);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 21);
-            this.comboBox2.TabIndex = 1;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(59, 75);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(210, 21);
-            this.comboBox3.TabIndex = 2;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(59, 102);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(210, 21);
+            this.comboBox5.TabIndex = 4;
             // 
             // comboBox4
             // 
@@ -111,13 +97,37 @@
             this.comboBox4.Size = new System.Drawing.Size(210, 21);
             this.comboBox4.TabIndex = 3;
             // 
-            // comboBox5
+            // comboBox3
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(59, 102);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(210, 21);
-            this.comboBox5.TabIndex = 4;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(59, 75);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(210, 21);
+            this.comboBox3.TabIndex = 2;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(59, 48);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(210, 21);
+            this.comboBox2.TabIndex = 1;
+            // 
+            // testCombo
+            // 
+            this.testCombo.FormattingEnabled = true;
+            this.testCombo.Location = new System.Drawing.Point(59, 21);
+            this.testCombo.Name = "testCombo";
+            this.testCombo.Size = new System.Drawing.Size(210, 21);
+            this.testCombo.TabIndex = 0;
+            // 
+            // comboBoxEnum1
+            // 
+            this.comboBoxEnum1.FormattingEnabled = true;
+            this.comboBoxEnum1.Location = new System.Drawing.Point(405, 48);
+            this.comboBoxEnum1.Name = "comboBoxEnum1";
+            this.comboBoxEnum1.Size = new System.Drawing.Size(210, 21);
+            this.comboBoxEnum1.TabIndex = 5;
             // 
             // UCtlProdComp_generalInfo
             // 
@@ -139,12 +149,13 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        protected System.Windows.Forms.TextBox textBox2;
         protected System.Windows.Forms.ComboBox comboBox5;
         protected System.Windows.Forms.ComboBox comboBox4;
         protected System.Windows.Forms.ComboBox comboBox3;
         protected System.Windows.Forms.ComboBox comboBox2;
-        protected System.Windows.Forms.ComboBox comboBox1;
+        protected System.Windows.Forms.ComboBox testCombo;
         public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtISINCode;
+        private ComboBoxEnum comboBoxEnum1;
     }
 }
