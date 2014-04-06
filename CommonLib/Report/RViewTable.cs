@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Data;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Report {
     [Serializable]
     public class RViewTable {
         public enum TOTALVALUETYPE {

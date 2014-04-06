@@ -14,7 +14,7 @@ namespace Com.Fadong.ZClient.UCtlProd {
             InitializeComponent();
         }
 
-        public override bool Save() {
+        public override Task<bool> Save() {
             throw new NotImplementedException();
         }
     }

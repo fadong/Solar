@@ -48,9 +48,10 @@ namespace Com.Fadong.ZClient {
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnSave_Click(object sender, EventArgs e) {
+        private async void btnSave_Click(object sender, EventArgs e) {
             try {
-                uctl.Save();
+                bool outrst = await uctl.Save();
+                Console.WriteLine("Hellow");
             } catch (Exception err) {
                 MessageBox.Show(err.Message);
             }

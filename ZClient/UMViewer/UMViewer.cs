@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Report;
 
 namespace Com.Fadong.ZClient.UMViewer {
     public partial class UMViewer : UserControl {

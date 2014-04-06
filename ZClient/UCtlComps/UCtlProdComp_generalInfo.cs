@@ -12,6 +12,12 @@ namespace Com.Fadong.ZClient.UCtlComps {
     public partial class UCtlProdComp_generalInfo : UserControl {
         public UCtlProdComp_generalInfo() {
             InitializeComponent();
+
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e) {
+            Console.WriteLine("Hello!!");
         }
     }
 }

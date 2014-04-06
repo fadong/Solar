@@ -50,8 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BObj.cs" />
-    <Compile Include="BzBisinessDayConv.cs" />
-    <Compile Include="BzDayCountConv.cs" />
+    <Compile Include="Utils\Convention\BzBisinessDayConv.cs" />
+    <Compile Include="Utils\Convention\BzDayCountConv.cs" />
     <Compile Include="Legs\CommodityForwardLeg.cs" />
     <Compile Include="Legs\CommoditySwapLeg.cs" />
     <Compile Include="Legs\DirectionalLeg.cs" />
@@ -114,15 +114,15 @@
     <Compile Include="Instrument\InterestRate\FInstrumentZero.cs" />
     <Compile Include="Parameters\FParameter.cs" />
     <Compile Include="Parameters\FParamItem.cs" />
-    <Compile Include="Parameters\Corrs\FPmCorrPoint.cs" />
-    <Compile Include="Parameters\Divds\FPmDivd.cs" />
-    <Compile Include="Parameters\Divds\FPmDivdCorr.cs" />
-    <Compile Include="Parameters\Divds\FPmDivdPoint.cs" />
-    <Compile Include="Parameters\Volatilites\FPmVol.cs" />
-    <Compile Include="Parameters\Volatilites\FPmVolPoint.cs" />
-    <Compile Include="Parameters\Volatilites\FPmVolSurface.cs" />
-    <Compile Include="Parameters\Curves\FPmYC.cs" />
-    <Compile Include="Parameters\Curves\FPmYCPoint.cs" />
+    <Compile Include="Parameters\FPmCorrPoint.cs" />
+    <Compile Include="Parameters\FPmDivd.cs" />
+    <Compile Include="Parameters\FPmDivdCorr.cs" />
+    <Compile Include="Parameters\FPmDivdPoint.cs" />
+    <Compile Include="Parameters\FPmVol.cs" />
+    <Compile Include="Parameters\FPmVolPoint.cs" />
+    <Compile Include="Parameters\FPmVolSurface.cs" />
+    <Compile Include="Parameters\FPmYC.cs" />
+    <Compile Include="Parameters\FPmYCPoint.cs" />
     <Compile Include="Position\FBook.cs" />
     <Compile Include="Position\FBookCompound.cs" />
     <Compile Include="Position\FBookReal.cs" />
@@ -132,8 +132,8 @@
     <Compile Include="PnL\FPnLCalculatorOpenAvg.cs" />
     <Compile Include="PnL\FPnLCalculatorOpenAvgLongShort.cs" />
     <Compile Include="Position\FPnLTradeItem.cs" />
-    <Compile Include="Parameters\Prices\FPrice.cs" />
-    <Compile Include="Parameters\Prices\FPriceHist.cs" />
+    <Compile Include="Prices\FPrice.cs" />
+    <Compile Include="Prices\FPriceHist.cs" />
     <Compile Include="Position\FTrade.cs" />
     <Compile Include="Position\FTradeGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

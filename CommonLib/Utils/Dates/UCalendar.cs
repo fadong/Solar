@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Utils.Dates {
     public class FCalendar : BObj {
         public FCalendar(string name, List<DateTime> holidays) {
             if (holidays == null || holidays.Count < 1) {
