@@ -75,5 +75,9 @@ namespace Com.Fadong.CommonInterface {
         All
     }
     #endregion
-    
+
+    public enum LANGUAGE {
+        KOREAN = 0,
+        ENGLISH = 1
+    }
 }

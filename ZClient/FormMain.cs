@@ -118,5 +118,15 @@ namespace Com.Fadong.ZClient {
 
         private EventHandler _cmdHandler = null;
 
+        private void menuToolStripMenuItem1_Click(object sender, EventArgs e) {
+            try {
+                FormMenuManager frm = new FormMenuManager();
+                frm.ShowDialog();
+
+            } catch (Exception err) {
+                Logger.Error(this, err.Message);
+            }
+        }
+
     }
 }

@@ -20,7 +20,7 @@ namespace Com.Fadong.ZClient.UCtlComps {
 
             txtName.DataBindings.Add("Text", inst, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
             txtISINCode.DataBindings.Add("Text", inst, "ISINCode", false, DataSourceUpdateMode.OnPropertyChanged);
-            testCombo.DataBindings.Add("SelectedItem", inst, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
+            //testCombo.DataBindings.Add("SelectedItem", inst, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
 
         }
 
