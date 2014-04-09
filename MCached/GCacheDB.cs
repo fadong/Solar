@@ -26,10 +26,12 @@ namespace Com.Fadong.MCached {
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            using (MCtx ctx = new MCtx()) {
+            using (Entities ctx = new Entities()) {
                 foreach(IEntityWithKey t in ctx.CreateObjectSet<T>()) {
                     if(t.EntityKey.EntityKeyValues.Length == 1) {
-                        this.Add(Decimal.ToInt32((decimal)t.EntityKey.EntityKeyValues[0].Value), (EntityObject)t);
+                        //Oracle의 경우 Decimal로 Return되어 int로 변환
+                        //this.Add(Decimal.ToInt32((decimal)t.EntityKey.EntityKeyValues[0].Value), (EntityObject)t);
+                        this.Add((int)t.EntityKey.EntityKeyValues[0].Value, (EntityObject)t);
                     }
                 }
             }
@@ -40,7 +42,7 @@ namespace Com.Fadong.MCached {
         #endregion
 
         public ObjectQuery<T> ReadFromDB<T>(string sql) where T : EntityObject {
-            using (MCtx ctx = new MCtx()) {
+            using (Entities ctx = new Entities()) {
                 return ctx.CreateObjectSet<T>().Where(sql, null);
             }
         }

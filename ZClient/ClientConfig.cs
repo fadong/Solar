@@ -12,6 +12,7 @@ namespace Com.Fadong.ZClient {
         public static string MAINFORM_NAME = "FormMain";
         public static string DOCTAB_SUBINFONAME = "docTabSubInfo";
         public static string UCTLVIEWER_PREFIX = "Com.Fadong.ZClient.UCtlViewer.";
+        public static string UCTLPROD_PREFIX = "Com.Fadong.ZClient.UCtlProd.";
 
         public static Timer SYSTIMER = null;
         public static int SYSTIMER_INTERNVAL = 500;

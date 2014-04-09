@@ -19,6 +19,7 @@ namespace Com.Fadong.Solar {
                      IncludeExceptionDetailInFaults = true)]
     public partial class ClientService : IClientService, IDisposable {
 
+        #region "public List<Claim> Connect(ClientInfo cinfo)"
         /// <summary>
         /// 
         /// </summary>
@@ -46,6 +47,7 @@ namespace Com.Fadong.Solar {
                 throw err.CreateFaultException("Solar Server Connection Failed!!");
             }
         }
+        #endregion
 
         #region "Channel_Closed(object sender, EventArgs e)"
         /// <summary>
@@ -71,12 +73,12 @@ namespace Com.Fadong.Solar {
         }
         #endregion
 
+        #region "UnregisterCallback(IClientChannel channel, bool closedGracefully)"
         /// <summary>
         /// 
         /// </summary>
         /// <param name="channel"></param>
         /// <param name="closedGracefully"></param>
-        #region "UnregisterCallback(IClientChannel channel, bool closedGracefully)"
         void UnregistCallback(IClientChannel channel, bool closedGracefully) {
             string sessid = channel.SessionId;
             string userid = string.Empty;
@@ -98,6 +100,7 @@ namespace Com.Fadong.Solar {
         }
         #endregion
 
+        #region "private void OnClientChanged(object obj, string msg)"
         /// <summary>
         /// 
         /// </summary>
@@ -108,7 +111,9 @@ namespace Com.Fadong.Solar {
                 clientChanged(this, msg);
             }
         }
+        #endregion
 
+        #region "public void OpenClientServiceHost()"
         /// <summary>
         /// 
         /// </summary>
@@ -126,6 +131,7 @@ namespace Com.Fadong.Solar {
                 throw err.CreateFaultException();
             }
         }
+        #endregion
 
         /// <summary>
         /// 

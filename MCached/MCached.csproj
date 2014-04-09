@@ -79,15 +79,15 @@
     <Compile Include="GCache.cs" />
     <Compile Include="GCacheDB.cs" />
     <Compile Include="MCached.cs" />
-    <Compile Include="MCacheTargetDB.Designer.cs">
+    <Compile Include="ModelBase.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
+      <DependentUpon>ModelBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model.cs">
+    <Compile Include="ModelBase.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>ModelBase.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,19 +99,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="MCacheTargetDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MCacheTargetDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
-    <None Include="MCacheTargetDB.edmx.diagram">
-      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
+    <EntityDeploy Include="ModelBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelBase.edmx.diagram">
+      <DependentUpon>ModelBase.edmx</DependentUpon>
     </None>
-    <None Include="Model.tt">
+    <None Include="ModelBase.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model.cs</LastGenOutput>
-      <DependentUpon>MCacheTargetDB.edmx</DependentUpon>
+      <LastGenOutput>ModelBase.cs</LastGenOutput>
+      <DependentUpon>ModelBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

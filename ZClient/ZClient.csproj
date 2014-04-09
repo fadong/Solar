@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <SkipPostSharp>True</SkipPostSharp>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.Win.C1Command.4, Version=4.0.20132.19568, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
