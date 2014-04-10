@@ -14,7 +14,7 @@ namespace Com.Fadong.ZClient.UCtlProd {
             InitializeComponent();
         }
 
-        public virtual bool Save() {
+        public virtual Task<bool> Save() {
             throw new NotImplementedException("");
         }
     }

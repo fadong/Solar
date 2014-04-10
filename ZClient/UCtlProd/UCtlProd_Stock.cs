@@ -10,37 +10,34 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Instrument.Equity;
 
 namespace Com.Fadong.ZClient.UCtlProd {
     public partial class UCtlProd_Stock : UCtlProdBase {
         public UCtlProd_Stock() {
             InitializeComponent();
-            stock = new FInstrumentStock();
-            stock.InsType = INSTYPE.Stock;
-            stock.CreatedTime = DateTime.Now;
-            stock.UpdatedTime = DateTime.Now;
-            stock.ObjectStatus = OBJECTSTATUS.Created;
+            Init(new FInstrumentStock());
         }
 
-        public override bool Save() {
-            try {
-                List<Exception> exps = new List<Exception>();
+        public void Init(FInstrumentStock stock) {
+            this._stock = new FInstrumentStock();
+            gInfo.SetDataBindings(this._stock);
+        }
 
-                if (txtName.Text.Length != 0) {
-                    stock.Name = txtName.Text;
-                } else {
-                    exps.Add(new Exception("상품명이 설정되지 않음"));
-                }
-                for (int i = 0; i < 10000; i++) {
-                    ZServer.BE.Svr.SaveInstrument(stock.ToXML());
-                }
+        public override Task<bool> Save() {
+            List<Exception> exps = new List<Exception>();
+
+            this._stock.CreatedTime = DateTime.Now;
+            this._stock.UpdatedTime = DateTime.Now;
+            Func<bool> func = delegate()
+            {
+                ZServer.BE.Svr.SaveInstrument(this._stock.ToXML());
                 return true;
-            } catch (Exception err) {
-                Logger.Error(this, err.Message);
-                return false;
-            }
+            };
+
+            return Task.Factory.StartNew<bool>(func);
         }
 
-        FInstrument stock = null;
+        FInstrumentStock _stock = null;
     }
 }

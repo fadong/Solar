@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ZClientModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ZClientModelStoreContainer">
+          <EntitySet Name="MenuMaster" EntityType="ZClientModel.Store.MenuMaster" store:Type="Tables" />
+          <EntitySet Name="MkEnums" EntityType="ZClientModel.Store.MkEnums" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="MenuMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="mnuName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="mnuType" Type="int" Nullable="false" />
+          <Property Name="loadType" Type="int" Nullable="false" />
+          <Property Name="hasChild" Type="int" Nullable="false" />
+          <Property Name="TgAssembly" Type="nvarchar" MaxLength="100" />
+          <Property Name="TgName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Parent" Type="nvarchar" MaxLength="100" />
+          <Property Name="RefId" Type="int" Nullable="false" />
+          <Property Name="mnuText" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="mnuTextEng" Type="nvarchar" MaxLength="100" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="CreatedUser" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="UpdatedUser" Type="nvarchar" MaxLength="100" />
+          <Property Name="Order" Type="int" />
+          <Property Name="ShortCutKey" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="MkEnums">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Entry" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tag" Type="nvarchar" MaxLength="100" />
+          <Property Name="Value" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+          <Property Name="Order" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ZClientModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="MenuMasters" EntityType="ZClientModel.MenuMaster" />
+          <EntitySet Name="MkEnums" EntityType="ZClientModel.MkEnum" />
+        </EntityContainer>
+        <EntityType Name="MenuMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="mnuName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="mnuType" Type="Int32" Nullable="false" />
+          <Property Name="loadType" Type="Int32" Nullable="false" />
+          <Property Name="hasChild" Type="Int32" Nullable="false" />
+          <Property Name="TgAssembly" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TgName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Parent" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RefId" Type="Int32" Nullable="false" />
+          <Property Name="mnuText" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="mnuTextEng" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedUser" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedUser" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="ShortCutKey" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MkEnum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Entry" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Tag" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Value" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ZClientModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="MenuMasters">
+            <EntityTypeMapping TypeName="ZClientModel.MenuMaster">
+              <MappingFragment StoreEntitySet="MenuMaster">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="mnuName" ColumnName="mnuName" />
+                <ScalarProperty Name="mnuType" ColumnName="mnuType" />
+                <ScalarProperty Name="loadType" ColumnName="loadType" />
+                <ScalarProperty Name="hasChild" ColumnName="hasChild" />
+                <ScalarProperty Name="TgAssembly" ColumnName="TgAssembly" />
+                <ScalarProperty Name="TgName" ColumnName="TgName" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="RefId" ColumnName="RefId" />
+                <ScalarProperty Name="mnuText" ColumnName="mnuText" />
+                <ScalarProperty Name="mnuTextEng" ColumnName="mnuTextEng" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="ShortCutKey" ColumnName="ShortCutKey" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MkEnums">
+            <EntityTypeMapping TypeName="ZClientModel.MkEnum">
+              <MappingFragment StoreEntitySet="MkEnums">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Entry" ColumnName="Entry" />
+                <ScalarProperty Name="Tag" ColumnName="Tag" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -38,9 +38,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter4Server\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pricer", "Pricer\Pricer.csproj", "{A930DF59-DF8B-4816-A001-DE8C5755C6A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZClient_UIUnitTest", "ZClient_UI\ZClient_UIUnitTest.csproj", "{9D66DEA9-5DED-495E-8839-594E89A4642E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_ZClient_UI", "ZClient_UI\UnitTest_ZClient_UI.csproj", "{9D66DEA9-5DED-495E-8839-594E89A4642E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZClient_UnitTest", "ZClient_UnitTest\ZClient_UnitTest.csproj", "{AB8E3E2B-E832-4014-8FDD-5185C2692E8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_ZClient", "ZClient_UnitTest\UnitTest_ZClient.csproj", "{AB8E3E2B-E832-4014-8FDD-5185C2692E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_CommonLib", "UnitTest_CommonLib\UnitTest_CommonLib.csproj", "{120F7025-6E15-4F77-9677-F0F8CC42C870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -120,6 +122,10 @@ Global
 		{AB8E3E2B-E832-4014-8FDD-5185C2692E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB8E3E2B-E832-4014-8FDD-5185C2692E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB8E3E2B-E832-4014-8FDD-5185C2692E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120F7025-6E15-4F77-9677-F0F8CC42C870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120F7025-6E15-4F77-9677-F0F8CC42C870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120F7025-6E15-4F77-9677-F0F8CC42C870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120F7025-6E15-4F77-9677-F0F8CC42C870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

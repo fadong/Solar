@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="d4c1e9903ea54f72a40362ee3b2dd04b" Name="다이어그램1">
         <EntityTypeShape EntityType="ZClientModel.MenuMaster" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZClientModel.Enum" Width="1.5" PointX="9.0459242169959122" PointY="1.9087475100107247" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

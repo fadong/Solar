@@ -12,6 +12,13 @@ namespace Com.Fadong.ZClient {
     public partial class FormMenuManager : Form {
         public FormMenuManager() {
             InitializeComponent();
+            SetInit();
+        }
+
+        private void SetInit() {
+
+            cmbLoadType.SelectedIndex = 0;
+
         }
     }
 }

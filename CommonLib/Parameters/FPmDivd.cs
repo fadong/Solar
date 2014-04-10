@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
-    class FPmVol {
+namespace Com.Fadong.CommonLib.Parameters {
+    class FPmDivd {
+
     }
 }

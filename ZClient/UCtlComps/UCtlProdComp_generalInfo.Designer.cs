@@ -23,18 +23,85 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
         private void InitializeComponent() {
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtISINCode = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxEnum1 = new Com.Fadong.ZClient.UCtlComps.ComboBoxEnum();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // UCtlProdComp_InstProperties
+            // txtName
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.txtName.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.Location = new System.Drawing.Point(62, 23);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(399, 22);
+            this.txtName.TabIndex = 0;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            // 
+            // txtISINCode
+            // 
+            this.txtISINCode.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtISINCode.Location = new System.Drawing.Point(508, 23);
+            this.txtISINCode.Name = "txtISINCode";
+            this.txtISINCode.Size = new System.Drawing.Size(107, 22);
+            this.txtISINCode.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txtISINCode);
+            this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.groupBox1.Location = new System.Drawing.Point(12, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(629, 64);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBoxEnum1);
+            this.groupBox2.Location = new System.Drawing.Point(12, 83);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(628, 133);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // comboBoxEnum1
+            // 
+            this.comboBoxEnum1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEnum1.FormattingEnabled = true;
+            this.comboBoxEnum1.Location = new System.Drawing.Point(62, 30);
+            this.comboBoxEnum1.Name = "comboBoxEnum1";
+            this.comboBoxEnum1.Size = new System.Drawing.Size(210, 21);
+            this.comboBoxEnum1.TabIndex = 5;
+            // 
+            // UCtlProdComp_generalInfo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UCtlProdComp_InstProperties";
-            this.Size = new System.Drawing.Size(761, 168);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Name = "UCtlProdComp_generalInfo";
+            this.Size = new System.Drawing.Size(652, 235);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtISINCode;
+        private ComboBoxEnum comboBoxEnum1;
     }
 }

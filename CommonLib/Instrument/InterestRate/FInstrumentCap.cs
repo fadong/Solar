@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Com.Fadong.CommonInterface;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Instrument.InterestRate {
     public class FInstrumentCap : FInstrumentCF {
 
 

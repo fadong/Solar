@@ -80,6 +80,22 @@ namespace Com.Fadong.ZClient
             }
         }
         private ObjectSet<MenuMaster> _MenuMasters;
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        public ObjectSet<Enum> Enums
+        {
+            get
+            {
+                if ((_Enums == null))
+                {
+                    _Enums = base.CreateObjectSet<Enum>("Enums");
+                }
+                return _Enums;
+            }
+        }
+        private ObjectSet<Enum> _Enums;
 
         #endregion
 
@@ -92,6 +108,14 @@ namespace Com.Fadong.ZClient
         {
             base.AddObject("MenuMasters", menuMaster);
         }
+    
+        /// <summary>
+        /// Enums EntitySet에 새 개체를 추가하는 데 사용되지 않는 메서드입니다. 연결된 ObjectSet&lt;T&gt; 속성의 .Add 메서드를 대신 사용하십시오.
+        /// </summary>
+        public void AddToEnums(Enum @enum)
+        {
+            base.AddObject("Enums", @enum);
+        }
 
         #endregion
 
@@ -100,6 +124,230 @@ namespace Com.Fadong.ZClient
     #endregion
 
     #region 엔터티
+    
+    /// <summary>
+    /// 사용 가능한 메타데이터 설명서가 없습니다.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="ZClientModel", Name="Enum")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Enum : EntityObject
+    {
+        #region 팩터리 메서드
+    
+        /// <summary>
+        /// 새 Enum 개체를 만듭니다.
+        /// </summary>
+        /// <param name="id">Id 속성의 초기 값입니다.</param>
+        public static Enum CreateEnum(global::System.Int32 id)
+        {
+            Enum @enum = new Enum();
+            @enum.Id = id;
+            return @enum;
+        }
+
+        #endregion
+
+        #region 단순 속성
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Entry
+        {
+            get
+            {
+                return _Entry;
+            }
+            set
+            {
+                OnEntryChanging(value);
+                ReportPropertyChanging("Entry");
+                _Entry = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Entry");
+                OnEntryChanged();
+            }
+        }
+        private global::System.String _Entry;
+        partial void OnEntryChanging(global::System.String value);
+        partial void OnEntryChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Value
+        {
+            get
+            {
+                return _Value;
+            }
+            set
+            {
+                OnValueChanging(value);
+                ReportPropertyChanging("Value");
+                _Value = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Value");
+                OnValueChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Value;
+        partial void OnValueChanging(Nullable<global::System.Int32> value);
+        partial void OnValueChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Description
+        {
+            get
+            {
+                return _Description;
+            }
+            set
+            {
+                OnDescriptionChanging(value);
+                ReportPropertyChanging("Description");
+                _Description = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Description");
+                OnDescriptionChanged();
+            }
+        }
+        private global::System.String _Description;
+        partial void OnDescriptionChanging(global::System.String value);
+        partial void OnDescriptionChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Order
+        {
+            get
+            {
+                return _Order;
+            }
+            set
+            {
+                OnOrderChanging(value);
+                ReportPropertyChanging("Order");
+                _Order = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Order");
+                OnOrderChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Order;
+        partial void OnOrderChanging(Nullable<global::System.Int32> value);
+        partial void OnOrderChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedTime
+        {
+            get
+            {
+                return _CreatedTime;
+            }
+            set
+            {
+                OnCreatedTimeChanging(value);
+                ReportPropertyChanging("CreatedTime");
+                _CreatedTime = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CreatedTime");
+                OnCreatedTimeChanged();
+            }
+        }
+        private global::System.String _CreatedTime;
+        partial void OnCreatedTimeChanging(global::System.String value);
+        partial void OnCreatedTimeChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String UpdatedTime
+        {
+            get
+            {
+                return _UpdatedTime;
+            }
+            set
+            {
+                OnUpdatedTimeChanging(value);
+                ReportPropertyChanging("UpdatedTime");
+                _UpdatedTime = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("UpdatedTime");
+                OnUpdatedTimeChanged();
+            }
+        }
+        private global::System.String _UpdatedTime;
+        partial void OnUpdatedTimeChanging(global::System.String value);
+        partial void OnUpdatedTimeChanged();
+    
+        /// <summary>
+        /// 사용 가능한 메타데이터 설명서가 없습니다.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Enum1
+        {
+            get
+            {
+                return _Enum1;
+            }
+            set
+            {
+                OnEnum1Changing(value);
+                ReportPropertyChanging("Enum1");
+                _Enum1 = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Enum1");
+                OnEnum1Changed();
+            }
+        }
+        private global::System.String _Enum1;
+        partial void OnEnum1Changing(global::System.String value);
+        partial void OnEnum1Changed();
+
+        #endregion
+
+    }
     
     /// <summary>
     /// 사용 가능한 메타데이터 설명서가 없습니다.

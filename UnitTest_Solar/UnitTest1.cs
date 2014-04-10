@@ -5,6 +5,7 @@ using System.Security.Claims;
 using Com.Fadong.Adapter;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Utils.Dates;
 
 namespace UnitTest_Solar {
     [TestClass]

@@ -13,7 +13,7 @@ namespace Com.Fadong.ZClient.UCtlProd {
         public UCtlProd_Combination() {
             InitializeComponent();
         }
-        public override bool Save() {
+        public override Task<bool> Save() {
             throw new NotImplementedException();
         }
     }

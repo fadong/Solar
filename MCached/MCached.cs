@@ -30,6 +30,36 @@ namespace Com.Fadong.MCached {
         /// </summary>
         public void CacheInit() {
             //TODO -Table Caching 로직 필요
+            _dic.Add("MkEnums", new GCacheDB());
+            _dic.Add("MenuMaster", new GCacheDB());
+
+            List<Thread> threads = new List<Thread>();
+            foreach (KeyValuePair<string, GCacheDB> v in _dic) {
+                ThreadStart ts = null;
+                GCacheDB gcdb = v.Value;
+                switch (v.Key) {
+                    case "MkEnums":
+                        ts = new ThreadStart(v.Value.Load<MkEnum>);
+                        break;
+                    case "MenuMaster":
+                        ts = new ThreadStart(v.Value.Load<MenuMaster>);
+                        break;
+                    default:
+                        break;
+
+                }
+                if(ts != null) {
+                    Thread t = new Thread(ts);
+                    t.Start();
+                    threads.Add(t);
+                    Logger.Info(this, v.Key + "Loading");
+                }
+                foreach(Thread t in threads) {
+                    t.Join();
+                }
+            }
+
+
             //_dic.Add("D_ADDINFO", new GCacheDB());
             //_dic.Add("D_ADDINFOSPEC", new GCacheDB());
 

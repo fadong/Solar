@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
-    public class FPmVolSurface {
-
+namespace Com.Fadong.CommonLib.Parameters {
+    class FPmDivdCorr {
     }
 }

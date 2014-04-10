@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
+namespace Com.Fadong.CommonLib.Instrument.FX {
     public class FInstrumentFXSwap : FInstrumentCF {
     }
 }

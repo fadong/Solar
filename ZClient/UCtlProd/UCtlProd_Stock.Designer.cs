@@ -23,43 +23,32 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
         private void InitializeComponent() {
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gInfo = new Com.Fadong.ZClient.UCtlComps.UCtlProdComp_generalInfo();
             this.SuspendLayout();
             // 
-            // txtName
+            // gInfo
             // 
-            this.txtName.Location = new System.Drawing.Point(69, 14);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(495, 22);
-            this.txtName.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "상품명 :";
+            this.gInfo.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gInfo.Location = new System.Drawing.Point(4, 4);
+            this.gInfo.Name = "gInfo";
+            this.gInfo.Size = new System.Drawing.Size(652, 227);
+            this.gInfo.TabIndex = 0;
             // 
             // UCtlProd_Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.gInfo);
             this.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Name = "UCtlProd_Stock";
-            this.Size = new System.Drawing.Size(579, 641);
+            this.Size = new System.Drawing.Size(658, 641);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label1;
+        private UCtlComps.UCtlProdComp_generalInfo gInfo;
+
     }
 }

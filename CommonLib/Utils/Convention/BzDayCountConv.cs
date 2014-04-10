@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
-
-    public class BzBisinessDayConv {
+namespace Com.Fadong.CommonLib.Utils.Convention {
+    public class BzDayCountConv {
 
     }
 }

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.Fadong.CommonLib {
-    class FPmDivd {
+namespace Com.Fadong.CommonLib.Instrument.MultiAssets {
+    public class FInstrumentCombination : FInstrumentCombi {
 
     }
 }
