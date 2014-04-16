@@ -72,6 +72,7 @@
     <Compile Include="CustomUserNameValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pool_UMngEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

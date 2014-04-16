@@ -28,6 +28,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBoxEnum1 = new Com.Fadong.ZClient.UCtlComps.ComboBoxEnum();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -37,7 +40,7 @@
             this.txtName.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtName.Location = new System.Drawing.Point(62, 23);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(399, 22);
+            this.txtName.Size = new System.Drawing.Size(383, 22);
             this.txtName.TabIndex = 0;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -51,6 +54,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.txtISINCode);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -63,6 +68,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.comboBoxEnum1);
             this.groupBox2.Location = new System.Drawing.Point(12, 83);
             this.groupBox2.Name = "groupBox2";
@@ -75,10 +81,37 @@
             // 
             this.comboBoxEnum1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxEnum1.FormattingEnabled = true;
-            this.comboBoxEnum1.Location = new System.Drawing.Point(62, 30);
+            this.comboBoxEnum1.Location = new System.Drawing.Point(64, 25);
             this.comboBoxEnum1.Name = "comboBoxEnum1";
             this.comboBoxEnum1.Size = new System.Drawing.Size(210, 21);
             this.comboBoxEnum1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(467, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "label3";
             // 
             // UCtlProdComp_generalInfo
             // 
@@ -92,6 +125,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -103,5 +137,8 @@
         public System.Windows.Forms.TextBox txtName;
         public System.Windows.Forms.TextBox txtISINCode;
         private ComboBoxEnum comboBoxEnum1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

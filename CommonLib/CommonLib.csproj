@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BObj.cs" />
+    <Compile Include="Sys\UMngEnum.cs" />
+    <Compile Include="Sys\UMngEnumPool.cs" />
+    <Compile Include="Sys\UMngEnumTag.cs" />
     <Compile Include="Utils\BzUtil.cs" />
     <Compile Include="Utils\Convention\BzBisinessDayConv.cs" />
     <Compile Include="Utils\Convention\BzDayCountConv.cs" />

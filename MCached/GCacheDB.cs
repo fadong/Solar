@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
 using System.Threading.Tasks;
@@ -13,41 +15,206 @@ namespace Com.Fadong.MCached {
     /// <summary>
     /// 
     /// </summary>
-    public class GCacheDB : GCache<EntityObject> {
+    public class GCacheDB<TEntity> : GCache<TEntity> where TEntity : class {
 
-        #region "public override void Load<T>()"
+        #region "public GCacheDB(DbContext ctx)"
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparam name="Ts"></typeparam>
-        public override void Load<T>() {
-            string tablename = typeof(T).Name;
-            Logger.Info(this, tablename + " Loading Started!!");
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-
-            using (Entities ctx = new Entities()) {
-                foreach(IEntityWithKey t in ctx.CreateObjectSet<T>()) {
-                    if(t.EntityKey.EntityKeyValues.Length == 1) {
-                        //Oracle의 경우 Decimal로 Return되어 int로 변환
-                        //this.Add(Decimal.ToInt32((decimal)t.EntityKey.EntityKeyValues[0].Value), (EntityObject)t);
-                        this.Add((int)t.EntityKey.EntityKeyValues[0].Value, (EntityObject)t);
-                    }
-                }
-            }
-            sw.Stop();
-            Logger.Info(this, tablename + " [" + sw.Elapsed.TotalSeconds + " / " + this.Count() + "] Loading Completed!!");
-            TableName = tablename;
+        /// <param name="ctx"></param>
+        public GCacheDB(DbContext ctx) {
+            this.BaseType = typeof(TEntity);
+            this.Context = ctx;
         }
         #endregion
 
-        public ObjectQuery<T> ReadFromDB<T>(string sql) where T : EntityObject {
-            using (Entities ctx = new Entities()) {
-                return ctx.CreateObjectSet<T>().Where(sql, null);
+        #region "public void LoadDB()"
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual void LoadDB() {
+            try {
+                this.Entities = this.Context.Set<TEntity>();
+                Logger.Info(this, this.ToString());
+            } catch (Exception err) {
+                Logger.Error(this, err);
             }
         }
+        #endregion
 
+        #region "public TEntity GetById(int id)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public TEntity GetById(int id){
+            return this._entities.Find(id);
+        }
+        #endregion
 
-        private string TableName = string.Empty;
+        #region "public TEntity Create()"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public TEntity Create() {
+            return this._entities.Create();
+        }
+        #endregion
+
+        #region "public bool Insert(TEntity tentity)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tentity"></param>
+        /// <returns></returns>
+        public bool Insert(TEntity tentity) {
+            try {
+                string tablename = typeof(TEntity).Name;
+                this._entities.Add(tentity);
+                int chgcnt = this.Context.SaveChanges();
+                return chgcnt > 0 ? true : false;
+            } catch (Exception err) {
+                Logger.Error(this, err.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region "public bool Update(TEntity tentity)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tentity"></param>
+        /// <returns></returns>
+        public bool Update(TEntity tentity) {
+            try {
+                string tablename = typeof(TEntity).Name;
+                this._entities.Add(tentity);
+                int chgcnt = this.Context.SaveChanges();
+                return chgcnt > 0 ? true : false;
+            } catch (Exception err) {
+                Logger.Error(this, err.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region "public bool Delete(TEntity tentity)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tentity"></param>
+        /// <returns></returns>
+        public bool Delete(TEntity tentity) {
+            try {
+                string tablename = typeof(TEntity).Name;
+                this._entities.Remove(tentity);
+                int chgcnt = this.Context.SaveChanges();
+                return chgcnt > 0 ? true : false;
+            } catch (Exception err) {
+                Logger.Error(this, err.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region "public bool Delete(int id)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool Delete(int id) {
+            try {
+                this._entities.Remove(GetById(id));
+                int chgcnt = this.Context.SaveChanges();
+                return chgcnt > 0 ? true : false;
+            } catch (Exception err) {
+                Logger.Error(this, err.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region "public IEnumerable<TEntity> Query(Func<TEntity, bool> query)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        public IEnumerable<TEntity> Query(Func<TEntity, bool> query) {
+            return this._entities.Where(query);
+        }
+        #endregion
+
+        #region "public IEnumerable<TEntity> QueryFromDB(Func<TEntity, bool> query)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        public IEnumerable<TEntity> QueryFromDB(Func<TEntity, bool> query) {
+            using (Entities ctx = new Entities()) {
+                return ctx.Set<TEntity>().Where(query);
+            }
+        }
+        #endregion
+
+        #region "public IEnumerable<TEntity> QueryFromDic(string qdickey)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="qdickey"></param>
+        /// <returns></returns>
+        public IEnumerable<TEntity> QueryFromDic(string qdickey) {
+            return Query(_querydic[qdickey]);
+        }
+        #endregion
+
+        #region "public override string ToString()"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() {
+            return this._entities.Count() + "개";
+        }
+        #endregion
+
+        #region "public Type BaseType"
+        /// <summary>
+        /// 
+        /// </summary>
+        public Type BaseType {
+            get;
+            internal set;
+        }
+        #endregion
+
+        #region "public DbContext Context"
+        /// <summary>
+        /// 
+        /// </summary>
+        public DbContext Context {
+            get;
+            internal set;
+        }
+        #endregion
+
+        #region "public IDbSet<TEntity> Entities"
+        /// <summary>
+        /// 
+        /// </summary>
+        public IDbSet<TEntity> Entities {
+            get;
+            internal set;
+        }
+        #endregion
+
+        private IDbSet<TEntity> _entities = null;
+        private Dictionary<string, Func<TEntity, bool>> _querydic = new Dictionary<string, Func<TEntity, bool>>();
+        
     }
 }

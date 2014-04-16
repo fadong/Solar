@@ -76,19 +76,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities.cs" />
     <Compile Include="GCache.cs" />
     <Compile Include="GCacheDB.cs" />
+    <Compile Include="GCacheMkEnums.cs" />
     <Compile Include="MCached.cs" />
-    <Compile Include="ModelBase.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelBase.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBase.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,11 +98,6 @@
       <LastGenOutput>ModelBase.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="ModelBase.edmx.diagram">
-      <DependentUpon>ModelBase.edmx</DependentUpon>
-    </None>
-    <None Include="ModelBase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelBase.cs</LastGenOutput>
       <DependentUpon>ModelBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />

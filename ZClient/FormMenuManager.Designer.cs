@@ -30,13 +30,13 @@
             this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.cmbLoadType = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -112,16 +112,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(17, 21);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(141, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "분리선(Separator) 여부";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cmbLoadType);
@@ -136,28 +126,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // textBox1
+            // cmbLoadType
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(82, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Menu Name :";
+            this.cmbLoadType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLoadType.FormattingEnabled = true;
+            this.cmbLoadType.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "d"});
+            this.cmbLoadType.Location = new System.Drawing.Point(82, 82);
+            this.cmbLoadType.Name = "cmbLoadType";
+            this.cmbLoadType.Size = new System.Drawing.Size(214, 21);
+            this.cmbLoadType.TabIndex = 4;
             // 
             // label2
             // 
@@ -168,14 +149,38 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Menu Text :";
             // 
-            // cmbLoadType
+            // label1
             // 
-            this.cmbLoadType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLoadType.FormattingEnabled = true;
-            this.cmbLoadType.Location = new System.Drawing.Point(82, 82);
-            this.cmbLoadType.Name = "cmbLoadType";
-            this.cmbLoadType.Size = new System.Drawing.Size(214, 21);
-            this.cmbLoadType.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Menu Name :";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(82, 54);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(214, 22);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 22);
+            this.textBox1.TabIndex = 0;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(17, 21);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(141, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "분리선(Separator) 여부";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // FormMenuManager
             // 

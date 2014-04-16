@@ -133,6 +133,7 @@ namespace Com.Fadong.Solar {
         }
         #endregion
 
+        #region "void _sh_Faulted(object sender, EventArgs e)"
         /// <summary>
         /// 
         /// </summary>
@@ -141,6 +142,7 @@ namespace Com.Fadong.Solar {
         void _sh_Faulted(object sender, EventArgs e) {
             Logger.Fatal(this, "ClientService Faulted!!");
         }
+        #endregion
 
         public void Dispose() {
             if (_isDisposed) return;

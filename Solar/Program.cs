@@ -112,6 +112,7 @@ namespace Com.Fadong.Solar {
 
         public SubMain() {
             DBCachePool dbpool = DBCachePool.BE;
+
         }
 
         public void Run() {

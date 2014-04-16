@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
+using Com.Fadong.CommonInterface.Poco;
 
 namespace Com.Fadong.MCached {
 
@@ -21,44 +22,46 @@ namespace Com.Fadong.MCached {
 
         /// <summary></summary>
         private DBCachePool() {
+            Context = new Entities();
             CacheInit();
-            
         }
 
+        #region "public void CacheInit()"
         /// <summary>
         ///
         /// </summary>
         public void CacheInit() {
             //TODO -Table Caching 로직 필요
-            _dic.Add("MkEnums", new GCacheDB());
-            _dic.Add("MenuMaster", new GCacheDB());
+
+            MenuMaster mmaster = new MenuMaster();
+            _dic.Add("MkEnum", new GCacheMkEnums(this.Context));
+            _dic.Add("MenuMaster", new GCacheDB<MenuMaster>(this.Context));
 
             List<Thread> threads = new List<Thread>();
-            foreach (KeyValuePair<string, GCacheDB> v in _dic) {
+            foreach (KeyValuePair<string, object> v in _dic) {
                 ThreadStart ts = null;
-                GCacheDB gcdb = v.Value;
                 switch (v.Key) {
-                    case "MkEnums":
-                        ts = new ThreadStart(v.Value.Load<MkEnum>);
+                    case "MkEnum":
+                        ts = new ThreadStart(((GCacheMkEnums)v.Value).LoadDB);
                         break;
                     case "MenuMaster":
-                        ts = new ThreadStart(v.Value.Load<MenuMaster>);
+                        ts = new ThreadStart(((GCacheDB<MenuMaster>)v.Value).LoadDB);
                         break;
                     default:
                         break;
 
                 }
-                if(ts != null) {
+                if (ts != null) {
                     Thread t = new Thread(ts);
                     t.Start();
                     threads.Add(t);
                     Logger.Info(this, v.Key + "Loading");
                 }
-                foreach(Thread t in threads) {
+                foreach (Thread t in threads) {
                     t.Join();
                 }
+                Logger.Info(this, _dic.Count + "개 Table Loading Completed!!");
             }
-
 
             //_dic.Add("D_ADDINFO", new GCacheDB());
             //_dic.Add("D_ADDINFOSPEC", new GCacheDB());
@@ -118,32 +121,71 @@ namespace Com.Fadong.MCached {
             //foreach(Thread t in tlist) {
             //    t.Join();
             //}
-
         }
+        #endregion
 
+        #region "public GCacheDB<TEntity> GetTEntity<TEntity>(string key) where TEntity : class"
         /// <summary>
         ///
         /// </summary>
         /// <param name="tablename"></param>
         /// <returns></returns>
-        public GCacheDB this[string tablename] {
-            get {
-                GCacheDB gcacdb = null;
-                if (_dic.ContainsKey(tablename)) {
-                    gcacdb = _dic[tablename];
+        public GCacheDB<TEntity> GetTEntity<TEntity>(string key) where TEntity : class {
+            try {
+                return (GCacheDB<TEntity>)_dic[key];
+            }
+            catch(Exception err) {
+                Logger.Error(this, err.Message);
+                throw err;
+            }
+
+        }
+        #endregion
+
+        #region "public void Dispose()"
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Dispose() {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        #endregion
+
+        #region "protected virtual void Dispose(bool disposing)"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing) {
+            if (disposing) {
+                if (this.Context != null) {
+                    this.Context.Dispose();
                 }
-                return gcacdb;
             }
         }
+        #endregion
 
+        #region "public Entities Context"
+        /// <summary>
+        /// 
+        /// </summary>
+        public Entities Context {
+            get;
+            internal set;
+        }
+        #endregion
+
+        #region "public static DBCachePool BE"
         /// <summary>
         ///
         /// </summary>
         public static DBCachePool BE {
             get { return _instance; }
         }
+        #endregion
 
-        private static Dictionary<string, GCacheDB> _dic = new Dictionary<string, GCacheDB>();
+        private static Dictionary<string, object> _dic = new Dictionary<string, object>();
         private static DBCachePool _instance = new DBCachePool();
     }
 }

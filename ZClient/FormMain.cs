@@ -110,8 +110,10 @@ namespace Com.Fadong.ZClient {
         /// Command Handler
         /// </summary>
         private void CmdHandler(object sender, EventArgs e) {
-            ToolStripMenuItem mitem = (ToolStripMenuItem)sender;
-            MngCommandManager.BE.Execute(mitem.Name);
+            if (sender is ToolStripMenuItem) {
+                ToolStripMenuItem mitem = (ToolStripMenuItem)sender;
+                MngCommandManager.BE.Execute(mitem.Name);
+            }
         }
         #endregion
 

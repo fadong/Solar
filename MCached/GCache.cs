@@ -109,13 +109,20 @@ namespace Com.Fadong.MCached {
         /// <summary>
         /// Caching된 Object를 담아두는 ConcurrentDictionary
         /// </summary>
-        private ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
+        protected ConcurrentDictionary<int, T> _dic = new ConcurrentDictionary<int, T>();
+        #endregion
+
+        #region "Others Properties"
+        public TimeSpan LoadTime {
+            get;
+            set;
+        }
         #endregion
 
         /// <summary>
         ///  Data Loading에 관련된 Abstraction Method
         /// </summary>
         /// <typeparam name="Ts"></typeparam>
-        public abstract void Load<Ts>() where Ts : class;
+        //public abstract void Load<T>() where T : class;
     }
 }
