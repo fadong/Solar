@@ -29,7 +29,6 @@ namespace Com.Fadong.ZClient {
             ClientConfig.MASTER_TIMER.Start();
 
             MngLayoutManager.BE.SetMenuLayout(this.mnuMain, this._cmdHandler);
-
             MngCommandManager.BE.onOpenFormListChanged += BE_onOpenFormListChanged;
 
             //Test

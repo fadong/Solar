@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Sys;
 
 namespace Com.Fadong.ZClient {
     //
@@ -13,13 +13,14 @@ namespace Com.Fadong.ZClient {
     public class MngLayoutManager {
 
         private MngLayoutManager() {
-            using (ZClientEntities ctx = new ZClientEntities()) {
+            using (ZClientEntitiesA ctx = new ZClientEntitiesA()) {
                 foreach (MenuMaster d in ctx.MenuMasters) {
                     this._dic.Add(d.mnuName, new ClsMenuInfo(d));
                 }
             }
         }
 
+        #region "public void SetMenuLayout(MenuStrip mstrip, EventHandler cmdhandler)"
         /// <summary>
         /// DB상의 정보를 이용하여 MenuItem들을 생성하고 이벤트 핸들러는 등록함
         /// </summary>
@@ -30,25 +31,64 @@ namespace Com.Fadong.ZClient {
             foreach (ClsMenuInfo mi in this._dic.Values.OrderBy(k => k.Order)) {
                 if (mi.IsRootMenu) {
                     mstrip.Items.Add(mi.StripItem);
-                    AddMenu(mi.StripItem, mi, cmdhandler);
+                    AddMenu4Strip(mi.StripItem, mi, cmdhandler);
                 }
-            }
-        }
-
-        #region "void AddMenu(ToolStripItem mnu, MenuMaster mmst, ZClientEntities ctx)"
-        void AddMenu(ToolStripItem mnu, ClsMenuInfo mmst, EventHandler cmdhandler) {
-            foreach (ClsMenuInfo mi in this._dic.Values.Where(k => k.RefId == mmst.Id && !k.IsRootMenu).OrderBy(k => k.Order)) {
-                ToolStripItem smnu = mi.StripItem;
-                smnu.Click += cmdhandler;
-                ((ToolStripMenuItem)mnu).DropDownItems.Add(smnu);
-                AddMenu(smnu, mi, cmdhandler);
             }
         }
         #endregion
 
+
+        #region "void AddMenu(ToolStripItem mnu, MenuMaster mmst, ZClientEntities ctx)"
+        void AddMenu4Strip(ToolStripItem mnu, ClsMenuInfo mmst, EventHandler cmdhandler) {
+            foreach (ClsMenuInfo mi in this._dic.Values.Where(k => k.RefId == mmst.Id && !k.IsRootMenu).OrderBy(k => k.Order)) {
+                ToolStripItem smnu = mi.StripItem;
+                smnu.Click += cmdhandler;
+                ((ToolStripMenuItem)mnu).DropDownItems.Add(smnu);
+                AddMenu4Strip(smnu, mi, cmdhandler);
+            }
+        }
+        #endregion
+
+        public void SetMenuTreeLayout(TreeView tv) {
+            foreach (ClsMenuInfo mi in this._dic.Values.OrderBy(k => k.Order)) {
+                if (mi.IsRootMenu) {
+                    TreeNode tn = new TreeNode(mi.MenuText);
+                    tn.Tag = mi;
+                    tv.Nodes.Add(tn);
+                    AddMenu4TreeNode(tn, mi);
+                }
+            }
+        }
+
+        void AddMenu4TreeNode(TreeNode tn, ClsMenuInfo mi) {
+            foreach (ClsMenuInfo submi in this._dic.Values.Where(k => k.RefId == mi.Id && !k.IsRootMenu).OrderBy(k => k.Order)) {
+                TreeNode subtn = new TreeNode(submi.MenuText);
+                subtn.Tag = submi;
+                tn.Nodes.Add(subtn);
+                AddMenu4TreeNode(subtn, submi);
+            }
+        }
+
+
+        #region "public Dictionary<string, ClsMenuInfo> Dic"
+        /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, ClsMenuInfo> Dic {
+            get {
+                return this._dic;
+            }
+        }
+        #endregion
+
+        #region "public static MngLayoutManager BE"
+        /// <summary>
+        /// 
+        /// </summary>
         public static MngLayoutManager BE {
             get { return _instance; }
         }
+        #endregion
 
         private static MngLayoutManager _instance = new MngLayoutManager();
         private Dictionary<string, ClsMenuInfo> _dic = new Dictionary<string, ClsMenuInfo>();
@@ -79,12 +119,13 @@ namespace Com.Fadong.ZClient {
         /// <param name="targetname"></param>
         /// <param name="order"></param>
         public ClsMenuInfo(string mnuName, string mnuText, int refid, int mnuType, LOADTYPE loadType, bool hasChild, 
-                        string Assemblyname, string parentname, string targetname, int order, string shortcutkey) {
+                        string Assemblyname, string parentname, string targetname, int order, string shortcutkey, bool isToggle) {
             this._mmst = MenuMaster.CreateMenuMaster(0, mnuName, mnuType, (int)loadType, hasChild ? 1 : 0, refid, mnuText);
             this.AssemblyName = Assemblyname;
             this.Parent = parentname;
             this.TargetName = targetname;
             this.Order = order;
+            this.IsToggle = isToggle;
         }
 
         public ClsMenuInfo(MenuMaster mmst) {
@@ -110,7 +151,8 @@ namespace Com.Fadong.ZClient {
                         }
                         break;
                     case LOADTYPE.ONLY_FORM:
-                        cmd = new MenuItemCommand4Viewer(this._stripitem, this.TargetName);
+                        Console.WriteLine(this._mmst.IsToggle);
+                        cmd = new MenuItemCommand4Viewer(this._stripitem, this.TargetName, this.Parent, this.AssemblyName, this.IsToggle);
                         break;
                 }
                 MngCommandManager.BE.Add(cmd);
@@ -160,7 +202,13 @@ namespace Com.Fadong.ZClient {
         }
 
         public bool IsSeperator {
-            get { return this._mmst.mnuType == 0 ? true : false;  }
+            get { return this._mmst.mnuType == 1 ? false : true;  }
+            set { this._mmst.mnuType = value ? 0 : 1; }
+        }
+
+
+        public bool IsToggle {
+            get { return this._mmst.IsToggle == 0 ? false : true; }
             set { this._mmst.mnuType = value ? 1 : 0; }
         }
 

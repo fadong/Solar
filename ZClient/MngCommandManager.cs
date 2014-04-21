@@ -230,34 +230,48 @@ namespace Com.Fadong.ZClient {
 
     #region "public class MenuItemCommand4Viewer : MenuItemCommand"
     public class MenuItemCommand4Viewer : MenuItemCommand {
-        public MenuItemCommand4Viewer(ToolStripItem menu, string targetname)
+        public MenuItemCommand4Viewer(ToolStripItem menu, string targetname, string doctabname, string viewerprefix, bool isToggle)
             : base(menu, false, false, targetname) {
                 ((ToolStripMenuItem)menu).CheckOnClick = true;
+                this._doctabname = doctabname;
+                this._viewprefix = viewerprefix;
+                this._isToggle = isToggle;
         }
 
         public override void Execute() {
             Form mfrm = Application.OpenForms.OfType<Form>().FirstOrDefault(k => k.Name.Equals(ClientConfig.MAINFORM_NAME));
             if(mfrm != null) {
                 Type t = typeof(C1DockingTab);
-                List<C1DockingTab> doctabs = ClientUtil.GetChildrens<C1DockingTab>(mfrm).Where(k => k.Name.Equals(ClientConfig.DOCTAB_SUBINFONAME)).ToList();
-                if(doctabs.Count == 1) {
-                    if(((ToolStripMenuItem)base.Menu).Checked) {
-                        C1DockingTabPage tp = new C1DockingTabPage();
-                        tp.Name = tp.Text = base.Menu.Text;
-                        Type ut = Assembly.GetExecutingAssembly().GetType(ClientConfig.UCTLVIEWER_PREFIX + this.TargetName);
-                        UCtlViewer.UCtlViewer viewer = (UCtlViewer.UCtlViewer)Activator.CreateInstance(ut);
-
-                        viewer.Dock = DockStyle.Fill;
-                        tp.Controls.Add(viewer);
-                        doctabs[0].SelectedIndex = ((C1DockingTab)doctabs[0]).TabPages.Add(tp);
-                    }
-                    else {
-                        int tidx = ((C1DockingTab)doctabs[0]).TabPages[base.Menu.Text].TabIndex;
-                        ((C1DockingTab)doctabs[0]).TabPages.RemoveAt(tidx);
+                C1DockingTab doctab = ClientUtil.GetChildrens<C1DockingTab>(mfrm).FirstOrDefault(k => k.Name.Equals(this._doctabname));
+                if(doctab != null) {
+                    if (this._isToggle) {
+                        if (((ToolStripMenuItem)base.Menu).Checked) {
+                            AddTabPage(doctab);
+                        } else {
+                            int tidx = doctab.TabPages[base.Menu.Text].TabIndex;
+                            doctab.TabPages.RemoveAt(tidx);
+                        }
+                    } else {
+                        ((ToolStripMenuItem)base.Menu).Checked = false;
+                        AddTabPage(doctab);
                     }
                 }
             }
         }
+
+        private void AddTabPage(C1DockingTab dtab) {
+            C1DockingTabPage tp = new C1DockingTabPage();
+            tp.Name = tp.Text = base.Menu.Text;
+            Type ut = Assembly.GetExecutingAssembly().GetType(this._viewprefix + "." + this.TargetName);
+            Control viewer = (Control)Activator.CreateInstance(ut);
+            viewer.Dock = DockStyle.Fill;
+            tp.Controls.Add(viewer);
+            dtab.SelectedIndex = dtab.TabPages.Add(tp);
+        }
+
+        private string _doctabname = string.Empty;
+        private string _viewprefix = string.Empty;
+        private bool _isToggle = false;
     }
     #endregion
 }

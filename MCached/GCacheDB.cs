@@ -49,7 +49,7 @@ namespace Com.Fadong.MCached {
         /// <param name="id"></param>
         /// <returns></returns>
         public TEntity GetById(int id){
-            return this._entities.Find(id);
+            return this.Entities.Find(id);
         }
         #endregion
 
@@ -59,7 +59,7 @@ namespace Com.Fadong.MCached {
         /// </summary>
         /// <returns></returns>
         public TEntity Create() {
-            return this._entities.Create();
+            return this.Entities.Create();
         }
         #endregion
 
@@ -72,7 +72,7 @@ namespace Com.Fadong.MCached {
         public bool Insert(TEntity tentity) {
             try {
                 string tablename = typeof(TEntity).Name;
-                this._entities.Add(tentity);
+                this.Entities.Add(tentity);
                 int chgcnt = this.Context.SaveChanges();
                 return chgcnt > 0 ? true : false;
             } catch (Exception err) {
@@ -91,7 +91,7 @@ namespace Com.Fadong.MCached {
         public bool Update(TEntity tentity) {
             try {
                 string tablename = typeof(TEntity).Name;
-                this._entities.Add(tentity);
+                this.Entities.Add(tentity);
                 int chgcnt = this.Context.SaveChanges();
                 return chgcnt > 0 ? true : false;
             } catch (Exception err) {
@@ -110,7 +110,7 @@ namespace Com.Fadong.MCached {
         public bool Delete(TEntity tentity) {
             try {
                 string tablename = typeof(TEntity).Name;
-                this._entities.Remove(tentity);
+                this.Entities.Remove(tentity);
                 int chgcnt = this.Context.SaveChanges();
                 return chgcnt > 0 ? true : false;
             } catch (Exception err) {
@@ -128,7 +128,7 @@ namespace Com.Fadong.MCached {
         /// <returns></returns>
         public bool Delete(int id) {
             try {
-                this._entities.Remove(GetById(id));
+                this.Entities.Remove(GetById(id));
                 int chgcnt = this.Context.SaveChanges();
                 return chgcnt > 0 ? true : false;
             } catch (Exception err) {
@@ -145,7 +145,7 @@ namespace Com.Fadong.MCached {
         /// <param name="query"></param>
         /// <returns></returns>
         public IEnumerable<TEntity> Query(Func<TEntity, bool> query) {
-            return this._entities.Where(query);
+            return this.Entities.Where(query);
         }
         #endregion
 
@@ -179,7 +179,7 @@ namespace Com.Fadong.MCached {
         /// </summary>
         /// <returns></returns>
         public override string ToString() {
-            return this._entities.Count() + "개";
+            return this.Entities.Count() + "개";
         }
         #endregion
 
@@ -213,7 +213,7 @@ namespace Com.Fadong.MCached {
         }
         #endregion
 
-        private IDbSet<TEntity> _entities = null;
+        //private IDbSet<TEntity> _entities = null;
         private Dictionary<string, Func<TEntity, bool>> _querydic = new Dictionary<string, Func<TEntity, bool>>();
         
     }

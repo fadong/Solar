@@ -26,6 +26,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
             this.umViewer1 = new Com.Fadong.ZClient.UMViewer.UMViewer();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
             this.c1Sizer1.SuspendLayout();
             this.SuspendLayout();
@@ -41,9 +42,10 @@
             // 
             // c1Sizer1
             // 
+            this.c1Sizer1.Controls.Add(this.richTextBox1);
             this.c1Sizer1.Controls.Add(this.umViewer1);
             this.c1Sizer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Sizer1.GridDefinition = "52.9661016949153:True:True;44.4915254237288:False:False;\t99.1150442477876:False:F" +
+            this.c1Sizer1.GridDefinition = "43.6440677966102:True:True;53.8135593220339:False:False;\t99.1150442477876:False:F" +
     "alse;";
             this.c1Sizer1.Location = new System.Drawing.Point(0, 25);
             this.c1Sizer1.Name = "c1Sizer1";
@@ -54,10 +56,18 @@
             // 
             // umViewer1
             // 
-            this.umViewer1.Location = new System.Drawing.Point(3, 258);
+            this.umViewer1.Location = new System.Drawing.Point(3, 214);
             this.umViewer1.Name = "umViewer1";
-            this.umViewer1.Size = new System.Drawing.Size(672, 210);
+            this.umViewer1.Size = new System.Drawing.Size(672, 254);
             this.umViewer1.TabIndex = 0;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(3, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(672, 206);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
             // 
             // UMUserQueryer
             // 
@@ -80,5 +90,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private C1.Win.C1Sizer.C1Sizer c1Sizer1;
         private UMViewer umViewer1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
