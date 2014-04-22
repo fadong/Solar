@@ -39,7 +39,7 @@ namespace Com.Fadong.CommonLib.Instrument
             }
         }
 
-
+        #region "public string Name"
         /// <summary>
         /// 상품명
         /// </summary>
@@ -54,7 +54,9 @@ namespace Com.Fadong.CommonLib.Instrument
                 }
             } 
         }
+        #endregion
 
+        #region "public INSTYPE InsType"
         /// <summary>
         /// 상품타입
         /// </summary>
@@ -69,7 +71,9 @@ namespace Com.Fadong.CommonLib.Instrument
                 }
             } 
         }
+        #endregion
 
+        #region "public string ISINCode"
         public string ISINCode {
             get { return this._isincode; }
             set {
@@ -79,7 +83,33 @@ namespace Com.Fadong.CommonLib.Instrument
                 }
             }
         }
+        #endregion
 
+        #region "public DateTime StartDay"
+        public DateTime StartDay {
+            get { return this._startday; }
+            set {
+                if(value != this._startday) {
+                    this._startday = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        #endregion
+
+        #region "public DateTime ExpDay"
+        public DateTime ExpDay {
+            get { return this._expday; }
+            set {
+                if (value != this._expday) {
+                    this._expday = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        #endregion
+
+        #region "public override XElement ToXML()"
         public override XElement ToXML() {
             XElement xout = new XElement("Instrument");
             xout.Add(new XElement("Id", this.Id));
@@ -89,10 +119,24 @@ namespace Com.Fadong.CommonLib.Instrument
             xout.Add(base.ToXML());
             return xout;
         }
+        #endregion
+
+        #region "public override string ToString()"
+        public override string ToString() {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("{0}:{1}" + Environment.NewLine, "Id", this.Id);
+            sb.AppendFormat("{0}:{1}" + Environment.NewLine, "Name", this.Name);
+            sb.AppendFormat("{0}:{1}" + Environment.NewLine, "Type", this.InsType);
+            sb.AppendFormat("{0}:{1}" + Environment.NewLine, "ISINCode", this.ISINCode);
+            return sb.ToString();
+        }
+        #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;
         private string _name = string.Empty;
         private INSTYPE _instype = INSTYPE.NONE;
         private string _isincode = string.Empty;
+        private DateTime _startday = DateTime.MinValue;
+        private DateTime _expday = DateTime.MinValue;
     }
 }

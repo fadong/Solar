@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Instrument;
+using ServiceStack.Text;
 
 namespace Com.Fadong.Solar {
     public partial class ClientService {
 
-        public bool SaveInstrument(XElement instrument) {
+        public bool SaveInstrument(string instrument) {
             try {
-                Console.WriteLine(instrument);
+                FInstrument inst = JsonSerializer.DeserializeFromString<FInstrument>(instrument);
+
+                Console.WriteLine(inst.ToString());
 
                 return true;
             } catch (Exception err) {

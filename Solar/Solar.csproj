@@ -52,6 +52,10 @@
     <Reference Include="PostSharp.Patterns.Model">
       <HintPath>..\packages\PostSharp.Patterns.Model.3.1.34\lib\net40\PostSharp.Patterns.Model.dll</HintPath>
     </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.4.0.18\lib\net40\ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />

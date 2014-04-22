@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Instrument;
 using Com.Fadong.CommonLib.Instrument.Equity;
+using ServiceStack.Text;
 
 namespace Com.Fadong.ZClient.UCtlProd {
     public partial class UCtlProd_Stock : UCtlProdBase {
@@ -31,7 +33,8 @@ namespace Com.Fadong.ZClient.UCtlProd {
             this._stock.UpdatedTime = DateTime.Now;
             Func<bool> func = delegate()
             {
-                ZServer.BE.Svr.SaveInstrument(this._stock.ToXML());
+                string stock = JsonSerializer.SerializeToString<FInstrument>(this._stock);
+                ZServer.BE.Svr.SaveInstrument(stock);
                 return true;
             };
 

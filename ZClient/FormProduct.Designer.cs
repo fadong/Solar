@@ -35,6 +35,7 @@
             this.tp_Valuation = new C1.Win.C1Command.C1DockingTabPage();
             this.tp_HistPrice = new C1.Win.C1Command.C1DockingTabPage();
             this.tp_RTPrice = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
             this.instPanel = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuL1_File = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuL2_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docTabTrade)).BeginInit();
@@ -77,6 +77,7 @@
             this.btnOpen.Size = new System.Drawing.Size(39, 33);
             this.btnOpen.Text = "Open";
             this.btnOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // toolStripSeparator4
             // 
@@ -168,6 +169,14 @@
             this.tp_RTPrice.Size = new System.Drawing.Size(638, 525);
             this.tp_RTPrice.TabIndex = 4;
             this.tp_RTPrice.Text = "RTPrice";
+            // 
+            // c1DockingTabPage1
+            // 
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 27);
+            this.c1DockingTabPage1.Name = "c1DockingTabPage1";
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(638, 525);
+            this.c1DockingTabPage1.TabIndex = 5;
+            this.c1DockingTabPage1.Text = "FA";
             // 
             // instPanel
             // 
@@ -263,14 +272,6 @@
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(43, 20);
             this.mnuHelp.Text = "Help";
-            // 
-            // c1DockingTabPage1
-            // 
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(2, 27);
-            this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(638, 525);
-            this.c1DockingTabPage1.TabIndex = 5;
-            this.c1DockingTabPage1.Text = "FA";
             // 
             // FormProduct
             // 

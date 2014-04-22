@@ -12,6 +12,8 @@ using System.Windows.Annotations;
 using System.Diagnostics;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonInterface.AOP;
+using Com.Fadong.CommonLib.Instrument;
+using ServiceStack.Text;
 
 namespace Com.Fadong.ZClient {
     /// <summary>
@@ -126,6 +128,22 @@ namespace Com.Fadong.ZClient {
 
             } catch (Exception err) {
                 Logger.Error(this, err.Message);
+            }
+        }
+
+        private void tBtn_FormalView_Click(object sender, EventArgs e) {
+            try {
+                //List<string> rsts = ZServer.BE.Svr.GetInstruments(new List<int>() { 1, 2, 3 });
+                //List<FInstrument> insts = new List<FInstrument>();
+                //foreach (string rst in rsts) {
+                //    insts.Add(JsonSerializer.DeserializeFromString<FInstrument>(rst));
+                //}
+                //MessageBox.Show(insts.Count.ToString());
+
+                List<Tuple<int, string>> lists = ZServer.BE.Svr.GetInstrumentKeyValues();
+                MessageBox.Show(lists.Count.ToString());
+            } catch (Exception err) {
+                Logger.Error(this, err);
             }
         }
 

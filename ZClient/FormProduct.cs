@@ -59,5 +59,14 @@ namespace Com.Fadong.ZClient {
         }
 
         UCtlProd.UCtlProdBase uctl = null;
+
+        private void btnOpen_Click(object sender, EventArgs e) {
+            try {
+                FormProduct_Open frm = new FormProduct_Open();
+                frm.ShowDialog();
+            } catch (Exception err) {
+                Logger.Error(this, err);
+            }
+        }
     }
 }

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Com.Fadong.CommonInterface;
 using Com.Fadong.CommonLib;
+using Com.Fadong.CommonLib.Instrument;
+using ServiceStack.Text;
 
 namespace Com.Fadong.Solar {
     public partial class ClientService : IClientService, IDisposable {
@@ -18,7 +20,9 @@ namespace Com.Fadong.Solar {
         public List<Tuple<int, string>> GetInstrumentKeyValues() {
             try {
                 List<Tuple<int, string>> list = new List<Tuple<int, string>>();
-                list.Add(new Tuple<int, string>(1, "test1"));
+                for (int i = 0; i < 5000; i++) {
+                    list.Add(new Tuple<int, string>(i, "test_" + i.ToString()));
+                }
                 return list;
             } catch (Exception err) {
                 throw err.CreateFaultException("GetInstrumentKeyValues Return Failed!!");
@@ -38,14 +42,17 @@ namespace Com.Fadong.Solar {
         }
         #endregion
 
-        #region "public List<XElement> GetInstruments(List<int> instlist)"
-        public List<XElement> GetInstruments(List<int> instlist) {
+        #region "public List<string> GetInstruments(List<int> instlist)"
+        public List<string> GetInstruments(List<int> instlist) {
             try {
-                List<XElement> list = new List<XElement>();
-                for (int i = 0; i < 10; i++) {
-                    XElement xout = new XElement("Root");
-                    xout.Add(new XElement("afafa"));
-                    list.Add(xout);
+                List<string> list = new List<string>();
+                for(int i = 0; i < 10000; i++) {
+                    FInstrument inst = new FInstrument();
+                    inst.Id = i;
+                    inst.Name = i.ToString() + "번째 ELS";
+                    inst.ObjectStatus = OBJECTSTATUS.DBLoaded;
+                    inst.InsType = INSTYPE.Stock;
+                    list.Add(JsonSerializer.SerializeToString<FInstrument>(inst));
                 }
                 return list;
             } catch (Exception err) {
@@ -53,5 +60,7 @@ namespace Com.Fadong.Solar {
             }
         }
         #endregion
+
+        
     }
 }

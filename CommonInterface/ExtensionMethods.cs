@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ComponentModel;
+using ServiceStack.Text;
 
 namespace Com.Fadong.CommonInterface {
     public static class ExtensionMethods
@@ -67,5 +68,9 @@ namespace Com.Fadong.CommonInterface {
             return retVal;
         }
         #endregion
+
+        public static List<T> Trans2Poco<T>(this List<string> @list) where T : class {
+            return @list.Select(k => JsonSerializer.DeserializeFromString<T>(k)).ToList<T>();
+        }
     }
 }
